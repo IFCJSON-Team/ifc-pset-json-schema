@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_EvaporativeCoolerPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_EvaporativeCoolerPHistory",
+    "description": "Evaporative cooler performance history attributes.",
+    "properties": {
+        "WaterSumpTemperature": {
+            "title": "WaterSumpTemperature",
+            "description": "Water sump temperature."
+        },
+        "Effectiveness": {
+            "title": "Effectiveness",
+            "description": "Ratio of the change in dry bulb temperature of the (primary) air stream to the difference between the entering dry bulb temperature of the (primary) air and the wet-bulb temperature of the (secondary) air."
+        },
+        "SensibleHeatTransferRate": {
+            "title": "SensibleHeatTransferRate",
+            "description": "Sensible heat transfer rate to primary air flow."
+        },
+        "LatentHeatTransferRate": {
+            "title": "LatentHeatTransferRate",
+            "description": "Latent heat transfer rate to primary air flow."
+        },
+        "TotalHeatTransferRate": {
+            "title": "TotalHeatTransferRate",
+            "description": "Total heat transfer rate to primary air flow."
+        }
+    }
+}

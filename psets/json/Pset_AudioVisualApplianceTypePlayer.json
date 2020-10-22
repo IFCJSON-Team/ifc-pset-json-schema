@@ -1,0 +1,35 @@
+{
+    "$id": "Pset_AudioVisualApplianceTypePlayer.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AudioVisualApplianceTypePlayer",
+    "description": "An audio-visual player is a device that plays stored media into a stream of audio and/or video, such as camera footage in security systems, background audio in retail areas, or media presentations in conference rooms or theatres.  HISTORY: Added in IFC4.",
+    "properties": {
+        "PlayerType": {
+            "title": "PlayerType",
+            "description": "Indicates the type of player.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "AUDIO",
+                    "VIDEO",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET."
+                ]
+            }
+        },
+        "PlayerMediaEject": {
+            "title": "PlayerMediaEject",
+            "description": "Indicates whether the media can be ejected from the player (if physical media).",
+            "datatype": "IfcBoolean"
+        },
+        "PlayerMediaFormat": {
+            "title": "PlayerMediaFormat",
+            "description": "Indicates supported media formats."
+        }
+    }
+}

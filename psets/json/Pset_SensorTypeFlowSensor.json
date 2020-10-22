@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_SensorTypeFlowSensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypeFlowSensor",
+    "description": "A device that senses or detects flow. HISTORY: Added in IFC4.",
+    "properties": {
+        "SetPointFlow": {
+            "title": "SetPointFlow",
+            "description": "The volumetric flow value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "$id": "Pset_FireSuppressionTerminalTypeHoseReel.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FireSuppressionTerminalTypeHoseReel",
+    "description": "A supporting framework on which a hose may be wound (BS6100 155 8201).\n\nNote that the service provided by the hose (water/foam) is determined by the context of the system onto which the hose reel is connected.",
+    "properties": {
+        "HoseReelType": {
+            "title": "HoseReelType",
+            "description": "Identifies the predefined types of hose arrangement from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "RACK",
+                    "REEL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HoseReelMountingType": {
+            "title": "HoseReelMountingType",
+            "description": "Identifies the predefined types of hose reel mounting from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CABINET_RECESSED",
+                    "CABINET_SEMIRECESSED",
+                    "SURFACE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "InletConnectionSize": {
+            "title": "InletConnectionSize",
+            "description": "Size of the inlet connection to the hose reel.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HoseDiameter": {
+            "title": "HoseDiameter",
+            "description": "Notional diameter (bore) of the hose.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HoseLength": {
+            "title": "HoseLength",
+            "description": "Notional length of the hose fitted to the hose reel when fully extended.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HoseNozzleType": {
+            "title": "HoseNozzleType",
+            "description": "Identifies the predefined types of nozzle (in terms of spray pattern) fitted to the end of the hose from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FOG",
+                    "STRAIGHTSTREAM",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ClassOfService": {
+            "title": "ClassOfService",
+            "description": "A classification of usage of the hose reel that may be applied.",
+            "datatype": "IfcLabel"
+        },
+        "ClassificationAuthority": {
+            "title": "ClassificationAuthority",
+            "description": "The name of the authority that applies the classification of service to the hose reel (e.g. NFPA/FEMA).",
+            "datatype": "IfcLabel"
+        }
+    }
+}

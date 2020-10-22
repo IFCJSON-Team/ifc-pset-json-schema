@@ -1,0 +1,104 @@
+{
+    "$id": "Pset_JunctionBoxTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_JunctionBoxTypeCommon",
+    "description": "A junction box is an enclosure within which cables are connected.\n\nHistory: New in IFC4",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NumberOfGangs": {
+            "title": "NumberOfGangs",
+            "description": "Number of slots available for switches/outlets (most commonly 1, 2, 3, or 4).",
+            "datatype": "IfcInteger"
+        },
+        "ClearDepth": {
+            "title": "ClearDepth",
+            "description": "Clear unobstructed depth available for cable inclusion within the junction box.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ShapeType": {
+            "title": "ShapeType",
+            "description": "Shape of the junction box.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "RECTANGULAR",
+                    "ROUND",
+                    "SLOT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "PlacingType": {
+            "title": "PlacingType",
+            "description": "Location at which the type of junction box can be located.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CEILING",
+                    "FLOOR",
+                    "WALL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "MountingType": {
+            "title": "MountingType",
+            "description": "Method of mounting to be adopted for the type of junction box.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FACENAIL",
+                    "SIDENAIL",
+                    "CUT_IN",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "IsExternal": {
+            "title": "IsExternal",
+            "description": "Indication of whether the junction box type is allowed for exposure to outdoor elements (set TRUE where external exposure is allowed).",
+            "datatype": "IfcBoolean"
+        },
+        "IP_Code": {
+            "title": "IP_Code",
+            "description": "IEC 60529 (1989) Classification of degrees of protection provided by enclosures (IP Code).",
+            "datatype": "IfcLabel"
+        }
+    }
+}

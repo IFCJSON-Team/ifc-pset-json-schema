@@ -1,0 +1,42 @@
+{
+    "$id": "Pset_DistributionPortPHistoryCable.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionPortPHistoryCable",
+    "description": "Log of electrical activity attached to an instance of IfcPerformanceHistory having an assigned IfcDistributionPort of type CABLE.",
+    "properties": {
+        "Current": {
+            "title": "Current",
+            "description": "Log of electrical current."
+        },
+        "Voltage": {
+            "title": "Voltage",
+            "description": "Log of electrical voltage."
+        },
+        "RealPower": {
+            "title": "RealPower",
+            "description": "Real power."
+        },
+        "ReactivePower": {
+            "title": "ReactivePower",
+            "description": "Reactive power."
+        },
+        "ApparentPower": {
+            "title": "ApparentPower",
+            "description": "Apparent power."
+        },
+        "PowerFactor": {
+            "title": "PowerFactor",
+            "description": "Power factor."
+        },
+        "DataTransmitted": {
+            "title": "DataTransmitted",
+            "description": "For data ports, captures log of data transmitted.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols."
+        },
+        "DataReceived": {
+            "title": "DataReceived",
+            "description": "For data ports, captures log of data received.  The LIST at IfcTimeSeriesValue.Values may split out data according to Pset_DistributionPortTypeCable.Protocols."
+        }
+    }
+}

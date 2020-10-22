@@ -1,0 +1,123 @@
+{
+    "$id": "Pset_AirTerminalBoxTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AirTerminalBoxTypeCommon",
+    "description": "Air terminal box type common attributes.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AirflowRateRange": {
+            "title": "AirflowRateRange",
+            "description": "Range of airflow that can be delivered.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "AirPressureRange": {
+            "title": "AirPressureRange",
+            "description": "Allowable air static pressure range at the entrance of the air terminal box.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "NominalAirFlowRate": {
+            "title": "NominalAirFlowRate",
+            "description": "Nominal airflow rate.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "ArrangementType": {
+            "title": "ArrangementType",
+            "description": "Terminal box arrangement.\nSingleDuct: Terminal box receives warm or cold air from a single air supply duct.\nDualDuct: Terminal box receives warm and cold air from separate air supply ducts.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SINGLEDUCT",
+                    "DUALDUCT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ReheatType": {
+            "title": "ReheatType",
+            "description": "Terminal box reheat type.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ELECTRICALREHEAT",
+                    "WATERCOILREHEAT",
+                    "STEAMCOILREHEAT",
+                    "GASREHEAT",
+                    "NONE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HasSoundAttenuator": {
+            "title": "HasSoundAttenuator",
+            "description": "Terminal box has a sound attenuator.",
+            "datatype": "IfcBoolean"
+        },
+        "HasReturnAir": {
+            "title": "HasReturnAir",
+            "description": "Terminal box has return air mixed with supply air from duct work.",
+            "datatype": "IfcBoolean"
+        },
+        "HasFan": {
+            "title": "HasFan",
+            "description": "Terminal box has a fan inside (fan powered box).",
+            "datatype": "IfcBoolean"
+        },
+        "NominalInletAirPressure": {
+            "title": "NominalInletAirPressure",
+            "description": "Nominal airflow inlet static pressure.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "NominalDamperDiameter": {
+            "title": "NominalDamperDiameter",
+            "description": "Nominal damper diameter.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HousingThickness": {
+            "title": "HousingThickness",
+            "description": "Air terminal box housing material thickness.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "OperationTemperatureRange": {
+            "title": "OperationTemperatureRange",
+            "description": "Allowable operational range of the ambient air temperature.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "ReturnAirFractionRange": {
+            "title": "ReturnAirFractionRange",
+            "description": "Allowable return air fraction range as a fraction of discharge airflow.",
+            "datatype": "IfcPositiveRatioMeasure"
+        }
+    }
+}

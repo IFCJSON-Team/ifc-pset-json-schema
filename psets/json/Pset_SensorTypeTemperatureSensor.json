@@ -1,0 +1,34 @@
+{
+    "$id": "Pset_SensorTypeTemperatureSensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypeTemperatureSensor",
+    "description": "A device that senses or detects temperature. HISTORY: TemperatureSensorSensorSetPoint changed to SetPointTemperature. Range, accuracy and time constant deleted.",
+    "properties": {
+        "TemperatureSensorType": {
+            "title": "TemperatureSensorType",
+            "description": "Enumeration that Identifies the types of temperature sensor that can be specified.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "HIGHLIMIT",
+                    "LOWLIMIT",
+                    "OUTSIDETEMPERATURE",
+                    "OPERATINGTEMPERATURE",
+                    "ROOMTEMPERATURE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "SetPointTemperature": {
+            "title": "SetPointTemperature",
+            "description": "The temperature value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        }
+    }
+}

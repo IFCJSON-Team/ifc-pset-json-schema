@@ -1,0 +1,62 @@
+{
+    "$id": "Pset_FurnitureTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FurnitureTypeCommon",
+    "description": "Common properties for all types of furniture such as chair, desk, table, and file cabinet. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_FurnitureCommon. IFC 2x4: 'IsBuiltIn' property added",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": null
+        },
+        "Status": {
+            "title": "Status",
+            "description": "element designed as new addition",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Style": {
+            "title": "Style",
+            "description": "Description of the furniture style.",
+            "datatype": "IfcLabel"
+        },
+        "NominalHeight": {
+            "title": "NominalHeight",
+            "description": "The nominal height of the furniture of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalLength": {
+            "title": "NominalLength",
+            "description": "The nominal length of the furniture of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalDepth": {
+            "title": "NominalDepth",
+            "description": "The nominal depth of the furniture of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "MainColor": {
+            "title": "MainColor",
+            "description": "The main color of the furniture of this type.",
+            "datatype": "IfcLabel"
+        },
+        "IsBuiltIn": {
+            "title": "IsBuiltIn",
+            "description": "Indicates whether the furniture type is intended to be 'built in' i.e. physically attached to a building or facility (= TRUE) or not i.e. Loose and movable (= FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

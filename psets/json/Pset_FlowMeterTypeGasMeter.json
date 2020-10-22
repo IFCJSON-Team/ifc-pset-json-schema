@@ -1,0 +1,43 @@
+{
+    "$id": "Pset_FlowMeterTypeGasMeter.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FlowMeterTypeGasMeter",
+    "description": "Device that measures, indicates and sometimes records, the volume of gas that passes through it without interrupting the flow.",
+    "properties": {
+        "GasType": {
+            "title": "GasType",
+            "description": "Defines the types of gas that may be specified.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "COMMERCIALBUTANE",
+                    "COMMERCIALPROPANE",
+                    "LIQUEFIEDPETROLEUMGAS",
+                    "NATURALGAS",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ConnectionSize": {
+            "title": "ConnectionSize",
+            "description": "Defines the size of inlet and outlet pipe connections to the meter.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "MaximumFlowRate": {
+            "title": "MaximumFlowRate",
+            "description": "Maximum rate of flow which the meter is expected to pass.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "MaximumPressureLoss": {
+            "title": "MaximumPressureLoss",
+            "description": "Pressure loss expected across the meter under conditions of maximum flow.",
+            "datatype": "IfcPressureMeasure"
+        }
+    }
+}

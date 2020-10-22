@@ -1,0 +1,199 @@
+{
+    "$id": "Pset_DamperTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DamperTypeCommon",
+    "description": "Damper type common attributes.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Operation": {
+            "title": "Operation",
+            "description": "The operational mechanism for the damper operation.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "AUTOMATIC",
+                    "MANUAL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Orientation": {
+            "title": "Orientation",
+            "description": "The intended orientation for the damper as specified by the manufacturer.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "VERTICAL",
+                    "HORIZONTAL",
+                    "VERTICALORHORIZONTAL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "BladeThickness": {
+            "title": "BladeThickness",
+            "description": "The thickness of the damper blade.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "BladeAction": {
+            "title": "BladeAction",
+            "description": "Blade action.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FOLDINGCURTAIN",
+                    "PARALLEL",
+                    "OPPOSED",
+                    "SINGLE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "BladeShape": {
+            "title": "BladeShape",
+            "description": "Blade shape. Flat means triple V-groove.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FLAT",
+                    "FABRICATEDAIRFOIL",
+                    "EXTRUDEDAIRFOIL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "BladeEdge": {
+            "title": "BladeEdge",
+            "description": "Blade edge.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CRIMPED",
+                    "UNCRIMPED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NumberofBlades": {
+            "title": "NumberofBlades",
+            "description": "Number of blades.",
+            "datatype": "IfcInteger"
+        },
+        "FaceArea": {
+            "title": "FaceArea",
+            "description": "Face area open to the airstream.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "MaximumAirFlowRate": {
+            "title": "MaximumAirFlowRate",
+            "description": "Maximum allowable air flow rate.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "TemperatureRange": {
+            "title": "TemperatureRange",
+            "description": "Temperature range.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "MaximumWorkingPressure": {
+            "title": "MaximumWorkingPressure",
+            "description": "Maximum working pressure.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "TemperatureRating": {
+            "title": "TemperatureRating",
+            "description": "Temperature rating.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "NominalAirFlowRate": {
+            "title": "NominalAirFlowRate",
+            "description": "Nominal air flow rate.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "OpenPressureDrop": {
+            "title": "OpenPressureDrop",
+            "description": "Total pressure drop across damper.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "LeakageFullyClosed": {
+            "title": "LeakageFullyClosed",
+            "description": "Leakage when fully closed.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "LossCoefficentCurve": {
+            "title": "LossCoefficentCurve",
+            "description": "Loss coefficient \u2013 blade position angle curve; ratio of pressure drop to velocity pressure versus blade angle; C = f (blade angle position)."
+        },
+        "LeakageCurve": {
+            "title": "LeakageCurve",
+            "description": "Leakage versus pressure drop; Leakage = f (pressure)."
+        },
+        "RegeneratedSoundCurve": {
+            "title": "RegeneratedSoundCurve",
+            "description": "Regenerated sound versus air flow rate."
+        },
+        "FrameType": {
+            "title": "FrameType",
+            "description": "The type of frame used by the damper (e.g., Standard, Single Flange, Single Reversed Flange, Double Flange, etc.).",
+            "datatype": "IfcLabel"
+        },
+        "FrameDepth": {
+            "title": "FrameDepth",
+            "description": "The length (or depth) of the damper frame.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "FrameThickness": {
+            "title": "FrameThickness",
+            "description": "The thickness of the damper frame material.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CloseOffRating": {
+            "title": "CloseOffRating",
+            "description": "Close off rating.",
+            "datatype": "IfcPressureMeasure"
+        }
+    }
+}

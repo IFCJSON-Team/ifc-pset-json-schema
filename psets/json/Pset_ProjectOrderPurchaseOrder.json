@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_ProjectOrderPurchaseOrder.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProjectOrderPurchaseOrder",
+    "description": "Defines the requirements for purchase orders in a project.",
+    "properties": {
+        "IsFOB": {
+            "title": "IsFOB",
+            "description": "Indication of whether contents of the purchase order are delivered 'Free on Board' (= True) or not (= False). FOB is a shipping term which indicates that the supplier pays the shipping costs (and usually also the insurance costs) from the point of manufacture to a specified destination, at which point the buyer takes responsibility.",
+            "datatype": "IfcBoolean"
+        },
+        "ShipMethod": {
+            "title": "ShipMethod",
+            "description": "Method of shipping that will be used for goods or services.",
+            "datatype": "IfcText"
+        }
+    }
+}

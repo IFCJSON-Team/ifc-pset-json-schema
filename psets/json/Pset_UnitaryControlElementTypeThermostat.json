@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_UnitaryControlElementTypeThermostat.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_UnitaryControlElementTypeThermostat",
+    "description": "Unitary control element type thermostat attributes.  HISTORY: Added in IFC4.",
+    "properties": {
+        "TemperatureSetPoint": {
+            "title": "TemperatureSetPoint",
+            "description": "The temperature setpoint range and default setpoint.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "$id": "Pset_MaterialWater.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialWater",
+    "description": "A set of extended material properties for of water typically used within the context of building services and flow distribution systems.",
+    "properties": {
+        "IsPotable": {
+            "title": "IsPotable",
+            "description": "If TRUE, then the water is considered potable.",
+            "datatype": "IfcBoolean"
+        },
+        "Hardness": {
+            "title": "Hardness",
+            "description": "Water hardness as positive, multivalent ion concentration in the water (usually concentrations of calcium and magnesium ions in terms of calcium carbonate).",
+            "datatype": "IfcIonConcentrationMeasure"
+        },
+        "AlkalinityConcentration": {
+            "title": "AlkalinityConcentration",
+            "description": "Maximum alkalinity concentration (maximum sum of concentrations of each of the negative ions substances measured as CaCO3).",
+            "datatype": "IfcIonConcentrationMeasure"
+        },
+        "AcidityConcentration": {
+            "title": "AcidityConcentration",
+            "description": "Maximum CaCO3 equivalent that would neutralize the acid.",
+            "datatype": "IfcIonConcentrationMeasure"
+        },
+        "ImpuritiesContent": {
+            "title": "ImpuritiesContent",
+            "description": "Fraction of impurities such as dust to the total amount of water. This is measured in weight of impurities per weight of water and is therefore unitless.",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "DissolvedSolidsContent": {
+            "title": "DissolvedSolidsContent",
+            "description": "Fraction of the dissolved solids to the total amount of water. This is measured in weight of dissolved solids per weight of water and is therefore unitless.",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "PHLevel": {
+            "title": "PHLevel",
+            "description": "Maximum water PH in a range from 0-14.",
+            "datatype": "IfcPHMeasure"
+        }
+    }
+}

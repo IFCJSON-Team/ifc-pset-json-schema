@@ -1,0 +1,103 @@
+{
+    "$id": "Pset_TubeBundleTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_TubeBundleTypeCommon",
+    "description": "Tube bundle type common attributes.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1').",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NumberOfRows": {
+            "title": "NumberOfRows",
+            "description": "Number of tube rows in the tube bundle assembly.",
+            "datatype": "IfcInteger"
+        },
+        "StaggeredRowSpacing": {
+            "title": "StaggeredRowSpacing",
+            "description": "Staggered tube row spacing.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "InLineRowSpacing": {
+            "title": "InLineRowSpacing",
+            "description": "In-line tube row spacing.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NumberOfCircuits": {
+            "title": "NumberOfCircuits",
+            "description": "Number of parallel fluid tube circuits.",
+            "datatype": "IfcInteger"
+        },
+        "FoulingFactor": {
+            "title": "FoulingFactor",
+            "description": "Fouling factor of the tubes in the tube bundle.",
+            "datatype": "IfcThermalResistanceMeasure"
+        },
+        "ThermalConductivity": {
+            "title": "ThermalConductivity",
+            "description": "The thermal conductivity of the tube.",
+            "datatype": "IfcThermalConductivityMeasure"
+        },
+        "Length": {
+            "title": "Length",
+            "description": "Length of the tubes in the tube bundle.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Volume": {
+            "title": "Volume",
+            "description": "Total volume of fluid in the tubes and their headers.",
+            "datatype": "IfcVolumeMeasure"
+        },
+        "NominalDiameter": {
+            "title": "NominalDiameter",
+            "description": "Nominal diameter or width of the tubes in the tube bundle.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "OutsideDiameter": {
+            "title": "OutsideDiameter",
+            "description": "Actual outside diameter of the tube in the tube bundle.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "InsideDiameter": {
+            "title": "InsideDiameter",
+            "description": "Actual inner diameter of the tube in the tube bundle.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HorizontalSpacing": {
+            "title": "HorizontalSpacing",
+            "description": "Horizontal spacing between tubes in the tube bundle.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "VerticalSpacing": {
+            "title": "VerticalSpacing",
+            "description": "Vertical spacing between tubes in the tube bundle.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HasTurbulator": {
+            "title": "HasTurbulator",
+            "description": "TRUE if the tube has a turbulator, FALSE if it does not.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

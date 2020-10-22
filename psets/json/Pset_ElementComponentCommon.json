@@ -1,0 +1,67 @@
+{
+    "$id": "Pset_ElementComponentCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ElementComponentCommon",
+    "description": "Set of common properties of component elements (especially discrete accessories, but also fasteners, reinforcement elements, or other types of components).",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "DeliveryType": {
+            "title": "DeliveryType",
+            "description": "Determines how the accessory will be delivered to the site.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CAST_IN_PLACE",
+                    "WELDED_TO_STRUCTURE",
+                    "LOOSE",
+                    "ATTACHED_FOR_DELIVERY",
+                    "PRECAST",
+                    "NOTDEFINED"
+                ]
+            }
+        },
+        "CorrosionTreatment": {
+            "title": "CorrosionTreatment",
+            "description": "Determines corrosion treatment for metal components. This property is provided if the requirement needs to be expressed (a) independently of a material specification and (b) as a mere requirements statement rather than a workshop design/ processing feature.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "PAINTED",
+                    "EPOXYCOATED",
+                    "GALVANISED",
+                    "STAINLESS",
+                    "NONE",
+                    "NOTDEFINED"
+                ]
+            }
+        }
+    }
+}

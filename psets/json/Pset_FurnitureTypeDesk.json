@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_FurnitureTypeDesk.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FurnitureTypeDesk",
+    "description": "A set of specific properties for furniture type desk. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Desk",
+    "properties": {
+        "WorksurfaceArea": {
+            "title": "WorksurfaceArea",
+            "description": "The value of the work surface area of the desk.",
+            "datatype": "IfcAreaMeasure"
+        }
+    }
+}

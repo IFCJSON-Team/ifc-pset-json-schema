@@ -1,0 +1,88 @@
+{
+    "$id": "Pset_FilterTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FilterTypeCommon",
+    "description": "Filter type common attributes.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1').",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Weight": {
+            "title": "Weight",
+            "description": "Weight of filter.",
+            "datatype": "IfcMassMeasure"
+        },
+        "InitialResistance": {
+            "title": "InitialResistance",
+            "description": "Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1).",
+            "datatype": "IfcPressureMeasure"
+        },
+        "FinalResistance": {
+            "title": "FinalResistance",
+            "description": "Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1).",
+            "datatype": "IfcPressureMeasure"
+        },
+        "OperationTemperatureRange": {
+            "title": "OperationTemperatureRange",
+            "description": "Allowable operation ambient fluid temperature range.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "FlowRateRange": {
+            "title": "FlowRateRange",
+            "description": "Possible range of fluid flowrate that can be delivered.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "NominalFilterFaceVelocity": {
+            "title": "NominalFilterFaceVelocity",
+            "description": "Filter face velocity.",
+            "datatype": "IfcLinearVelocityMeasure"
+        },
+        "NominalMediaSurfaceVelocity": {
+            "title": "NominalMediaSurfaceVelocity",
+            "description": "Average fluid velocity at the media surface.",
+            "datatype": "IfcLinearVelocityMeasure"
+        },
+        "NominalPressureDrop": {
+            "title": "NominalPressureDrop",
+            "description": "Total pressure drop across the filter.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "NominalFlowrate": {
+            "title": "NominalFlowrate",
+            "description": "Nominal fluid flow rate through the filter.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "NominalParticleGeometricMeanDiameter": {
+            "title": "NominalParticleGeometricMeanDiameter",
+            "description": "Particle geometric mean diameter associated with nominal efficiency.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalParticleGeometricStandardDeviation": {
+            "title": "NominalParticleGeometricStandardDeviation",
+            "description": "Particle geometric standard deviation associated with nominal efficiency.",
+            "datatype": "IfcReal"
+        }
+    }
+}

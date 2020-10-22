@@ -1,0 +1,45 @@
+{
+    "$id": "Pset_ThermalLoadAggregate.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ThermalLoadAggregate",
+    "description": "The aggregated thermal loads experienced by one or many spaces, zones, or buildings. This aggregate thermal load information is typically addressed by a system or plant. HISTORY: New property set in IFC Release 1.0 (Pset_AggregateLoadInformation); renamed Pset_ThermalLoadAggregate in IFC2x2.",
+    "properties": {
+        "TotalCoolingLoad": {
+            "title": "TotalCoolingLoad",
+            "description": "The peak total cooling load for the building, zone or space.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "TotalHeatingLoad": {
+            "title": "TotalHeatingLoad",
+            "description": "The peak total heating load for the building, zone or space.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "LightingDiversity": {
+            "title": "LightingDiversity",
+            "description": "Lighting diversity.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "InfiltrationDiversitySummer": {
+            "title": "InfiltrationDiversitySummer",
+            "description": "Diversity factor for Summer infiltration.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "InfiltrationDiversityWinter": {
+            "title": "InfiltrationDiversityWinter",
+            "description": "Diversity factor for Winter infiltration.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "ApplianceDiversity": {
+            "title": "ApplianceDiversity",
+            "description": "Diversity of appliance load.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "LoadSafetyFactor": {
+            "title": "LoadSafetyFactor",
+            "description": "Load safety factor.",
+            "datatype": "IfcPositiveRatioMeasure"
+        }
+    }
+}

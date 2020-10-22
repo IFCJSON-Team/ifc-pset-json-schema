@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_CoolingTowerPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CoolingTowerPHistory",
+    "description": "Cooling tower performance history attributes.",
+    "properties": {
+        "Capacity": {
+            "title": "Capacity",
+            "description": "Cooling tower capacity in terms of heat transfer rate of the cooling tower between air stream and water stream."
+        },
+        "HeatTransferCoefficient": {
+            "title": "HeatTransferCoefficient",
+            "description": "Heat transfer coefficient-area product."
+        },
+        "SumpHeaterPower": {
+            "title": "SumpHeaterPower",
+            "description": "Electrical heat power of sump heater."
+        },
+        "UACurve": {
+            "title": "UACurve",
+            "description": "UA value as a  function of fan speed at certain water flow rate, UA = f ( fan speed)."
+        },
+        "Performance": {
+            "title": "Performance",
+            "description": "Water temperature change as a function of wet-bulb temperature, water entering temperature, water flow rate, air flow rate, Tdiff = f ( Twet-bulb, Twater,in, mwater, mair)."
+        }
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "$id": "Pset_BuildingCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_BuildingCommon",
+    "description": "Properties common to the definition of all instances of IfcBuilding. Please note that several building attributes are handled directly at the IfcBuilding instance, the building number (or short name) by IfcBuilding.Name, the building name (or long name) by IfcBuilding.LongName, and the description (or comments) by IfcBuilding.Description. Actual building quantities, like building perimeter, building area and building volume are provided by IfcElementQuantity, and the building classification according to national building code by IfcClassificationReference.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.",
+            "datatype": "IfcIdentifier"
+        },
+        "BuildingID": {
+            "title": "BuildingID",
+            "description": "A unique identifier assigned to a building. A temporary identifier is initially assigned at the time of making a planning application. This temporary identifier is changed to a permanent identifier when the building is registered into a statutory buildings and properties database.",
+            "datatype": "IfcIdentifier"
+        },
+        "IsPermanentID": {
+            "title": "IsPermanentID",
+            "description": "Indicates whether the identity assigned to a building is permanent (= TRUE) or temporary (=FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "ConstructionMethod": {
+            "title": "ConstructionMethod",
+            "description": "The type of construction action to the building, the project deals with, e.g. new construction, renovation, refurbishment, etc.",
+            "datatype": "IfcLabel"
+        },
+        "FireProtectionClass": {
+            "title": "FireProtectionClass",
+            "description": "Main fire protection class for the building which is assigned from the fire protection classification table as given by the relevant national building code.",
+            "datatype": "IfcLabel"
+        },
+        "SprinklerProtection": {
+            "title": "SprinklerProtection",
+            "description": "Indication whether this object is sprinkler protected (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "SprinklerProtectionAutomatic": {
+            "title": "SprinklerProtectionAutomatic",
+            "description": "Indication whether this object has an automatic sprinkler protection (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "OccupancyType": {
+            "title": "OccupancyType",
+            "description": "Occupancy type for this object.\nIt is defined according to the presiding national building code.",
+            "datatype": "IfcLabel"
+        },
+        "GrossPlannedArea": {
+            "title": "GrossPlannedArea",
+            "description": "Total planned gross area for the building  Used for programming the building.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "NetPlannedArea": {
+            "title": "NetPlannedArea",
+            "description": "Total planned net area for the building  Used for programming the building.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "NumberOfStoreys": {
+            "title": "NumberOfStoreys",
+            "description": "The number of storeys within a building.\nCaptured for those cases where the IfcBuildingStorey entity is not used. Note that if IfcBuilingStorey is asserted and the number of storeys in a building can be determined from it, then this approach should be used in preference to setting a property for the number of storeys.",
+            "datatype": "IfcInteger"
+        },
+        "YearOfConstruction": {
+            "title": "YearOfConstruction",
+            "description": "Year of construction of this building, including expected year of completion.",
+            "datatype": "IfcLabel"
+        },
+        "YearOfLastRefurbishment": {
+            "title": "YearOfLastRefurbishment",
+            "description": "Year of last major refurbishment, or reconstruction, of the building (applies to reconstruction works).",
+            "datatype": "IfcLabel"
+        },
+        "IsLandmarked": {
+            "title": "IsLandmarked",
+            "description": "This builing is listed as a historic building (TRUE), or not (FALSE), or unknown.",
+            "datatype": "IfcLogical"
+        }
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "$id": "Pset_WasteTerminalTypeGullyTrap.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_WasteTerminalTypeGullyTrap",
+    "description": "Pipe fitting or assembly of fittings to receive surface water or waste water, fitted with a grating or sealed cover and discharging through a trap (BS6100 330 3504 modified)",
+    "properties": {
+        "NominalBodyLength": {
+            "title": "NominalBodyLength",
+            "description": "Nominal or quoted length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the chamber of the gully trap.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalBodyWidth": {
+            "title": "NominalBodyWidth",
+            "description": "Nominal or quoted length measured along the y-axis in the local coordinate system of the chamber of the gully trap.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalBodyDepth": {
+            "title": "NominalBodyDepth",
+            "description": "Nominal or quoted length measured along the z-axis in the local coordinate system of the chamber of the gully trap.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "GullyType": {
+            "title": "GullyType",
+            "description": "Identifies the predefined types of gully from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "VERTICAL",
+                    "BACKINLET",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HasStrainer": {
+            "title": "HasStrainer",
+            "description": "Indicates whether the gully trap has a strainer (= TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "TrapType": {
+            "title": "TrapType",
+            "description": "Identifies the predefined types of trap from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NONE",
+                    "P_TRAP",
+                    "Q_TRAP",
+                    "S_TRAP",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "OutletConnectionSize": {
+            "title": "OutletConnectionSize",
+            "description": "Size of the outlet connection from the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "BackInletPatternType": {
+            "title": "BackInletPatternType",
+            "description": "Identifies the pattern of inlet connections to a gully trap.\n\nA gulley trap may have 0,1,2,3 or 4 inlet connections and the pattern of their arrangement may vary. The enumeration makes the convention that an outlet is either vertical or is placed at the bottom (south side) of the gully trap (when viewed in plan). Position 1 is to the left (west), position 2 is to the top (north), position 3 is to the right (east) and position 4 is to the bottom (south).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NONE",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "12",
+                    "13",
+                    "14",
+                    "23",
+                    "24",
+                    "34",
+                    "123",
+                    "124",
+                    "134",
+                    "234",
+                    "1234"
+                ]
+            }
+        },
+        "InletConnectionSize": {
+            "title": "InletConnectionSize",
+            "description": "Size of the inlet connection(s), where used, of the inlet connections.\n\nNote that all inlet connections are assumed to be the same size.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoverLength": {
+            "title": "CoverLength",
+            "description": "The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the gully trap.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoverWidth": {
+            "title": "CoverWidth",
+            "description": "The length measured along the y-axis in the local coordinate system of the cover of the gully trap.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

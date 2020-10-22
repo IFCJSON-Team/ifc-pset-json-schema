@@ -1,0 +1,68 @@
+{
+    "$id": "Pset_ControllerTypeProgrammable.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ControllerTypeProgrammable",
+    "description": "Properties for Discrete Digital Control (DDC) or programmable logic controllers.  HISTORY: Added in IFC4.",
+    "properties": {
+        "ControlType": {
+            "title": "ControlType",
+            "description": "The type of discrete digital controller: \n\nPRIMARY: Controller has built-in communication interface for PC connection, may manage secondary controllers.\nSECONDARY: Controller communicates with primary controller and its own managed devices.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "PRIMARY",
+                    "SECONDARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FirmwareVersion": {
+            "title": "FirmwareVersion",
+            "description": "Indicates version of device firmware according to device manufacturer.",
+            "datatype": "IfcLabel"
+        },
+        "SoftwareVersion": {
+            "title": "SoftwareVersion",
+            "description": "Indicates version of application software according to systems integrator.",
+            "datatype": "IfcLabel"
+        },
+        "Application": {
+            "title": "Application",
+            "description": "Indicates application of controller.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ModemController",
+                    "TelephoneDirectory",
+                    "FanCoilUnitController",
+                    "RoofTopUnitController",
+                    "UnitVentilatorController",
+                    "SpaceConfortController",
+                    "VAV",
+                    "PumpController",
+                    "BoilerController",
+                    "DischargeAirController",
+                    "OccupancyController",
+                    "ConstantLightController",
+                    "SceneController",
+                    "PartitionWallController",
+                    "RealTimeKeeper",
+                    "RealTimeBasedScheduler",
+                    "LightingPanelController",
+                    "SunblindController",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

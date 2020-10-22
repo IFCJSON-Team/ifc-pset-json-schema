@@ -1,0 +1,108 @@
+{
+    "$id": "Pset_WindowCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_WindowCommon",
+    "description": "Properties common to the definition of all occurrences of Window.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AcousticRating": {
+            "title": "AcousticRating",
+            "description": "Acoustic rating for this object.\nIt is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).",
+            "datatype": "IfcLabel"
+        },
+        "FireRating": {
+            "title": "FireRating",
+            "description": "Fire rating for this object.\nIt is given according to the national fire safety classification.",
+            "datatype": "IfcLabel"
+        },
+        "SecurityRating": {
+            "title": "SecurityRating",
+            "description": "Index based rating system indicating security level.\nIt is giving according to the national building code.",
+            "datatype": "IfcLabel"
+        },
+        "IsExternal": {
+            "title": "IsExternal",
+            "description": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+            "datatype": "IfcBoolean"
+        },
+        "Infiltration": {
+            "title": "Infiltration",
+            "description": "Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "ThermalTransmittance": {
+            "title": "ThermalTransmittance",
+            "description": "Thermal transmittance coefficient (U-Value) of a material.\nIt applies to the total door construction.",
+            "datatype": "IfcThermalTransmittanceMeasure"
+        },
+        "GlazingAreaFraction": {
+            "title": "GlazingAreaFraction",
+            "description": "Fraction of the glazing area relative to the total area of the filling element. \nIt shall be used, if the glazing area is not given separately for all panels within the filling element.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "HasSillExternal": {
+            "title": "HasSillExternal",
+            "description": "Indication whether the window opening has an external sill (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "HasSillInternal": {
+            "title": "HasSillInternal",
+            "description": "Indication whether the window opening has an internal sill (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "HasDrive": {
+            "title": "HasDrive",
+            "description": "Indication whether this object has an automatic drive to operate it (TRUE) or no drive (FALSE)",
+            "datatype": "IfcBoolean"
+        },
+        "SmokeStop": {
+            "title": "SmokeStop",
+            "description": "Indication whether the object is designed to provide a smoke stop (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "FireExit": {
+            "title": "FireExit",
+            "description": "Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE). Here it defines an exit window in accordance to the national building code.",
+            "datatype": "IfcBoolean"
+        },
+        "WaterTightnessRating": {
+            "title": "WaterTightnessRating",
+            "description": "Water tightness rating for this object.\nIt is provided according to the national building code.",
+            "datatype": "IfcLabel"
+        },
+        "MechanicalLoadRating": {
+            "title": "MechanicalLoadRating",
+            "description": "Mechanical load rating for this object.\nIt is provided according to the national building code.",
+            "datatype": "IfcLabel"
+        },
+        "WindLoadRating": {
+            "title": "WindLoadRating",
+            "description": "Wind load resistance rating for this object.\nIt is provided according to the national building code.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

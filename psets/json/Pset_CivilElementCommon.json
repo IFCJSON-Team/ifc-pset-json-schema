@@ -1,0 +1,32 @@
+{
+    "$id": "Pset_CivilElementCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CivilElementCommon",
+    "description": "Properties common to the definition of all occurrence and type objects of civil element.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": null
+        },
+        "Status": {
+            "title": "Status",
+            "description": "element designed as new addition",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

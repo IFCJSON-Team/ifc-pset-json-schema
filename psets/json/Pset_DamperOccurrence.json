@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_DamperOccurrence.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DamperOccurrence",
+    "description": "Damper occurrence attributes attached to an instance of IfcDamper",
+    "properties": {
+        "SizingMethod": {
+            "title": "SizingMethod",
+            "description": "Identifies whether the damper is sized nominally or with exact measurements:\n\nNOMINAL: Nominal sizing method. \nEXACT: Exact sizing method.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NOMINAL",
+                    "EXACT",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

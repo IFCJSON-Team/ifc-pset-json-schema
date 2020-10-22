@@ -1,0 +1,80 @@
+{
+    "$id": "Pset_ReinforcementBarPitchOfSlab.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ReinforcementBarPitchOfSlab",
+    "description": "The pitch length information of reinforcement  bar with the slab.",
+    "properties": {
+        "Description": {
+            "title": "Description",
+            "description": "Description of the reinforcement.",
+            "datatype": "IfcText"
+        },
+        "Reference": {
+            "title": "Reference",
+            "description": "A descriptive label for the general reinforcement type.",
+            "datatype": "IfcLabel"
+        },
+        "LongOutsideTopBarPitch": {
+            "title": "LongOutsideTopBarPitch",
+            "description": "The pitch length of the long outside top bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LongInsideCenterTopBarPitch": {
+            "title": "LongInsideCenterTopBarPitch",
+            "description": "The pitch length of the long inside center top bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LongInsideEndTopBarPitch": {
+            "title": "LongInsideEndTopBarPitch",
+            "description": "The pitch length of the long inside end top bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ShortOutsideTopBarPitch": {
+            "title": "ShortOutsideTopBarPitch",
+            "description": "The pitch length of the short outside top bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ShortInsideCenterTopBarPitch": {
+            "title": "ShortInsideCenterTopBarPitch",
+            "description": "The pitch length of the short inside center top bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ShortInsideEndTopBarPitch": {
+            "title": "ShortInsideEndTopBarPitch",
+            "description": "The pitch length of the short inside end top bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LongOutsideLowerBarPitch": {
+            "title": "LongOutsideLowerBarPitch",
+            "description": "The pitch length of the long outside lower bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LongInsideCenterLowerBarPitch": {
+            "title": "LongInsideCenterLowerBarPitch",
+            "description": "The pitch length of the long inside center lower bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LongInsideEndLowerBarPitch": {
+            "title": "LongInsideEndLowerBarPitch",
+            "description": "The pitch length of the long inside end lower bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ShortOutsideLowerBarPitch": {
+            "title": "ShortOutsideLowerBarPitch",
+            "description": "The pitch length of the short outside lower bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ShortInsideCenterLowerBarPitch": {
+            "title": "ShortInsideCenterLowerBarPitch",
+            "description": "The pitch length of the short inside center lower bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ShortInsideEndLowerBarPitch": {
+            "title": "ShortInsideEndLowerBarPitch",
+            "description": "The pitch length of the short inside end lower bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

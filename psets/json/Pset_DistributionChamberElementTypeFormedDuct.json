@@ -1,0 +1,35 @@
+{
+    "$id": "Pset_DistributionChamberElementTypeFormedDuct.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionChamberElementTypeFormedDuct",
+    "description": "Space formed in the ground for the passage of pipes, cables, ducts.",
+    "properties": {
+        "ClearWidth": {
+            "title": "ClearWidth",
+            "description": "The width of the formed space in the duct.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ClearDepth": {
+            "title": "ClearDepth",
+            "description": "The depth of the formed space in the duct.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WallThickness": {
+            "title": "WallThickness",
+            "description": "The thickness of the duct wall construction\nNOTE: It is assumed that chamber walls will be constructed at a single thickness.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "BaseThickness": {
+            "title": "BaseThickness",
+            "description": "The thickness of the duct base construction\nNOTE: It is assumed that duct base will be constructed at a single thickness.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "AccessCoverLoadRating": {
+            "title": "AccessCoverLoadRating",
+            "description": "The load rating of the access cover (which may be a value or an alphanumerically defined class rating).",
+            "datatype": "IfcText"
+        }
+    }
+}

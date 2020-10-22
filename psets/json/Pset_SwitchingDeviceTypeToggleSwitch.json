@@ -1,0 +1,73 @@
+{
+    "$id": "Pset_SwitchingDeviceTypeToggleSwitch.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SwitchingDeviceTypeToggleSwitch",
+    "description": "A toggle switch is a switch that enables or isolates electrical power through a two position on/off action.  HISTORY: SetPoint added in IFC4.",
+    "properties": {
+        "ToggleSwitchType": {
+            "title": "ToggleSwitchType",
+            "description": "A list of the available types of toggle switch from which that required may be selected.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BREAKGLASS",
+                    "CHANGEOVER",
+                    "KEYOPERATED",
+                    "MANUALPULL",
+                    "PUSHBUTTON",
+                    "PULLCORD",
+                    "ROCKER",
+                    "SELECTOR",
+                    "TWIST",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "SwitchUsage": {
+            "title": "SwitchUsage",
+            "description": "A list of the available usages for toggle switches from which that required may be selected.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "EMERGENCY",
+                    "GUARD",
+                    "LIMIT",
+                    "START",
+                    "STOP",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "SwitchActivation": {
+            "title": "SwitchActivation",
+            "description": "A list of the available activations for toggle switches from which that required may be selected.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ACTUATOR",
+                    "FOOT",
+                    "HAND",
+                    "PROXIMITY",
+                    "SOUND",
+                    "TWOHAND",
+                    "WIRE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

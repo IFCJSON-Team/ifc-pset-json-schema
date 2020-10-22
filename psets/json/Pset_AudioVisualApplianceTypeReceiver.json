@@ -1,0 +1,34 @@
+{
+    "$id": "Pset_AudioVisualApplianceTypeReceiver.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AudioVisualApplianceTypeReceiver",
+    "description": "An audio-visual receiver is a device that switches audio and/or video from multiple sources, including external sources connected from ports and internal aggregated sources.  HISTORY: Added in IFC4.",
+    "properties": {
+        "ReceiverType": {
+            "title": "ReceiverType",
+            "description": "Indicates the type of receiver.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "AUDIO",
+                    "AUDIOVIDEO",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET."
+                ]
+            }
+        },
+        "AudioAmplification": {
+            "title": "AudioAmplification",
+            "description": "Indicates audio amplification frequency ranges."
+        },
+        "AudioMode": {
+            "title": "AudioMode",
+            "description": "Indicates audio sound modes and corresponding labels, if applicable."
+        }
+    }
+}

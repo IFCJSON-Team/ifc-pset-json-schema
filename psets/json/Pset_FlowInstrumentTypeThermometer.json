@@ -1,0 +1,32 @@
+{
+    "$id": "Pset_FlowInstrumentTypeThermometer.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FlowInstrumentTypeThermometer",
+    "description": "A device that reads and displays a temperature value at a point.",
+    "properties": {
+        "ThermometerType": {
+            "title": "ThermometerType",
+            "description": "Identifies the means by which temperature is displayed.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DIAL",
+                    "DIGITAL",
+                    "STEM",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "DisplaySize": {
+            "title": "DisplaySize",
+            "description": "The physical size of the display. In the case of a stem thermometer, this will be the length of the stem. For a dial thermometer, it will be the diameter of the dial.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

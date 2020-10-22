@@ -1,0 +1,49 @@
+{
+    "$id": "Pset_PumpOccurrence.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PumpOccurrence",
+    "description": "Pump occurrence attributes attached to an instance of IfcPump.",
+    "properties": {
+        "ImpellerDiameter": {
+            "title": "ImpellerDiameter",
+            "description": "Diameter of pump impeller - used to scale performance of geometrically similar pumps.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "BaseType": {
+            "title": "BaseType",
+            "description": "Defines general types of pump bases.\n\nFRAME: Frame. \nBASE: Base. \nNONE: There is no pump base, such as an inline pump. \nOTHER: Other type of pump base.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FRAME",
+                    "BASE",
+                    "NONE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "DriveConnectionType": {
+            "title": "DriveConnectionType",
+            "description": "The way the pump drive mechanism is connected to the pump.\n\nDIRECTDRIVE: Direct drive. \nBELTDRIVE: Belt drive. \nCOUPLING: Coupling. \nOTHER: Other type of drive connection.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DIRECTDRIVE",
+                    "BELTDRIVE",
+                    "COUPLING",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

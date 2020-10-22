@@ -1,0 +1,82 @@
+{
+    "$id": "Pset_PropertyAgreement.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PropertyAgreement",
+    "description": "A property agreement is an agreement that enables the occupation of a property for a period of time.\n\nThe objective is to capture the information within an  agreement that is relevant to a facilities manager. Design and construction information associated with the property is not considered. A property agreement may be applied to an instance of IfcSpatialStructureElement including to compositions defined through the IfcSpatialStructureElement.Element.CompositionEnum.\n\nNote that the associated actors are captured by the IfcOccupant class.",
+    "properties": {
+        "AgreementType": {
+            "title": "AgreementType",
+            "description": "Identifies the predefined types of property agreement from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ASSIGNMENT",
+                    "LEASE",
+                    "TENANT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Identifier": {
+            "title": "Identifier",
+            "description": "The identifier assigned to the agreement for the purposes of tracking.",
+            "datatype": "IfcIdentifier"
+        },
+        "Version": {
+            "title": "Version",
+            "description": "The version number of the agreement that is identified.",
+            "datatype": "IfcLabel"
+        },
+        "VersionDate": {
+            "title": "VersionDate",
+            "description": "The date on which the version of the agreement became applicable.",
+            "datatype": "IfcDate"
+        },
+        "PropertyName": {
+            "title": "PropertyName",
+            "description": "Addressing details of the property as stated within the agreement.",
+            "datatype": "IfcLabel"
+        },
+        "CommencementDate": {
+            "title": "CommencementDate",
+            "description": "Date on which the agreement commences.",
+            "datatype": "IfcDate"
+        },
+        "TerminationDate": {
+            "title": "TerminationDate",
+            "description": "Date on which the agreement terminates.",
+            "datatype": "IfcDate"
+        },
+        "Duration": {
+            "title": "Duration",
+            "description": "The period of time for the lease.",
+            "datatype": "IfcDuration"
+        },
+        "Options": {
+            "title": "Options",
+            "description": "A statement of the options available in the agreement.",
+            "datatype": "IfcText"
+        },
+        "ConditionCommencement": {
+            "title": "ConditionCommencement",
+            "description": "Condition of property provided on commencement of the agreement e.g. cold shell, warm lit shell, broom clean, turn-key.",
+            "datatype": "IfcText"
+        },
+        "Restrictions": {
+            "title": "Restrictions",
+            "description": "Restrictions that may be placed by a  competent authority.",
+            "datatype": "IfcText"
+        },
+        "ConditionTermination": {
+            "title": "ConditionTermination",
+            "description": "Condition of property required on termination of the agreement e.g. cold shell, warm lit shell, broom clean, turn-key.",
+            "datatype": "IfcText"
+        }
+    }
+}

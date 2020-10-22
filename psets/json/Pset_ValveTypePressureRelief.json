@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_ValveTypePressureRelief.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ValveTypePressureRelief",
+    "description": "Spring or weight loaded valve that automatically discharges to a safe place fluid that has built up to excessive pressure in pipes or fittings.\nNote that a pressure relief valve is constrained to have a single port pattern.",
+    "properties": {
+        "ReliefPressure": {
+            "title": "ReliefPressure",
+            "description": "The pressure at which the spring or weight in the valve is set to discharge fluid.",
+            "datatype": "IfcPressureMeasure"
+        }
+    }
+}

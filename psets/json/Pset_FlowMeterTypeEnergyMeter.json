@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_FlowMeterTypeEnergyMeter.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FlowMeterTypeEnergyMeter",
+    "description": "Device that measures, indicates and sometimes records, the energy usage in a system.",
+    "properties": {
+        "NominalCurrent": {
+            "title": "NominalCurrent",
+            "description": "The nominal current that is designed to be measured.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "MaximumCurrent": {
+            "title": "MaximumCurrent",
+            "description": "The maximum allowed current that a device is certified to handle.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "MultipleTarriff": {
+            "title": "MultipleTarriff",
+            "description": "Indicates whether meter has built-in support for multiple tarriffs (variable energy cost rates).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

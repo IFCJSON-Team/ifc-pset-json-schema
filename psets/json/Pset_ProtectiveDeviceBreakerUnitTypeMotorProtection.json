@@ -1,0 +1,60 @@
+{
+    "$id": "Pset_ProtectiveDeviceBreakerUnitTypeMotorProtection.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceBreakerUnitTypeMotorProtection",
+    "description": "A coherent set of attributes representing different capacities of a a motor protection device, defined in accordance with IEC 60947. Note - A protective device may be associated with different instances of this Pset.",
+    "properties": {
+        "PerformanceClasses": {
+            "title": "PerformanceClasses",
+            "description": "A set of designations of performance classes for the breaker unit for which the data of this instance is valid. A breaker unit being a motor protection device may be\nconstructed for different levels of breaking capacities. A maximum of 7 different\nperformance classes may be provided. Examples of performance classes that may be specified include B, C, N, S, H, L, V.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "VoltageLevel": {
+            "title": "VoltageLevel",
+            "description": "The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "U230",
+                    "U400",
+                    "U440",
+                    "U525",
+                    "U690",
+                    "U1000",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ICU60947": {
+            "title": "ICU60947",
+            "description": "The ultimate breaking capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "ICS60947": {
+            "title": "ICS60947",
+            "description": "The service breaking capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "ICW60947": {
+            "title": "ICW60947",
+            "description": "The thermal withstand current in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series. The value shall be related to 1 s.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "ICM60947": {
+            "title": "ICM60947",
+            "description": "The making capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.",
+            "datatype": "IfcElectricCurrentMeasure"
+        }
+    }
+}

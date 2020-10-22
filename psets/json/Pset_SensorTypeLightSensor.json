@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_SensorTypeLightSensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypeLightSensor",
+    "description": "A device that senses or detects light. HISTORY: LightSensorSensorSetPoint changed to SetPointIlluminance. Range, accuracy and time constant deleted.",
+    "properties": {
+        "SetPointIlluminance": {
+            "title": "SetPointIlluminance",
+            "description": "The illuminance value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+            "datatype": "IfcIlluminanceMeasure"
+        }
+    }
+}

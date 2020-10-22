@@ -1,0 +1,84 @@
+{
+    "$id": "Pset_CondenserTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CondenserTypeCommon",
+    "description": "Condenser type common attributes.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "element designed as new addition",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "RefrigerantClass": {
+            "title": "RefrigerantClass",
+            "description": "Refrigerant class used by the condenser.\n\nCFC: Chlorofluorocarbons.\nHCFC: Hydrochlorofluorocarbons.\nHFC: Hydrofluorocarbons.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CFC",
+                    "HCFC",
+                    "HFC",
+                    "HYDROCARBONS",
+                    "AMMONIA",
+                    "CO2",
+                    "H2O",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ExternalSurfaceArea": {
+            "title": "ExternalSurfaceArea",
+            "description": "External surface area (both primary and secondary area).",
+            "datatype": "IfcAreaMeasure"
+        },
+        "InternalSurfaceArea": {
+            "title": "InternalSurfaceArea",
+            "description": "Internal surface area.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "InternalRefrigerantVolume": {
+            "title": "InternalRefrigerantVolume",
+            "description": "Internal volume of condenser (refrigerant side).",
+            "datatype": "IfcVolumeMeasure"
+        },
+        "InternalWaterVolume": {
+            "title": "InternalWaterVolume",
+            "description": "Internal volume of condenser (water side).",
+            "datatype": "IfcVolumeMeasure"
+        },
+        "NominalHeatTransferArea": {
+            "title": "NominalHeatTransferArea",
+            "description": "Nominal heat transfer surface area associated with nominal overall heat transfer coefficient.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "NominalHeatTransferCoefficient": {
+            "title": "NominalHeatTransferCoefficient",
+            "description": "Nominal overall heat transfer coefficient associated with nominal heat transfer area.",
+            "datatype": "IfcThermalTransmittanceMeasure"
+        }
+    }
+}

@@ -1,0 +1,144 @@
+{
+    "$id": "Pset_TransformerTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_TransformerTypeCommon",
+    "description": "An inductive stationary device that transfers electrical energy from one circuit to another.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "PrimaryVoltage": {
+            "title": "PrimaryVoltage",
+            "description": "The voltage that is going to be transformed and that runs into the transformer on the primary side.",
+            "datatype": "IfcElectricVoltageMeasure"
+        },
+        "SecondaryVoltage": {
+            "title": "SecondaryVoltage",
+            "description": "The voltage that has been transformed and is running out of the transformer on the secondary side.",
+            "datatype": "IfcElectricVoltageMeasure"
+        },
+        "PrimaryCurrent": {
+            "title": "PrimaryCurrent",
+            "description": "The current that is going to be transformed and that runs into the transformer on the primary side.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "SecondaryCurrent": {
+            "title": "SecondaryCurrent",
+            "description": "The current that has been transformed and is running out of the transformer on the secondary side.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "PrimaryFrequency": {
+            "title": "PrimaryFrequency",
+            "description": "The frequency that is going to be transformed and that runs into the transformer on the primary side.",
+            "datatype": "IfcFrequencyMeasure"
+        },
+        "SecondaryFrequency": {
+            "title": "SecondaryFrequency",
+            "description": "The frequency that has been transformed and is running out of the transformer on the secondary side.",
+            "datatype": "IfcFrequencyMeasure"
+        },
+        "PrimaryApparentPower": {
+            "title": "PrimaryApparentPower",
+            "description": "The power in VA (volt ampere) that has been transformed and that runs into the transformer on the primary side.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "SecondaryApparentPower": {
+            "title": "SecondaryApparentPower",
+            "description": "The power in VA (volt ampere) that has been transformed and is running out of the transformer on the secondary side.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "MaximumApparentPower": {
+            "title": "MaximumApparentPower",
+            "description": "Maximum apparent power/capacity in VA (volt ampere).",
+            "datatype": "IfcPowerMeasure"
+        },
+        "SecondaryCurrentType": {
+            "title": "SecondaryCurrentType",
+            "description": "A list of the secondary current types that can result from transformer output.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "AC",
+                    "DC",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ShortCircuitVoltage": {
+            "title": "ShortCircuitVoltage",
+            "description": "A complex number that specifies the real and imaginary parts of the short-circuit voltage at rated current of a transformer given in %.",
+            "datatype": "IfcComplexNumber"
+        },
+        "RealImpedanceRatio": {
+            "title": "RealImpedanceRatio",
+            "description": "The ratio between the real part of the zero sequence impedance and the real part of the positive impedance (i.e. real part of the short-circuit voltage) of the transformer.\nUsed for three-phase transformer which includes a N-conductor.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "ImaginaryImpedanceRatio": {
+            "title": "ImaginaryImpedanceRatio",
+            "description": "The ratio between the imaginary part of the zero sequence impedance and the imaginary part of the positive impedance (i.e. imaginary part of the short-circuit voltage) of the transformer.\nUsed for three-phase transformer which includes a N-conductor.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "TransformerVectorGroup": {
+            "title": "TransformerVectorGroup",
+            "description": "List of the possible vector groups for the transformer from which that required may be set. Values in the enumeration list follow a standard international code where the first letter  describes how the primary windings are connected,\nthe second letter describes how the secondary windings are connected, and the numbers describe the rotation of voltages and currents from the primary to the secondary side in multiples of 30 degrees.\n\nD: means that the windings are delta-connected.\nY: means that the windings are star-connected. \nZ: means that the windings are zig-zag connected (a special start-connected providing low reactance of the transformer); \nThe connectivity is only relevant for three-phase transformers.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DD0",
+                    "DD6",
+                    "DY5",
+                    "DY11",
+                    "YD5",
+                    "YD11",
+                    "DZ0",
+                    "DZ6",
+                    "YY0",
+                    "YY6",
+                    "YZ5",
+                    "YZ11",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "IsNeutralPrimaryTerminalAvailable": {
+            "title": "IsNeutralPrimaryTerminalAvailable",
+            "description": "An indication of whether the neutral point of the primary winding is available as a terminal (=TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "IsNeutralSecondaryTerminalAvailable": {
+            "title": "IsNeutralSecondaryTerminalAvailable",
+            "description": "An indication of whether the neutral point of the secondary winding is available as a terminal (=TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

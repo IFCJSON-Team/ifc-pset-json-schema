@@ -1,0 +1,26 @@
+{
+    "$id": "Pset_AirTerminalBoxPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AirTerminalBoxPHistory",
+    "description": "Air terminal box performance history attributes.",
+    "properties": {
+        "DamperPosition": {
+            "title": "DamperPosition",
+            "description": "Control damper position, ranging from 0 to 1."
+        },
+        "AtmosphericPressure": {
+            "title": "AtmosphericPressure",
+            "description": "Ambient atmospheric pressure."
+        },
+        "Sound": {
+            "title": "Sound",
+            "description": "Sound performance."
+        },
+        "AirflowCurve": {
+            "title": "AirflowCurve",
+            "description": "Air flowrate versus damper position relationship;airflow = f ( valve position)."
+        }
+    }
+}

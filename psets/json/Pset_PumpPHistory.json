@@ -1,0 +1,34 @@
+{
+    "$id": "Pset_PumpPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PumpPHistory",
+    "description": "Pump performance history attributes.",
+    "properties": {
+        "MechanicalEfficiency": {
+            "title": "MechanicalEfficiency",
+            "description": "The pumps operational mechanical efficiency."
+        },
+        "OverallEfficiency": {
+            "title": "OverallEfficiency",
+            "description": "The pump and motor overall operational efficiency."
+        },
+        "PressureRise": {
+            "title": "PressureRise",
+            "description": "The developed pressure."
+        },
+        "RotationSpeed": {
+            "title": "RotationSpeed",
+            "description": "Pump rotational speed."
+        },
+        "Flowrate": {
+            "title": "Flowrate",
+            "description": "The actual operational fluid flowrate."
+        },
+        "Power": {
+            "title": "Power",
+            "description": "The actual power consumption of the pump."
+        }
+    }
+}

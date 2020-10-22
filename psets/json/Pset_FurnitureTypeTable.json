@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_FurnitureTypeTable.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FurnitureTypeTable",
+    "description": "HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Table",
+    "properties": {
+        "WorksurfaceArea": {
+            "title": "WorksurfaceArea",
+            "description": "The value of the work surface area of the desk..",
+            "datatype": "IfcAreaMeasure"
+        },
+        "NumberOfChairs": {
+            "title": "NumberOfChairs",
+            "description": "Maximum number of chairs that can fit with the table for normal use.",
+            "datatype": "IfcInteger"
+        }
+    }
+}

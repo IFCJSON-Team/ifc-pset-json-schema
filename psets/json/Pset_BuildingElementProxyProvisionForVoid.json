@@ -1,0 +1,40 @@
+{
+    "$id": "Pset_BuildingElementProxyProvisionForVoid.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_BuildingElementProxyProvisionForVoid",
+    "description": "Properties common to the definition of a provision for void as a special type of an instance of IfcBuildingElementProxy. A provision for void is a spatial provision that might be resolved into a void in a building element. The properties carry requested values.",
+    "properties": {
+        "Shape": {
+            "title": "Shape",
+            "description": "The shape form of the provision for void, the minimum set of agreed values includes 'Rectangle', 'Round', and 'Undefined'.",
+            "datatype": "IfcLabel"
+        },
+        "Width": {
+            "title": "Width",
+            "description": "The requested width (horizontal extension in elevation) of the provision for void, only provided if the Shape property is set to \"rectangle\".",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Height": {
+            "title": "Height",
+            "description": "The requested height (vertical extension in elevation) of the provision for void\", only provided if the Shape property is set to \"rectangle\".",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Diameter": {
+            "title": "Diameter",
+            "description": "The requested diameter (in elevation) of the provision for void, only provided if the Shape property is set to \"round\".",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Depth": {
+            "title": "Depth",
+            "description": "The requested depth or thickness of the provision for void.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "System": {
+            "title": "System",
+            "description": "he building service system that requires the provision for voids, e.g. 'Air Conditioning', 'Plumbing', 'Electro', etc.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

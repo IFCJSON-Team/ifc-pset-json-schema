@@ -1,0 +1,74 @@
+{
+    "$id": "Pset_SwitchingDeviceTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SwitchingDeviceTypeCommon",
+    "description": "A switching device is a device designed to make or break the current in one or more electric circuits.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NumberOfGangs": {
+            "title": "NumberOfGangs",
+            "description": "Number of gangs/buttons on this switch.",
+            "datatype": "IfcInteger"
+        },
+        "SwitchFunction": {
+            "title": "SwitchFunction",
+            "description": "Indicates types of switches which differs in functionality.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ONOFFSWITCH",
+                    "INTERMEDIATESWITCH",
+                    "DOUBLETHROWSWITCH",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HasLock": {
+            "title": "HasLock",
+            "description": "Indication of whether a switching device has a key operated lock (=TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "IsIlluminated": {
+            "title": "IsIlluminated",
+            "description": "An indication of whether there is an illuminated indicator to show that the switch is on (=TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "Legend": {
+            "title": "Legend",
+            "description": "A text inscribed or applied to the switch as a legend to indicate purpose or function.",
+            "datatype": "IfcLabel"
+        },
+        "SetPoint": {
+            "title": "SetPoint",
+            "description": "Indicates the setpoint and label.  For toggle switches, there are two positions, 0 for off and 1 for on.  For dimmer switches, the values may indicate the fully-off and full-on positions, where missing integer values in between are interpolated.   For selector switches, the range indicates the available positions.  \nAn IfcTable may be attached (using IfcMetric and IfcPropertyConstraintRelationship) containing columns of the specified header names and types:\n'Position' (IfcInteger): The discrete setpoint level.\n'Sink' (IfcLabel): The Name of the switched input port (IfcDistributionPort with FlowDirection=SINK).\n'Source' (IfcLabel): The Name of the switched output port (IfcDistributionPort with FlowDirection=SOURCE).\n'Ratio' (IfcNormalizedRatioMeasure): The ratio of power at the setpoint where 0.0 is off and 1.0 is fully on."
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "$id": "Pset_ProtectiveDeviceTrippingFunctionLCurve.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceTrippingFunctionLCurve",
+    "description": "Tripping functions are applied to electronic tripping units (i.e. tripping units having type property sets for electronic tripping defined). They are not applied to thermal, thermal magnetic or RCD tripping units.\nThis property set represent the long time protection (L-curve) of an electronic protection device",
+    "properties": {
+        "IsSelectable": {
+            "title": "IsSelectable",
+            "description": "Indication whether the L-function can be switched off or not.",
+            "datatype": "IfcBoolean"
+        },
+        "UpperCurrent1": {
+            "title": "UpperCurrent1",
+            "description": "The current in [x In], indicating that for currents larger than UpperCurrent1 the I2t part of the L-function will trip the current.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "UpperCurrent2": {
+            "title": "UpperCurrent2",
+            "description": "The current in [x In], indicating the upper current limit of the upper time/current curve of the I2t part of the L-function.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "UpperTime1": {
+            "title": "UpperTime1",
+            "description": "The time in [s], indicating that tripping times of the upper time/current curve lower than UpperTime1 is determined by the I2t part of the L-function.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "UpperTime2": {
+            "title": "UpperTime2",
+            "description": "The time in [s], indicating the tripping times of the upper time/current curve at the UpperCurrent2.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "LowerCurrent1": {
+            "title": "LowerCurrent1",
+            "description": "The current in [x In], indicating that for currents smaller than LowerCurrent1 the I2t part of the L-function will not trip the current,",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "LowerCurrent2": {
+            "title": "LowerCurrent2",
+            "description": "The current in [x In], indicating the upper current limit of the lower time/current curve of the I2t part of the L-function.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "LowerTime1": {
+            "title": "LowerTime1",
+            "description": "The time in [s], indicating that tripping times of the lower time/current curve lower than LowerTime1 is determined by the I2t part of the L-function.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "LowerTime2": {
+            "title": "LowerTime2",
+            "description": "The time in [s], indicating the tripping times of the upper time/current curve at the LowerCurrent2.",
+            "datatype": "IfcTimeMeasure"
+        }
+    }
+}

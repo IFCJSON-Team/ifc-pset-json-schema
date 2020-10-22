@@ -1,0 +1,259 @@
+{
+    "$id": "Pset_AirTerminalTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AirTerminalTypeCommon",
+    "description": "Air terminal type common attributes.\nSoundLevel attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Shape": {
+            "title": "Shape",
+            "description": "Shape of the air terminal. Slot is typically a long narrow supply device with an aspect ratio generally greater than 10 to 1.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ROUND",
+                    "RECTANGULAR",
+                    "SQUARE",
+                    "SLOT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FaceType": {
+            "title": "FaceType",
+            "description": "Identifies how the terminal face of an AirTerminal is constructed.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FOURWAYPATTERN",
+                    "SINGLEDEFLECTION",
+                    "DOUBLEDEFLECTION",
+                    "SIGHTPROOF",
+                    "EGGCRATE",
+                    "PERFORATED",
+                    "LOUVERED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "SlotWidth": {
+            "title": "SlotWidth",
+            "description": "Slot width.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "SlotLength": {
+            "title": "SlotLength",
+            "description": "Slot length.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NumberOfSlots": {
+            "title": "NumberOfSlots",
+            "description": "Number of slots.",
+            "datatype": "IfcInteger"
+        },
+        "FlowPattern": {
+            "title": "FlowPattern",
+            "description": "Flow pattern.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "LINEARSINGLE",
+                    "LINEARDOUBLE",
+                    "LINEARFOURWAY",
+                    "RADIAL",
+                    "SWIRL",
+                    "DISPLACMENT",
+                    "COMPACTJET",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AirFlowrateRange": {
+            "title": "AirFlowrateRange",
+            "description": "Air flowrate range within which the air terminal is designed to operate.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "TemperatureRange": {
+            "title": "TemperatureRange",
+            "description": "Temperature range within which the air terminal is designed to operate.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "DischargeDirection": {
+            "title": "DischargeDirection",
+            "description": "Discharge direction of the air terminal.\n\nParallel: discharges parallel to mounting surface designed so that flow attaches to the surface.\nPerpendicular:  discharges away from mounting surface.\nAdjustable: both parallel and perpendicular discharge.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "PARALLEL",
+                    "PERPENDICULAR",
+                    "ADJUSTABLE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ThrowLength": {
+            "title": "ThrowLength",
+            "description": "The horizontal or vertical axial distance an airstream travels after leaving an AirTerminal before the maximum stream velocity is reduced to a specified terminal velocity under isothermal conditions at the upper value of the AirFlowrateRange.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "AirDiffusionPerformanceIndex": {
+            "title": "AirDiffusionPerformanceIndex",
+            "description": "The Air Diffusion Performance Index (ADPI) is used for cooling mode conditions. If several measurements of air velocity and air temperature are made throughout the occupied zone of a space, the ADPI is the percentage of locations where measurements were taken that meet the specifications for effective draft temperature and air velocity.",
+            "datatype": "IfcReal"
+        },
+        "FinishType": {
+            "title": "FinishType",
+            "description": "The type of finish for the air terminal.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ANNODIZED",
+                    "PAINTED",
+                    "NONE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FinishColor": {
+            "title": "FinishColor",
+            "description": "The finish color for the air terminal.",
+            "datatype": "IfcLabel"
+        },
+        "MountingType": {
+            "title": "MountingType",
+            "description": "The way the air terminal is mounted to the ceiling, wall, etc.\n\nSurface: mounted to the surface of something (e.g., wall, duct, etc.).\nFlat flush: mounted flat and flush with a surface.\nLay-in: mounted in a lay-in type ceiling (e.g., a dropped ceiling grid).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SURFACE",
+                    "FLATFLUSH",
+                    "LAYIN",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "CoreType": {
+            "title": "CoreType",
+            "description": "Identifies the way the core of the AirTerminal is constructed.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SHUTTERBLADE",
+                    "CURVEDBLADE",
+                    "REMOVABLE",
+                    "REVERSIBLE",
+                    "NONE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "CoreSetHorizontal": {
+            "title": "CoreSetHorizontal",
+            "description": "Degree of horizontal (in the X-axis of the LocalPlacement) blade set from the centerline.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "CoreSetVertical": {
+            "title": "CoreSetVertical",
+            "description": "Degree of vertical (in the Y-axis of the LocalPlacement) blade set from the centerline.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "HasIntegralControl": {
+            "title": "HasIntegralControl",
+            "description": "If TRUE, a self powered temperature control is included in the AirTerminal.",
+            "datatype": "IfcBoolean"
+        },
+        "FlowControlType": {
+            "title": "FlowControlType",
+            "description": "Type of flow control element that may be included as a part of the construction of the air terminal.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DAMPER",
+                    "BELLOWS",
+                    "NONE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HasSoundAttenuator": {
+            "title": "HasSoundAttenuator",
+            "description": "If TRUE, the air terminal has sound attenuation.",
+            "datatype": "IfcBoolean"
+        },
+        "HasThermalInsulation": {
+            "title": "HasThermalInsulation",
+            "description": "If TRUE, the air terminal has thermal insulation.",
+            "datatype": "IfcBoolean"
+        },
+        "NeckArea": {
+            "title": "NeckArea",
+            "description": "Neck area of the air terminal.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "EffectiveArea": {
+            "title": "EffectiveArea",
+            "description": "Effective discharge area of the air terminal.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "AirFlowrateVersusFlowControlElement": {
+            "title": "AirFlowrateVersusFlowControlElement",
+            "description": "Air flowrate versus flow control element position at nominal pressure drop."
+        }
+    }
+}

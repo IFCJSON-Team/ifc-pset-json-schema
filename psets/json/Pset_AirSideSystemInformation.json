@@ -1,0 +1,132 @@
+{
+    "$id": "Pset_AirSideSystemInformation.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AirSideSystemInformation",
+    "description": "Attributes that apply to an air side HVAC system. HISTORY: New property set in IFC Release 1.0.",
+    "properties": {
+        "Name": {
+            "title": "Name",
+            "description": "The name of the air side system.",
+            "datatype": "IfcLabel"
+        },
+        "Description": {
+            "title": "Description",
+            "description": "The description of the air side system.",
+            "datatype": "IfcLabel"
+        },
+        "AirSideSystemType": {
+            "title": "AirSideSystemType",
+            "description": "This enumeration specifies the basic types of possible air side systems (e.g., Constant Volume, Variable Volume, etc.).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CONSTANTVOLUME",
+                    "CONSTANTVOLUMESINGLEZONE",
+                    "CONSTANTVOLUMEMULTIPLEZONEREHEAT",
+                    "CONSTANTVOLUMEBYPASS",
+                    "VARIABLEAIRVOLUME",
+                    "VARIABLEAIRVOLUMEREHEAT",
+                    "VARIABLEAIRVOLUMEINDUCTION",
+                    "VARIABLEAIRVOLUMEFANPOWERED",
+                    "VARIABLEAIRVOLUMEDUALCONDUIT",
+                    "VARIABLEAIRVOLUMEVARIABLEDIFFUSERS",
+                    "VARIABLEAIRVOLUMEVARIABLETEMPERATURE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AirSideSystemDistributionType": {
+            "title": "AirSideSystemDistributionType",
+            "description": "This enumeration defines the basic types of air side systems (e.g., SingleDuct, DualDuct, Multizone, etc.).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SINGLEDUCT",
+                    "DUALDUCT",
+                    "MULTIZONE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "TotalAirflow": {
+            "title": "TotalAirflow",
+            "description": "The total design supply air flowrate required for the system for either heating or cooling conditions, whichever is greater.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "EnergyGainTotal": {
+            "title": "EnergyGainTotal",
+            "description": "The total amount of energy gains for the spaces served by the system during the peak cooling conditions, plus any system-level total energy gains.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "AirflowSensible": {
+            "title": "AirflowSensible",
+            "description": "The air flowrate required to satisfy the sensible peak loads.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "EnergyGainSensible": {
+            "title": "EnergyGainSensible",
+            "description": "The sum of total energy gains for the spaces served by the system during the peak cooling conditions, plus any system-level sensible energy gains.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "EnergyLoss": {
+            "title": "EnergyLoss",
+            "description": "The sum of energy losses for the spaces served by the system during the peak heating conditions.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "LightingDiversity": {
+            "title": "LightingDiversity",
+            "description": "Lighting diversity.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "InfiltrationDiversitySummer": {
+            "title": "InfiltrationDiversitySummer",
+            "description": "Diversity factor for Summer infiltration.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "InfiltrationDiversityWinter": {
+            "title": "InfiltrationDiversityWinter",
+            "description": "Diversity factor for Winter infiltration.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "ApplianceDiversity": {
+            "title": "ApplianceDiversity",
+            "description": "Diversity of appliance load.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "LoadSafetyFactor": {
+            "title": "LoadSafetyFactor",
+            "description": "Load safety factor.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "HeatingTemperatureDelta": {
+            "title": "HeatingTemperatureDelta",
+            "description": "Heating temperature difference for calculating space air flow rates.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "CoolingTemperatureDelta": {
+            "title": "CoolingTemperatureDelta",
+            "description": "Cooling temperature difference for calculating space air flow rates.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "Ventilation": {
+            "title": "Ventilation",
+            "description": "Required outside air ventilation.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "FanPower": {
+            "title": "FanPower",
+            "description": "Fan motor loads contributing to the cooling load.",
+            "datatype": "IfcPowerMeasure"
+        }
+    }
+}

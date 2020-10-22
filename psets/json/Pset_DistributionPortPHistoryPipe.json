@@ -1,0 +1,22 @@
+{
+    "$id": "Pset_DistributionPortPHistoryPipe.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionPortPHistoryPipe",
+    "description": "Log of substance usage attached to an instance of IfcPerformanceHistory having an assigned IfcDistributionPort of type PIPE.",
+    "properties": {
+        "Temperature": {
+            "title": "Temperature",
+            "description": "The temperature of the fuel."
+        },
+        "Pressure": {
+            "title": "Pressure",
+            "description": "The pressure of the fuel."
+        },
+        "Flowrate": {
+            "title": "Flowrate",
+            "description": "The flowrate of the fuel."
+        }
+    }
+}

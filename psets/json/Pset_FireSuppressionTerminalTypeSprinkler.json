@@ -1,0 +1,122 @@
+{
+    "$id": "Pset_FireSuppressionTerminalTypeSprinkler.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FireSuppressionTerminalTypeSprinkler",
+    "description": "Device for sprinkling water from a pipe under pressure over an area (BS6100 100 3432)",
+    "properties": {
+        "SprinklerType": {
+            "title": "SprinklerType",
+            "description": "Identifies the predefined types of sprinkler  from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CEILING",
+                    "CONCEALED",
+                    "CUT-OFF",
+                    "PENDANT",
+                    "RECESSEDPENDANT",
+                    "SIDEWALL",
+                    "UPRIGHT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Activation": {
+            "title": "Activation",
+            "description": "Identifies the predefined methods of sprinkler activation from which that required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BULB",
+                    "FUSIBLESOLDER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Response": {
+            "title": "Response",
+            "description": "Identifies the predefined methods of sprinkler response from which that required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "QUICK",
+                    "STANDARD",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ActivationTemperature": {
+            "title": "ActivationTemperature",
+            "description": "The temperature at which the object is designed to activate.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "CoverageArea": {
+            "title": "CoverageArea",
+            "description": "The area that the sprinkler is designed to protect.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "HasDeflector": {
+            "title": "HasDeflector",
+            "description": "Indication of whether the sprinkler has a deflector (baffle) fitted to diffuse the discharge on activation (= TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "BulbLiquidColor": {
+            "title": "BulbLiquidColor",
+            "description": "The color of the liquid in the bulb for a bulb activated sprinkler. Note that the liquid color varies according to the activation temperature requirement of the sprinkler head. Note also that this property does not need to be asserted for quick response activated sprinklers.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ORANGE",
+                    "RED",
+                    "YELLOW",
+                    "GREEN",
+                    "BLUE",
+                    "MAUVE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "DischargeFlowRate": {
+            "title": "DischargeFlowRate",
+            "description": "The volumetric rate of fluid discharge.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "ResidualFlowingPressure": {
+            "title": "ResidualFlowingPressure",
+            "description": "The residual flowing pressure in the pipeline at which the discharge flow rate is determined.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "DischargeCoefficient": {
+            "title": "DischargeCoefficient",
+            "description": "The coefficient of flow at the sprinkler.",
+            "datatype": "IfcReal"
+        },
+        "MaximumWorkingPressure": {
+            "title": "MaximumWorkingPressure",
+            "description": "Maximum pressure that the object is manufactured to withstand.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "ConnectionSize": {
+            "title": "ConnectionSize",
+            "description": "Size of the inlet connection to the sprinkler.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

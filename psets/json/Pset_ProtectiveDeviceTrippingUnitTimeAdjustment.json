@@ -1,0 +1,70 @@
+{
+    "$id": "Pset_ProtectiveDeviceTrippingUnitTimeAdjustment.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceTrippingUnitTimeAdjustment",
+    "description": "A set of time adjustment values that may be applied to an electronic or thermal tripping unit type.",
+    "properties": {
+        "AdjustmentValueType": {
+            "title": "AdjustmentValueType",
+            "description": "The type of adjustment value that is applied through the property set. This determines the properties that should be asserted (see below).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "RANGE",
+                    "LIST"
+                ]
+            }
+        },
+        "AdjustmentRange": {
+            "title": "AdjustmentRange",
+            "description": "Upper and lower time adjustment limits for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "AdjustmentRangeStepValue": {
+            "title": "AdjustmentRangeStepValue",
+            "description": "Step value of time adjustment for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "AdjustmentValues": {
+            "title": "AdjustmentValues",
+            "description": "A list of time adjustment values that may be applied to a tripping unit for an AdjustmentValueType = LIST. A minimum of 1 and a maximum of 16 adjustment values may be specified. Note that this property should not have a value for an  AdjustmentValueType = RANGE.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "AdjustmentDesignation": {
+            "title": "AdjustmentDesignation",
+            "description": "The desgnation on the device for the adjustment.",
+            "datatype": "IfcLabel"
+        },
+        "CurrentForTimeDelay": {
+            "title": "CurrentForTimeDelay",
+            "description": "The tripping current in [x In] at which the time delay is specified. A value for this property should only be asserted for time delay of L-function, and for I2t of the S and G function.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "I2TApplicability": {
+            "title": "I2TApplicability",
+            "description": "The applicability of the time adjustment related to the tripping function.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "L_FUNCTION",
+                    "S_FUNCTION",
+                    "G_FUNCTION",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

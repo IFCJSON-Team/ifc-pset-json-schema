@@ -1,0 +1,32 @@
+{
+    "$id": "Pset_FlowInstrumentTypePressureGauge.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FlowInstrumentTypePressureGauge",
+    "description": "A device that reads and displays a pressure value at a point or the pressure difference between two points.",
+    "properties": {
+        "PressureGaugeType": {
+            "title": "PressureGaugeType",
+            "description": "Identifies the means by which pressure is displayed.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DIAL",
+                    "DIGITAL",
+                    "MANOMETER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "DisplaySize": {
+            "title": "DisplaySize",
+            "description": "The physical size of the display. For a dial pressure gauge it will be the diameter of the dial.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

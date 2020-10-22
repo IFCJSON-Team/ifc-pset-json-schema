@@ -1,0 +1,55 @@
+{
+    "$id": "Pset_UnitaryEquipmentTypeAirConditioningUnit.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_UnitaryEquipmentTypeAirConditioningUnit",
+    "description": "Air conditioning unit equipment type attributes.\nNote that these attributes were formely Pset_PackagedACUnit prior to IFC2x2.\nHeatingEnergySource attribute deleted in IFC2x2 Pset Addendum: Use IfcEnergyProperties, IfcFuelProperties, etc. instead.",
+    "properties": {
+        "SensibleCoolingCapacity": {
+            "title": "SensibleCoolingCapacity",
+            "description": "Sensible cooling capacity.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "LatentCoolingCapacity": {
+            "title": "LatentCoolingCapacity",
+            "description": "Latent cooling capacity.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "CoolingEfficiency": {
+            "title": "CoolingEfficiency",
+            "description": "Coefficient of Performance: Ratio of cooling energy output to energy input under full load operating conditions.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "HeatingCapacity": {
+            "title": "HeatingCapacity",
+            "description": "Heating capacity.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "HeatingEfficiency": {
+            "title": "HeatingEfficiency",
+            "description": "Heating efficiency under full load heating conditions.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "CondenserFlowrate": {
+            "title": "CondenserFlowrate",
+            "description": "Flow rate of fluid through the condenser.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "CondenserEnteringTemperature": {
+            "title": "CondenserEnteringTemperature",
+            "description": "Temperature of fluid entering condenser.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "CondenserLeavingTemperature": {
+            "title": "CondenserLeavingTemperature",
+            "description": "Termperature of fluid leaving condenser.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "OutsideAirFlowrate": {
+            "title": "OutsideAirFlowrate",
+            "description": "Flow rate of outside air entering the unit.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        }
+    }
+}

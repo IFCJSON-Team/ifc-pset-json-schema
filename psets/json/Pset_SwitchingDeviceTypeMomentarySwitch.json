@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_SwitchingDeviceTypeMomentarySwitch.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SwitchingDeviceTypeMomentarySwitch",
+    "description": "A momentary switch is a switch that does not hold state.  HISTORY: Added in IFC4.",
+    "properties": {
+        "MomentaryType": {
+            "title": "MomentaryType",
+            "description": "A list of the available types of momentary switch from which that required may be selected.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BUTTON",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

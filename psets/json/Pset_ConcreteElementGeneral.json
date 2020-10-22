@@ -1,0 +1,70 @@
+{
+    "$id": "Pset_ConcreteElementGeneral.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ConcreteElementGeneral",
+    "description": "General properties common to different types of concrete elements, including reinforced concrete elements. The property set can be used by a number of subtypes of IfcBuildingElement, indicated that such element is designed or constructed using a concrete construction method.",
+    "properties": {
+        "ConstructionMethod": {
+            "title": "ConstructionMethod",
+            "description": "Designator for whether the concrete element is constructed on site or prefabricated. Allowed values are: 'In-Situ' vs 'Precast'.",
+            "datatype": "IfcLabel"
+        },
+        "StructuralClass": {
+            "title": "StructuralClass",
+            "description": "The structural class defined for the concrete structure (e.g. '1').",
+            "datatype": "IfcLabel"
+        },
+        "StrengthClass": {
+            "title": "StrengthClass",
+            "description": "Classification of the concrete strength in accordance with the concrete design code which is applied in the project.",
+            "datatype": "IfcLabel"
+        },
+        "ExposureClass": {
+            "title": "ExposureClass",
+            "description": "Classification of exposure to environmental conditions, usually specified in accordance with the concrete design code which is applied in the project.",
+            "datatype": "IfcLabel"
+        },
+        "ReinforcementVolumeRatio": {
+            "title": "ReinforcementVolumeRatio",
+            "description": "The required ratio of the effective mass of the reinforcement to the effective volume of the concrete of a reinforced concrete structural element.",
+            "datatype": "IfcMassDensityMeasure"
+        },
+        "ReinforcementAreaRatio": {
+            "title": "ReinforcementAreaRatio",
+            "description": "The required ratio of the effective area of the reinforcement to the effective area of the concrete At any section of a reinforced concrete structural element.",
+            "datatype": "IfcAreaDensityMeasure"
+        },
+        "DimensionalAccuracyClass": {
+            "title": "DimensionalAccuracyClass",
+            "description": "Classification designation of the dimensional accuracy requirement according to local standards.",
+            "datatype": "IfcLabel"
+        },
+        "ConstructionToleranceClass": {
+            "title": "ConstructionToleranceClass",
+            "description": "Classification designation of the on-site construction tolerances according to local standards.",
+            "datatype": "IfcLabel"
+        },
+        "ConcreteCover": {
+            "title": "ConcreteCover",
+            "description": "The protective concrete cover at the reinforcing bars according to local building regulations.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ConcreteCoverAtMainBars": {
+            "title": "ConcreteCoverAtMainBars",
+            "description": "The protective concrete cover at the main reinforcing bars according to local building regulations.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ConcreteCoverAtLinks": {
+            "title": "ConcreteCoverAtLinks",
+            "description": "The protective concrete cover at the reinforcement links according to local building regulations.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ReinforcementStrengthClass": {
+            "title": "ReinforcementStrengthClass",
+            "description": "Classification of the reinforcement strength in accordance with the concrete design code which is applied in the project. The reinforcing strength class often combines strength and ductility.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "$id": "Pset_MechanicalFastenerBolt.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MechanicalFastenerBolt",
+    "description": "Properties related to bolt-type fasteners. The properties of a whole set with bolt, washers and nut may be provided. Note, it is usually not necessary to transmit these properties in case of standardized bolts. Instead, the standard is referred to.",
+    "properties": {
+        "ThreadDiameter": {
+            "title": "ThreadDiameter",
+            "description": "Nominal diameter of the thread, if different from the bolt's overall nominal diameter",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ThreadLength": {
+            "title": "ThreadLength",
+            "description": "Nominal length of the thread",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NutsCount": {
+            "title": "NutsCount",
+            "description": "Count of nuts to be mounted on one bolt",
+            "datatype": "IfcCountMeasure"
+        },
+        "WashersCount": {
+            "title": "WashersCount",
+            "description": "Count of washers to be mounted on one bolt",
+            "datatype": "IfcCountMeasure"
+        },
+        "HeadShape": {
+            "title": "HeadShape",
+            "description": "Shape of the bolt's head, e.g. 'Hexagon', 'Countersunk', 'Cheese'",
+            "datatype": "IfcLabel"
+        },
+        "KeyShape": {
+            "title": "KeyShape",
+            "description": "If applicable, shape of the head's slot, e.g. 'Slot', 'Allen'",
+            "datatype": "IfcLabel"
+        },
+        "NutShape": {
+            "title": "NutShape",
+            "description": "Shape of the nut, e.g. 'Hexagon', 'Cap', 'Castle', 'Wing'",
+            "datatype": "IfcLabel"
+        },
+        "WasherShape": {
+            "title": "WasherShape",
+            "description": "Shape of the washers, e.g. 'Standard', 'Square'",
+            "datatype": "IfcLabel"
+        }
+    }
+}

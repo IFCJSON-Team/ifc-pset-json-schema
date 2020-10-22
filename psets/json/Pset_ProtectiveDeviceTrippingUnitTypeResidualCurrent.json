@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_ProtectiveDeviceTrippingUnitTypeResidualCurrent.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceTrippingUnitTypeResidualCurrent",
+    "description": "Information on tripping units that are activated by residual current.",
+    "properties": {
+        "TrippingUnitReleaseCurrent": {
+            "title": "TrippingUnitReleaseCurrent",
+            "description": "The value of tripping or residual current for which the device has the possibility to be equipped. The values are given in mA.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "10",
+                    "30",
+                    "100",
+                    "300",
+                    "500",
+                    "1000",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

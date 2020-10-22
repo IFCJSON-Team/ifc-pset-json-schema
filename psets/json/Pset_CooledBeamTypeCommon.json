@@ -1,0 +1,167 @@
+{
+    "$id": "Pset_CooledBeamTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CooledBeamTypeCommon",
+    "description": "Cooled beam common attributes.\nSoundLevel and SoundAttenuation attributes deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "IsFreeHanging": {
+            "title": "IsFreeHanging",
+            "description": "Is it free hanging type (not mounted in a false ceiling)?",
+            "datatype": "IfcBoolean"
+        },
+        "PipeConnection": {
+            "title": "PipeConnection",
+            "description": "The manner in which the pipe connection is made to the cooled beam.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "STRAIGHT",
+                    "RIGHT",
+                    "LEFT",
+                    "TOP",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "WaterFlowControlSystemType": {
+            "title": "WaterFlowControlSystemType",
+            "description": "Factory fitted waterflow control system.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NONE",
+                    "ONOFFVALVE",
+                    "2WAYVALVE",
+                    "3WAYVALVE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "WaterPressureRange": {
+            "title": "WaterPressureRange",
+            "description": "Allowable water circuit working pressure range.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "NominalCoolingCapacity": {
+            "title": "NominalCoolingCapacity",
+            "description": "Nominal cooling capacity.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "NominalSurroundingTemperatureCooling": {
+            "title": "NominalSurroundingTemperatureCooling",
+            "description": "Nominal surrounding temperature (refers to nominal cooling capacity).",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "NominalSurroundingHumidityCooling": {
+            "title": "NominalSurroundingHumidityCooling",
+            "description": "Nominal surrounding humidity (refers to nominal cooling capacity).",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "NominalSupplyWaterTemperatureCooling": {
+            "title": "NominalSupplyWaterTemperatureCooling",
+            "description": "Nominal supply water temperature (refers to nominal cooling capacity).",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "NominalReturnWaterTemperatureCooling": {
+            "title": "NominalReturnWaterTemperatureCooling",
+            "description": "Nominal return water temperature (refers to nominal cooling capacity).",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "NominalWaterFlowCooling": {
+            "title": "NominalWaterFlowCooling",
+            "description": "Nominal water flow (refers to nominal cooling capacity).",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "NominalHeatingCapacity": {
+            "title": "NominalHeatingCapacity",
+            "description": "Nominal heating capacity.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "NominalSurroundingTemperatureHeating": {
+            "title": "NominalSurroundingTemperatureHeating",
+            "description": "Nominal surrounding temperature (refers to nominal heating capacity).",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "NominalSupplyWaterTemperatureHeating": {
+            "title": "NominalSupplyWaterTemperatureHeating",
+            "description": "Nominal supply water temperature (refers to nominal heating capacity).",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "NominalReturnWaterTemperatureHeating": {
+            "title": "NominalReturnWaterTemperatureHeating",
+            "description": "Nominal return water temperature (refers to nominal heating capacity).",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "NominalWaterFlowHeating": {
+            "title": "NominalWaterFlowHeating",
+            "description": "Nominal water flow (refers to nominal heating capacity).",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "IntegratedLightingType": {
+            "title": "IntegratedLightingType",
+            "description": "Integrated lighting in cooled beam.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NONE",
+                    "DIRECT",
+                    "INDIRECT",
+                    "DIRECTANDINDIRECT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FinishColor": {
+            "title": "FinishColor",
+            "description": "Finish color for cooled beam.",
+            "datatype": "IfcLabel"
+        },
+        "CoilLength": {
+            "title": "CoilLength",
+            "description": "Length of coil.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoilWidth": {
+            "title": "CoilWidth",
+            "description": "Width of coil.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "$id": "Pset_FireSuppressionTerminalTypeBreechingInlet.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FireSuppressionTerminalTypeBreechingInlet",
+    "description": "Symmetrical pipe fitting that unites two or more inlets into a single pipe (BS6100 330 114 adapted).",
+    "properties": {
+        "BreechingInletType": {
+            "title": "BreechingInletType",
+            "description": "Defines the type of breeching inlet.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "TWOWAY",
+                    "FOURWAY",
+                    "OTHER",
+                    "USERDEFINED",
+                    "NOTDEFINED"
+                ]
+            }
+        },
+        "InletDiameter": {
+            "title": "InletDiameter",
+            "description": "The inlet diameter of the breeching inlet.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "OutletDiameter": {
+            "title": "OutletDiameter",
+            "description": "The outlet diameter of the breeching inlet.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CouplingType": {
+            "title": "CouplingType",
+            "description": "Defines the type coupling on the inlet of the breeching inlet.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "INSTANTANEOUS_FEMALE",
+                    "INSTANTANEOUS_MALE",
+                    "OTHER",
+                    "USERDEFINED",
+                    "NOTDEFINED"
+                ]
+            }
+        },
+        "HasCaps": {
+            "title": "HasCaps",
+            "description": "Does the inlet connection have protective caps.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

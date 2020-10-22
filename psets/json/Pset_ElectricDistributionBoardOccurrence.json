@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_ElectricDistributionBoardOccurrence.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ElectricDistributionBoardOccurrence",
+    "description": "Properties that may be applied to electric distribution board occurrences.",
+    "properties": {
+        "IsMain": {
+            "title": "IsMain",
+            "description": "Identifies if the current instance is a main distribution point or topmost level in an electrical distribution hierarchy (= TRUE) or a sub-main distribution point (= FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "IsSkilledOperator": {
+            "title": "IsSkilledOperator",
+            "description": "Identifies if the current instance requires a skilled person or instructed person to perform operations on the distribution board (= TRUE) or whether operations may be performed by a person without appropriate skills or instruction (= FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

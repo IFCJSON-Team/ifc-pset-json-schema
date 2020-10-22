@@ -1,0 +1,83 @@
+{
+    "$id": "Pset_DistributionPortTypePipe.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionPortTypePipe",
+    "description": "Pipe port occurrence attributes attached to an instance of IfcDistributionPort.",
+    "properties": {
+        "ConnectionType": {
+            "title": "ConnectionType",
+            "description": "The end-style treatment of the pipe port:\n\nBRAZED: Brazed. \nCOMPRESSION: Compression. \nFLANGED: Flanged. \nGROOVED: Grooved. \nOUTSIDESLEEVE: Outside Sleeve. \nSOLDERED: Soldered. \nSWEDGE: Swedge. \nTHREADED: Threaded. \nWELDED: Welded. \nOTHER: Another type of end-style has been applied.\nNONE: No end-style has been applied.\nUSERDEFINED: User-defined port connection type. \nNOTDEFINED: Undefined port connection type.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BRAZED",
+                    "COMPRESSION",
+                    "FLANGED",
+                    "GROOVED",
+                    "OUTSIDESLEEVE",
+                    "SOLDERED",
+                    "SWEDGE",
+                    "THREADED",
+                    "WELDED",
+                    "OTHER",
+                    "NONE",
+                    "UNSET"
+                ]
+            }
+        },
+        "ConnectionSubType": {
+            "title": "ConnectionSubType",
+            "description": "The physical port connection subtype that further qualifies the ConnectionType.",
+            "datatype": "IfcLabel"
+        },
+        "NominalDiameter": {
+            "title": "NominalDiameter",
+            "description": "The nominal diameter of the pipe connection.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "InnerDiameter": {
+            "title": "InnerDiameter",
+            "description": "The actual inner diameter of the pipe.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "OuterDiameter": {
+            "title": "OuterDiameter",
+            "description": "The actual outer diameter of the pipe.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Temperature": {
+            "title": "Temperature",
+            "description": "Temperature of the fluid.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "VolumetricFlowRate": {
+            "title": "VolumetricFlowRate",
+            "description": "The volumetric flow rate of the fluid.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "MassFlowRate": {
+            "title": "MassFlowRate",
+            "description": "The mass flow rate of the fluid.",
+            "datatype": "IfcMassFlowRateMeasure"
+        },
+        "FlowCondition": {
+            "title": "FlowCondition",
+            "description": "Defines the flow condition as a percentage of the cross-sectional area.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "Velocity": {
+            "title": "Velocity",
+            "description": "The velocity of the fluid.",
+            "datatype": "IfcLinearVelocityMeasure"
+        },
+        "Pressure": {
+            "title": "Pressure",
+            "description": "The pressure of the fluid.",
+            "datatype": "IfcPressureMeasure"
+        }
+    }
+}

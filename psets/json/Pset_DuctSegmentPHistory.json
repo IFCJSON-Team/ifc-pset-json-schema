@@ -1,0 +1,26 @@
+{
+    "$id": "Pset_DuctSegmentPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DuctSegmentPHistory",
+    "description": "Duct segment performance history common attributes.",
+    "properties": {
+        "LossCoefficient": {
+            "title": "LossCoefficient",
+            "description": "Dimensionless loss coefficient used for calculating fluid resistance representing the ratio of total pressure loss to velocity pressure at a referenced cross-section."
+        },
+        "AtmosphericPressure": {
+            "title": "AtmosphericPressure",
+            "description": "Ambient atmospheric pressure."
+        },
+        "LeakageCurve": {
+            "title": "LeakageCurve",
+            "description": "Leakage per unit length curve versus working pressure. If a scalar is expressed then it represents LeakageClass which is flowrate per unit area at a specified pressure rating (e.g., ASHRAE Fundamentals 2001 34.16.)."
+        },
+        "FluidFlowLeakage": {
+            "title": "FluidFlowLeakage",
+            "description": "Volumetric leakage flow rate."
+        }
+    }
+}

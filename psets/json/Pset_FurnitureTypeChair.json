@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_FurnitureTypeChair.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FurnitureTypeChair",
+    "description": "A set of specific properties for furniture type chair. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Chair",
+    "properties": {
+        "SeatingHeight": {
+            "title": "SeatingHeight",
+            "description": "The value of seating height if the chair height is not adjustable.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HighestSeatingHeight": {
+            "title": "HighestSeatingHeight",
+            "description": "The value of seating height of high level if the chair height is adjustable.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LowestSeatingHeight": {
+            "title": "LowestSeatingHeight",
+            "description": "The value of seating height of low level if the chair height is adjustable.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

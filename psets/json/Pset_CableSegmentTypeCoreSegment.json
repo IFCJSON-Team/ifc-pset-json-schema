@@ -1,0 +1,94 @@
+{
+    "$id": "Pset_CableSegmentTypeCoreSegment.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CableSegmentTypeCoreSegment",
+    "description": "An assembly comprising a conductor with its own insulation (and screens if any)",
+    "properties": {
+        "OverallDiameter": {
+            "title": "OverallDiameter",
+            "description": "The overall diameter of a core (maximun space used).",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "RatedVoltage": {
+            "title": "RatedVoltage",
+            "description": "The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.",
+            "datatype": "IfcElectricVoltageMeasure"
+        },
+        "RatedTemperature": {
+            "title": "RatedTemperature",
+            "description": "The range of allowed temerature that a device is certified to handle. The upper bound of this value is the maximum.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "ScreenDiameter": {
+            "title": "ScreenDiameter",
+            "description": "The diameter of the screen around a core segment (if present).",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoreIdentifier": {
+            "title": "CoreIdentifier",
+            "description": "The core identification used  Identifiers may be used such as by color (Black, Brown, Grey) or by number (1, 2, 3) or by IEC phase reference (L1, L2, L3) etc.",
+            "datatype": "IfcIdentifier"
+        },
+        "SheathColors": {
+            "title": "SheathColors",
+            "description": "Colour of the core (derived from IEC 60757). Note that the combined color 'GreenAndYellow' shall be used only as Protective Earth (PE) conductors according to the requirements of IEC 60446.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BLACK",
+                    "BLUE",
+                    "BROWN",
+                    "GOLD",
+                    "GREEN",
+                    "GREY",
+                    "ORANGE",
+                    "PINK",
+                    "RED",
+                    "SILVER",
+                    "TURQUOISE",
+                    "VIOLET",
+                    "WHITE",
+                    "YELLOW",
+                    "GREENANDYELLOW",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Weight": {
+            "title": "Weight",
+            "description": "Weight of core kg/km.",
+            "datatype": "IfcMassMeasure"
+        },
+        "SelfExtinguishing60332_1": {
+            "title": "SelfExtinguishing60332_1",
+            "description": "Self Extinguishing cable/core according to IEC 60332.1.",
+            "datatype": "IfcBoolean"
+        },
+        "SelfExtinguishing60332_3": {
+            "title": "SelfExtinguishing60332_3",
+            "description": "Self Extinguishing cable/core according to IEC 60332.3.",
+            "datatype": "IfcBoolean"
+        },
+        "HalogenProof": {
+            "title": "HalogenProof",
+            "description": "Produces small amount of smoke and irritating deaerator/gas.",
+            "datatype": "IfcBoolean"
+        },
+        "FunctionReliable": {
+            "title": "FunctionReliable",
+            "description": "Core maintain given properties/functions over a given (tested) time and conditions. According to (IEC) standard.",
+            "datatype": "IfcBoolean"
+        },
+        "Standard": {
+            "title": "Standard",
+            "description": "The designation of the standard applicable for the definition of the core used.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

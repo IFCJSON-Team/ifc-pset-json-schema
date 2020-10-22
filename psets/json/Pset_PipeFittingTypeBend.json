@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_PipeFittingTypeBend.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PipeFittingTypeBend",
+    "description": "Pipe fitting type attributes for bend shapes.",
+    "properties": {
+        "BendAngle": {
+            "title": "BendAngle",
+            "description": "The change of direction of flow.",
+            "datatype": "IfcPositivePlaneAngleMeasure"
+        },
+        "BendRadius": {
+            "title": "BendRadius",
+            "description": "The radius of bending if circular arc or zero if sharp bend.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

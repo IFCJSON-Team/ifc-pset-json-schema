@@ -1,0 +1,54 @@
+{
+    "$id": "Pset_EvaporatorPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_EvaporatorPHistory",
+    "description": "Evaporator performance history attributes.",
+    "properties": {
+        "HeatRejectionRate": {
+            "title": "HeatRejectionRate",
+            "description": "Sum of the refrigeration effect and the heat equivalent of the power input to the compressor."
+        },
+        "ExteriorHeatTransferCoefficient": {
+            "title": "ExteriorHeatTransferCoefficient",
+            "description": "Exterior heat transfer coefficient associated with exterior surface area."
+        },
+        "InteriorHeatTransferCoefficient": {
+            "title": "InteriorHeatTransferCoefficient",
+            "description": "Interior heat transfer coefficient associated with interior surface area."
+        },
+        "RefrigerantFoulingResistance": {
+            "title": "RefrigerantFoulingResistance",
+            "description": "Fouling resistance on the refrigerant side."
+        },
+        "EvaporatingTemperature": {
+            "title": "EvaporatingTemperature",
+            "description": "Refrigerant evaporating temperature."
+        },
+        "LogarithmicMeanTemperatureDifference": {
+            "title": "LogarithmicMeanTemperatureDifference",
+            "description": "Logarithmic mean temperature difference between refrigerant and water or air."
+        },
+        "UAcurves": {
+            "title": "UAcurves",
+            "description": "UV = f (VExterior, VInterior), UV as a function of interior and exterior fluid flow velocity at the entrance."
+        },
+        "CompressorEvaporatorHeatGain": {
+            "title": "CompressorEvaporatorHeatGain",
+            "description": "Heat gain between the evaporator outlet and the compressor inlet."
+        },
+        "CompressorEvaporatorPressureDrop": {
+            "title": "CompressorEvaporatorPressureDrop",
+            "description": "Pressure drop between the evaporator outlet and the compressor inlet."
+        },
+        "EvaporatorMeanVoidFraction": {
+            "title": "EvaporatorMeanVoidFraction",
+            "description": "Mean void fraction in evaporator."
+        },
+        "WaterFoulingResistance": {
+            "title": "WaterFoulingResistance",
+            "description": "Fouling resistance on water/air side."
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "$id": "Pset_RampCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_RampCommon",
+    "description": "Properties common to the definition of all occurrences of IfcRamp.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "RequiredHeadroom": {
+            "title": "RequiredHeadroom",
+            "description": "Required headroom clearance for the passageway according to the applicable building code or additional requirements.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "RequiredSlope": {
+            "title": "RequiredSlope",
+            "description": "Required sloping angle of the object  - relative to horizontal (0.0 degrees).\nRequired maximum slope for the passageway according to the applicable building code or additional requirements.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "HandicapAccessible": {
+            "title": "HandicapAccessible",
+            "description": "Indication that this object is designed to be accessible by the handicapped. \nSet to (TRUE) if this ramp is rated as handicap accessible  according the local building codes, otherwise (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "HasNonSkidSurface": {
+            "title": "HasNonSkidSurface",
+            "description": "Indication whether the surface finish is designed to prevent slippery (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "FireExit": {
+            "title": "FireExit",
+            "description": "Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).\nHere it defines an exit ramp in accordance to the national building code.",
+            "datatype": "IfcBoolean"
+        },
+        "IsExternal": {
+            "title": "IsExternal",
+            "description": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+            "datatype": "IfcBoolean"
+        },
+        "ThermalTransmittance": {
+            "title": "ThermalTransmittance",
+            "description": null
+        },
+        "LoadBearing": {
+            "title": "LoadBearing",
+            "description": null
+        },
+        "FireRating": {
+            "title": "FireRating",
+            "description": "Fire rating for this object.\nIt is given according to the national fire safety classification.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

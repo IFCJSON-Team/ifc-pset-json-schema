@@ -1,0 +1,26 @@
+{
+    "$id": "Pset_SpaceHeaterTypeConvector.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceHeaterTypeConvector",
+    "description": "Space heater type convector attributes.",
+    "properties": {
+        "ConvectorType": {
+            "title": "ConvectorType",
+            "description": "Indicates the type of convector, whether forced air (mechanically driven) or natural (gravity).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FORCED",
+                    "NATURAL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

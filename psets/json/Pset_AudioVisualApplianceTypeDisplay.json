@@ -1,0 +1,102 @@
+{
+    "$id": "Pset_AudioVisualApplianceTypeDisplay.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AudioVisualApplianceTypeDisplay",
+    "description": "An audio-visual display is a device that renders video from a screen.  HISTORY: Added in IFC4.",
+    "properties": {
+        "DisplayType": {
+            "title": "DisplayType",
+            "description": "Indicates the type of display.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CRT",
+                    "DLP",
+                    "LCD",
+                    "LED",
+                    "PLASMA",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET."
+                ]
+            }
+        },
+        "NominalSize": {
+            "title": "NominalSize",
+            "description": "Indicates the diagonal screen size.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "DisplayWidth": {
+            "title": "DisplayWidth",
+            "description": "Indicates the physical width of the screen (only the display surface).",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "DisplayHeight": {
+            "title": "DisplayHeight",
+            "description": "Indicates the physical height of the screen (only the display surface).",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Brightness": {
+            "title": "Brightness",
+            "description": "Indicates the display brightness.",
+            "datatype": "IfcIlluminanceMeasure"
+        },
+        "ContrastRatio": {
+            "title": "ContrastRatio",
+            "description": "Indicates the display contrast ratio.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "RefreshRate": {
+            "title": "RefreshRate",
+            "description": "Indicates the display refresh frequency.",
+            "datatype": "IfcFrequencyMeasure"
+        },
+        "TouchScreen": {
+            "title": "TouchScreen",
+            "description": "Indicates touchscreen support.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SINGLETOUCH",
+                    "MULTITOUCH",
+                    "NONE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "VideoResolutionWidth": {
+            "title": "VideoResolutionWidth",
+            "description": "Indicates the number of horizontal pixels, e.g. 1920.",
+            "datatype": "IfcInteger"
+        },
+        "VideoResolutionHeight": {
+            "title": "VideoResolutionHeight",
+            "description": "Indicates the number of vertical pixels, e.g. 1080.",
+            "datatype": "IfcInteger"
+        },
+        "VideoResolutionMode": {
+            "title": "VideoResolutionMode",
+            "description": "Indicates video resolution modes."
+        },
+        "VideoScaleMode": {
+            "title": "VideoScaleMode",
+            "description": "Indicates video scaling modes."
+        },
+        "VideoCaptionMode": {
+            "title": "VideoCaptionMode",
+            "description": "Indicates video closed captioning modes."
+        },
+        "AudioMode": {
+            "title": "AudioMode",
+            "description": "Indicates audio sound modes and corresponding labels, if applicable."
+        }
+    }
+}

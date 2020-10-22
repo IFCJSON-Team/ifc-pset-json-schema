@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_SensorTypeRadioactivitySensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypeRadioactivitySensor",
+    "description": "A device that senses or detects atomic decay. HISTORY: Added in IFC4.",
+    "properties": {
+        "SetPointRadioactivity": {
+            "title": "SetPointRadioactivity",
+            "description": "The radioactivity value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+            "datatype": "IfcRadioActivityMeasure"
+        }
+    }
+}

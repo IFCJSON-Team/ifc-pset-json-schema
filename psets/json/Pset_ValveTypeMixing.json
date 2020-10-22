@@ -1,0 +1,32 @@
+{
+    "$id": "Pset_ValveTypeMixing.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ValveTypeMixing",
+    "description": "A valve where typically the temperature of the outlet is determined by mixing hot and cold water inlet flows.",
+    "properties": {
+        "MixerControl": {
+            "title": "MixerControl",
+            "description": "Defines the form of control of the mixing valve.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "MANUAL",
+                    "PREDEFINED",
+                    "THERMOSTATIC",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "OutletConnectionSize": {
+            "title": "OutletConnectionSize",
+            "description": "The size of the pipework connection from the mixing valve.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

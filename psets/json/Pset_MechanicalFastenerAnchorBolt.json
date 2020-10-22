@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_MechanicalFastenerAnchorBolt.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MechanicalFastenerAnchorBolt",
+    "description": "Properties common to different types of anchor bolts.",
+    "properties": {
+        "AnchorBoltLength": {
+            "title": "AnchorBoltLength",
+            "description": "The length of the anchor bolt.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "AnchorBoltDiameter": {
+            "title": "AnchorBoltDiameter",
+            "description": "The nominal diameter of the anchor bolt bar(s).",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "AnchorBoltThreadLength": {
+            "title": "AnchorBoltThreadLength",
+            "description": "The length of the threaded part of the anchor bolt.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "AnchorBoltProtrusionLength": {
+            "title": "AnchorBoltProtrusionLength",
+            "description": "The length of the protruding part of the anchor bolt.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

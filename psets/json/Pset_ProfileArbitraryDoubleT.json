@@ -1,0 +1,85 @@
+{
+    "$id": "Pset_ProfileArbitraryDoubleT.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProfileArbitraryDoubleT",
+    "description": "This is a collection of geometric properties of double-T section profiles of precast concrete elements, to be used in conjunction with IfcArbitraryProfileDef when profile designation alone does not fulfill the information requirements.",
+    "properties": {
+        "OverallWidth": {
+            "title": "OverallWidth",
+            "description": "Overall width of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LeftFlangeWidth": {
+            "title": "LeftFlangeWidth",
+            "description": "Left flange width of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "RightFlangeWidth": {
+            "title": "RightFlangeWidth",
+            "description": "Right flange width of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "OverallDepth": {
+            "title": "OverallDepth",
+            "description": "Overall depth of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "FlangeDepth": {
+            "title": "FlangeDepth",
+            "description": "Flange depth of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "FlangeDraft": {
+            "title": "FlangeDraft",
+            "description": "Flange draft of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "FlangeChamfer": {
+            "title": "FlangeChamfer",
+            "description": "Flange chamfer of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "FlangeBaseFillet": {
+            "title": "FlangeBaseFillet",
+            "description": "Flange base fillet of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "FlangeTopFillet": {
+            "title": "FlangeTopFillet",
+            "description": "Flange top fillet of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "StemBaseWidth": {
+            "title": "StemBaseWidth",
+            "description": "Stem base width of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "StemTopWidth": {
+            "title": "StemTopWidth",
+            "description": "Stem top width of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "StemBaseChamfer": {
+            "title": "StemBaseChamfer",
+            "description": "Stem base chamfer of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "StemTopChamfer": {
+            "title": "StemTopChamfer",
+            "description": "Stem top chamfer of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "StemBaseFillet": {
+            "title": "StemBaseFillet",
+            "description": "Stem base fillet of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "StemTopFillet": {
+            "title": "StemTopFillet",
+            "description": "Stem top fillet of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        }
+    }
+}

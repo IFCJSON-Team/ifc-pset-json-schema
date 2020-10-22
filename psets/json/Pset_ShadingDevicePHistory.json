@@ -1,0 +1,18 @@
+{
+    "$id": "Pset_ShadingDevicePHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ShadingDevicePHistory",
+    "description": "Shading device performance history attributes.",
+    "properties": {
+        "TiltAngle": {
+            "title": "TiltAngle",
+            "description": "The angle of tilt defined in the plane perpendicular to the extrusion axis (X-Axis of the local placement). The angle shall be measured from the orientation of the Z-Axis in the local placement."
+        },
+        "Azimuth": {
+            "title": "Azimuth",
+            "description": "The azimuth of the outward normal for the outward or upward facing surface."
+        }
+    }
+}

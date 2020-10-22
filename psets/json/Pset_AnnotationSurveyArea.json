@@ -1,0 +1,39 @@
+{
+    "$id": "Pset_AnnotationSurveyArea.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AnnotationSurveyArea",
+    "description": "Specifies particular properties of survey methods to be assigned to survey point set or resulting surface patches",
+    "properties": {
+        "AcquisitionMethod": {
+            "title": "AcquisitionMethod",
+            "description": "The means by which survey data was acquired.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "GPS",
+                    "LASERSCAN_AIRBORNE",
+                    "LASERSCAN_GROUND",
+                    "SONAR",
+                    "THEODOLITE",
+                    "USERDEFINED",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AccuracyQualityObtained": {
+            "title": "AccuracyQualityObtained",
+            "description": "A measure of the accuracy quality of survey points as obtained expressed in percentage terms.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "AccuracyQualityExpected": {
+            "title": "AccuracyQualityExpected",
+            "description": "A measure of the accuracy quality of survey points as expected expressed in percentage terms.",
+            "datatype": "IfcRatioMeasure"
+        }
+    }
+}

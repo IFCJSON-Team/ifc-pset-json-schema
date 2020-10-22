@@ -1,0 +1,26 @@
+{
+    "$id": "Pset_UnitaryControlElementPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_UnitaryControlElementPHistory",
+    "description": "Properties for history and operating schedules of thermostats.  HISTORY: Added in IFC4.",
+    "properties": {
+        "Temperature": {
+            "title": "Temperature",
+            "description": "Indicates the current measured temperature."
+        },
+        "Mode": {
+            "title": "Mode",
+            "description": "Indicates operation mode corresponding to Pset_UnitaryControlTypeCommon.Mode.  For example, 'HEAT', 'COOL', 'AUTO'."
+        },
+        "Fan": {
+            "title": "Fan",
+            "description": "Indicates fan operation where True is on, False is off, and Unknown is automatic."
+        },
+        "SetPoint": {
+            "title": "SetPoint",
+            "description": "Indicates the temperature setpoint.  For thermostats with setbacks or separate high and low setpoints, then the time series may contain a pair of values at each entry where the first value is the heating setpoint (low) and the second value is the cooling setpoint (high)."
+        }
+    }
+}

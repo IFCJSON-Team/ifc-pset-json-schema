@@ -1,0 +1,53 @@
+{
+    "$id": "Pset_BuildingElementProxyCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_BuildingElementProxyCommon",
+    "description": "Properties common to the definition of all instances of IfcBuildingElementProxy.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "IsExternal": {
+            "title": "IsExternal",
+            "description": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+            "datatype": "IfcBoolean"
+        },
+        "ThermalTransmittance": {
+            "title": "ThermalTransmittance",
+            "description": "Thermal transmittance coefficient (U-Value) of the element. It is the total thermal transmittance coefficient through the building element proxy within the direction of the thermal flow (including all materials).\n\nNote: new property in IFC4",
+            "datatype": "IfcThermalTransmittanceMeasure"
+        },
+        "LoadBearing": {
+            "title": "LoadBearing",
+            "description": "Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "FireRating": {
+            "title": "FireRating",
+            "description": "Fire rating for the element.\nIt is given according to the national fire safety classification.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

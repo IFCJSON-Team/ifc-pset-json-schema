@@ -1,0 +1,45 @@
+{
+    "$id": "Pset_SpaceOccupancyRequirements.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceOccupancyRequirements",
+    "description": "Properties concerning work activities occurring or expected to occur within one or a set of similar spatial structure elements.",
+    "properties": {
+        "OccupancyType": {
+            "title": "OccupancyType",
+            "description": "Occupancy type for this object. It is defined according to the presiding national building code.",
+            "datatype": "IfcLabel"
+        },
+        "OccupancyNumber": {
+            "title": "OccupancyNumber",
+            "description": "Number of people required for the activity assigned to this space.",
+            "datatype": "IfcCountMeasure"
+        },
+        "OccupancyNumberPeak": {
+            "title": "OccupancyNumberPeak",
+            "description": "Maximal number of people required for the activity assigned to this space in peak time.",
+            "datatype": "IfcCountMeasure"
+        },
+        "OccupancyTimePerDay": {
+            "title": "OccupancyTimePerDay",
+            "description": "The amount of time during the day that the activity is required within this space.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "AreaPerOccupant": {
+            "title": "AreaPerOccupant",
+            "description": "Design occupancy loading for this type of usage assigned to this space.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "MinimumHeadroom": {
+            "title": "MinimumHeadroom",
+            "description": "Headroom required for the activity assigned to this space.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "IsOutlookDesirable": {
+            "title": "IsOutlookDesirable",
+            "description": "An indication of whether the outlook is desirable (set TRUE) or not (set FALSE)",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

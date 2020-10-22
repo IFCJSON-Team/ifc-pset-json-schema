@@ -1,0 +1,135 @@
+{
+    "$id": "Pset_EnvironmentalImpactIndicators.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_EnvironmentalImpactIndicators",
+    "description": "Environmental impact indicators are related to a given \u201cfunctional unit\u201d (ISO 14040 concept). An example of functional unit is a \"Double glazing window with PVC frame\" and the unit to consider is \"one square meter of opening elements filled by this product\u201d.\nIndicators values are valid for the whole life cycle or only a specific phase (see LifeCyclePhase property). Values of all the indicators are expressed per year according to the expected service life. The first five properties capture the characteristics of the functional unit. The following properties are related to environmental indicators.\nThere is a consensus agreement international for the five one. Last ones are not yet fully and formally agreed at the international level.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project",
+            "datatype": "IfcIdentifier"
+        },
+        "FunctionalUnitReference": {
+            "title": "FunctionalUnitReference",
+            "description": "Reference to a database or a classification",
+            "datatype": "IfcLabel"
+        },
+        "Unit": {
+            "title": "Unit",
+            "description": "The unit of the quantity the environmental indicators values are related with.",
+            "datatype": "IfcText"
+        },
+        "LifeCyclePhase": {
+            "title": "LifeCyclePhase",
+            "description": "The whole life cycle or only a given phase  from which environmental data are valid.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "Acquisition",
+                    "Cradletosite",
+                    "Deconstruction",
+                    "Disposal",
+                    "Disposaltransport",
+                    "Growth",
+                    "Installation",
+                    "Maintenance",
+                    "Manufacture",
+                    "Occupancy",
+                    "Operation",
+                    "Procurement",
+                    "Production",
+                    "Productiontransport",
+                    "Recovery",
+                    "Refurbishment",
+                    "Repair",
+                    "Replacement",
+                    "Transport",
+                    "Usage",
+                    "Waste",
+                    "Wholelifecycle",
+                    "UserDefined",
+                    "NotDefined"
+                ]
+            }
+        },
+        "ExpectedServiceLife": {
+            "title": "ExpectedServiceLife",
+            "description": "Expected service life in years.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "TotalPrimaryEnergyConsumptionPerUnit": {
+            "title": "TotalPrimaryEnergyConsumptionPerUnit",
+            "description": "Quantity of energy used as defined in ISO21930:2007.",
+            "datatype": "IfcEnergyMeasure"
+        },
+        "WaterConsumptionPerUnit": {
+            "title": "WaterConsumptionPerUnit",
+            "description": "Quantity of water used.",
+            "datatype": "IfcVolumeMeasure"
+        },
+        "HazardousWastePerUnit": {
+            "title": "HazardousWastePerUnit",
+            "description": "Quantity of hazardous waste generated",
+            "datatype": "IfcMassMeasure"
+        },
+        "NonHazardousWastePerUnit": {
+            "title": "NonHazardousWastePerUnit",
+            "description": "Quantity of non hazardous waste generated",
+            "datatype": "IfcMassMeasure"
+        },
+        "ClimateChangePerUnit": {
+            "title": "ClimateChangePerUnit",
+            "description": "Quantity of greenhouse gases emitted calculated in equivalent CO2",
+            "datatype": "IfcMassMeasure"
+        },
+        "AtmosphericAcidificationPerUnit": {
+            "title": "AtmosphericAcidificationPerUnit",
+            "description": "Quantity of gases responsible for the atmospheric acidification calculated in equivalent SO2",
+            "datatype": "IfcMassMeasure"
+        },
+        "RenewableEnergyConsumptionPerUnit": {
+            "title": "RenewableEnergyConsumptionPerUnit",
+            "description": "Quantity of renewable energy used as defined in ISO21930:2007",
+            "datatype": "IfcEnergyMeasure"
+        },
+        "NonRenewableEnergyConsumptionPerUnit": {
+            "title": "NonRenewableEnergyConsumptionPerUnit",
+            "description": "Quantity of non-renewable energy used as defined in ISO21930:2007",
+            "datatype": "IfcEnergyMeasure"
+        },
+        "ResourceDepletionPerUnit": {
+            "title": "ResourceDepletionPerUnit",
+            "description": "Quantity of resources used calculated in equivalent antimony",
+            "datatype": "IfcMassMeasure"
+        },
+        "InertWastePerUnit": {
+            "title": "InertWastePerUnit",
+            "description": "Quantity of inert waste generated",
+            "datatype": "IfcMassMeasure"
+        },
+        "RadioactiveWastePerUnit": {
+            "title": "RadioactiveWastePerUnit",
+            "description": "Quantity of radioactive waste generated",
+            "datatype": "IfcMassMeasure"
+        },
+        "StratosphericOzoneLayerDestructionPerUnit": {
+            "title": "StratosphericOzoneLayerDestructionPerUnit",
+            "description": "Quantity of gases destroying the stratospheric ozone layer calculated in equivalent CFC-R11",
+            "datatype": "IfcMassMeasure"
+        },
+        "PhotochemicalOzoneFormationPerUnit": {
+            "title": "PhotochemicalOzoneFormationPerUnit",
+            "description": "Quantity of gases creating the photochemical ozone calculated in equivalent ethylene",
+            "datatype": "IfcMassMeasure"
+        },
+        "EutrophicationPerUnit": {
+            "title": "EutrophicationPerUnit",
+            "description": "Quantity of eutrophicating compounds calculated in equivalent PO4",
+            "datatype": "IfcMassMeasure"
+        }
+    }
+}

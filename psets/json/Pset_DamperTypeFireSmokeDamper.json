@@ -1,0 +1,57 @@
+{
+    "$id": "Pset_DamperTypeFireSmokeDamper.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DamperTypeFireSmokeDamper",
+    "description": "Combination Fire and Smoke damper type attributes.\nNew Pset in IFC2x2 Pset Addendum.",
+    "properties": {
+        "ControlType": {
+            "title": "ControlType",
+            "description": "The type of control used to operate the damper (e.g., Open/Closed Indicator, Resetable Temperature Sensor, Temperature Override, etc.).",
+            "datatype": "IfcLabel"
+        },
+        "ActuationType": {
+            "title": "ActuationType",
+            "description": "Enumeration that identifies the different types of dampers.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "GRAVITY",
+                    "SPRING",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ClosureRatingEnum": {
+            "title": "ClosureRatingEnum",
+            "description": "Enumeration that identifies the closure rating for the damper.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DYNAMIC",
+                    "STATIC",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FireResistanceRating": {
+            "title": "FireResistanceRating",
+            "description": "Measure of the fire resistance rating in hours (e.g., 1.5 hours, 2 hours, etc.).",
+            "datatype": "IfcLabel"
+        },
+        "FusibleLinkTemperature": {
+            "title": "FusibleLinkTemperature",
+            "description": "The temperature that the fusible link melts.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        }
+    }
+}

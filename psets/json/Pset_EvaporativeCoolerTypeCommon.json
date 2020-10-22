@@ -1,0 +1,77 @@
+{
+    "$id": "Pset_EvaporativeCoolerTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_EvaporativeCoolerTypeCommon",
+    "description": "Evaporative cooler type common attributes.\nSound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead. WaterRequirement attribute unit type modified in IFC2x2 Pset Addendum.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1').",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FlowArrangement": {
+            "title": "FlowArrangement",
+            "description": "CounterFlow: Air and water flow enter in different directions.\n\nCrossFlow: Air and water flow are perpendicular.\nParallelFlow: Air and water flow enter in same directions.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "COUNTERFLOW",
+                    "CROSSFLOW",
+                    "PARALLELFLOW",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HeatExchangeArea": {
+            "title": "HeatExchangeArea",
+            "description": "Heat exchange area.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "OperationTemperatureRange": {
+            "title": "OperationTemperatureRange",
+            "description": "Allowable operation ambient air temperature range.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "WaterRequirement": {
+            "title": "WaterRequirement",
+            "description": "Make-up water requirement.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "EffectivenessTable": {
+            "title": "EffectivenessTable",
+            "description": "Total heat transfer effectiveness curve as a function of the primary air flow rate."
+        },
+        "AirPressureDropCurve": {
+            "title": "AirPressureDropCurve",
+            "description": "Air pressure drop as function of air flow rate."
+        },
+        "WaterPressDropCurve": {
+            "title": "WaterPressDropCurve",
+            "description": "Water pressure drop as function of water flow rate."
+        }
+    }
+}

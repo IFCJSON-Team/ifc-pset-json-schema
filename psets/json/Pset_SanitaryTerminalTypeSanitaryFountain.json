@@ -1,0 +1,49 @@
+{
+    "$id": "Pset_SanitaryTerminalTypeSanitaryFountain.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SanitaryTerminalTypeSanitaryFountain",
+    "description": "Asanitary terminal that provides a low pressure jet of water for a specific purpose (IAI). HISTORY: In IFC4, Material property removed. Use materials capabilities from IfcMaterialsResource schema. Datatype of color changed to IfcLabel (still a string value).",
+    "properties": {
+        "FountainType": {
+            "title": "FountainType",
+            "description": "Selection of the type of fountain from the enumerated list of types where:-\n\nDrinkingWater: \tSanitary appliance that provides a low pressure jet of drinking water.\nEyewash: \tWaste water appliance, usually installed in work places where there is a risk of injury to eyes by solid particles or dangerous liquids, with which the user can wash the eyes without touching them.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DRINKINGWATER",
+                    "EYEWASH",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Mounting": {
+            "title": "Mounting",
+            "description": "Selection of the form of mounting of the fountain from the enumerated list of mountings where:-\n\nBackToWall: \tA pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections.\nPedestal: \tA floor mounted sanitary terminal that has an integral base\n.\nCounterTop: \tA sanitary terminal that is installed into a horizontal surface that is installed into a horizontal surface. Note: When applied to a wash hand basin, the term more normally used is \u2018vanity\u2019. See also Wash Hand Basin Type specification.\nWallHung: \tA sanitary terminal cantilevered clear of the floor.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BACKTOWALL",
+                    "PEDESTAL",
+                    "COUNTERTOP",
+                    "WALLHUNG",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "DrainSize": {
+            "title": "DrainSize",
+            "description": "The size of the drain outlet connection from the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

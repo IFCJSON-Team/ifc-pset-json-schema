@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_SensorTypeFireSensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypeFireSensor",
+    "description": "A device that senses or detects the presence of fire.",
+    "properties": {
+        "FireSensorSetPoint": {
+            "title": "FireSensorSetPoint",
+            "description": "The temperature value to be sensed to indicate the presence of fire.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "AccuracyOfFireSensor": {
+            "title": "AccuracyOfFireSensor",
+            "description": "The accuracy of the sensor.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "TimeConstant": {
+            "title": "TimeConstant",
+            "description": "The time constant of the sensor.",
+            "datatype": "IfcTimeMeasure"
+        }
+    }
+}

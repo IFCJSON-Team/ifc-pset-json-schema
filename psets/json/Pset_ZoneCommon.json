@@ -1,0 +1,40 @@
+{
+    "$id": "Pset_ZoneCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ZoneCommon",
+    "description": "Properties common to the definition of all occurrences of IfcZone.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.",
+            "datatype": "IfcIdentifier"
+        },
+        "IsExternal": {
+            "title": "IsExternal",
+            "description": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external zone at the outside of the building.",
+            "datatype": "IfcBoolean"
+        },
+        "GrossPlannedArea": {
+            "title": "GrossPlannedArea",
+            "description": "Total planned gross area for the zone. Used for programming the zone.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "NetPlannedArea": {
+            "title": "NetPlannedArea",
+            "description": "Total planned net area for the zone. Used for programming the zone.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "PubliclyAccessible": {
+            "title": "PubliclyAccessible",
+            "description": "Indication whether this space (in case of e.g., a toilet) is designed to serve as a publicly accessible space, e.g., for a public toilet (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "HandicapAccessible": {
+            "title": "HandicapAccessible",
+            "description": "Indication whether this space (in case of e.g., a toilet) is designed to serve as an accessible space for handicapped people, e.g., for a public toilet (TRUE) or not (FALSE). This information is often used to declare the need for access for the disabled and for special design requirements of this space.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

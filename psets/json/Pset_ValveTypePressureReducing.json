@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_ValveTypePressureReducing.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ValveTypePressureReducing",
+    "description": "Valve that reduces the pressure of a fluid immediately downstream of its position in a pipeline to a preselected value or by a predetermined ratio.\nNote that a pressure reducing valve is constrained to have a 2 port  pattern.",
+    "properties": {
+        "UpstreamPressure": {
+            "title": "UpstreamPressure",
+            "description": "The operating pressure of the fluid upstream of the pressure reducing valve.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "DownstreamPressure": {
+            "title": "DownstreamPressure",
+            "description": "The operating pressure of the fluid downstream of the pressure reducing valve.",
+            "datatype": "IfcPressureMeasure"
+        }
+    }
+}

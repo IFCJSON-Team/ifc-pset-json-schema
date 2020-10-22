@@ -1,0 +1,66 @@
+{
+    "$id": "Pset_ControllerTypeProportional.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ControllerTypeProportional",
+    "description": "Properties for signal handling for an proportional controller taking setpoint and feedback inputs and creating a single valued output. HISTORY: In IFC4, SignalFactor1, SignalFactor2 and SignalFactor3 changed to ProportionalConstant, IntegralConstant and DerivativeConstant.  SignalTime1 and SignalTime2 changed to SignalTimeIncrease and SignalTimeDecrease.",
+    "properties": {
+        "ControlType": {
+            "title": "ControlType",
+            "description": "The type of signal modification.\nPROPORTIONAL: Output is proportional to the control error. The gain of a proportional control (Kp) will have the effect of reducing the rise time and reducing , but never eliminating, the steady-state error of the variable controlled. \nPROPORTIONALINTEGRAL: Part of the output is proportional to the control error and part is proportional to the time integral of the control error. Adding the gain of an integral control (Ki) will have the effect of eliminating the steady-state error of the variable controlled, but it may make the transient response worse. \nPROPORTIONALINTEGRALDERIVATIVE: Part of the output is proportional to the control error, part is proportional to the time integral of the control error and part is proportional to the time derivative of the control error. Adding the gain of a derivative control (Kd) will have the effect of increasing the stability of the system, reducing the overshoot, and improving the transient response of the variable controlled.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "PROPORTIONAL",
+                    "PROPORTIONALINTEGRAL",
+                    "PROPORTIONALINTEGRALDERIVATIVE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Labels": {
+            "title": "Labels",
+            "description": "Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'."
+        },
+        "Range": {
+            "title": "Range",
+            "description": "The physical range of values.",
+            "datatype": "IfcReal"
+        },
+        "Value": {
+            "title": "Value",
+            "description": "The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.",
+            "datatype": "IfcReal"
+        },
+        "ProportionalConstant": {
+            "title": "ProportionalConstant",
+            "description": "The proportional gain factor of the controller (usually referred to as Kp).",
+            "datatype": "IfcReal"
+        },
+        "IntegralConstant": {
+            "title": "IntegralConstant",
+            "description": "The integral gain factor of the controller (usually referred to as Ki).  Asserted where ControlType is PROPORTIONALINTEGRAL or PROPORTIONALINTEGRALDERIVATIVE.",
+            "datatype": "IfcReal"
+        },
+        "DerivativeConstant": {
+            "title": "DerivativeConstant",
+            "description": "The derivative gain factor of the controller (usually referred to as Kd).  Asserted where ControlType is PROPORTIONALINTEGRALDERIVATIVE.",
+            "datatype": "IfcReal"
+        },
+        "SignalTimeIncrease": {
+            "title": "SignalTimeIncrease",
+            "description": "Time factor used for exponential increase.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "SignalTimeDecrease": {
+            "title": "SignalTimeDecrease",
+            "description": "Time factor used for exponential decrease.",
+            "datatype": "IfcTimeMeasure"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "$id": "Pset_SystemFurnitureElementTypeWorkSurface.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SystemFurnitureElementTypeWorkSurface",
+    "description": "A set of specific properties for work surfaces used in workstations. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Worksurface",
+    "properties": {
+        "UsePurpose": {
+            "title": "UsePurpose",
+            "description": "The principal purpose for which the work surface is intended to be used e.g. writing/reading, computer, meeting, printer, reference files, etc.",
+            "datatype": "IfcLabel"
+        },
+        "SupportType": {
+            "title": "SupportType",
+            "description": "Available support types from which that required may be selected.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FREESTANDING",
+                    "SUPPORTED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HangingHeight": {
+            "title": "HangingHeight",
+            "description": "The hanging height of the worksurface.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalThickness": {
+            "title": "NominalThickness",
+            "description": "The nominal thickness of the work surface.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ShapeDescription": {
+            "title": "ShapeDescription",
+            "description": "A description of the shape of the work surface e.g. corner square, rectangle, etc.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

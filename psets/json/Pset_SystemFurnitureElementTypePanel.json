@@ -1,0 +1,42 @@
+{
+    "$id": "Pset_SystemFurnitureElementTypePanel.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SystemFurnitureElementTypePanel",
+    "description": "A set of specific properties for vertical panels that assembly workstations.. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Panel",
+    "properties": {
+        "HasOpening": {
+            "title": "HasOpening",
+            "description": "indicates whether the panel has an opening (= TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "FurniturePanelType": {
+            "title": "FurniturePanelType",
+            "description": "Available panel types from which that required may be selected.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ACOUSTICAL",
+                    "GLAZED",
+                    "HORZ_SEG",
+                    "MONOLITHIC",
+                    "OPEN",
+                    "ENDS",
+                    "DOOR",
+                    "SCREEN",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NominalThickness": {
+            "title": "NominalThickness",
+            "description": "The nominal thickness of the panel.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

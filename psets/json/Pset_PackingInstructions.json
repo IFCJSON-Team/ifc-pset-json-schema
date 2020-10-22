@@ -1,0 +1,39 @@
+{
+    "$id": "Pset_PackingInstructions.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PackingInstructions",
+    "description": "Packing instructions are specific instructions relating to the packing that is required for an artifact in the event of a move (or transport).",
+    "properties": {
+        "PackingCareType": {
+            "title": "PackingCareType",
+            "description": "Identifies the predefined types of care that may be required when handling the artefact during a move where:\n\nFragile: artefact may be broken during a move through careless handling.\nHandleWithCare: artefact may be damaged during a move through careless handling.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FRAGILE",
+                    "HANDLEWITHCARE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "WrappingMaterial": {
+            "title": "WrappingMaterial",
+            "description": "Special requirements for material used to wrap an artefact."
+        },
+        "ContainerMaterial": {
+            "title": "ContainerMaterial",
+            "description": "Special requirements for material used to contain an artefact."
+        },
+        "SpecialInstructions": {
+            "title": "SpecialInstructions",
+            "description": "Special instructions for packing.",
+            "datatype": "IfcText"
+        }
+    }
+}

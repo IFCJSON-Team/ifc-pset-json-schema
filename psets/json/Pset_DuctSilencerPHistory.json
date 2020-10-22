@@ -1,0 +1,18 @@
+{
+    "$id": "Pset_DuctSilencerPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DuctSilencerPHistory",
+    "description": "Duct silencer performance history common attributes.",
+    "properties": {
+        "AirFlowRate": {
+            "title": "AirFlowRate",
+            "description": "Volumetric air flow rate."
+        },
+        "AirPressureDropCurve": {
+            "title": "AirPressureDropCurve",
+            "description": "Air pressure drop as a function of air flow rate."
+        }
+    }
+}

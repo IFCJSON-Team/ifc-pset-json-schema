@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_DiscreteAccessoryCornerFixingPlate.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DiscreteAccessoryCornerFixingPlate",
+    "description": "Properties specific to corner fixing plates.",
+    "properties": {
+        "CornerFixingPlateLength": {
+            "title": "CornerFixingPlateLength",
+            "description": "The length of the L-shaped corner plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CornerFixingPlateThickness": {
+            "title": "CornerFixingPlateThickness",
+            "description": "The thickness of the L-shaped corner plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CornerFixingPlateFlangeWidthInPlaneZ": {
+            "title": "CornerFixingPlateFlangeWidthInPlaneZ",
+            "description": "The flange width of the L-shaped corner plate in plane Z.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CornerFixingPlateFlangeWidthInPlaneX": {
+            "title": "CornerFixingPlateFlangeWidthInPlaneX",
+            "description": "The flange width of the L-shaped corner plate in plane X.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

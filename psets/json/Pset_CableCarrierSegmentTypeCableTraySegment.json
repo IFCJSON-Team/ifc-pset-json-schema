@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_CableCarrierSegmentTypeCableTraySegment.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CableCarrierSegmentTypeCableTraySegment",
+    "description": "An (typically) open carrier segment onto which cables are laid. \nHISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure",
+    "properties": {
+        "NominalWidth": {
+            "title": "NominalWidth",
+            "description": "The nominal width of the segment.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalHeight": {
+            "title": "NominalHeight",
+            "description": "The nominal height of the segment.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HasCover": {
+            "title": "HasCover",
+            "description": "Indication of whether the cable tray has a cover (=TRUE) or not (= FALSE). By default, this value should be set to FALSE..",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

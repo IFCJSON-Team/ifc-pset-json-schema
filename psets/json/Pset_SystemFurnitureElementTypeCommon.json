@@ -1,0 +1,35 @@
+{
+    "$id": "Pset_SystemFurnitureElementTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SystemFurnitureElementTypeCommon",
+    "description": "Common properties for all systems furniture (I.e. modular furniture) element types (e.g. vertical panels, work surfaces, and storage). HISTORY: First issued in IFC Release R1.5. Renamed from Pset_FurnitureElementCommon",
+    "properties": {
+        "IsUsed": {
+            "title": "IsUsed",
+            "description": "Indicates whether the element is being used in a workstation (= TRUE) or not.(= FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "GroupCode": {
+            "title": "GroupCode",
+            "description": "e.g. panels, worksurfaces, storage, etc.",
+            "datatype": "IfcIdentifier"
+        },
+        "NominalWidth": {
+            "title": "NominalWidth",
+            "description": "The nominal width of the system furniture elements of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalHeight": {
+            "title": "NominalHeight",
+            "description": "The nominal height of the system furniture elements of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Finishing": {
+            "title": "Finishing",
+            "description": "The finishing applied to system furniture elements of this type e.g. walnut, fabric.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

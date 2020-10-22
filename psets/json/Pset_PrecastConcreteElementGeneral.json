@@ -1,0 +1,109 @@
+{
+    "$id": "Pset_PrecastConcreteElementGeneral.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PrecastConcreteElementGeneral",
+    "description": "Production and manufacturing related properties common to different types of precast concrete elements. The Pset can be used by a number of subtypes of IfcBuildingElement. If the precast concrete element is a sandwich wall panel each structural layer or shell represented by an IfcBuildingElementPart may be attached to a separate Pset of this type, if needed. Some of the properties apply only for specific types of precast concrete elements.",
+    "properties": {
+        "TypeDesignator": {
+            "title": "TypeDesignator",
+            "description": "Type designator for the precast concrete element. The content depends on local standards. For instance in Finland it usually a one-letter acronym, e.g. P=Column, K=reinforced concrete beam,etc.",
+            "datatype": "IfcLabel"
+        },
+        "CornerChamfer": {
+            "title": "CornerChamfer",
+            "description": "The chamfer in the corners of the precast element. The chamfer is presumed to be equal in both directions.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ManufacturingToleranceClass": {
+            "title": "ManufacturingToleranceClass",
+            "description": "Classification designation of the manufacturing tolerances according to local standards.",
+            "datatype": "IfcLabel"
+        },
+        "FormStrippingStrength": {
+            "title": "FormStrippingStrength",
+            "description": "The minimum required compressive strength of the concrete at form stripping time.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "LiftingStrength": {
+            "title": "LiftingStrength",
+            "description": "The minimum required compressive strength of the concrete when the concrete element is lifted.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "ReleaseStrength": {
+            "title": "ReleaseStrength",
+            "description": "The minimum required compressive strength of the concrete when the tendon stress is released. This property applies to prestressed concrete elements only.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "MinimumAllowableSupportLength": {
+            "title": "MinimumAllowableSupportLength",
+            "description": "The minimum allowable support length.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "InitialTension": {
+            "title": "InitialTension",
+            "description": "The initial stress of the tendon. This property applies to prestressed concrete elements only.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "TendonRelaxation": {
+            "title": "TendonRelaxation",
+            "description": "The maximum allowable relaxation of the tendon (usually expressed as %/1000 h).This property applies to prestressed concrete elements only.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "TransportationStrength": {
+            "title": "TransportationStrength",
+            "description": "The minimum required compressive strength of the concrete required for transportation.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "SupportDuringTransportDescription": {
+            "title": "SupportDuringTransportDescription",
+            "description": "Textual description of how the concrete element is supported during transportation.",
+            "datatype": "IfcText"
+        },
+        "SupportDuringTransportDocReference": {
+            "title": "SupportDuringTransportDocReference",
+            "description": "Reference to an external document defining how the concrete element is supported during transportation."
+        },
+        "HollowCorePlugging": {
+            "title": "HollowCorePlugging",
+            "description": "A descriptive label for how the hollow core ends are treated: they may be left open, closed with a plug, or sealed with cast concrete. Values would be, for example: 'Unplugged', 'Plugged', 'SealedWithConcrete'. This property applies to  hollow core slabs only.",
+            "datatype": "IfcLabel"
+        },
+        "CamberAtMidspan": {
+            "title": "CamberAtMidspan",
+            "description": "The camber deflection, measured from the midpoint of a cambered face of a piece to the midpoint of the chord joining the ends of the same face, as shown in the figure below, divided by the original (nominal) straight length of the face of the piece.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "BatterAtStart": {
+            "title": "BatterAtStart",
+            "description": "The angle, in radians, by which the formwork at the starting face of a piece is to be rotated from the vertical in order to compensate for the rotation of the face that will occur once the piece is stripped from its form, inducing camber due to eccentric prestressing.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "BatterAtEnd": {
+            "title": "BatterAtEnd",
+            "description": "The angle, in radians, by which the formwork at the ending face of a piece is to be rotated from the vertical in order to compensate for the rotation of the face that will occur once the piece is stripped from its form, inducing camber due to eccentric prestressing.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "Twisting": {
+            "title": "Twisting",
+            "description": "The angle, in radians, through which the end face of a precast piece is rotated with respect to its starting face, along its longitudinal axis, as a result of non-aligned supports. This measure is also termed the \u2018warping\u2019 angle.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "Shortening": {
+            "title": "Shortening",
+            "description": "The ratio of the distance by which a precast piece is shortened after release from its form (due to compression induced by prestressing) to its original (nominal) length.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "PieceMark": {
+            "title": "PieceMark",
+            "description": "Defines a unique piece for production purposes. All pieces with the same piece mark value are identical and interchangeable. The piece mark may be composed of sub-parts that have specific locally defined meaning (e.g. B-1A may denote a beam, of generic type \u20181\u2019 and specific shape \u2018A\u2019).",
+            "datatype": "IfcLabel"
+        },
+        "DesignLocationNumber": {
+            "title": "DesignLocationNumber",
+            "description": "Defines a unique location within a structure, the \u2018slot\u2019 for which the piece was designed.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

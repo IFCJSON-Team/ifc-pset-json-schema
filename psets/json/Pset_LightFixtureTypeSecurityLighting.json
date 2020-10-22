@@ -1,0 +1,101 @@
+{
+    "$id": "Pset_LightFixtureTypeSecurityLighting.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_LightFixtureTypeSecurityLighting",
+    "description": "Properties that characterize security lighting.",
+    "properties": {
+        "SecurityLightingType": {
+            "title": "SecurityLightingType",
+            "description": "The type of security lighting.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SAFETYLIGHT",
+                    "WARNINGLIGHT",
+                    "EMERGENCYEXITLIGHT",
+                    "BLUEILLUMINATION",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FixtureHeight": {
+            "title": "FixtureHeight",
+            "description": "The height of the fixture, such as the text height of an exit sign.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "SelfTestFunction": {
+            "title": "SelfTestFunction",
+            "description": "The type of self test function.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CENTRAL",
+                    "LOCAL",
+                    "NONE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "BackupSupplySystem": {
+            "title": "BackupSupplySystem",
+            "description": "The type of backup supply system.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "LOCALBATTERY",
+                    "CENTRALBATTERY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "PictogramEscapeDirection": {
+            "title": "PictogramEscapeDirection",
+            "description": "The direction of escape pictogram.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "RIGHTARROW",
+                    "LEFTARROW",
+                    "DOWNARROW",
+                    "UPARROW",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Addressablility": {
+            "title": "Addressablility",
+            "description": "The type of addressability.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "IMPLEMENTED",
+                    "UPGRADEABLETO",
+                    "NOTIMPLEMENTED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

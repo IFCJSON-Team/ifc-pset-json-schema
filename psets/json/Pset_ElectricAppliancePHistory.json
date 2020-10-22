@@ -1,0 +1,14 @@
+{
+    "$id": "Pset_ElectricAppliancePHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ElectricAppliancePHistory",
+    "description": "Captures realtime information for electric appliances, such as for energy usage.  HISTORY: Added in IFC4.",
+    "properties": {
+        "PowerState": {
+            "title": "PowerState",
+            "description": "Indicates the power state of the device where True is on and False is off."
+        }
+    }
+}

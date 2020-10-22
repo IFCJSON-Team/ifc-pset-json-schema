@@ -1,0 +1,46 @@
+{
+    "$id": "Pset_AudioVisualApplianceTypeProjector.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AudioVisualApplianceTypeProjector",
+    "description": "An audio-visual projector is a device that projects video to a surface.  HISTORY: Added in IFC4.",
+    "properties": {
+        "ProjectorType": {
+            "title": "ProjectorType",
+            "description": "Indicates the type of projector.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET."
+                ]
+            }
+        },
+        "VideoResolutionWidth": {
+            "title": "VideoResolutionWidth",
+            "description": "Indicates the number of horizontal pixels (the largest native video resolution width).",
+            "datatype": "IfcInteger"
+        },
+        "VideoResolutionHeight": {
+            "title": "VideoResolutionHeight",
+            "description": "Indicates the number of vertical pixels (the largest native video resolution height).",
+            "datatype": "IfcInteger"
+        },
+        "VideoResolutionMode": {
+            "title": "VideoResolutionMode",
+            "description": "Indicates video resolution modes."
+        },
+        "VideoScaleMode": {
+            "title": "VideoScaleMode",
+            "description": "Indicates video scaling modes."
+        },
+        "VideoCaptionMode": {
+            "title": "VideoCaptionMode",
+            "description": "Indicates closed captioning modes."
+        }
+    }
+}

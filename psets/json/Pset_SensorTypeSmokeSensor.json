@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_SensorTypeSmokeSensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypeSmokeSensor",
+    "description": "A device that senses or detects smoke. HISTORY: PressureSensorSensorSetPoint (error in previous release) changed to SetPointConcentration. Range, accuracy and time constant deleted.",
+    "properties": {
+        "CoverageArea": {
+            "title": "CoverageArea",
+            "description": "The floor area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).",
+            "datatype": "IfcAreaMeasure"
+        },
+        "SetPointConcentration": {
+            "title": "SetPointConcentration",
+            "description": "The smoke concentration value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "HasBuiltInAlarm": {
+            "title": "HasBuiltInAlarm",
+            "description": "Indicates whether the smoke sensor is included as an element within a smoke alarm/sensor unit (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

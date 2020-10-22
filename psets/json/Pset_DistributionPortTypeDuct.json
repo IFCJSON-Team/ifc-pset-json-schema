@@ -1,0 +1,83 @@
+{
+    "$id": "Pset_DistributionPortTypeDuct.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionPortTypeDuct",
+    "description": "Duct port occurrence attributes attached to an instance of IfcDistributionPort.",
+    "properties": {
+        "ConnectionType": {
+            "title": "ConnectionType",
+            "description": "The end-style treatment of the duct port:\n\nBEADEDSLEEVE: Beaded Sleeve. \nCOMPRESSION: Compression. \nCRIMP: Crimp. \nDRAWBAND: Drawband. \nDRIVESLIP: Drive slip. \nFLANGED: Flanged. \nOUTSIDESLEEVE: Outside Sleeve. \nSLIPON: Slipon. \nSOLDERED: Soldered. \nSSLIP: S-Slip. \nSTANDINGSEAM: Standing seam. \nSWEDGE: Swedge. \nWELDED: Welded. \nOTHER: Another type of end-style has been applied.\nNONE: No end-style has been applied.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BEADEDSLEEVE",
+                    "COMPRESSION",
+                    "CRIMP",
+                    "DRAWBAND",
+                    "DRIVESLIP",
+                    "FLANGED",
+                    "OUTSIDESLEEVE",
+                    "SLIPON",
+                    "SOLDERED",
+                    "SSLIP",
+                    "STANDINGSEAM",
+                    "SWEDGE",
+                    "WELDED",
+                    "OTHER",
+                    "NONE",
+                    "USERDEFINED",
+                    "NOTDEFINED"
+                ]
+            }
+        },
+        "ConnectionSubType": {
+            "title": "ConnectionSubType",
+            "description": "The physical port connection subtype that further qualifies the ConnectionType.",
+            "datatype": "IfcLabel"
+        },
+        "NominalWidth": {
+            "title": "NominalWidth",
+            "description": "The nominal width or diameter of the duct connection.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalHeight": {
+            "title": "NominalHeight",
+            "description": "The nominal height of the duct connection. Only provided for rectangular shaped ducts.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalThickness": {
+            "title": "NominalThickness",
+            "description": "The nominal wall thickness of the duct at the connection point.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "DryBulbTemperature": {
+            "title": "DryBulbTemperature",
+            "description": "Dry bulb temperature of the air.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "WetBulbTemperature": {
+            "title": "WetBulbTemperature",
+            "description": "Wet bulb temperature of the air.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "VolumetricFlowRate": {
+            "title": "VolumetricFlowRate",
+            "description": "The volumetric flow rate of the fluid.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "Velocity": {
+            "title": "Velocity",
+            "description": "The velocity of the fluid.",
+            "datatype": "IfcLinearVelocityMeasure"
+        },
+        "Pressure": {
+            "title": "Pressure",
+            "description": "The pressure of the fluid.",
+            "datatype": "IfcPressureMeasure"
+        }
+    }
+}

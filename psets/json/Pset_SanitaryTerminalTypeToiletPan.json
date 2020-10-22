@@ -1,0 +1,70 @@
+{
+    "$id": "Pset_SanitaryTerminalTypeToiletPan.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SanitaryTerminalTypeToiletPan",
+    "description": "Soil appliance for the disposal of excrement. HISTORY: In IFC4, Material property removed. Use materials capabilities from IfcMaterialsResource schema. Prefix for color property removed. Datatype of color changed to IfcLabel (still a string value).",
+    "properties": {
+        "ToiletType": {
+            "title": "ToiletType",
+            "description": "Enumeration that defines the types of toilet (water closet) arrangements that may be specified where:-\n\nBedPanWasher: Enclosed soil appliance in which bedpans and urinal bottles are emptied and cleansed.\nChemical: Portable receptacle or soil appliance that receives and retains excrement in either an integral or a separate container, in which it is chemically treated and from which it has to be emptied periodically.\nCloseCoupled: \tToilet suite in which a flushing cistern is connected directly to the water closet pan.\nLooseCoupled: \tToilet arrangement in which a flushing cistern is connected to the water closet pan through a flushing pipe.\nSlopHopper: \tHopper shaped soil appliance with a flushing rim and outlet similar to those of a toilet pan, into which human excrement is emptied for disposal.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BEDPANWASHER",
+                    "CHEMICAL",
+                    "CLOSECOUPLED",
+                    "LOOSECOUPLED",
+                    "SLOPHOPPER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ToiletPanType": {
+            "title": "ToiletPanType",
+            "description": "The property enumeration Pset_ToiletPanTypeEnum defines the types of toilet pan that may be specified within the property set Pset_Toilet:-\n\nSiphonic: \tToilet pan in which excrement is removed by siphonage induced by the flushing water.\nSquat: \tToilet pan with an elongated bowl installed with its top edge at or near floor level, so that the user has to squat.\nWashDown: \tToilet pan in which excrement is removed by the momentum of the flushing water.\nWashOut: \tA washdown toilet pan in which excrement falls first into a shallow water filled bowl.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SIPHONIC",
+                    "SQUAT",
+                    "WASHDOWN",
+                    "WASHOUT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "PanMounting": {
+            "title": "PanMounting",
+            "description": "The property enumeration Pset_SanitaryMountingEnum defines the forms of mounting or fixing of the sanitary terminal that may be specified within property sets used to define sanitary terminals (WC\u2019s, basins, sinks, etc.) where:-\n\nBackToWall: \tA pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections.\nPedestal: \tA floor mounted sanitary terminal that has an integral base.\nCounterTop: \tA sanitary terminal that is installed into a horizontal surface that is installed into a horizontal surface. Note: When applied to a wash hand basin, the term more normally used is \u2018vanity\u2019. See also Wash Hand Basin Type specification.\nWallHung: \tA sanitary terminal cantilevered clear of the floor.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BACKTOWALL",
+                    "PEDESTAL",
+                    "COUNTERTOP",
+                    "WALLHUNG",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "SpilloverLevel": {
+            "title": "SpilloverLevel",
+            "description": "The level at which water spills out of the terminal.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "$id": "Pset_SpaceHeaterPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceHeaterPHistory",
+    "description": "Space heater performance history common attributes.",
+    "properties": {
+        "FractionRadiantHeatTransfer": {
+            "title": "FractionRadiantHeatTransfer",
+            "description": "Fraction of the total heat transfer rate as the radiant heat transfer."
+        },
+        "FractionConvectiveHeatTransfer": {
+            "title": "FractionConvectiveHeatTransfer",
+            "description": "Fraction of the total heat transfer rate as the convective heat transfer."
+        },
+        "Effectiveness": {
+            "title": "Effectiveness",
+            "description": "Ratio of the real heat transfer rate to the maximum possible heat transfer rate."
+        },
+        "SurfaceTemperature": {
+            "title": "SurfaceTemperature",
+            "description": "Average surface temperature of the component."
+        },
+        "SpaceAirTemperature": {
+            "title": "SpaceAirTemperature",
+            "description": "Dry bulb temperature in the space."
+        },
+        "SpaceMeanRadiantTemperature": {
+            "title": "SpaceMeanRadiantTemperature",
+            "description": "Mean radiant temperature in the space."
+        },
+        "AuxiliaryEnergySourceConsumption": {
+            "title": "AuxiliaryEnergySourceConsumption",
+            "description": "Auxiliary energy source consumption."
+        },
+        "UACurve": {
+            "title": "UACurve",
+            "description": "UA curve as function of ambient temperature and surface temperature; UA = f (Tambient, Tsurface)"
+        },
+        "OutputCapacityCurve": {
+            "title": "OutputCapacityCurve",
+            "description": "Partial output capacity curve (as a function of water temperature); Q = f (Twater)."
+        },
+        "AirResistanceCurve": {
+            "title": "AirResistanceCurve",
+            "description": "Air resistance curve (w/ fan only); Pressure = f ( flow rate)."
+        },
+        "Exponent": {
+            "title": "Exponent",
+            "description": "Characteristic exponent, slope of log(heat output) vs log (surface temperature minus environmental temperature)."
+        },
+        "HeatOutputRate": {
+            "title": "HeatOutputRate",
+            "description": "Overall heat transfer rate."
+        }
+    }
+}

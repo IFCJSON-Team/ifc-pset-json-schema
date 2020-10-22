@@ -1,0 +1,90 @@
+{
+    "$id": "Pset_FastenerWeld.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FastenerWeld",
+    "description": "Properties related to welded connections.",
+    "properties": {
+        "Type1": {
+            "title": "Type1",
+            "description": "Type of weld seam according to ISO 2553.  Note, combined welds are given by two corresponding symbols in the direction of the normal axis of the coordinate system.  For example, an X weld is specified by Type1 = 'V' and Type2 = 'V'.",
+            "datatype": "IfcLabel"
+        },
+        "Type2": {
+            "title": "Type2",
+            "description": "See Type1.",
+            "datatype": "IfcLabel"
+        },
+        "Surface1": {
+            "title": "Surface1",
+            "description": "Aspect of weld seam surface, i.e. 'plane', 'curved' or 'hollow'.  Combined welds are given by two corresponding symbols analogous to Type1 and Type2.",
+            "datatype": "IfcLabel"
+        },
+        "Surface2": {
+            "title": "Surface2",
+            "description": "See Surface1.",
+            "datatype": "IfcLabel"
+        },
+        "Process": {
+            "title": "Process",
+            "description": "Reference number of the welding process according to ISO 4063, an up to three digits long code",
+            "datatype": "IfcInteger"
+        },
+        "ProcessName": {
+            "title": "ProcessName",
+            "description": "Name of the welding process.  Alternative to the numeric Process property.",
+            "datatype": "IfcLabel"
+        },
+        "a": {
+            "title": "a",
+            "description": "Measure a according to ISO 2553",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "c": {
+            "title": "c",
+            "description": "Measure c according to ISO 2553",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "d": {
+            "title": "d",
+            "description": "Measure d according to ISO 2553",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "e": {
+            "title": "e",
+            "description": "Measure e according to ISO 2553",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "l": {
+            "title": "l",
+            "description": "Measure l according to ISO 2553",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "n": {
+            "title": "n",
+            "description": "Count n according to ISO 2553",
+            "datatype": "IfcCountMeasure"
+        },
+        "s": {
+            "title": "s",
+            "description": "Measure s according to ISO 2553",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "z": {
+            "title": "z",
+            "description": "Measure z according to ISO 2553",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Intermittent": {
+            "title": "Intermittent",
+            "description": "If fillet weld, intermittent or not",
+            "datatype": "IfcBoolean"
+        },
+        "Staggered": {
+            "title": "Staggered",
+            "description": "If intermittent weld, staggered or not",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

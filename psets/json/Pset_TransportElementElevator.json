@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_TransportElementElevator.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_TransportElementElevator",
+    "description": "Properties common to the definition of all occurrences of IfcTransportElement with the predefined type =\"ELEVATOR\"",
+    "properties": {
+        "FireFightingLift": {
+            "title": "FireFightingLift",
+            "description": "Indication whether the elevator is designed to serve as a fire fighting lift the case of fire (TRUE) or not (FALSE). A fire fighting lift is used by fire fighters to access the location of fire and to evacuate people.",
+            "datatype": "IfcBoolean"
+        },
+        "ClearWidth": {
+            "title": "ClearWidth",
+            "description": "Clear width of the object (elevator). It indicates the distance from the inner surfaces of the elevator car left and right from the elevator door. \nThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ClearDepth": {
+            "title": "ClearDepth",
+            "description": "Clear depth of the object (elevator). It indicates the distance from the inner surface of the elevator door to the opposite surface of the elevator car. \nThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ClearHeight": {
+            "title": "ClearHeight",
+            "description": "Clear height of the object (elevator).  \nThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

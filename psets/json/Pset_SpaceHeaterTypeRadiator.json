@@ -1,0 +1,38 @@
+{
+    "$id": "Pset_SpaceHeaterTypeRadiator.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceHeaterTypeRadiator",
+    "description": "Space heater type radiator attributes.",
+    "properties": {
+        "RadiatorType": {
+            "title": "RadiatorType",
+            "description": "Indicates the type of radiator.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FINNEDTUBE",
+                    "PANEL",
+                    "SECTIONAL",
+                    "TUBULAR",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "TubingLength": {
+            "title": "TubingLength",
+            "description": "Water tube length inside the component.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WaterContent": {
+            "title": "WaterContent",
+            "description": "Weight of water content within the heater.",
+            "datatype": "IfcMassMeasure"
+        }
+    }
+}

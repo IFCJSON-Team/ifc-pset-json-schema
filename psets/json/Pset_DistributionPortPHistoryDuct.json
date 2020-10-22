@@ -1,0 +1,38 @@
+{
+    "$id": "Pset_DistributionPortPHistoryDuct.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionPortPHistoryDuct",
+    "description": "Fluid flow performance history attached to an instance of IfcPerformanceHistory assigned to IfcDistributionPort.  This replaces the deprecated IfcFluidFlowProperties for performance values.",
+    "properties": {
+        "Temperature": {
+            "title": "Temperature",
+            "description": "Temperature of the fluid. For air this value represents the dry bulb temperature."
+        },
+        "WetBulbTemperature": {
+            "title": "WetBulbTemperature",
+            "description": "Wet bulb temperature of the fluid; only applicable if the fluid is air."
+        },
+        "VolumetricFlowRate": {
+            "title": "VolumetricFlowRate",
+            "description": "The volumetric flow rate of the fluid."
+        },
+        "MassFlowRate": {
+            "title": "MassFlowRate",
+            "description": "The mass flow rate of the fluid."
+        },
+        "FlowCondition": {
+            "title": "FlowCondition",
+            "description": "Defines the flow condition as a percentage of the cross-sectional area."
+        },
+        "Velocity": {
+            "title": "Velocity",
+            "description": "The velocity of the fluid."
+        },
+        "Pressure": {
+            "title": "Pressure",
+            "description": "The pressure of the fluid."
+        }
+    }
+}

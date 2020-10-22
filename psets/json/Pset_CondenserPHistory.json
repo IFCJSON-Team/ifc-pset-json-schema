@@ -1,0 +1,54 @@
+{
+    "$id": "Pset_CondenserPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CondenserPHistory",
+    "description": "Condenser performance history attributes.",
+    "properties": {
+        "HeatRejectionRate": {
+            "title": "HeatRejectionRate",
+            "description": "Sum of the refrigeration effect and the heat equivalent of the power input to the compressor."
+        },
+        "ExteriorHeatTransferCoefficient": {
+            "title": "ExteriorHeatTransferCoefficient",
+            "description": "Exterior heat transfer coefficient associated with exterior surface area."
+        },
+        "InteriorHeatTransferCoefficient": {
+            "title": "InteriorHeatTransferCoefficient",
+            "description": "Interior heat transfer coefficient associated with interior surface area."
+        },
+        "RefrigerantFoulingResistance": {
+            "title": "RefrigerantFoulingResistance",
+            "description": "Fouling resistance on the refrigerant side."
+        },
+        "CondensingTemperature": {
+            "title": "CondensingTemperature",
+            "description": "Refrigerant condensing temperature."
+        },
+        "LogarithmicMeanTemperatureDifference": {
+            "title": "LogarithmicMeanTemperatureDifference",
+            "description": "Logarithmic mean temperature difference between refrigerant and water or air."
+        },
+        "UAcurves": {
+            "title": "UAcurves",
+            "description": "UV = f (VExterior, VInterior), UV as a function of interior and exterior fluid flow velocity at the entrance."
+        },
+        "CompressorCondenserHeatGain": {
+            "title": "CompressorCondenserHeatGain",
+            "description": "Heat gain between condenser inlet to compressor outlet."
+        },
+        "CompressorCondenserPressureDrop": {
+            "title": "CompressorCondenserPressureDrop",
+            "description": "Pressure drop between condenser inlet and compressor outlet."
+        },
+        "CondenserMeanVoidFraction": {
+            "title": "CondenserMeanVoidFraction",
+            "description": "Mean void fraction in condenser."
+        },
+        "WaterFoulingResistance": {
+            "title": "WaterFoulingResistance",
+            "description": "Fouling resistance on water/air side."
+        }
+    }
+}

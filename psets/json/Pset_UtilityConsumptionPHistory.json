@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_UtilityConsumptionPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_UtilityConsumptionPHistory",
+    "description": "Consumption of utility resources, typically applied to the IfcBuilding instance, used to identify how much was consumed on I.e., a monthly basis.",
+    "properties": {
+        "Heat": {
+            "title": "Heat",
+            "description": "The amount of heat energy consumed during the period specified in the time series."
+        },
+        "Electricity": {
+            "title": "Electricity",
+            "description": "The amount of electricity consumed during the period specified in the time series."
+        },
+        "Water": {
+            "title": "Water",
+            "description": "The amount of water consumed during the period specified in the time series."
+        },
+        "Fuel": {
+            "title": "Fuel",
+            "description": "The amount of fuel consumed during the period specified in the time series."
+        },
+        "Steam": {
+            "title": "Steam",
+            "description": "The amount of steam consumed during the period specified in the time series."
+        }
+    }
+}

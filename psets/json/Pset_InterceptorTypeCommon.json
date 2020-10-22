@@ -1,0 +1,73 @@
+{
+    "$id": "Pset_InterceptorTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_InterceptorTypeCommon",
+    "description": "Common properties for interceptors.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NominalBodyLength": {
+            "title": "NominalBodyLength",
+            "description": "Nominal or quoted length, measured along the x-axis of the local coordinate system of the object, of the body of the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalBodyWidth": {
+            "title": "NominalBodyWidth",
+            "description": "Nominal or quoted length, measured along the y-axis of the local coordinate system of the object, of the body of the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalBodyDepth": {
+            "title": "NominalBodyDepth",
+            "description": "Nominal or quoted =length, measured along the z-axis of the local coordinate system of the object, of the body of the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "InletConnectionSize": {
+            "title": "InletConnectionSize",
+            "description": "Size of the inlet connection.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "OutletConnectionSize": {
+            "title": "OutletConnectionSize",
+            "description": "Size of the outlet connection.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoverLength": {
+            "title": "CoverLength",
+            "description": "The length measured along the x-axis in the local coordinate system or the radius (in the case of a circular shape in plan) of the cover of the oil interceptor.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoverWidth": {
+            "title": "CoverWidth",
+            "description": "The length measured along the x-axis in the local coordinate system of the cover of the oil interceptor.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "VentilatingPipeSize": {
+            "title": "VentilatingPipeSize",
+            "description": "Size of the ventilating pipe(s).",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

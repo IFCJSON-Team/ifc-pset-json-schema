@@ -1,0 +1,62 @@
+{
+    "$id": "Pset_FlowMeterTypeWaterMeter.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FlowMeterTypeWaterMeter",
+    "description": "Device that measures, indicates and sometimes records, the volume of water that passes through it without interrupting the flow.",
+    "properties": {
+        "Type": {
+            "title": "Type",
+            "description": "Defines the allowed values for selection of the flow meter operation type.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "COMPOUND",
+                    "INFERENTIAL",
+                    "PISTON",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ConnectionSize": {
+            "title": "ConnectionSize",
+            "description": "Defines the size of inlet and outlet pipe connections to the meter.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "MaximumFlowRate": {
+            "title": "MaximumFlowRate",
+            "description": "Maximum rate of flow which the meter is expected to pass.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "MaximumPressureLoss": {
+            "title": "MaximumPressureLoss",
+            "description": "Pressure loss expected across the meter under conditions of maximum flow.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "BackflowPreventerType": {
+            "title": "BackflowPreventerType",
+            "description": "Identifies the type of backflow preventer installed to prevent the backflow of contaminated or polluted water from an irrigation/reticulation system to a potable water supply.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NONE",
+                    "ATMOSPHERICVACUUMBREAKER",
+                    "ANTISIPHONVALVE",
+                    "DOUBLECHECKBACKFLOWPREVENTER",
+                    "PRESSUREVACUUMBREAKER",
+                    "REDUCEDPRESSUREBACKFLOWPREVENTER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "$id": "Pset_PrecastConcreteElementFabrication.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PrecastConcreteElementFabrication",
+    "description": "Production and manufacturing related properties common to different types of precast concrete elements. The Pset applies to manufactured pieces. It can be used by a number of subtypes of IfcBuildingElement. If the precast concrete ele",
+    "properties": {
+        "TypeDesignator": {
+            "title": "TypeDesignator",
+            "description": "Type designator for the precast concrete element. The content depends on local standards. For instance in Finland it usually a one-letter acronym, e.g. P=Column, K=reinforced concrete beam,etc.",
+            "datatype": "IfcLabel"
+        },
+        "ProductionLotId": {
+            "title": "ProductionLotId",
+            "description": "The manufacturer's production lot identifier.",
+            "datatype": "IfcIdentifier"
+        },
+        "SerialNumber": {
+            "title": "SerialNumber",
+            "description": "The manufacturer's serial number for the precast concrete element.",
+            "datatype": "IfcIdentifier"
+        },
+        "PieceMark": {
+            "title": "PieceMark",
+            "description": "Defines a unique piece for production purposes. All pieces with the same piece mark value are identical and interchangeable. The piece mark may be composed of sub-parts that have specific locally defined meaning (e.g. B-1A may denote a beam, of generic type \u20181\u2019 and specific shape \u2018A\u2019).",
+            "datatype": "IfcLabel"
+        },
+        "AsBuiltLocationNumber": {
+            "title": "AsBuiltLocationNumber",
+            "description": "Defines a unique location within a structure, the \u2018slot\u2019 into which the piece was installed. Where pieces share the same piece mark, they can be interchanged. The value is only known after erection.",
+            "datatype": "IfcLabel"
+        },
+        "ActualProductionDate": {
+            "title": "ActualProductionDate",
+            "description": "Production date (stripped from form).",
+            "datatype": "IfcDateTime"
+        },
+        "ActualErectionDate": {
+            "title": "ActualErectionDate",
+            "description": "Date erected.",
+            "datatype": "IfcDateTime"
+        }
+    }
+}

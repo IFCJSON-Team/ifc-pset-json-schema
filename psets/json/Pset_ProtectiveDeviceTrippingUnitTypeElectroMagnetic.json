@@ -1,0 +1,74 @@
+{
+    "$id": "Pset_ProtectiveDeviceTrippingUnitTypeElectroMagnetic.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceTrippingUnitTypeElectroMagnetic",
+    "description": "Information on tripping units that are electrically or magnetically tripped.",
+    "properties": {
+        "ElectroMagneticTrippingUnitType": {
+            "title": "ElectroMagneticTrippingUnitType",
+            "description": "A list of the available types of electric magnetic tripping unit  from which that required may be selected. These cover overload, none special, short circuit, motor protection and bi-metal tripping.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "OL",
+                    "TMP_STD",
+                    "TMP_SC",
+                    "TMP_MP",
+                    "TMP_BM",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "I1": {
+            "title": "I1",
+            "description": "The (thermal) lower testing current limit in [x In], indicating that for currents lower than I1, the tripping time shall be longer than the associated tripping time, T2.",
+            "datatype": "IfcReal"
+        },
+        "I2": {
+            "title": "I2",
+            "description": "The (thermal) upper testing current limit in [x In], indicating that for currents larger than I2, the tripping time shall be shorter than the associated tripping time, T2.",
+            "datatype": "IfcReal"
+        },
+        "T2": {
+            "title": "T2",
+            "description": "The (thermal) testing time in [s] associated with the testing currents I1 and I2.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "DefinedTemperature": {
+            "title": "DefinedTemperature",
+            "description": "The ambient temperature at which the thermal current/time-curve associated with this protection device is defined.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "TemperatureFactor": {
+            "title": "TemperatureFactor",
+            "description": "The correction factor (typically measured as %/deg K) for adjusting the thermal current/time to an ambient temperature different from the value given by the defined temperature.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "I4": {
+            "title": "I4",
+            "description": "The lower electromagnetic testing current limit in [x In], indicating that for currents lower than I4, the tripping time shall be longer than the associated tripping time, T5, i.e. the device shall not trip instantaneous.",
+            "datatype": "IfcReal"
+        },
+        "I5": {
+            "title": "I5",
+            "description": "The upper electromagnetic testing current limit in [x In], indicating that for currents larger than I5, the tripping time shall be shorter than or equal to the associated tripping time, T5, i.e. the device shall trip instantaneous.",
+            "datatype": "IfcReal"
+        },
+        "T5": {
+            "title": "T5",
+            "description": "The electromagnetic testing time in [s] associated with the testing currents I4 and I5, i.e. electromagnetic tripping time",
+            "datatype": "IfcTimeMeasure"
+        },
+        "CurveDesignation": {
+            "title": "CurveDesignation",
+            "description": "The designation of the trippingcurve given by the manufacturer. For a MCB the designation should be in accordance with the designations given in IEC 60898.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

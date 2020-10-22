@@ -1,0 +1,29 @@
+{
+    "$id": "Pset_FilterTypeWaterFilter.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FilterTypeWaterFilter",
+    "description": "Water filter type attributes.",
+    "properties": {
+        "WaterFilterType": {
+            "title": "WaterFilterType",
+            "description": "Further qualifies the type of water filter.  Filtration removes undissolved matter; Purification removes dissolved matter; Softening replaces dissolved matter.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FILTRATION_DIATOMACEOUSEARTH",
+                    "FILTRATION_SAND",
+                    "PURIFICATION_DEIONIZING",
+                    "PURIFICATION_REVERSEOSMOSIS",
+                    "SOFTENING_ZEOLITE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "$id": "Pset_EnvironmentalImpactValues.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_EnvironmentalImpactValues",
+    "description": "The following properties capture environmental impact values of an element. They correspond to the indicators defined into Pset_EnvironmentalImpactIndicators. \nEnvironmental impact values are obtained multiplying indicator value per unit by the relevant quantity of the element.",
+    "properties": {
+        "TotalPrimaryEnergyConsumption": {
+            "title": "TotalPrimaryEnergyConsumption",
+            "description": "Quantity of energy used as defined in ISO21930:2007.",
+            "datatype": "IfcEnergyMeasure"
+        },
+        "WaterConsumption": {
+            "title": "WaterConsumption",
+            "description": "Quantity of water used.",
+            "datatype": "IfcVolumeMeasure"
+        },
+        "HazardousWaste": {
+            "title": "HazardousWaste",
+            "description": "Quantity of hazardous waste generated.",
+            "datatype": "IfcMassMeasure"
+        },
+        "NonHazardousWaste": {
+            "title": "NonHazardousWaste",
+            "description": "Quantity of non hazardous waste generated.",
+            "datatype": "IfcMassMeasure"
+        },
+        "ClimateChange": {
+            "title": "ClimateChange",
+            "description": "Quantity of greenhouse gases emitted calculated in equivalent CO2.",
+            "datatype": "IfcMassMeasure"
+        },
+        "AtmosphericAcidification": {
+            "title": "AtmosphericAcidification",
+            "description": "Quantity of gases responsible for the atmospheric acidification calculated in equivalent SO2.",
+            "datatype": "IfcMassMeasure"
+        },
+        "RenewableEnergyConsumption": {
+            "title": "RenewableEnergyConsumption",
+            "description": "Quantity of renewable energy used as defined in ISO21930:2007",
+            "datatype": "IfcEnergyMeasure"
+        },
+        "NonRenewableEnergyConsumption": {
+            "title": "NonRenewableEnergyConsumption",
+            "description": "Quantity of non-renewable energy used as defined in ISO21930:2007",
+            "datatype": "IfcEnergyMeasure"
+        },
+        "ResourceDepletion": {
+            "title": "ResourceDepletion",
+            "description": "Quantity of resources used calculated in equivalent antimony.",
+            "datatype": "IfcMassMeasure"
+        },
+        "InertWaste": {
+            "title": "InertWaste",
+            "description": "Quantity of inert waste generated .",
+            "datatype": "IfcMassMeasure"
+        },
+        "RadioactiveWaste": {
+            "title": "RadioactiveWaste",
+            "description": "Quantity of radioactive waste generated.",
+            "datatype": "IfcMassMeasure"
+        },
+        "StratosphericOzoneLayerDestruction": {
+            "title": "StratosphericOzoneLayerDestruction",
+            "description": "Quantity of gases destroying the stratospheric ozone layer calculated in equivalent CFC-R11.",
+            "datatype": "IfcMassMeasure"
+        },
+        "PhotochemicalOzoneFormation": {
+            "title": "PhotochemicalOzoneFormation",
+            "description": "Quantity of gases creating the photochemical ozone calculated in equivalent ethylene.",
+            "datatype": "IfcMassMeasure"
+        },
+        "Eutrophication": {
+            "title": "Eutrophication",
+            "description": "Quantity of eutrophicating compounds calculated in equivalent PO4.",
+            "datatype": "IfcMassMeasure"
+        },
+        "LeadInTime": {
+            "title": "LeadInTime",
+            "description": "Lead in time before start of process.",
+            "datatype": "IfcDuration"
+        },
+        "Duration": {
+            "title": "Duration",
+            "description": "Duration of process.",
+            "datatype": "IfcDuration"
+        },
+        "LeadOutTime": {
+            "title": "LeadOutTime",
+            "description": "Lead out time after end of process.",
+            "datatype": "IfcDuration"
+        }
+    }
+}

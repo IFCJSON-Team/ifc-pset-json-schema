@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_ProjectOrderMoveOrder.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProjectOrderMoveOrder",
+    "description": "Defines the requirements for move orders. Note that the move order status is defined in the same way as a work order status since a move order implies a work requirement.",
+    "properties": {
+        "SpecialInstructions": {
+            "title": "SpecialInstructions",
+            "description": "Special instructions that affect the move.",
+            "datatype": "IfcText"
+        }
+    }
+}

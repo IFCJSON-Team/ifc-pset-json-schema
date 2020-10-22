@@ -1,0 +1,95 @@
+{
+    "$id": "Pset_HumidifierTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_HumidifierTypeCommon",
+    "description": "Humidifier type common attributes.\nWaterProperties attribute renamed to WaterRequirement and unit type modified in IFC2x2 Pset Addendum.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1').",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Application": {
+            "title": "Application",
+            "description": "Humidifier application.\n\nFixed: Humidifier installed in a ducted flow distribution system.\nPortable: Humidifier is not installed in a ducted flow distribution system.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "PORTABLE",
+                    "FIXED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Weight": {
+            "title": "Weight",
+            "description": "The weight of the humidifier.",
+            "datatype": "IfcMassMeasure"
+        },
+        "NominalMoistureGain": {
+            "title": "NominalMoistureGain",
+            "description": "Nominal rate of water vapor added into the airstream.",
+            "datatype": "IfcMassFlowRateMeasure"
+        },
+        "NominalAirFlowRate": {
+            "title": "NominalAirFlowRate",
+            "description": "Nominal rate of air flow into which water vapor is added.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "InternalControl": {
+            "title": "InternalControl",
+            "description": "Internal modulation control.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ONOFF",
+                    "STEPPED",
+                    "MODULATING",
+                    "NONE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "WaterRequirement": {
+            "title": "WaterRequirement",
+            "description": "Make-up water requirement.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "SaturationEfficiencyCurve": {
+            "title": "SaturationEfficiencyCurve",
+            "description": "Saturation efficiency as a function of the air flow rate."
+        },
+        "AirPressureDropCurve": {
+            "title": "AirPressureDropCurve",
+            "description": "Air pressure drop versus air-flow rate."
+        }
+    }
+}

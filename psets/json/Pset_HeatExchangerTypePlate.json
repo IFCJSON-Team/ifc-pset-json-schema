@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_HeatExchangerTypePlate.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_HeatExchangerTypePlate",
+    "description": "Plate heat exchanger type common attributes.",
+    "properties": {
+        "NumberOfPlates": {
+            "title": "NumberOfPlates",
+            "description": "Number of plates used by the plate heat exchanger.",
+            "datatype": "IfcInteger"
+        }
+    }
+}

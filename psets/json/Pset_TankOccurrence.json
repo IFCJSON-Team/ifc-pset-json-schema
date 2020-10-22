@@ -1,0 +1,36 @@
+{
+    "$id": "Pset_TankOccurrence.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_TankOccurrence",
+    "description": "Properties that relate to a tank. Note that a partial tank may be considered as a compartment within a compartmentalized tank.",
+    "properties": {
+        "TankComposition": {
+            "title": "TankComposition",
+            "description": "Defines the level of element composition where.\n\nCOMPLEX: A set of elementary units aggregated together to fulfill the overall  required purpose.\nELEMENT: A single elementary unit that may exist of itself or as an aggregation of partial units..\nPARTIAL: A partial elementary unit.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "COMPLEX",
+                    "ELEMENT",
+                    "PARTIAL",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HasLadder": {
+            "title": "HasLadder",
+            "description": "Indication of whether the tank is provided with a ladder (set TRUE) for access to the top. If no ladder is provided then value is set FALSE.\n\nNote: No indication is given of the type of ladder (gooseneck etc.)",
+            "datatype": "IfcBoolean"
+        },
+        "HasVisualIndicator": {
+            "title": "HasVisualIndicator",
+            "description": "Indication of whether the tank is provided with a visual indicator (set TRUE) that shows the water level in the tank. If no visual indicator is provided then value is set FALSE.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

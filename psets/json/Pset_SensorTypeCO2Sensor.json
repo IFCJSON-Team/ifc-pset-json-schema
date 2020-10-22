@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_SensorTypeCO2Sensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypeCO2Sensor",
+    "description": "A device that senses or detects carbon dioxide.",
+    "properties": {
+        "SetPointConcentration": {
+            "title": "SetPointConcentration",
+            "description": "The carbon dioxide concentration to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+            "datatype": "IfcPositiveRatioMeasure"
+        }
+    }
+}

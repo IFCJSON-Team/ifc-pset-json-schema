@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_CableCarrierSegmentTypeCableLadderSegment.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CableCarrierSegmentTypeCableLadderSegment",
+    "description": "An open carrier segment on which cables are carried on a ladder structure.\nHISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure.",
+    "properties": {
+        "NominalWidth": {
+            "title": "NominalWidth",
+            "description": "The nominal width of the segment.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalHeight": {
+            "title": "NominalHeight",
+            "description": "The nominal height of the segment.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LadderConfiguration": {
+            "title": "LadderConfiguration",
+            "description": "Description of the configuration of the ladder structure used.",
+            "datatype": "IfcText"
+        }
+    }
+}

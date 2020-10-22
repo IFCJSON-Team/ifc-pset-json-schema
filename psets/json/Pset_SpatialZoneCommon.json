@@ -1,0 +1,19 @@
+{
+    "$id": "Pset_SpatialZoneCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpatialZoneCommon",
+    "description": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external zone at the outside of the building.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": null
+        },
+        "IsExternal": {
+            "title": "IsExternal",
+            "description": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external zone at the outside of the building.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

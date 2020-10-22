@@ -1,0 +1,18 @@
+{
+    "$id": "Pset_PipeSegmentPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PipeSegmentPHistory",
+    "description": "Pipe segment performance history common attributes.",
+    "properties": {
+        "LeakageCurve": {
+            "title": "LeakageCurve",
+            "description": "Leakage per unit length curve versus working pressure."
+        },
+        "FluidFlowLeakage": {
+            "title": "FluidFlowLeakage",
+            "description": "Volumetric leakage flow rate."
+        }
+    }
+}

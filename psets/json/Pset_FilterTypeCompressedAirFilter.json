@@ -1,0 +1,46 @@
+{
+    "$id": "Pset_FilterTypeCompressedAirFilter.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FilterTypeCompressedAirFilter",
+    "description": "Compressed air filter type attributes.",
+    "properties": {
+        "CompressedAirFilterType": {
+            "title": "CompressedAirFilterType",
+            "description": "ACTIVATEDCARBON: absorbs oil vapor and odor; PARTICLE_FILTER: used to absorb solid particles of medium size; COALESCENSE_FILTER: used to absorb fine solid, oil, and water particles, also called micro filter",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ACTIVATEDCARBON",
+                    "PARTICLE_FILTER",
+                    "COALESCENSE_FILTER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "OperationPressureMax": {
+            "title": "OperationPressureMax",
+            "description": "Maximum pressure under normal operating conditions.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "ParticleAbsorptionCurve": {
+            "title": "ParticleAbsorptionCurve",
+            "description": "Ratio of particles that are removed by the filter.  Each entry describes the ratio of particles absorbed greater than equal to the specified size and less than the next specified size.  For example,  given for 3 significant particle sizes >= 0,1 micro m, >= 1 micro m, >= 5 micro m"
+        },
+        "AutomaticCondensateDischarge": {
+            "title": "AutomaticCondensateDischarge",
+            "description": "Whether or not the condensing water or oil is discharged automatically from the filter.",
+            "datatype": "IfcBoolean"
+        },
+        "CloggingIndicator": {
+            "title": "CloggingIndicator",
+            "description": "Whether the filter has an indicator to display the degree of clogging of the filter.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

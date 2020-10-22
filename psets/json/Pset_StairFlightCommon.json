@@ -1,0 +1,83 @@
+{
+    "$id": "Pset_StairFlightCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_StairFlightCommon",
+    "description": "Properties common to the definition of all occurrences of IfcStairFlight.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NumberOfRiser": {
+            "title": "NumberOfRiser",
+            "description": "Total number of the risers included in the stair flight.",
+            "datatype": "IfcCountMeasure"
+        },
+        "NumberOfTreads": {
+            "title": "NumberOfTreads",
+            "description": "Total number of treads included in the stair flight.",
+            "datatype": "IfcCountMeasure"
+        },
+        "RiserHeight": {
+            "title": "RiserHeight",
+            "description": "Vertical distance from tread to tread. \nThe riser height is supposed to be equal for all steps of a stair or stair flight.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "TreadLength": {
+            "title": "TreadLength",
+            "description": "Horizontal distance from the front of the thread to the front of the next tread. \nThe tread length is supposed to be equal for all steps of the stair or stair flight at the walking line.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NosingLength": {
+            "title": "NosingLength",
+            "description": "Horizontal distance from the front of the tread to the riser underneath. It is the overhang of the tread.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "WalkingLineOffset": {
+            "title": "WalkingLineOffset",
+            "description": "Offset of the walking line from the inner side of the flight. \nNote: the walking line may have a own shape representation (in case of inconsistencies, the value derived from the shape representation shall take precedence).",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "TreadLengthAtOffset": {
+            "title": "TreadLengthAtOffset",
+            "description": "Length of treads at a given offset.\nWalking line position is given by the 'WalkingLineOffset'. The resulting value should normally be identical with TreadLength, it may be given in addition, if the walking line offset for building code calculations is different from that used in design.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "TreadLengthAtInnerSide": {
+            "title": "TreadLengthAtInnerSide",
+            "description": "Minimum length of treads at the inner side of the winder. \nOnly relevant in case of winding flights, for straight flights it is identical with IfcStairFlight.TreadLength. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Headroom": {
+            "title": "Headroom",
+            "description": "Actual headroom clearance for the passageway according to the current design. \nThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WaistThickness": {
+            "title": "WaistThickness",
+            "description": "Minimum thickness of the stair flight, measured perpendicular to the slope of the flight to the inner corner of riser and tread. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "$id": "Pset_ChillerTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ChillerTypeCommon",
+    "description": "Chiller type common attributes.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NominalCapacity": {
+            "title": "NominalCapacity",
+            "description": "Nominal cooling capacity of chiller at standardized conditions as defined by the agency having jurisdiction.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "NominalEfficiency": {
+            "title": "NominalEfficiency",
+            "description": "Nominal chiller efficiency under nominal conditions.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "NominalCondensingTemperature": {
+            "title": "NominalCondensingTemperature",
+            "description": "Chiller condensing temperature.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "NominalEvaporatingTemperature": {
+            "title": "NominalEvaporatingTemperature",
+            "description": "Chiller evaporating temperature.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "NominalHeatRejectionRate": {
+            "title": "NominalHeatRejectionRate",
+            "description": "Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "NominalPowerConsumption": {
+            "title": "NominalPowerConsumption",
+            "description": "Nominal total power consumption.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "CapacityCurve": {
+            "title": "CapacityCurve",
+            "description": "Chiller cooling capacity is a function of condensing temperature and evaporating temperature, data is in table form, Capacity = f (TempCon, TempEvp), capacity = a1+b1*Tei+c1*Tei^2+d1*Tci+e1*Tci^2+f1*Tei*Tci. \nThis table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: \n1.IfcPowerMeasure:Capacity\n2.IfcThermodynamicTemperatureMeasure:CondensingTemperature\n3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature"
+        },
+        "CoefficientOfPerformanceCurve": {
+            "title": "CoefficientOfPerformanceCurve",
+            "description": "Chiller coefficient of performance (COP) is function of condensing temperature and evaporating temperature, data is in table form, COP= f (TempCon, TempEvp), COP = a2+b2*Tei+c2*Tei^2+d2*Tci+e2*Tci^2+f2*Tei*Tci. \nThis table uses multiple input variables; to represent, both DefiningValues and DefinedValues lists are null and IfcTable is attached using IfcPropertyConstraintRelationship and IfcMetric.  Columns are specified in the following order: \n1.IfcPositiveRatioMeasure:CoefficientOfPerformance\n2.IfcThermodynamicTemperatureMeasure:CondensingTemperature\n3.IfcThermodynamicTemperatureMeasure:EvaporatingTemperature"
+        },
+        "FullLoadRatioCurve": {
+            "title": "FullLoadRatioCurve",
+            "description": "Ratio of actual power to full load power as a quadratic function of part load, at certain condensing and evaporating temperature, FracFullLoadPower = f ( PartLoadRatio)."
+        }
+    }
+}

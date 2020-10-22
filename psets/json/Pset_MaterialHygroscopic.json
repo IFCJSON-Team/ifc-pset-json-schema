@@ -1,0 +1,35 @@
+{
+    "$id": "Pset_MaterialHygroscopic.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialHygroscopic",
+    "description": "A set of hygroscopic properties of materials.",
+    "properties": {
+        "UpperVaporResistanceFactor": {
+            "title": "UpperVaporResistanceFactor",
+            "description": "The vapor permeability relationship of air/material (typically value > 1), measured in high relative humidity (typically in 95/50 % RH).",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "LowerVaporResistanceFactor": {
+            "title": "LowerVaporResistanceFactor",
+            "description": "The vapor permeability relationship of air/material (typically value > 1), measured in low relative humidity (typically in 0/50 % RH).",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "IsothermalMoistureCapacity": {
+            "title": "IsothermalMoistureCapacity",
+            "description": "Based on water vapor density.",
+            "datatype": "IfcIsothermalMoistureCapacityMeasure"
+        },
+        "VaporPermeability": {
+            "title": "VaporPermeability",
+            "description": "The rate of water vapor transmission per unit area per unit of vapor pressure differential under test conditions.",
+            "datatype": "IfcVaporPermeabilityMeasure"
+        },
+        "MoistureDiffusivity": {
+            "title": "MoistureDiffusivity",
+            "description": "Moisture diffusivity is a transport property that is frequently used in the hygrothermal analysis of building envelope components.",
+            "datatype": "IfcMoistureDiffusivityMeasure"
+        }
+    }
+}

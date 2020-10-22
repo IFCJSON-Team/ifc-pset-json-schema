@@ -1,0 +1,151 @@
+{
+    "$id": "Pset_Risk.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_Risk",
+    "description": "An indication of exposure to mischance, peril, menace, hazard or loss. \n\nHISTORY: Extended in IFC2x3\n\nThere are various types of risk that may be encountered and there may be several instances of Pset_Risk associated in an instance of an IfcProcess.\nSpecification of this property set incorporates the values of the Incom risk analysis matrix (satisfying AS/NZS 4360) together with additional identified requirements.",
+    "properties": {
+        "RiskType": {
+            "title": "RiskType",
+            "description": "Identifies the predefined types of risk from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BUSINESS",
+                    "HAZARD",
+                    "HEALTHANDSAFETY",
+                    "INSURANCE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NatureOfRisk": {
+            "title": "NatureOfRisk",
+            "description": "An indication of the generic nature of the risk that might be encountered. \n\nNOTE: It is anticipated that there will be a local agreement that constrains the values that might be assigned to this property. An example might be 'Fall'  or 'Fall of grille unit' causing injury and damage to person and property.",
+            "datatype": "IfcLabel"
+        },
+        "SubNatureOfRisk1": {
+            "title": "SubNatureOfRisk1",
+            "description": "A first subsidiary value that might be assigned to designate a more specific type of risk.\n\nNOTE: Nature of risk may be identified in various ways depending upon the place where risk assessment takes place and according to local agreement. This property set allows for a generic nature of risk and up to two subsidiary natures. An example might be 'causing injury and damage'.",
+            "datatype": "IfcLabel"
+        },
+        "SubNatureOfRisk2": {
+            "title": "SubNatureOfRisk2",
+            "description": "A second subsidiary value that might be assigned to designate a more specific type of risk. An example might be 'o person and property'.",
+            "datatype": "IfcLabel"
+        },
+        "RiskCause": {
+            "title": "RiskCause",
+            "description": "A value that may be assigned to capture the cause or trigger for the risk. An example might be 'poor fixing'.",
+            "datatype": "IfcText"
+        },
+        "AssessmentOfRisk": {
+            "title": "AssessmentOfRisk",
+            "description": "Likelihood of risk event occurring.\n\nNote  that assessment of risk may frequently be associated with the physical location of the object for which the risk is assessed.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ALMOSTCERTAIN",
+                    "VERYLIKELY",
+                    "LIKELY",
+                    "VERYPOSSIBLE",
+                    "POSSIBLE",
+                    "SOMEWHATPOSSIBLE",
+                    "UNLIKELY",
+                    "VERYUNLIKELY",
+                    "RARE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "RiskConsequence": {
+            "title": "RiskConsequence",
+            "description": "Indicates the level of severity of the consequences that the risk would have in case it happens.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CATASTROPHIC",
+                    "SEVERE",
+                    "MAJOR",
+                    "CONSIDERABLE",
+                    "MODERATE",
+                    "SOME",
+                    "MINOR",
+                    "VERYLOW",
+                    "INSIGNIFICANT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "RiskRating": {
+            "title": "RiskRating",
+            "description": "A general rating of the risk that may be determined from a combination of the risk assessment and risk consequence.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CRITICAL",
+                    "VERYHIGH",
+                    "HIGH",
+                    "CONSIDERABLE",
+                    "MODERATE",
+                    "SOME",
+                    "LOW",
+                    "VERYLOW",
+                    "INSIGNIFICANT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "RiskOwner": {
+            "title": "RiskOwner",
+            "description": "A determination of who is the owner of the risk by reference to principal roles of organizations within a project. Determination of the specific organization should be by reference to instances of IfcActorRole assigned to instances of IfcOrganization (if assigned).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DESIGNER",
+                    "SPECIFIER",
+                    "CONSTRUCTOR",
+                    "INSTALLER",
+                    "MAINTAINER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AffectsSurroundings": {
+            "title": "AffectsSurroundings",
+            "description": "Indicates wether the risk affects only to the person assigned to that task (FALSE) or if it can also affect to the people in the surroundings (TRUE).\n\nFor example, the process of painting would affect all the people in the vicinity of the process.",
+            "datatype": "IfcBoolean"
+        },
+        "PreventiveMeassures": {
+            "title": "PreventiveMeassures",
+            "description": "Identifies preventive measures to be taken to mitigate risk.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        }
+    }
+}

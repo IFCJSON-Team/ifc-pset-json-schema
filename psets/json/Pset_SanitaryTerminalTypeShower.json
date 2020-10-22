@@ -1,0 +1,42 @@
+{
+    "$id": "Pset_SanitaryTerminalTypeShower.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SanitaryTerminalTypeShower",
+    "description": "Installation or waste water appliance that emits a spray of water to wash the human body (BS6100). HISTORY: In IFC4, Material and MaterialThickness properties removed. Use materials capabilities from IfcMaterialsResource schema. Datatype of color changed to IfcLabel (still a string value)",
+    "properties": {
+        "ShowerType": {
+            "title": "ShowerType",
+            "description": "Selection of the type of shower from the enumerated list of types where:-\n\nDrench:  \tShower that rapidly gives a thorough soaking in an emergency.\nIndividual: \tShower unit that is typically enclosed and is for the use of one person at a time.\nTunnel: \tShower that has a succession of shower heads or spreaders that operate simultaneously along its length.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DRENCH",
+                    "INDIVIDUAL",
+                    "TUNNEL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HasTray": {
+            "title": "HasTray",
+            "description": "Indicates whether the shower has a separate receptacle that catches the water in a shower and directs it to a waste outlet.",
+            "datatype": "IfcBoolean"
+        },
+        "ShowerHeadDescription": {
+            "title": "ShowerHeadDescription",
+            "description": "A description of the shower head(s) that emit the spray of water.",
+            "datatype": "IfcText"
+        },
+        "DrainSize": {
+            "title": "DrainSize",
+            "description": "The size of the drain outlet connection from the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_DistributionChamberElementTypeInspectionPit.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionChamberElementTypeInspectionPit",
+    "description": "Recess or chamber formed to permit access for inspection of substructure and services (definition modified from BS6100 221 4128).",
+    "properties": {
+        "Length": {
+            "title": "Length",
+            "description": "The length of the pit.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Width": {
+            "title": "Width",
+            "description": "The width of the pit.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Depth": {
+            "title": "Depth",
+            "description": "The depth of the pit.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

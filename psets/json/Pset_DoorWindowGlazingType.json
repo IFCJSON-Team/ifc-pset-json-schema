@@ -1,0 +1,105 @@
+{
+    "$id": "Pset_DoorWindowGlazingType.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DoorWindowGlazingType",
+    "description": "Properties common to the definition of the glazing component of occurrences of IfcDoor and IfcWindow, used for thermal and lighting calculations.",
+    "properties": {
+        "GlassLayers": {
+            "title": "GlassLayers",
+            "description": "Number of glass layers within the frame. E.g. \"2\" for double glazing.",
+            "datatype": "IfcCountMeasure"
+        },
+        "GlassThickness1": {
+            "title": "GlassThickness1",
+            "description": "Thickness of the first (inner) glass layer.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "GlassThickness2": {
+            "title": "GlassThickness2",
+            "description": "Thickness of the second (intermediate or outer) glass layer.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "GlassThickness3": {
+            "title": "GlassThickness3",
+            "description": "Thickness of the third (outer) glass layer.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "FillGas": {
+            "title": "FillGas",
+            "description": "Name of the gas by which the gap between two glass layers is filled. It is given for information purposes only.",
+            "datatype": "IfcLabel"
+        },
+        "GlassColor": {
+            "title": "GlassColor",
+            "description": "Color (tint) selection for this glazing. It is given for information purposes only.",
+            "datatype": "IfcLabel"
+        },
+        "IsTempered": {
+            "title": "IsTempered",
+            "description": "Indication whether the glass is tempered (TRUE) or not (FALSE) .",
+            "datatype": "IfcBoolean"
+        },
+        "IsLaminated": {
+            "title": "IsLaminated",
+            "description": "Indication whether the glass is layered with other materials (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "IsCoated": {
+            "title": "IsCoated",
+            "description": "Indication whether the glass is coated with a material (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "IsWired": {
+            "title": "IsWired",
+            "description": "Indication whether the glass includes a contained wire mesh to prevent break-in (TRUE) or not (FALSE)",
+            "datatype": "IfcBoolean"
+        },
+        "VisibleLightReflectance": {
+            "title": "VisibleLightReflectance",
+            "description": "Fraction of the visible light that is reflected by the glazing at normal incidence. It is a value without unit.",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "VisibleLightTransmittance": {
+            "title": "VisibleLightTransmittance",
+            "description": "Fraction of the visible light that passes the glazing at normal incidence. It is a value without unit.",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "SolarAbsorption": {
+            "title": "SolarAbsorption",
+            "description": "(Asol) The ratio of incident solar radiation that is absorbed by a glazing system. It is the sum of the absorption distributed to the exterior (a) and to the interior (qi). Note the following equation Asol + Rsol + Tsol = 1",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "SolarReflectance": {
+            "title": "SolarReflectance",
+            "description": "(Rsol): The ratio of incident solar radiation that is reflected by a glazing system (also named \u03c1e). Note the following equation Asol + Rsol + Tsol = 1",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "SolarTransmittance": {
+            "title": "SolarTransmittance",
+            "description": "(Tsol): The ratio of incident solar radiation that directly passes through a glazing system (also named \u03c4e). Note the following equation Asol + Rsol + Tsol = 1",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "SolarHeatGainTransmittance": {
+            "title": "SolarHeatGainTransmittance",
+            "description": "(SHGC): The ratio of incident solar radiation that contributes to the heat gain of the interior, it is the solar radiation that directly passes (Tsol or \u03c4e) plus the part of the absorbed radiation that is distributed to the interior (qi). The SHGC is refered to also as g-value (g = \u03c4e + qi).",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "ShadingCoefficient": {
+            "title": "ShadingCoefficient",
+            "description": "(SC): The measure of the ability of a glazing to transmit solar heat, relative to that ability for 3 mm (1/8-inch) clear, double-strength, single glass. Shading coefficient is being phased out in favor of the solar heat gain coefficient (SHGC), and is approximately equal to the SHGC multiplied by 1.15. The shading coefficient is expressed as a number without units between 0 and 1.",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "ThermalTransmittanceSummer": {
+            "title": "ThermalTransmittanceSummer",
+            "description": "Thermal transmittance coefficient (U-Value) of a material.\nSummer thermal transmittance coefficient of the glazing only, often referred to as (U-value).",
+            "datatype": "IfcThermalTransmittanceMeasure"
+        },
+        "ThermalTransmittanceWinter": {
+            "title": "ThermalTransmittanceWinter",
+            "description": "Thermal transmittance coefficient (U-Value) of a material.\nWinter thermal transmittance coefficient of the glazing only, often referred to as (U-value).",
+            "datatype": "IfcThermalTransmittanceMeasure"
+        }
+    }
+}

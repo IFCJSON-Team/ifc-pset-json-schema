@@ -1,0 +1,26 @@
+{
+    "$id": "Pset_AudioVisualAppliancePHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AudioVisualAppliancePHistory",
+    "description": "Captures realtime information for audio-video devices, such as for security camera footage and retail information displays.  HISTORY: Added in IFC4.",
+    "properties": {
+        "PowerState": {
+            "title": "PowerState",
+            "description": "Indicates the power state of the device where True is on and False is off."
+        },
+        "MediaSource": {
+            "title": "MediaSource",
+            "description": "Indicates the media source where the identifier corresponds to an entry within the table of available media sources on Pset_AudioVisualApplianceTypeCommon.MediaSource."
+        },
+        "MediaContent": {
+            "title": "MediaContent",
+            "description": "Indicates the media content storage location, such as URLs to camera footage within particular time periods."
+        },
+        "AudioVolume": {
+            "title": "AudioVolume",
+            "description": "Indicates the audio volume level where the integer level corresponds to an entry or interpolation within Pset_AudioVisualApplianceTypeCommon.AudioVolume."
+        }
+    }
+}

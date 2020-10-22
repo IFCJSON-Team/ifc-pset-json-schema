@@ -1,0 +1,95 @@
+{
+    "$id": "Pset_ProtectiveDeviceOccurrence.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceOccurrence",
+    "description": "Properties that are applied to an occurrence of a protective device.",
+    "properties": {
+        "PoleUsage": {
+            "title": "PoleUsage",
+            "description": "Pole usage.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "1P",
+                    "2P",
+                    "3P",
+                    "4P",
+                    "1PN",
+                    "3PN",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "LongTimeFunction": {
+            "title": "LongTimeFunction",
+            "description": "Applying long time function\nA flag indicating that the long time function (i.e. the thermal tripping) of the device is used. The value should be set to TRUE for all devices except those that allows the Long time function of the device not to be used.",
+            "datatype": "IfcBoolean"
+        },
+        "ShortTimeFunction": {
+            "title": "ShortTimeFunction",
+            "description": "Applying short time function A flag indicating that the short time function of the device is used. The value should be set to FALSE for devices not having a short time function, or if the short time function is not selected to be used.",
+            "datatype": "IfcBoolean"
+        },
+        "ShortTimei2tFunction": {
+            "title": "ShortTimei2tFunction",
+            "description": "Applying short time i2t function. A flag indicating that the I2t short time function of the device is used. The value should be set to TRUE only if the I2t function \u00a0is explicitly selected for the device.",
+            "datatype": "IfcBoolean"
+        },
+        "GroundFaultFunction": {
+            "title": "GroundFaultFunction",
+            "description": "Applying ground fault function. A flag indicating that the ground fault function of the device is used. The value should be set to FALSE for devices not having a ground fault function, or if the ground fault function is not selected to be used.",
+            "datatype": "IfcBoolean"
+        },
+        "GroundFaulti2tFunction": {
+            "title": "GroundFaulti2tFunction",
+            "description": "Applying ground fault i2t function. A flag indicating that the I2t ground fault function of the device is used. The value should be set to TRUE only if the I2t function is explicitly selected for the device.",
+            "datatype": "IfcBoolean"
+        },
+        "LongTimeCurrentSetValue": {
+            "title": "LongTimeCurrentSetValue",
+            "description": "Long time current set value. The set value of the long time tripping current if adjustable.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "ShortTimeCurrentSetValue": {
+            "title": "ShortTimeCurrentSetValue",
+            "description": "Short time current set value. The set value of the long time tripping current if adjustable.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "InstantaneousCurrentSetValue": {
+            "title": "InstantaneousCurrentSetValue",
+            "description": "Instantaneous current set value. The set value of the instantaneous tripping current if adjustable.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "GroundFaultCurrentSetValue": {
+            "title": "GroundFaultCurrentSetValue",
+            "description": "Ground fault current set value. The set value of the ground tripping current if adjustable.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "LongTimeDelay": {
+            "title": "LongTimeDelay",
+            "description": "Long time delay. The set value of the long time time-delay if adjustable.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "ShortTimeTrippingTime": {
+            "title": "ShortTimeTrippingTime",
+            "description": "Short time tripping time. The set value of the short time tripping time if adjustable.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "InstantaneousTrippingTime": {
+            "title": "InstantaneousTrippingTime",
+            "description": "Instantaneous tripping time. The set value of the instantaneous tripping time if adjustable.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "GroundFaultTrippingTime": {
+            "title": "GroundFaultTrippingTime",
+            "description": "Ground fault tripping time. The set value of the ground fault tripping current if adjustable.",
+            "datatype": "IfcTimeMeasure"
+        }
+    }
+}

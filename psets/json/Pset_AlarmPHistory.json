@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_AlarmPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AlarmPHistory",
+    "description": "Properties for history of alarm values.  HISTORY: Added in IFC4.",
+    "properties": {
+        "Enabled": {
+            "title": "Enabled",
+            "description": "Indicates whether alarm is enabled or disabled over time."
+        },
+        "Condition": {
+            "title": "Condition",
+            "description": "Indicates alarm condition over time.  The range of possible values and their meanings is defined by Pset_AlarmTypeCommon.Condition.  An empty value indicates no present alarm condition."
+        },
+        "Severity": {
+            "title": "Severity",
+            "description": "Indicates alarm severity over time, where the scale of values is determined by the control system configuration.  A zero value indicates no present alarm."
+        },
+        "Acknowledge": {
+            "title": "Acknowledge",
+            "description": "Indicates acknowledgement status where False indicates acknowlegement is required and outstanding, True indicates condition has been acknowedged, and Unknown indicates no acknowledgement is required.  Upon resetting the condition, then acknowledgement reverts to Unknown."
+        },
+        "User": {
+            "title": "User",
+            "description": "Indicates acknowledging user over time by identification corresponding to IfcPerson.Identification on an IfcActor."
+        }
+    }
+}

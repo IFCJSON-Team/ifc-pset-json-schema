@@ -1,0 +1,29 @@
+{
+    "$id": "Pset_DiscreteAccessoryFixingSocket.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DiscreteAccessoryFixingSocket",
+    "description": "Properties common to fixing sockets.",
+    "properties": {
+        "FixingSocketTypeReference": {
+            "title": "FixingSocketTypeReference",
+            "description": "Type reference for the fixing socket according to local standards."
+        },
+        "FixingSocketHeight": {
+            "title": "FixingSocketHeight",
+            "description": "The overall height of the fixing socket.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "FixingSocketThreadDiameter": {
+            "title": "FixingSocketThreadDiameter",
+            "description": "The nominal diameter of the thread.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "FixingSocketThreadLength": {
+            "title": "FixingSocketThreadLength",
+            "description": "The length of the threaded part of the fixing socket.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

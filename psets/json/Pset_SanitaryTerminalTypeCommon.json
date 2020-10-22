@@ -1,0 +1,53 @@
+{
+    "$id": "Pset_SanitaryTerminalTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SanitaryTerminalTypeCommon",
+    "description": "Common properties for sanitary terminals.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "element designed as new addition",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NominalLength": {
+            "title": "NominalLength",
+            "description": "Nominal or quoted length of the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalWidth": {
+            "title": "NominalWidth",
+            "description": "Nominal or quoted width of the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalDepth": {
+            "title": "NominalDepth",
+            "description": "Nominal or quoted depth of the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Color": {
+            "title": "Color",
+            "description": "Color selection for this object.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

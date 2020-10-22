@@ -1,0 +1,48 @@
+{
+    "$id": "Pset_ProtectiveDeviceTrippingUnitCurrentAdjustment.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceTrippingUnitCurrentAdjustment",
+    "description": "A set of current adjustment values that may be applied to an electronic or thermal tripping unit type.",
+    "properties": {
+        "AdjustmentValueType": {
+            "title": "AdjustmentValueType",
+            "description": "The type of adjustment value that is applied through the property set. This determines the properties that should be asserted (see below).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "RANGE",
+                    "LIST"
+                ]
+            }
+        },
+        "AdjustmentRange": {
+            "title": "AdjustmentRange",
+            "description": "Upper and lower current adjustment limits for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "AdjustmentRangeStepValue": {
+            "title": "AdjustmentRangeStepValue",
+            "description": "Step value of current adjustment for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "AdjustmentValues": {
+            "title": "AdjustmentValues",
+            "description": "A list of current adjustment values that may be applied to a tripping unit for an AdjustmentValueType = LIST. A minimum of 1 and a maximum of 16 adjustment values may be specified. Note that this property should not have a value for an  AdjustmentValueType = RANGE.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "AdjustmentDesignation": {
+            "title": "AdjustmentDesignation",
+            "description": "The desgnation on the device for the adjustment.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

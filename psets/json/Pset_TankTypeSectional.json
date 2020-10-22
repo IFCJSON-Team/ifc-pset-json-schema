@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_TankTypeSectional.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_TankTypeSectional",
+    "description": "Fixed vessel constructed from sectional parts with one or more compartments for storing a liquid.\n\nNote (1): All sectional construction tanks are considered to be rectangular by default.\nNote (2): Generally, it is not expected that sectional construction tanks will be used for the purposes of gas storage.\n\nPset renamed from Pset_TankTypeSectionalTank to Pset_TankTypeSectional in IFC2x2 Pset Addendum.",
+    "properties": {
+        "NumberOfSections": {
+            "title": "NumberOfSections",
+            "description": "Number of sections used in the construction of the tank\n\nNote: All sections assumed to be the same size.",
+            "datatype": "IfcInteger"
+        },
+        "SectionLength": {
+            "title": "SectionLength",
+            "description": "The length of a section used in the construction of the tank.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "SectionWidth": {
+            "title": "SectionWidth",
+            "description": "The width of a section used in the construction of the tank.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

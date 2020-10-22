@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_DuctFittingOccurrence.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DuctFittingOccurrence",
+    "description": "Duct fitting occurrence attributes.",
+    "properties": {
+        "InteriorRoughnessCoefficient": {
+            "title": "InteriorRoughnessCoefficient",
+            "description": "The interior roughness of the duct fitting material.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HasLiner": {
+            "title": "HasLiner",
+            "description": "TRUE if the fitting has interior duct insulating lining, FALSE if it does not.",
+            "datatype": "IfcBoolean"
+        },
+        "Color": {
+            "title": "Color",
+            "description": "The color of the duct segment.\n\nNote: This is typically used for any duct segments with a painted surface which is not otherwise specified as a covering.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

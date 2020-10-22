@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_DamperTypeSmokeDamper.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DamperTypeSmokeDamper",
+    "description": "Smoke damper type attributes.\nPset renamed from Pset_DamperTypeSmoke to Pset_DamperTypeSmokeDamper in IFC2x2 Pset Addendum.",
+    "properties": {
+        "ControlType": {
+            "title": "ControlType",
+            "description": "The type of control used to operate the damper (e.g., Open/Closed Indicator, Resetable Temperature Sensor, Temperature Override, etc.) .",
+            "datatype": "IfcLabel"
+        }
+    }
+}

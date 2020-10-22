@@ -1,0 +1,100 @@
+{
+    "$id": "Pset_SpaceThermalRequirements.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceThermalRequirements",
+    "description": "Properties related to the comfort requirements for thermal and other  thermal related performance properties of spaces that apply to the occurrences of IfcSpace, IfcSpatialZone or IfcZone. It can also be used to capture requirements for IfcSpaceType's. This includes the required design temperature, humidity, ventilation, and air conditioning.",
+    "properties": {
+        "SpaceTemperature": {
+            "title": "SpaceTemperature",
+            "description": "Temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period. Provide this value, if no temperatur range (Min-Max) is available.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "SpaceTemperatureMax": {
+            "title": "SpaceTemperatureMax",
+            "description": "Maximal temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "SpaceTemperatureMin": {
+            "title": "SpaceTemperatureMin",
+            "description": "Minimal temperature of the space or zone, that is required from user/designer view point. If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "SpaceTemperatureSummerMax": {
+            "title": "SpaceTemperatureSummerMax",
+            "description": "Maximal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "SpaceTemperatureSummerMin": {
+            "title": "SpaceTemperatureSummerMin",
+            "description": "Minimal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "SpaceTemperatureWinterMax": {
+            "title": "SpaceTemperatureWinterMax",
+            "description": "Maximal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "SpaceTemperatureWinterMin": {
+            "title": "SpaceTemperatureWinterMin",
+            "description": "Minimal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "SpaceHumidity": {
+            "title": "SpaceHumidity",
+            "description": "Humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period. Provide this property, if no humidity range (Min-Max) is available.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "SpaceHumidityMax": {
+            "title": "SpaceHumidityMax",
+            "description": "Maximal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "SpaceHumidityMin": {
+            "title": "SpaceHumidityMin",
+            "description": "Minimal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "SpaceHumiditySummer": {
+            "title": "SpaceHumiditySummer",
+            "description": "Humidity of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "SpaceHumidityWinter": {
+            "title": "SpaceHumidityWinter",
+            "description": "Humidity of the space or zone for the cold (winter) period that is required from user/designer view point and provided as requirement for heating.",
+            "datatype": "IfcRatioMeasure"
+        },
+        "DiscontinuedHeating": {
+            "title": "DiscontinuedHeating",
+            "description": "Indication whether discontinued heating is required/desirable from user/designer view point. (TRUE) if yes, (FALSE) otherwise.",
+            "datatype": "IfcBoolean"
+        },
+        "NaturalVentilation": {
+            "title": "NaturalVentilation",
+            "description": "Indication whether the space is required to have natural ventilation (TRUE) or mechanical ventilation (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "NaturalVentilationRate": {
+            "title": "NaturalVentilationRate",
+            "description": "Indication of the requirement of a particular natural air ventilation rate, given in air changes per hour.",
+            "datatype": "IfcCountMeasure"
+        },
+        "MechanicalVentilationRate": {
+            "title": "MechanicalVentilationRate",
+            "description": "Indication of the requirement of a particular mechanical air ventilation rate, given in air changes per hour.",
+            "datatype": "IfcCountMeasure"
+        },
+        "AirConditioning": {
+            "title": "AirConditioning",
+            "description": "Indication whether this space requires air conditioning provided (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "AirConditioningCentral": {
+            "title": "AirConditioningCentral",
+            "description": "Indication whether the space  requires a central air conditioning provided (TRUE) or not (FALSE).\nIt should only be given, if the property \"AirConditioning\" is set to TRUE.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

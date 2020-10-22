@@ -1,0 +1,76 @@
+{
+    "$id": "Pset_DistributionSystemTypeVentilation.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionSystemTypeVentilation",
+    "description": "This property set is used to define the general characteristics of the duct design parameters within a system.\nHISTORY: New property set in IFC Release 2.0.  Renamed from Pset_DuctDesignCriteria in IFC4.",
+    "properties": {
+        "DesignName": {
+            "title": "DesignName",
+            "description": "A name for the design values.",
+            "datatype": "IfcLabel"
+        },
+        "DuctSizingMethod": {
+            "title": "DuctSizingMethod",
+            "description": "Enumeration that identifies the methodology to be used to size system components.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CONSTANTFRICTION",
+                    "CONSTANTPRESSURE",
+                    "STATICREGAIN",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "PressureClass": {
+            "title": "PressureClass",
+            "description": "Nominal pressure rating of the system components. (Data type = PressureMeasure)",
+            "datatype": "IfcPressureMeasure"
+        },
+        "LeakageClass": {
+            "title": "LeakageClass",
+            "description": "Nominal leakage rating for the system components.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "FrictionLoss": {
+            "title": "FrictionLoss",
+            "description": "The pressure loss due to friction per unit length. (Data type = PressureMeasure/LengthMeasure)",
+            "datatype": "IfcReal"
+        },
+        "ScrapFactor": {
+            "title": "ScrapFactor",
+            "description": "Sheet metal scrap factor.",
+            "datatype": "IfcReal"
+        },
+        "DuctSealant": {
+            "title": "DuctSealant",
+            "description": "Type of sealant used on the duct and fittings."
+        },
+        "MaximumVelocity": {
+            "title": "MaximumVelocity",
+            "description": "The maximum design velocity of the air in the duct or fitting.",
+            "datatype": "IfcLinearVelocityMeasure"
+        },
+        "AspectRatio": {
+            "title": "AspectRatio",
+            "description": "The default aspect ratio.",
+            "datatype": "IfcReal"
+        },
+        "MinimumHeight": {
+            "title": "MinimumHeight",
+            "description": "The minimum duct height for rectangular, oval or round duct.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "MinimumWidth": {
+            "title": "MinimumWidth",
+            "description": "The minimum duct width for oval or rectangular duct.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_MaterialFuel.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialFuel",
+    "description": "A set of extended material properties of fuel energy typically used within the context of building services and flow distribution systems.",
+    "properties": {
+        "CombustionTemperature": {
+            "title": "CombustionTemperature",
+            "description": "Combustion temperature of the material when air is at 298 K and 100 kPa.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "CarbonContent": {
+            "title": "CarbonContent",
+            "description": "The carbon content in the fuel. This is measured in weight of carbon per unit weight of fuel and is therefore unitless.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "LowerHeatingValue": {
+            "title": "LowerHeatingValue",
+            "description": "Lower Heating Value is defined as the amount of energy released (MJ/kg) when a fuel is burned completely, and H2O is in vapor form in the combustion products.",
+            "datatype": "IfcHeatingValueMeasure"
+        },
+        "HigherHeatingValue": {
+            "title": "HigherHeatingValue",
+            "description": "Higher Heating Value is defined as the amount of energy released (MJ/kg) when a fuel is burned completely, and H2O is in liquid form in the combustion products.",
+            "datatype": "IfcHeatingValueMeasure"
+        }
+    }
+}

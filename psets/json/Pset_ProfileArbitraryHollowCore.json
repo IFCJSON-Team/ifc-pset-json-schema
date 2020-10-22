@@ -1,0 +1,125 @@
+{
+    "$id": "Pset_ProfileArbitraryHollowCore.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProfileArbitraryHollowCore",
+    "description": "This is a collection of geometric properties of hollow core section profiles of precast concrete elements, to be used in conjunction with IfcArbitraryProfileDefWithVoids when profile designation alone does not fulfill the information requirements.  \n\nIn all cases, the cores are symmetrically distributed on either side of the plank center line, irrespective of whether the number of cores is odd or even. For planks with a center core with different geometry to that of the other cores, provide the property CenterCoreSpacing. When the number of cores is even, no Center Core properties shall be asserted.\n\nKey chamfers and draft chamfer are all 45 degree chamfers.\n\nThe CoreTopRadius and CoreBaseRadius parameters can be derived and are therefore not listed in the property set. They are shown to define that the curves are arcs. The parameters for the center core are the same as above, but with the prefix \"Center\".",
+    "properties": {
+        "OverallWidth": {
+            "title": "OverallWidth",
+            "description": "Overall width of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "OverallDepth": {
+            "title": "OverallDepth",
+            "description": "Overall depth of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "EdgeDraft": {
+            "title": "EdgeDraft",
+            "description": "Edge draft of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "DraftBaseOffset": {
+            "title": "DraftBaseOffset",
+            "description": "Draft base offset of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "DraftSideOffset": {
+            "title": "DraftSideOffset",
+            "description": "Draft side offset of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "BaseChamfer": {
+            "title": "BaseChamfer",
+            "description": "Base chamfer of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "KeyDepth": {
+            "title": "KeyDepth",
+            "description": "Key depth of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "KeyHeight": {
+            "title": "KeyHeight",
+            "description": "Key height of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "KeyOffset": {
+            "title": "KeyOffset",
+            "description": "Key offset of the profile.",
+            "datatype": "IfcNonNegativeLengthMeasure"
+        },
+        "BottomCover": {
+            "title": "BottomCover",
+            "description": "Bottom cover of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoreSpacing": {
+            "title": "CoreSpacing",
+            "description": "Core spacing of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoreBaseHeight": {
+            "title": "CoreBaseHeight",
+            "description": "Core base height of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoreMiddleHeight": {
+            "title": "CoreMiddleHeight",
+            "description": "Core middle height of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoreTopHeight": {
+            "title": "CoreTopHeight",
+            "description": "Core top height of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoreBaseWidth": {
+            "title": "CoreBaseWidth",
+            "description": "Core base width of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CoreTopWidth": {
+            "title": "CoreTopWidth",
+            "description": "Core top width of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CenterCoreSpacing": {
+            "title": "CenterCoreSpacing",
+            "description": "Center core spacing of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CenterCoreBaseHeight": {
+            "title": "CenterCoreBaseHeight",
+            "description": "Center core base height of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CenterCoreMiddleHeight": {
+            "title": "CenterCoreMiddleHeight",
+            "description": "Center core middle height of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CenterCoreTopHeight": {
+            "title": "CenterCoreTopHeight",
+            "description": "Center core top height of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CenterCoreBaseWidth": {
+            "title": "CenterCoreBaseWidth",
+            "description": "Center core base width of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CenterCoreTopWidth": {
+            "title": "CenterCoreTopWidth",
+            "description": "Center core top width of the profile.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NumberOfCores": {
+            "title": "NumberOfCores",
+            "description": "Number of cores.",
+            "datatype": "IfcCountMeasure"
+        }
+    }
+}

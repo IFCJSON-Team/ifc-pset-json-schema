@@ -1,0 +1,52 @@
+{
+    "$id": "Pset_DamperTypeFireDamper.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DamperTypeFireDamper",
+    "description": "Fire damper type attributes.\nPset renamed from Pset_DamperTypeFire to Pset_DamperTypeFireDamper in IFC2x2 Pset Addendum.",
+    "properties": {
+        "ActuationType": {
+            "title": "ActuationType",
+            "description": "Enumeration that identifies the different types of dampers.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "GRAVITY",
+                    "SPRING",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ClosureRatingEnum": {
+            "title": "ClosureRatingEnum",
+            "description": "Enumeration that identifies the closure rating for the damper.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DYNAMIC",
+                    "STATIC",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FireResistanceRating": {
+            "title": "FireResistanceRating",
+            "description": "Measure of the fire resistance rating in hours (e.g., 1.5 hours, 2 hours, etc.).",
+            "datatype": "IfcLabel"
+        },
+        "FusibleLinkTemperature": {
+            "title": "FusibleLinkTemperature",
+            "description": "The temperature that the fusible link melts.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        }
+    }
+}

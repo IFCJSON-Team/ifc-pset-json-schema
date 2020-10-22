@@ -1,0 +1,29 @@
+{
+    "$id": "Pset_ElectricApplianceTypeDishwasher.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ElectricApplianceTypeDishwasher",
+    "description": "Common properties for dishwasher appliances.  HISTORY: Added in IFC4.",
+    "properties": {
+        "DishwasherType": {
+            "title": "DishwasherType",
+            "description": "Type of dishwasher.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "POTWASHER",
+                    "TRAYWASHER",
+                    "DISHWASHER",
+                    "BOTTLEWASHER",
+                    "CUTLERYWASHER",
+                    "OTHER",
+                    "UNKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "$id": "Pset_FilterPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FilterPHistory",
+    "description": "Filter performance history attributes.",
+    "properties": {
+        "CountedEfficiency": {
+            "title": "CountedEfficiency",
+            "description": "Filter efficiency based the particle counts concentration before and after filter against particles with certain size distribution."
+        },
+        "WeightedEfficiency": {
+            "title": "WeightedEfficiency",
+            "description": "Filter efficiency based the particle weight concentration before and after filter against particles with certain size distribution."
+        },
+        "ParticleMassHolding": {
+            "title": "ParticleMassHolding",
+            "description": "Mass of particle holding in the filter."
+        }
+    }
+}

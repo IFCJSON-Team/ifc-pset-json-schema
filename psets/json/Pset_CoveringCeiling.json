@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_CoveringCeiling.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CoveringCeiling",
+    "description": "Properties common to the definition of all occurrence and type objects of covering with the predefined type set to CEILING.",
+    "properties": {
+        "Permeability": {
+            "title": "Permeability",
+            "description": "Ratio of the permeability of the ceiling.\nThe ration can be used to indicate an open ceiling (that enables identification of whether ceiling construction should be considered as impeding distribution of sprinkler water, light etc. from installations within the ceiling area).",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "TileLength": {
+            "title": "TileLength",
+            "description": "Length of ceiling tiles. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "TileWidth": {
+            "title": "TileWidth",
+            "description": "Width of ceiling tiles. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

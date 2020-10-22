@@ -1,0 +1,85 @@
+{
+    "$id": "Pset_CableSegmentTypeCableSegment.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CableSegmentTypeCableSegment",
+    "description": "Electrical cable with a specific purpose to lead electric current within a circuit or any other electric construction. Includes all types of electric cables, mainly several electrical segments wrapped together, e.g. cable, tube, busbar. Note that the number of conductors within a cable is determined by an aggregation mechanism that aggregates the conductors within the cable. A single-core cable is defined in IEV 461-06-02 as being 'a cable having only one core'; a multiconductor cable is defined in IEV 461-06-03 as b eing 'a cable having more than one conductor, some of which may be uninsulated'; a mulicore cable is defined in IEV 461-06-04 as being 'a cable having more than one core'.",
+    "properties": {
+        "Standard": {
+            "title": "Standard",
+            "description": "The designation of the standard applicable for the definition of the Cable/Bus used.",
+            "datatype": "IfcLabel"
+        },
+        "NumberOfCores": {
+            "title": "NumberOfCores",
+            "description": "The number of cores in Cable/Bus.",
+            "datatype": "IfcInteger"
+        },
+        "OverallDiameter": {
+            "title": "OverallDiameter",
+            "description": "The overall diameter of a Cable/Bus.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "RatedVoltage": {
+            "title": "RatedVoltage",
+            "description": "The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.",
+            "datatype": "IfcElectricVoltageMeasure"
+        },
+        "RatedTemperature": {
+            "title": "RatedTemperature",
+            "description": "The range of allowed temerature that a device is certified to handle. The upper bound of this value is the maximum.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "ScreenDiameter": {
+            "title": "ScreenDiameter",
+            "description": "The diameter of the screen around a cable or bus segment (if present).",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HasProtectiveEarth": {
+            "title": "HasProtectiveEarth",
+            "description": "One core has protective earth marked insulation, Yellow/Green.",
+            "datatype": "IfcBoolean"
+        },
+        "MaximumOperatingTemperature": {
+            "title": "MaximumOperatingTemperature",
+            "description": "The maximum temperature at which a cable or bus is certified to operate.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "MaximumShortCircuitTemperature": {
+            "title": "MaximumShortCircuitTemperature",
+            "description": "The maximum short circuit temperature at which a cable or bus is certified to operate.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "SpecialConstruction": {
+            "title": "SpecialConstruction",
+            "description": "Special construction capabilities like self-supporting, flat devidable cable or bus flat non devidable cable or bus supporting elements inside (steal, textile, concentric conductor). Note that materials used should be agreed between exchange participants before use.",
+            "datatype": "IfcLabel"
+        },
+        "Weight": {
+            "title": "Weight",
+            "description": "Weight of cable kg/km.",
+            "datatype": "IfcMassMeasure"
+        },
+        "SelfExtinguishing60332_1": {
+            "title": "SelfExtinguishing60332_1",
+            "description": "Self Extinguishing cable/core according to IEC 60332.1.",
+            "datatype": "IfcBoolean"
+        },
+        "SelfExtinguishing60332_3": {
+            "title": "SelfExtinguishing60332_3",
+            "description": "Self Extinguishing cable/core according to IEC 60332.3.",
+            "datatype": "IfcBoolean"
+        },
+        "HalogenProof": {
+            "title": "HalogenProof",
+            "description": "Produces small amount of smoke and irritating Deaerator/Gas.",
+            "datatype": "IfcBoolean"
+        },
+        "FunctionReliable": {
+            "title": "FunctionReliable",
+            "description": "Cable/bus maintain given properties/functions over a given (tested) time and conditions. According to IEC standard.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "$id": "Pset_CooledBeamPHistoryActive.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CooledBeamPHistoryActive",
+    "description": "Performance history attributes for an active cooled beam.",
+    "properties": {
+        "AirFlowRate": {
+            "title": "AirFlowRate",
+            "description": "Air flow rate."
+        },
+        "Throw": {
+            "title": "Throw",
+            "description": "Distance cooled beam throws the air."
+        },
+        "AirPressureDropCurves": {
+            "title": "AirPressureDropCurves",
+            "description": "Air pressure drop as function of air flow rate."
+        }
+    }
+}

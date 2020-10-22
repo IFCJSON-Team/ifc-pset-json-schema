@@ -1,0 +1,90 @@
+{
+    "$id": "Pset_BuildingUse.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_BuildingUse",
+    "description": "Provides information on on the real estate context of the building of interest both current and anticipated.",
+    "properties": {
+        "MarketCategory": {
+            "title": "MarketCategory",
+            "description": "Category of use e.g. residential, commercial, recreation etc.",
+            "datatype": "IfcLabel"
+        },
+        "MarketSubCategory": {
+            "title": "MarketSubCategory",
+            "description": "Subset of category of use e.g. multi-family, 2 bedroom, low rise.",
+            "datatype": "IfcLabel"
+        },
+        "PlanningControlStatus": {
+            "title": "PlanningControlStatus",
+            "description": "Label of zoning category or class, or planning control category for the site or facility.",
+            "datatype": "IfcLabel"
+        },
+        "NarrativeText": {
+            "title": "NarrativeText",
+            "description": "Added information relating to the adjacent building use that is not appropriate to the general descriptive text associated with an entity through the inherited IfcRoot.Description.",
+            "datatype": "IfcText"
+        },
+        "VacancyRateInCategoryNow": {
+            "title": "VacancyRateInCategoryNow",
+            "description": "Percentage of vacancy found in the particular category currently.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "TenureModesAvailableNow": {
+            "title": "TenureModesAvailableNow",
+            "description": "A list of the tenure modes that are currently available expressed in terms of IfcLabel.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "MarketSubCategoriesAvailableNow": {
+            "title": "MarketSubCategoriesAvailableNow",
+            "description": "A list of the sub categories of property that are currently available expressed in terms of IfcLabel.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "RentalRatesInCategoryNow": {
+            "title": "RentalRatesInCategoryNow",
+            "description": "Range of the cost rates for property currently available in the required category.",
+            "datatype": "IfcMonetaryMeasure"
+        },
+        "VacancyRateInCategoryFuture": {
+            "title": "VacancyRateInCategoryFuture",
+            "description": "Percentage of vacancy found in the particular category expected in the future.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "TenureModesAvailableFuture": {
+            "title": "TenureModesAvailableFuture",
+            "description": "A list of the tenure modes that are expected to be available in the future expressed in terms of IfcLabel.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "MarketSubCategoriesAvailableFuture": {
+            "title": "MarketSubCategoriesAvailableFuture",
+            "description": "A list of the sub categories of property that are expected to be available in the future expressed in terms of IfcLabel.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "RentalRatesInCategoryFuture": {
+            "title": "RentalRatesInCategoryFuture",
+            "description": "Range of the cost rates for property expected to be available in the future in the required category.",
+            "datatype": "IfcMonetaryMeasure"
+        }
+    }
+}

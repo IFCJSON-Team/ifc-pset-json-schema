@@ -1,0 +1,90 @@
+{
+    "$id": "Pset_DuctSegmentTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DuctSegmentTypeCommon",
+    "description": "Duct segment type common attributes.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1').",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Shape": {
+            "title": "Shape",
+            "description": "Cross sectional shape. Note that this shape is uniform throughout the length of the segment. For nonuniform shapes, a transition fitting should be used instead.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FLATOVAL",
+                    "RECTANGULAR",
+                    "ROUND",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "WorkingPressure": {
+            "title": "WorkingPressure",
+            "description": "Pressure classification as defined by the authority having jurisdiction (e.g., SMACNA, etc.).",
+            "datatype": "IfcPressureMeasure"
+        },
+        "PressureRange": {
+            "title": "PressureRange",
+            "description": "Allowable maximum and minimum working pressure (relative to ambient pressure).",
+            "datatype": "IfcPressureMeasure"
+        },
+        "TemperatureRange": {
+            "title": "TemperatureRange",
+            "description": "Allowable maximum and minimum temperature.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "LongitudinalSeam": {
+            "title": "LongitudinalSeam",
+            "description": "The type of seam to be used along the longitudinal axis of the duct segment.",
+            "datatype": "IfcText"
+        },
+        "NominalDiameterOrWidth": {
+            "title": "NominalDiameterOrWidth",
+            "description": "The nominal diameter or width of the duct segment.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalHeight": {
+            "title": "NominalHeight",
+            "description": "The nominal height of the duct segment.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Reinforcement": {
+            "title": "Reinforcement",
+            "description": "The type of reinforcement, if any, used for the duct segment.",
+            "datatype": "IfcLabel"
+        },
+        "ReinforcementSpacing": {
+            "title": "ReinforcementSpacing",
+            "description": "The spacing between reinforcing elements.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

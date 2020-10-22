@@ -1,0 +1,35 @@
+{
+    "$id": "Pset_AnnotationLineOfSight.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AnnotationLineOfSight",
+    "description": "Specifies the properties of the line of sight at a point of connection between two elements. Typically used to define the line of sight visibility at the junction between two roads (particularly between an access road and a public road).",
+    "properties": {
+        "SetbackDistance": {
+            "title": "SetbackDistance",
+            "description": "Setback distance from the point of connection on the major element along the axis of the minor element (e.g. distance from a public road at which the line of sigfht is measured.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "VisibleAngleLeft": {
+            "title": "VisibleAngleLeft",
+            "description": "Angle of visibility to the left of the access.",
+            "datatype": "IfcPositivePlaneAngleMeasure"
+        },
+        "VisibleAngleRight": {
+            "title": "VisibleAngleRight",
+            "description": "Angle of visibility to the right of the access.",
+            "datatype": "IfcPositivePlaneAngleMeasure"
+        },
+        "RoadVisibleDistanceLeft": {
+            "title": "RoadVisibleDistanceLeft",
+            "description": "Distance visible to the left of the access.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "RoadVisibleDistanceRight": {
+            "title": "RoadVisibleDistanceRight",
+            "description": "Distance visible to the right of the access.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

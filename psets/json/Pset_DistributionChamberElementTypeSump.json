@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_DistributionChamberElementTypeSump.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionChamberElementTypeSump",
+    "description": "Recess or small chamber into which liquid is drained to facilitate its removal.",
+    "properties": {
+        "Length": {
+            "title": "Length",
+            "description": "The length of the sump.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Width": {
+            "title": "Width",
+            "description": "The width of the sump.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "InvertLevel": {
+            "title": "InvertLevel",
+            "description": "The lowest point in the cross section of the sump.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

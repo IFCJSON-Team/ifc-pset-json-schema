@@ -1,0 +1,14 @@
+{
+    "$id": "Pset_SwitchingDeviceTypePHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SwitchingDeviceTypePHistory",
+    "description": "Indicates switch positions or levels over time, such as for energy management or surveillance.",
+    "properties": {
+        "SetPoint": {
+            "title": "SetPoint",
+            "description": "Indicates the switch position over time according to Pset_SwitchingDeviceTypeCommon.SetPoint."
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_DiscreteAccessoryEdgeFixingPlate.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DiscreteAccessoryEdgeFixingPlate",
+    "description": "Properties specific to edge fixing plates.",
+    "properties": {
+        "EdgeFixingPlateLength": {
+            "title": "EdgeFixingPlateLength",
+            "description": "The length of the L-shaped edge plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "EdgeFixingPlateThickness": {
+            "title": "EdgeFixingPlateThickness",
+            "description": "The thickness of the L-shaped edge plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "EdgeFixingPlateFlangeWidthInPlaneZ": {
+            "title": "EdgeFixingPlateFlangeWidthInPlaneZ",
+            "description": "The flange width of the L-shaped edge plate in plane Z.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "EdgeFixingPlateFlangeWidthInPlaneX": {
+            "title": "EdgeFixingPlateFlangeWidthInPlaneX",
+            "description": "The flange width of the L-shaped edge plate in plane X.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "$id": "Pset_FanTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FanTypeCommon",
+    "description": "Fan type common attributes.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1').",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "MotorDriveType": {
+            "title": "MotorDriveType",
+            "description": "Motor drive type:\nDIRECTDRIVE: Direct drive. \nBELTDRIVE: Belt drive. \nCOUPLING: Coupling. \nOTHER: Other type of motor drive. \nUNKNOWN: Unknown motor drive type.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DIRECTDRIVE",
+                    "BELTDRIVE",
+                    "COUPLING",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "CapacityControlType": {
+            "title": "CapacityControlType",
+            "description": "InletVane: Control by adjusting inlet vane.\nVariableSpeedDrive: Control by variable speed drive. \nBladePitchAngle: Control by adjusting blade pitch angle.\nTwoSpeed: Control by switch between high and low speed.\nDischargeDamper: Control by modulating discharge damper.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "INLETVANE",
+                    "VARIABLESPEEDDRIVE",
+                    "BLADEPITCHANGLE",
+                    "TWOSPEED",
+                    "DISCHARGEDAMPER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "OperationTemperatureRange": {
+            "title": "OperationTemperatureRange",
+            "description": "Allowable operation ambient air temperature range.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "NominalAirFlowRate": {
+            "title": "NominalAirFlowRate",
+            "description": "Nominal air flow rate.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "NominalTotalPressure": {
+            "title": "NominalTotalPressure",
+            "description": "Nominal total pressure rise across the fan.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "NominalStaticPressure": {
+            "title": "NominalStaticPressure",
+            "description": "The static pressure within the air stream that the fan must overcome to insure designed circulation of air.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "NominalRotationSpeed": {
+            "title": "NominalRotationSpeed",
+            "description": "Nominal fan wheel speed.",
+            "datatype": "IfcRotationalFrequencyMeasure"
+        },
+        "NominalPowerRate": {
+            "title": "NominalPowerRate",
+            "description": "Nominal fan power rate.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "OperationalCriteria": {
+            "title": "OperationalCriteria",
+            "description": "Time of operation at maximum operational ambient air temperature.",
+            "datatype": "IfcTimeMeasure"
+        },
+        "PressureCurve": {
+            "title": "PressureCurve",
+            "description": "Pressure rise = f (flow rate)."
+        },
+        "EfficiencyCurve": {
+            "title": "EfficiencyCurve",
+            "description": "Fan efficiency =f (flow rate)."
+        }
+    }
+}

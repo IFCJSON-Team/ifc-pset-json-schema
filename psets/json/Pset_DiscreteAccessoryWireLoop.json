@@ -1,0 +1,40 @@
+{
+    "$id": "Pset_DiscreteAccessoryWireLoop.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DiscreteAccessoryWireLoop",
+    "description": "Shape properties common to wire loop joint connectors.",
+    "properties": {
+        "WireLoopBasePlateThickness": {
+            "title": "WireLoopBasePlateThickness",
+            "description": "The thickness of the base plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WireLoopBasePlateWidth": {
+            "title": "WireLoopBasePlateWidth",
+            "description": "The width of the base plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WireLoopBasePlateLength": {
+            "title": "WireLoopBasePlateLength",
+            "description": "The length of the base plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WireDiameter": {
+            "title": "WireDiameter",
+            "description": "The nominal diameter of the wire.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WireEmbeddingLength": {
+            "title": "WireEmbeddingLength",
+            "description": "The length of the part of wire which is embedded in the precast concrete element.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WireLoopLength": {
+            "title": "WireLoopLength",
+            "description": "The length of the fastening loop part of the wire.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

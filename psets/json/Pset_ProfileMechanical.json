@@ -1,0 +1,135 @@
+{
+    "$id": "Pset_ProfileMechanical.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProfileMechanical",
+    "description": "This is a collection of mechanical properties that are applicable to virtually all profile classes. Most of these properties are especially used in structural analysis.",
+    "properties": {
+        "MassPerLength": {
+            "title": "MassPerLength",
+            "description": "Mass per length, i.e. mass of a beam with a unit length of extrusion. For example measured in kg/m.",
+            "datatype": "IfcMassPerLengthMeasure"
+        },
+        "CrossSectionArea": {
+            "title": "CrossSectionArea",
+            "description": "Area of the profile. For example measured in mm2. If given, the value of the cross section area shall be greater than zero.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "Perimeter": {
+            "title": "Perimeter",
+            "description": "Perimeter of the profile for calculating the surface area. For example measured in mm.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "MinimumPlateThickness": {
+            "title": "MinimumPlateThickness",
+            "description": "This value may be needed for stress analysis and to handle buckling problems. It can also be derived from the given profile geometry or classification and therefore it is only an optional feature allowing for an explicit description. For example measured in mm.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "MaximumPlateThickness": {
+            "title": "MaximumPlateThickness",
+            "description": "This value may be needed for stress analysis and to handle buckling problems. It can also be derived from the given profile geometry or classification and therefore it is only an optional feature allowing for an explicit description. For example measured in mm.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "CentreOfGravityInX": {
+            "title": "CentreOfGravityInX",
+            "description": "Location of the profile's centre of gravity (geometric centroid), measured along xp.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "CentreOfGravityInY": {
+            "title": "CentreOfGravityInY",
+            "description": "Location of the profile's centre of gravity (geometric centroid), measured along yp.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "ShearCentreZ": {
+            "title": "ShearCentreZ",
+            "description": "Location of the profile's shear centre, measured along zs.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "ShearCentreY": {
+            "title": "ShearCentreY",
+            "description": "Location of the profile's shear centre, measured along ys.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "MomentOfInertiaY": {
+            "title": "MomentOfInertiaY",
+            "description": "Moment of inertia about ys (second moment of area, about ys). For example measured in mm4.",
+            "datatype": "IfcMomentOfInertiaMeasure"
+        },
+        "MomentOfInertiaZ": {
+            "title": "MomentOfInertiaZ",
+            "description": "Moment of inertia about zs (second moment of area, about zs). For example measured in mm4",
+            "datatype": "IfcMomentOfInertiaMeasure"
+        },
+        "MomentOfInertiaYZ": {
+            "title": "MomentOfInertiaYZ",
+            "description": "Moment of inertia about ys and zs (product moment of area). For example measured in mm4.",
+            "datatype": "IfcMomentOfInertiaMeasure"
+        },
+        "TorsionalConstantX": {
+            "title": "TorsionalConstantX",
+            "description": "Torsional constant about xs. For example measured in mm4.",
+            "datatype": "IfcMomentOfInertiaMeasure"
+        },
+        "WarpingConstant": {
+            "title": "WarpingConstant",
+            "description": "Warping constant of the profile for torsional action. For example measured in mm6.",
+            "datatype": "IfcWarpingConstantMeasure"
+        },
+        "ShearDeformationAreaZ": {
+            "title": "ShearDeformationAreaZ",
+            "description": "Area of the profile for calculating the shear deformation due to a shear force parallel to zs. For example measured in mm\u00b2. If given, the shear deformation area zs shall be non-negative.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "ShearDeformationAreaY": {
+            "title": "ShearDeformationAreaY",
+            "description": "Area of the profile for calculating the shear deformation due to a shear force parallel to ys. For example measured in mm\u00b2. If given, the shear deformation area ys shall be non-negative.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "MaximumSectionModulusY": {
+            "title": "MaximumSectionModulusY",
+            "description": "Bending resistance about the ys axis at the point with maximum zs ordinate. For example measured in mm\u00b3.",
+            "datatype": "IfcSectionModulusMeasure"
+        },
+        "MinimumSectionModulusY": {
+            "title": "MinimumSectionModulusY",
+            "description": "Bending resistance about the ys axis at the point with minimum zs ordinate. For example measured in mm\u00b3.",
+            "datatype": "IfcSectionModulusMeasure"
+        },
+        "MaximumSectionModulusZ": {
+            "title": "MaximumSectionModulusZ",
+            "description": "Bending resistance about the zs axis at the point with maximum ys ordinate. For example measured in mm\u00b3.",
+            "datatype": "IfcSectionModulusMeasure"
+        },
+        "MinimumSectionModulusZ": {
+            "title": "MinimumSectionModulusZ",
+            "description": "Bending resistance about the zs axis at the point with minimum ys ordinate. For example measured in mm\u00b3.",
+            "datatype": "IfcSectionModulusMeasure"
+        },
+        "TorsionalSectionModulus": {
+            "title": "TorsionalSectionModulus",
+            "description": "Torsional resistance (about xs). For example measured in mm\u00b3.",
+            "datatype": "IfcSectionModulusMeasure"
+        },
+        "ShearAreaZ": {
+            "title": "ShearAreaZ",
+            "description": "Area of the profile for calculating the shear stress due to shear force parallel to the section analysis axis zs. For example measured in mm\u00b2. If given, the shear area zs shall be non-negative.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "ShearAreaY": {
+            "title": "ShearAreaY",
+            "description": "Area of the profile for calculating the shear stress due to shear force parallel to the section analysis axis ys. For example measured in mm\u00b2. If given, the shear area ys shall be non-negative.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "PlasticShapeFactorY": {
+            "title": "PlasticShapeFactorY",
+            "description": "Ratio of plastic versus elastic bending moment capacity about the section analysis axis ys. A dimensionless value.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "PlasticShapeFactorZ": {
+            "title": "PlasticShapeFactorZ",
+            "description": "Ratio of plastic versus elastic bending moment capacity about the section analysis axis zs. A dimensionless value.",
+            "datatype": "IfcPositiveRatioMeasure"
+        }
+    }
+}

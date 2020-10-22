@@ -1,0 +1,154 @@
+{
+    "$id": "Pset_TankTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_TankTypeCommon",
+    "description": "Common attributes of a tank type.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1').",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AccessType": {
+            "title": "AccessType",
+            "description": "Defines the types of access (or cover) to a tank that may be specified.\n\nNote that covers are generally specified for rectangular tanks. For cylindrical tanks, access will normally be via a manhole.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NONE",
+                    "LOOSECOVER",
+                    "MANHOLE",
+                    "SECUREDCOVER",
+                    "SECUREDCOVERWITHMANHOLE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "StorageType": {
+            "title": "StorageType",
+            "description": "Defines the general material category intended to be stored.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ICE",
+                    "WATER",
+                    "RAINWATER",
+                    "WASTEWATER",
+                    "POTABLEWATER",
+                    "FUEL",
+                    "OIL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NominalLengthOrDiameter": {
+            "title": "NominalLengthOrDiameter",
+            "description": "The nominal length or, in the case of a vertical cylindrical tank, the nominal diameter of the tank.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalWidthOrDiameter": {
+            "title": "NominalWidthOrDiameter",
+            "description": "The nominal width or, in the case of a horizontal cylindrical tank, the nominal diameter of the tank.\n\nNote: Not required for a vertical cylindrical tank.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalDepth": {
+            "title": "NominalDepth",
+            "description": "The nominal depth of the tank.\n\nNote: Not required for a horizontal cylindrical tank.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalCapacity": {
+            "title": "NominalCapacity",
+            "description": "The total nominal or design volumetric capacity of the tank.",
+            "datatype": "IfcVolumeMeasure"
+        },
+        "EffectiveCapacity": {
+            "title": "EffectiveCapacity",
+            "description": "The total effective or actual volumetric capacity of the tank.",
+            "datatype": "IfcVolumeMeasure"
+        },
+        "OperatingWeight": {
+            "title": "OperatingWeight",
+            "description": "Operating weight of the tank including all of its contents.",
+            "datatype": "IfcMassMeasure"
+        },
+        "PatternType": {
+            "title": "PatternType",
+            "description": "Defines the types of pattern (or shape of a tank that may be specified.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "HORIZONTALCYLINDER",
+                    "VERTICALCYLINDER",
+                    "RECTANGULAR",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "EndShapeType": {
+            "title": "EndShapeType",
+            "description": "Defines the types of end shapes that can be used for preformed tanks. The convention for reading these enumerated values is that for a vertical cylinder, the first value is the base and the second is the top; for a horizontal cylinder, the order of reading should be left to right. For a speherical tank, the value UNSET should be used.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CONCAVECONVEX",
+                    "FLATCONVEX",
+                    "CONVEXCONVEX",
+                    "CONCAVEFLAT",
+                    "FLATFLAT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FirstCurvatureRadius": {
+            "title": "FirstCurvatureRadius",
+            "description": "FirstCurvatureRadius should be defined as the base or left side radius of curvature value.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "SecondCurvatureRadius": {
+            "title": "SecondCurvatureRadius",
+            "description": "SecondCurvatureRadius should be defined as the top or right side radius of curvature value.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NumberOfSections": {
+            "title": "NumberOfSections",
+            "description": "Number of sections used in the construction of the tank. Default is 1.\n\nNote: All sections assumed to be the same size.",
+            "datatype": "IfcInteger"
+        }
+    }
+}

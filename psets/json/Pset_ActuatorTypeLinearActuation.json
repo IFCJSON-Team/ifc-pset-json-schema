@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_ActuatorTypeLinearActuation.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ActuatorTypeLinearActuation",
+    "description": "Characteristics of linear actuation of an actuator\nHistory: Replaces Pset_LinearActuator",
+    "properties": {
+        "Force": {
+            "title": "Force",
+            "description": "Indicates the maximum close-off force for the actuator.",
+            "datatype": "IfcForceMeasure"
+        },
+        "Stroke": {
+            "title": "Stroke",
+            "description": "Indicates the maximum distance the actuator must traverse.",
+            "datatype": "IfcLengthMeasure"
+        }
+    }
+}

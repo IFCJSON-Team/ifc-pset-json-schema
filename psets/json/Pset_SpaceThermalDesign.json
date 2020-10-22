@@ -1,0 +1,75 @@
+{
+    "$id": "Pset_SpaceThermalDesign.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceThermalDesign",
+    "description": "Space or zone HVAC design requirements. HISTORY: New property set in IFC Release 1.0 (Pset_SpaceHvacInformation); renamed to Pset_SpaceThermalDesign and revised in IFC2x2.",
+    "properties": {
+        "CoolingDesignAirflow": {
+            "title": "CoolingDesignAirflow",
+            "description": "The air flowrate required during the peak cooling conditions.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "HeatingDesignAirflow": {
+            "title": "HeatingDesignAirflow",
+            "description": "The air flowrate required during the peak heating conditions, but could also be determined by minimum ventilation requirement or minimum air change requirements.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "TotalSensibleHeatGain": {
+            "title": "TotalSensibleHeatGain",
+            "description": "The total sensible heat or energy gained by the space during the peak cooling conditions.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "TotalHeatGain": {
+            "title": "TotalHeatGain",
+            "description": "The total amount of heat or energy gained by the space at the time of the space's peak cooling conditions.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "TotalHeatLoss": {
+            "title": "TotalHeatLoss",
+            "description": "The total amount of heat or energy lost by the space at the time of the space's peak heating conditions.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "CoolingDryBulb": {
+            "title": "CoolingDryBulb",
+            "description": "Inside dry bulb temperature for cooling design.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "CoolingRelativeHumidity": {
+            "title": "CoolingRelativeHumidity",
+            "description": "Inside relative humidity for cooling design.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "HeatingDryBulb": {
+            "title": "HeatingDryBulb",
+            "description": "Inside dry bulb temperature for heating design.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "HeatingRelativeHumidity": {
+            "title": "HeatingRelativeHumidity",
+            "description": "Inside relative humidity for heating design.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "VentilationAirFlowrate": {
+            "title": "VentilationAirFlowrate",
+            "description": "Ventilation outside air requirement for the space.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "ExhaustAirFlowrate": {
+            "title": "ExhaustAirFlowrate",
+            "description": "Design exhaust air flow rate for the space.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "CeilingRAPlenum": {
+            "title": "CeilingRAPlenum",
+            "description": "Ceiling plenum used for return air or not. TRUE = Yes, FALSE = No.",
+            "datatype": "IfcBoolean"
+        },
+        "BoundaryAreaHeatLoss": {
+            "title": "BoundaryAreaHeatLoss",
+            "description": "Heat loss per unit area for the boundary object. This is a design input value for use in the absence of calculated load data.",
+            "datatype": "IfcHeatFluxDensityMeasure"
+        }
+    }
+}

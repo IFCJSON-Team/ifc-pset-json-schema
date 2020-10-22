@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_UnitaryControlElementTypeIndicatorPanel.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_UnitaryControlElementTypeIndicatorPanel",
+    "description": "Unitary control element type indicator panel attributes.  HISTORY: Added in IFC4.",
+    "properties": {
+        "Application": {
+            "title": "Application",
+            "description": "The application of the unitary control element.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "LiftPositionIndicator",
+                    "LiftHallLantern",
+                    "LiftArrivalGong",
+                    "LiftCarDirectionLantern",
+                    "LiftFireSystemsPort",
+                    "LiftVoiceAnnouncer",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

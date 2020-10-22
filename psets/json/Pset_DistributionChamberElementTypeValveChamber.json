@@ -1,0 +1,42 @@
+{
+    "$id": "Pset_DistributionChamberElementTypeValveChamber.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionChamberElementTypeValveChamber",
+    "description": "Chamber that houses a valve(s).",
+    "properties": {
+        "ChamberLengthOrRadius": {
+            "title": "ChamberLengthOrRadius",
+            "description": "Length or, in the event of the shape being circular in plan, the radius of the chamber.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ChamberWidth": {
+            "title": "ChamberWidth",
+            "description": "Width, in the event of the shape being non circular in plan.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WallMaterial": {
+            "title": "WallMaterial",
+            "description": "The material from which the wall of the chamber is constructed.\nNOTE: It is assumed that chamber walls will be constructed of a single material."
+        },
+        "WallThickness": {
+            "title": "WallThickness",
+            "description": "The thickness of the chamber wall construction.\nNOTE: It is assumed that chamber walls will be constructed at a single thickness.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "BaseMaterial": {
+            "title": "BaseMaterial",
+            "description": "The material from which the base of the chamber is constructed.\nNOTE: It is assumed that chamber base will be constructed of a single material."
+        },
+        "BaseThickness": {
+            "title": "BaseThickness",
+            "description": "The thickness of the chamber base construction.\nNOTE: It is assumed that chamber base will be constructed at a single thickness.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "AccessCoverMaterial": {
+            "title": "AccessCoverMaterial",
+            "description": "The material from which the access cover to the chamber is constructed.\nNOTE: It is assumed that chamber walls will be constructed of a single material."
+        }
+    }
+}

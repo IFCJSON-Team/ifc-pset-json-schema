@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_ValveTypeDrawOffCock.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ValveTypeDrawOffCock",
+    "description": "A small diameter valve, used to drain water from a cistern or water filled system.",
+    "properties": {
+        "HasHoseUnion": {
+            "title": "HasHoseUnion",
+            "description": "Indicates whether the drawoff cock is fitted with a hose union connection (= TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

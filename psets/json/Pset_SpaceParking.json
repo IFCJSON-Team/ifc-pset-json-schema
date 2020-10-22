@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_SpaceParking.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceParking",
+    "description": "Properties common to the definition of all occurrences of IfcSpace which have an attribute value for ObjectType = 'Parking'. NOTE: Modified in IFC 2x3, properties ParkingUse and ParkingUnits added.",
+    "properties": {
+        "ParkingUse": {
+            "title": "ParkingUse",
+            "description": "Identifies the type of transporation for which the parking space is designed. Values are not predefined but might include car, compact car, motorcycle, bicycle, truck, bus etc.",
+            "datatype": "IfcLabel"
+        },
+        "ParkingUnits": {
+            "title": "ParkingUnits",
+            "description": "Indicates the number of transporation units of the type specified by the property ParkingUse that may be accommodated within the space. Generally, this value should default to 1 unit. However, where the parking space is for motorcycles or bicycles, provision may be made for more than one unit in the space.",
+            "datatype": "IfcCountMeasure"
+        },
+        "IsAisle": {
+            "title": "IsAisle",
+            "description": "Indicates that this parking zone is for accessing the parking units, i.e. an aisle (TRUE) and not a parking unit itself (FALSE)",
+            "datatype": "IfcBoolean"
+        },
+        "IsOneWay": {
+            "title": "IsOneWay",
+            "description": "Indicates whether the parking aisle is designed for oneway traffic (TRUE) or twoway traffic (FALSE). Should only be provided if the property IsAisle is set to TRUE.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

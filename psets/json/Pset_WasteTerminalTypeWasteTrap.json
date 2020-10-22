@@ -1,0 +1,38 @@
+{
+    "$id": "Pset_WasteTerminalTypeWasteTrap.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_WasteTerminalTypeWasteTrap",
+    "description": "Pipe fitting, set adjacent to a sanitary terminal, that retains liquid to prevent the passage of foul air.",
+    "properties": {
+        "WasteTrapType": {
+            "title": "WasteTrapType",
+            "description": "Identifies the predefined types of trap from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NONE",
+                    "P_TRAP",
+                    "Q_TRAP",
+                    "S_TRAP",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "OutletConnectionSize": {
+            "title": "OutletConnectionSize",
+            "description": "Size of the outlet connection from the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "InletConnectionSize": {
+            "title": "InletConnectionSize",
+            "description": "Size of the inlet connection(s), where used, of the inlet connections.\n\nNote that all inlet connections are assumed to be the same size.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

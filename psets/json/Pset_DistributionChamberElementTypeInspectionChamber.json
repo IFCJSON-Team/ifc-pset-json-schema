@@ -1,0 +1,72 @@
+{
+    "$id": "Pset_DistributionChamberElementTypeInspectionChamber.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionChamberElementTypeInspectionChamber",
+    "description": "Chamber constructed on a drain, sewer or pipeline and with a removable cover, that permits visible inspection.",
+    "properties": {
+        "ChamberLengthOrRadius": {
+            "title": "ChamberLengthOrRadius",
+            "description": "Length or, in the event of the shape being circular in plan, the radius of the chamber.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ChamberWidth": {
+            "title": "ChamberWidth",
+            "description": "Width, in the event of the shape being non circular in plan.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "InvertLevel": {
+            "title": "InvertLevel",
+            "description": "Level of the lowest part of the cross section as measured from ground level.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "SoffitLevel": {
+            "title": "SoffitLevel",
+            "description": "Level of the highest internal part of the cross section as measured from ground level.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "WallMaterial": {
+            "title": "WallMaterial",
+            "description": "The material from which the wall of the chamber is constructed.\nNOTE: It is assumed that chamber walls will be constructed of a single material."
+        },
+        "WallThickness": {
+            "title": "WallThickness",
+            "description": "The thickness of the chamber wall construction\nNOTE: It is assumed that chamber walls will be constructed at a single thickness.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "BaseMaterial": {
+            "title": "BaseMaterial",
+            "description": "The material from which the base of the chamber is constructed.\nNOTE: It is assumed that chamber base will be constructed of a single material."
+        },
+        "BaseThickness": {
+            "title": "BaseThickness",
+            "description": "The thickness of the chamber base construction\nNOTE: It is assumed that chamber base will be constructed at a single thickness.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WithBackdrop": {
+            "title": "WithBackdrop",
+            "description": "Indicates whether the chamber has a backdrop or tumbling bay (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "AccessCoverMaterial": {
+            "title": "AccessCoverMaterial",
+            "description": "The material from which the access cover to the chamber is constructed.\nNOTE: It is assumed that chamber walls will be constructed of a single material."
+        },
+        "AccessLengthOrRadius": {
+            "title": "AccessLengthOrRadius",
+            "description": "The length of the chamber access cover or, where the plan shape of the cover is circular, the radius.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "AccessWidth": {
+            "title": "AccessWidth",
+            "description": "The width of the chamber access cover where the plan shape of the cover is not circular.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "AccessCoverLoadRating": {
+            "title": "AccessCoverLoadRating",
+            "description": "The load rating of the access cover (which may be a value or an alphanumerically defined class rating).",
+            "datatype": "IfcText"
+        }
+    }
+}

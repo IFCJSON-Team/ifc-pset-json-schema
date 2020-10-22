@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_SpaceLightingRequirements.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceLightingRequirements",
+    "description": "Properties related to the lighting requirements that apply to the occurrences of IfcSpace or IfcZone. This includes the required artificial lighting, illuminance, etc.",
+    "properties": {
+        "ArtificialLighting": {
+            "title": "ArtificialLighting",
+            "description": "Indication whether this space  requires artificial lighting (as natural lighting would be not sufficient). (TRUE) indicates yes (FALSE) otherwise.",
+            "datatype": "IfcBoolean"
+        },
+        "Illuminance": {
+            "title": "Illuminance",
+            "description": "Required average illuminance value for this space.",
+            "datatype": "IfcIlluminanceMeasure"
+        }
+    }
+}

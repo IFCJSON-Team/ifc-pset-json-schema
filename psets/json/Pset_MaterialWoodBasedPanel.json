@@ -1,0 +1,75 @@
+{
+    "$id": "Pset_MaterialWoodBasedPanel.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialWoodBasedPanel",
+    "description": "This is a collection of mechanical properties related to wood-based materials for panel-like products like plywood or OSB. The propositions given above for wood-based beam materials with respect to anisotropy, strength graduation according to element sizes (especially panel thickness) apply accordingly.",
+    "properties": {
+        "ApplicableStructuralDesignMethod": {
+            "title": "ApplicableStructuralDesignMethod",
+            "description": "Determines whether mechanical material properties are applicable to 'ASD' = allowable stress design (working stress design), 'LSD' = limit state design, or 'LRFD' = load and resistance factor design.",
+            "datatype": "IfcLabel"
+        },
+        "InPlane": {
+            "title": "InPlane",
+            "description": "Mechanical properties with respect to in-plane load, i.e. for function as a membrane."
+        },
+        "YoungModulusBending": {
+            "title": "YoungModulusBending",
+            "description": "Defining values: \u03b1; defined values: elastic modulus in bending."
+        },
+        "YoungModulusTension": {
+            "title": "YoungModulusTension",
+            "description": "Defining values: \u03b1; defined values: elastic modulus in tension."
+        },
+        "YoungModulusCompression": {
+            "title": "YoungModulusCompression",
+            "description": "Elastic modulus in compression.",
+            "datatype": "IfcModulusOfElasticityMeasure"
+        },
+        "ShearModulus": {
+            "title": "ShearModulus",
+            "description": "Shear modulus.",
+            "datatype": "IfcModulusOfElasticityMeasure"
+        },
+        "BendingStrength": {
+            "title": "BendingStrength",
+            "description": "Defining values: \u03b1; defined values: bending strength."
+        },
+        "CompressiveStrength": {
+            "title": "CompressiveStrength",
+            "description": "Defining values: \u03b1; defined values: compressive strength."
+        },
+        "TensileStrength": {
+            "title": "TensileStrength",
+            "description": "Defining values: \u03b1; defined values: tensile strength."
+        },
+        "ShearStrength": {
+            "title": "ShearStrength",
+            "description": "Defining values: \u03b1; defined values: shear strength."
+        },
+        "BearingStrength": {
+            "title": "BearingStrength",
+            "description": "Defining values: \u03b1; defined values: bearing strength of bolt holes, i.e. intrados pressure."
+        },
+        "RaisedCompressiveStrength": {
+            "title": "RaisedCompressiveStrength",
+            "description": "Alternative value for compressive strength which may be used under material and code dependent conditions (e.g. if deformation is tolerable, or far from ends of the member); conditions should be stated in SELF\\IfcProperty.Description.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "ReferenceDepth": {
+            "title": "ReferenceDepth",
+            "description": "Depth in bending for which the mechanical properties are valid; provided as a means to check the integrity of material assignment.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "OutOfPlane": {
+            "title": "OutOfPlane",
+            "description": "Mechanical properties with respect to out-of-plane load, i.e. for function as a plate; tension zone of unbalanced layups is stressed in tension."
+        },
+        "OutOfPlaneNegative": {
+            "title": "OutOfPlaneNegative",
+            "description": "Mechanical properties with respect to out-of-plane load i.e. for function as a plate; compression zone of unbalanced layups is stressed in tension."
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "$id": "Pset_SanitaryTerminalTypeUrinal.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SanitaryTerminalTypeUrinal",
+    "description": "Soil appliance that receives urine and directs it to a waste outlet (BS6100). HISTORY: In IFC4, Material property removed. Use materials capabilities from IfcMaterialsResource schema. Prefix for color property removed. Datatype of color changed to IfcLabel (still a string value).  Mounting property added.",
+    "properties": {
+        "UrinalType": {
+            "title": "UrinalType",
+            "description": "Selection of the type of urinal from the enumerated list of types where:-\n\nBowl: Individual wall mounted urinal.\nSlab: Urinal that consists of a slab or sheet fixed to a wall and down which urinal flows into a floor channel.\nStall: Floor mounted urinal that consists of an elliptically shaped sanitary stall fixed to a wall and down which urine flows into a floor channel.\nTrough: Wall mounted urinal of elongated rectangular shape on plan, that can be used by more than one person at a time.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BOWL",
+                    "SLAB",
+                    "STALL",
+                    "TROUGH",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Mounting": {
+            "title": "Mounting",
+            "description": "Selection of the form of mounting from the enumerated list of mountings where:-\n\nBackToWall =\tA pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections\nPedestal =\tA floor mounted sanitary terminal that has an integral base\nCounterTop =\tA sanitary terminal that is installed into a horizontal surface that is installed into a horizontal surface. Note: When applied to a wash hand basin, the term more normally used is \u2018vanity\u2019. See also Wash Hand Basin Type specification.\nWallHung =\tA sanitary terminal cantilevered clear of the floor\n.\n\nNote that BackToWall, Pedestal and WallHung are allowable values for a urinal.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BACKTOWALL",
+                    "PEDESTAL",
+                    "COUNTERTOP",
+                    "WALLHUNG",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "SpilloverLevel": {
+            "title": "SpilloverLevel",
+            "description": "The level at which water spills out of the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

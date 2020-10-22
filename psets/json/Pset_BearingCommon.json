@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_BearingCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_BearingCommon",
+    "description": "A list of exactly three boelean values representing an accomodated displacement (value TRUE or 1) or no displacement (value FALSE or 0) on the corresponding axis where the first value represents axis X, second value axis Y and third value axis Z.",
+    "properties": {
+        "DisplacementAccomodated": {
+            "title": "DisplacementAccomodated",
+            "description": "A list of exactly three boelean values representing an accomodated displacement (value TRUE or 1) or no displacement (value FALSE or 0) on the corresponding axis where the first value represents axis X, second value axis Y and third value axis Z.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "RotationAccomodated": {
+            "title": "RotationAccomodated",
+            "description": "A list of exactly three boelean values representing an accomodated rotation (value TRUE or 1) or no rotation (value FALSE or 0) about the corresponding axis where the first value represents axis X, second value axis Y and third value axis Z.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        }
+    }
+}

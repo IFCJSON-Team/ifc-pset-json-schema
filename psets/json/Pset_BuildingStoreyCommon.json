@@ -1,0 +1,50 @@
+{
+    "$id": "Pset_BuildingStoreyCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_BuildingStoreyCommon",
+    "description": "Properties common to the definition of all instances of IfcBuildingStorey. Please note that several building attributes are handled directly at the IfcBuildingStorey instance, the building storey number (or short name) by IfcBuildingStorey.Name, the building storey name (or long name) by IfcBuildingStorey.LongName, and the description (or comments) by IfcBuildingStorey.Description. Actual building storey quantities, like building storey perimeter, building storey area and building storey volume are provided by IfcElementQuantity, and the building storey classification according to national building code by IfcClassificationReference.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.",
+            "datatype": "IfcIdentifier"
+        },
+        "EntranceLevel": {
+            "title": "EntranceLevel",
+            "description": "Indication whether this building storey is an entrance level to the building (TRUE), or (FALSE) if otherwise.",
+            "datatype": "IfcBoolean"
+        },
+        "AboveGround": {
+            "title": "AboveGround",
+            "description": "Indication whether this building storey is fully above ground (TRUE), or below ground (FALSE), or partially above and below ground (UNKNOWN) - as in sloped terrain.",
+            "datatype": "IfcLogical"
+        },
+        "SprinklerProtection": {
+            "title": "SprinklerProtection",
+            "description": "Indication whether this object is sprinkler protected (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "SprinklerProtectionAutomatic": {
+            "title": "SprinklerProtectionAutomatic",
+            "description": "Indication whether this object has an automatic sprinkler protection (TRUE) or not (FALSE).\nIt should only be given, if the property \"SprinklerProtection\" is set to TRUE.",
+            "datatype": "IfcBoolean"
+        },
+        "LoadBearingCapacity": {
+            "title": "LoadBearingCapacity",
+            "description": "Maximum load bearing capacity of the floor structure throughtout the storey as designed.",
+            "datatype": "IfcPlanarForceMeasure"
+        },
+        "GrossPlannedArea": {
+            "title": "GrossPlannedArea",
+            "description": "Total planned area for the building storey. Used for programming the building storey.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "NetPlannedArea": {
+            "title": "NetPlannedArea",
+            "description": "Total planned net area for the building storey. Used for programming the building storey.",
+            "datatype": "IfcAreaMeasure"
+        }
+    }
+}

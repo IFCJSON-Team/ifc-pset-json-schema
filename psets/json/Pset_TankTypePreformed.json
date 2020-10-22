@@ -1,0 +1,56 @@
+{
+    "$id": "Pset_TankTypePreformed.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_TankTypePreformed",
+    "description": "Fixed vessel manufactured as a single unit with one or more compartments for storing a liquid.\n\nPset renamed from Pset_TankTypePreformedTank to Pset_TankTypePreformed in IFC2x2 Pset Addendum.",
+    "properties": {
+        "PatternType": {
+            "title": "PatternType",
+            "description": "Defines the types of pattern (or shape of a tank that may be specified.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "HORIZONTALCYLINDER",
+                    "VERTICALCYLINDER",
+                    "RECTANGULAR",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "EndShapeType": {
+            "title": "EndShapeType",
+            "description": "Defines the types of end shapes that can be used for preformed tanks. The convention for reading these enumerated values is that for a vertical cylinder, the first value is the base and the second is the top; for a horizontal cylinder, the order of reading should be left to right. For a speherical tank, the value UNSET should be used.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CONCAVECONVEX",
+                    "FLATCONVEX",
+                    "CONVEXCONVEX",
+                    "CONCAVEFLAT",
+                    "FLATFLAT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FirstCurvatureRadius": {
+            "title": "FirstCurvatureRadius",
+            "description": "FirstCurvatureRadius should be defined as the base or left side radius of curvature value.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "SecondCurvatureRadius": {
+            "title": "SecondCurvatureRadius",
+            "description": "SecondCurvatureRadius should be defined as the top or right side radius of curvature value.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

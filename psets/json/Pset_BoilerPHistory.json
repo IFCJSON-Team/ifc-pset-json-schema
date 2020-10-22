@@ -1,0 +1,46 @@
+{
+    "$id": "Pset_BoilerPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_BoilerPHistory",
+    "description": "Boiler performance history common attributes.\nWaterQuality attribute deleted in IFC2x2 Pset Addendum: Use IfcWaterProperties instead. CombustionProductsMaximulLoad and CombustionProductsPartialLoad attributes deleted in IFC2x2 Pset Addendum: Use IfcProductsOfCombustionProperties instead.",
+    "properties": {
+        "EnergySourceConsumption": {
+            "title": "EnergySourceConsumption",
+            "description": "Energy consumption."
+        },
+        "OperationalEfficiency": {
+            "title": "OperationalEfficiency",
+            "description": "Operational efficiency: boiler output divided by total energy input (electrical and fuel)."
+        },
+        "CombustionEfficiency": {
+            "title": "CombustionEfficiency",
+            "description": "Combustion efficiency under nominal condition."
+        },
+        "WorkingPressure": {
+            "title": "WorkingPressure",
+            "description": "Boiler working pressure."
+        },
+        "CombustionTemperature": {
+            "title": "CombustionTemperature",
+            "description": "Average combustion chamber temperature."
+        },
+        "PartLoadRatio": {
+            "title": "PartLoadRatio",
+            "description": "Ratio of the real to the nominal capacity."
+        },
+        "Load": {
+            "title": "Load",
+            "description": "Boiler real load."
+        },
+        "PrimaryEnergyConsumption": {
+            "title": "PrimaryEnergyConsumption",
+            "description": "Boiler primary energy source consumption (i.e., the fuel consumed for changing the thermodynamic state of the fluid)."
+        },
+        "AuxiliaryEnergyConsumption": {
+            "title": "AuxiliaryEnergyConsumption",
+            "description": "Boiler secondary energy source consumption (i.e., the electricity consumed by electrical devices such as fans and pumps)."
+        }
+    }
+}

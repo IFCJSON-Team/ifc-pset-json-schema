@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_DiscreteAccessoryStandardFixingPlate.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DiscreteAccessoryStandardFixingPlate",
+    "description": "Properties specific to standard fixing plates.",
+    "properties": {
+        "StandardFixingPlateWidth": {
+            "title": "StandardFixingPlateWidth",
+            "description": "The width of the standard fixing plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "StandardFixingPlateDepth": {
+            "title": "StandardFixingPlateDepth",
+            "description": "The depth of the standard fixing plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "StandardFixingPlateThickness": {
+            "title": "StandardFixingPlateThickness",
+            "description": "The thickness of the standard fixing plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

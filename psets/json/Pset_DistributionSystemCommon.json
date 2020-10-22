@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_DistributionSystemCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionSystemCommon",
+    "description": "Distribution system occurrence attributes attached to an instance of IfcDistributionSystem.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specific instance of a distribution system, or sub-system (e.g. 'WWS/VS1', which indicates the system to be WWS, subsystems VSI/400). The reference values depend on the local code of practice.",
+            "datatype": "IfcIdentifier"
+        }
+    }
+}

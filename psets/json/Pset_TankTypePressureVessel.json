@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_TankTypePressureVessel.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_TankTypePressureVessel",
+    "description": "Common attributes of a pressure vessel.",
+    "properties": {
+        "ChargePressure": {
+            "title": "ChargePressure",
+            "description": "Nominal or design operating pressure of the tank.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "PressureRegulatorSetting": {
+            "title": "PressureRegulatorSetting",
+            "description": "Pressure that is automatically maintained in the tank.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "ReliefValveSetting": {
+            "title": "ReliefValveSetting",
+            "description": "Pressure at which the relief valve activates.",
+            "datatype": "IfcPressureMeasure"
+        }
+    }
+}

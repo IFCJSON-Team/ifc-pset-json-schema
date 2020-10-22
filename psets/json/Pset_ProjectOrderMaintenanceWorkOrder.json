@@ -1,0 +1,87 @@
+{
+    "$id": "Pset_ProjectOrderMaintenanceWorkOrder.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProjectOrderMaintenanceWorkOrder",
+    "description": "A MaintenanceWorkOrder is a detailed description of maintenance work that is to be performed. Note that the Scheduled Frequency property of the maintenance work order is used when the order is required as an instance of a scheduled work order.",
+    "properties": {
+        "ProductDescription": {
+            "title": "ProductDescription",
+            "description": "A textual description of the products that require the work.",
+            "datatype": "IfcText"
+        },
+        "WorkTypeRequested": {
+            "title": "WorkTypeRequested",
+            "description": "Work type requested in circumstances where there are categorizations of types of work task. It could be used to identify a remedial task, minor work task, electrical task etc.",
+            "datatype": "IfcText"
+        },
+        "ContractualType": {
+            "title": "ContractualType",
+            "description": "The contractual type of the work.",
+            "datatype": "IfcText"
+        },
+        "IfNotAccomplished": {
+            "title": "IfNotAccomplished",
+            "description": "Comments if the job is not accomplished.",
+            "datatype": "IfcText"
+        },
+        "MaintenaceType": {
+            "title": "MaintenaceType",
+            "description": "Identifies the predefined types of maintenance that can be done from which the type that generates the maintenance work order may be set where:\n\nConditionBased: generated as a result of the condition of an asset or artefact being less than a determined value.\nCorrective: generated as a result of an immediate and urgent need for maintenance action.\nPlannedCorrective: generated as a result of immediate corrective action being needed but with sufficient time available for the work order to be included in maintenance planning.\nScheduled: generated as a result of a fixed, periodic maintenance requirement.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CONDITIONBASED",
+                    "CORRECTIVE",
+                    "PLANNEDCORRECTIVE",
+                    "SCHEDULED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FaultPriorityType": {
+            "title": "FaultPriorityType",
+            "description": "Identifies the predefined types of priority that can be assigned from which the type may be set where:\n\nHigh: action is required urgently.\nMedium: action can occur within a reasonable period of time.\nLow: action can occur when convenient.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "HIGH",
+                    "MEDIUM",
+                    "LOW",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "LocationPriorityType": {
+            "title": "LocationPriorityType",
+            "description": "Identifies the predefined types of priority that can be assigned from which the type may be set where:\n\nHigh: action is required urgently.\nMedium: action can occur within a reasonable period of time.\nLow: action can occur when convenient.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "HIGH",
+                    "MEDIUM",
+                    "LOW",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ScheduledFrequency": {
+            "title": "ScheduledFrequency",
+            "description": "The period of time between expected instantiations of a work order that may have been predefined.",
+            "datatype": "IfcTimeMeasure"
+        }
+    }
+}

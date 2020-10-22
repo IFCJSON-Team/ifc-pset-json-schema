@@ -1,0 +1,27 @@
+{
+    "$id": "Pset_SwitchingDeviceTypeDimmerSwitch.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SwitchingDeviceTypeDimmerSwitch",
+    "description": "A dimmer switch is a switch that adjusts electrical power through a variable position level action.  HISTORY: Added in IFC4.",
+    "properties": {
+        "DimmerType": {
+            "title": "DimmerType",
+            "description": "A list of the available types of dimmer switch from which that required may be selected.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ROCKER",
+                    "SELECTOR",
+                    "TWIST",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

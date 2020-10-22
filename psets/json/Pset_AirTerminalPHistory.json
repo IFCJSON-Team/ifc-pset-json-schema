@@ -1,0 +1,38 @@
+{
+    "$id": "Pset_AirTerminalPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AirTerminalPHistory",
+    "description": "Air terminal performance history common attributes.",
+    "properties": {
+        "AirFlowRate": {
+            "title": "AirFlowRate",
+            "description": "Volumetric flow rate."
+        },
+        "NeckAirVelocity": {
+            "title": "NeckAirVelocity",
+            "description": "Air velocity at the neck."
+        },
+        "SupplyAirTemperatureHeating": {
+            "title": "SupplyAirTemperatureHeating",
+            "description": "Supply air temperature in heating mode."
+        },
+        "SupplyAirTemperatureCooling": {
+            "title": "SupplyAirTemperatureCooling",
+            "description": "Supply air temperature in cooling mode."
+        },
+        "PressureDrop": {
+            "title": "PressureDrop",
+            "description": "Drop in total pressure between inlet and outlet at nominal air-flow rate."
+        },
+        "InductionRatio": {
+            "title": "InductionRatio",
+            "description": "Induction ratio versus distance from the diffuser and its discharge direction; induction ratio (or entrainment ratio) is the ratio of the volumetric flow rate in the jet to the volumetric flow rate at the air terminal."
+        },
+        "CenterlineAirVelocity": {
+            "title": "CenterlineAirVelocity",
+            "description": "Centerline air velocity versus distance from the diffuser and temperature differential; a function of distance from diffuser and temperature difference between supply air and room air."
+        }
+    }
+}

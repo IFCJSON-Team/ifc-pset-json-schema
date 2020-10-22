@@ -1,0 +1,50 @@
+{
+    "$id": "Pset_PrecastSlab.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PrecastSlab",
+    "description": "Layout and component information defining how prestressed slab components are laid out in a precast slab assembly. The values are global defaults for the slab as a whole, but can be overridden by local placements of the individual com",
+    "properties": {
+        "TypeDesignator": {
+            "title": "TypeDesignator",
+            "description": "Type designator for the precast concrete slab, expressing mainly the component type. Possible values are \u201cHollow-core\u201d, \u201cDouble-tee\u201d, \u201cFlat plank\u201d, etc.",
+            "datatype": "IfcLabel"
+        },
+        "ToppingType": {
+            "title": "ToppingType",
+            "description": "Defines if a topping is applied and what kind. Values are \u201cFull topping\u201d, \u201cPerimeter Wash\u201d, \u201cNone\u201d",
+            "datatype": "IfcLabel"
+        },
+        "EdgeDistanceToFirstAxis": {
+            "title": "EdgeDistanceToFirstAxis",
+            "description": "The distance from the left (\u2018West\u2019) edge of the slab (in the direction of span of the components) to the axis of the first component.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "DistanceBetweenComponentAxes": {
+            "title": "DistanceBetweenComponentAxes",
+            "description": "The distance between the axes of the components, measured along the \u2018South\u2019 edge of the slab.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "AngleToFirstAxis": {
+            "title": "AngleToFirstAxis",
+            "description": "The angle of rotation of the axis of the first component relative to the \u2018West\u2019 edge of the slab.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "AngleBetweenComponentAxes": {
+            "title": "AngleBetweenComponentAxes",
+            "description": "The angle between the axes of each pair of components.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "NominalThickness": {
+            "title": "NominalThickness",
+            "description": "The nominal overall thickness of the slab.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalToppingThickness": {
+            "title": "NominalToppingThickness",
+            "description": "The nominal thickness of the topping.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_CableSegmentTypeBusBarSegment.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CableSegmentTypeBusBarSegment",
+    "description": "Properties specific to busbar cable segments.",
+    "properties": {
+        "IsHorizontalBusbar": {
+            "title": "IsHorizontalBusbar",
+            "description": "Indication of whether the busbar occurrences are routed horizontally (= TRUE) or vertically (= FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

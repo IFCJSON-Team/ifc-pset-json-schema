@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_PipeFittingOccurrence.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PipeFittingOccurrence",
+    "description": "Pipe segment occurrence attributes attached to an instance of IfcPipeSegment.",
+    "properties": {
+        "InteriorRoughnessCoefficient": {
+            "title": "InteriorRoughnessCoefficient",
+            "description": "The interior roughness coefficient of the pipe segment.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Color": {
+            "title": "Color",
+            "description": "The color of the pipe segment.\n\nNote: This is typically used only for plastic pipe segments. However, it may be used for any pipe segments with a painted surface which is not otherwise specified as a covering.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

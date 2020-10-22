@@ -1,0 +1,46 @@
+{
+    "$id": "Pset_FanPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FanPHistory",
+    "description": "Fan performance history attributes.\nSound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.",
+    "properties": {
+        "FanRotationSpeed": {
+            "title": "FanRotationSpeed",
+            "description": "Fan rotation speed."
+        },
+        "WheelTipSpeed": {
+            "title": "WheelTipSpeed",
+            "description": "Fan blade tip speed, typically defined as the linear speed of the tip of the fan blade furthest from the shaft."
+        },
+        "FanEfficiency": {
+            "title": "FanEfficiency",
+            "description": "Fan mechanical efficiency."
+        },
+        "OverallEfficiency": {
+            "title": "OverallEfficiency",
+            "description": "Total efficiency of motor and fan."
+        },
+        "FanPowerRate": {
+            "title": "FanPowerRate",
+            "description": "Fan power consumption."
+        },
+        "ShaftPowerRate": {
+            "title": "ShaftPowerRate",
+            "description": "Fan shaft power."
+        },
+        "DischargeVelocity": {
+            "title": "DischargeVelocity",
+            "description": "The speed at which air discharges from the fan through the fan housing discharge opening."
+        },
+        "DischargePressureLoss": {
+            "title": "DischargePressureLoss",
+            "description": "Fan discharge pressure loss associated with the discharge arrangement."
+        },
+        "DrivePowerLoss": {
+            "title": "DrivePowerLoss",
+            "description": "Fan drive power losses associated with the type of connection between the motor and the fan wheel."
+        }
+    }
+}

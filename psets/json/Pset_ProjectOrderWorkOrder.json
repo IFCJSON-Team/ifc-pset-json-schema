@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_ProjectOrderWorkOrder.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProjectOrderWorkOrder",
+    "description": "Defines the requirements for purchase orders in a project.",
+    "properties": {
+        "ProductDescription": {
+            "title": "ProductDescription",
+            "description": "A textual description of the products that require the work.",
+            "datatype": "IfcText"
+        },
+        "WorkTypeRequested": {
+            "title": "WorkTypeRequested",
+            "description": "Work type requested in circumstances where there are categorizations of types of work task. It could be used to identify a remedial task, minor work task, electrical task etc.",
+            "datatype": "IfcText"
+        },
+        "ContractualType": {
+            "title": "ContractualType",
+            "description": "The contractual type of the work.",
+            "datatype": "IfcText"
+        },
+        "IfNotAccomplished": {
+            "title": "IfNotAccomplished",
+            "description": "Comments if the job is not accomplished.",
+            "datatype": "IfcText"
+        }
+    }
+}

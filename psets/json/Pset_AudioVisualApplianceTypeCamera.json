@@ -1,0 +1,79 @@
+{
+    "$id": "Pset_AudioVisualApplianceTypeCamera.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AudioVisualApplianceTypeCamera",
+    "description": "An audio-visual camera is a device that captures video, such as for security.  HISTORY: Added in IFC4.",
+    "properties": {
+        "CameraType": {
+            "title": "CameraType",
+            "description": "Indicates the type of camera.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "PHOTO",
+                    "VIDEO",
+                    "AUDIOVIDEO",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET."
+                ]
+            }
+        },
+        "IsOutdoors": {
+            "title": "IsOutdoors",
+            "description": "Indicates if camera is designed to be used outdoors.",
+            "datatype": "IfcBoolean"
+        },
+        "VideoResolutionWidth": {
+            "title": "VideoResolutionWidth",
+            "description": "Indicates the number of horizontal pixels (the largest native video resolution width).",
+            "datatype": "IfcInteger"
+        },
+        "VideoResolutionHeight": {
+            "title": "VideoResolutionHeight",
+            "description": "Indicates the number of vertical pixels (the largest native video resolution height).",
+            "datatype": "IfcInteger"
+        },
+        "VideoResolutionMode": {
+            "title": "VideoResolutionMode",
+            "description": "Indicates video resolution modes."
+        },
+        "VideoCaptureInterval": {
+            "title": "VideoCaptureInterval",
+            "description": "Indicates video frame capture time intervals."
+        },
+        "PanTiltZoomPreset": {
+            "title": "PanTiltZoomPreset",
+            "description": "Indicates pan/tilt/zoom position presets."
+        },
+        "PanHorizontal": {
+            "title": "PanHorizontal",
+            "description": "Indicates horizontal range for panning.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "PanVertical": {
+            "title": "PanVertical",
+            "description": "Indicates vertical range for panning.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "TiltHorizontal": {
+            "title": "TiltHorizontal",
+            "description": "Indicates horizontal range for pivoting, where positive values indicate the camera rotating clockwise,",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "TiltVertical": {
+            "title": "TiltVertical",
+            "description": "Indicates vertical range for pivoting, where 0.0 is level, +90 degrees is looking up, -90 degrees is looking down.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "Zoom": {
+            "title": "Zoom",
+            "description": "Indicates the zoom range.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "$id": "Pset_FilterTypeAirParticleFilter.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FilterTypeAirParticleFilter",
+    "description": "Air particle filter type attributes.",
+    "properties": {
+        "AirParticleFilterType": {
+            "title": "AirParticleFilterType",
+            "description": "A panel dry type extended surface filter is a dry-type air filter with random fiber mats or blankets in the forms of pockets, V-shaped or radial pleats, and include the following:\n\nCoarseFilter: Filter with a efficiency lower than 30% for atmosphere dust-spot.\nCoarseMetalScreen: Filter made of metal screen.\nCoarseCellFoams: Filter made of cell foams.\nCoarseSpunGlass: Filter made of spun glass.\nMediumFilter: Filter with an efficiency between 30-98% for atmosphere dust-spot.\nMediumElectretFilter: Filter with fine electret synthetic fibers.\nMediumNaturalFiberFilter: Filter with natural fibers.\nHEPAFilter: High efficiency particulate air filter.\nULPAFilter: Ultra low penetration air filter.\nMembraneFilters: Filter made of membrane for certain pore diameters in flat sheet and pleated form.\nA renewable media with a moving curtain viscous filter are random-fiber media coated with viscous substance in roll form or curtain where fresh media is fed across the face of the filter and the dirty media is rewound onto a roll at the bottom or to into a reservoir:\nRollForm: Viscous filter used in roll form.\nAdhesiveReservoir: Viscous filter used in moving curtain form.\nA renewable moving curtain dry media filter is a random-fiber dry media of relatively high porosity used in moving-curtain(roll) filters.\nAn electrical filter uses electrostatic precipitation to remove and collect particulate contaminants.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "COARSEMETALSCREEN",
+                    "COARSECELLFOAMS",
+                    "COARSESPUNGLASS",
+                    "MEDIUMELECTRETFILTER",
+                    "MEDIUMNATURALFIBERFILTER",
+                    "HEPAFILTER",
+                    "ULPAFILTER",
+                    "MEMBRANEFILTERS",
+                    "RENEWABLEMOVINGCURTIANDRYMEDIAFILTER",
+                    "ELECTRICALFILTER",
+                    "ROLLFORM",
+                    "ADHESIVERESERVOIR",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FrameMaterial": {
+            "title": "FrameMaterial",
+            "description": "Filter frame material."
+        },
+        "SeparationType": {
+            "title": "SeparationType",
+            "description": "Air particulate filter media separation type.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BAG",
+                    "PLEAT",
+                    "TREADSEPARATION",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "DustHoldingCapacity": {
+            "title": "DustHoldingCapacity",
+            "description": "Maximum filter dust holding capacity.",
+            "datatype": "IfcMassMeasure"
+        },
+        "FaceSurfaceArea": {
+            "title": "FaceSurfaceArea",
+            "description": "Face area of filter frame.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "MediaExtendedArea": {
+            "title": "MediaExtendedArea",
+            "description": "Total extended media area.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "NominalCountedEfficiency": {
+            "title": "NominalCountedEfficiency",
+            "description": "Nominal filter efficiency based the particle count concentration before and after the filter against particles with a certain size distribution.",
+            "datatype": "IfcReal"
+        },
+        "NominalWeightedEfficiency": {
+            "title": "NominalWeightedEfficiency",
+            "description": "Nominal filter efficiency based the particle weight concentration before and after the filter against particles with a certain size distribution.",
+            "datatype": "IfcReal"
+        },
+        "PressureDropCurve": {
+            "title": "PressureDropCurve",
+            "description": "Under certain dust holding weight, DelPressure = f (fluidflowRate)"
+        },
+        "CountedEfficiencyCurve": {
+            "title": "CountedEfficiencyCurve",
+            "description": "Counted efficiency curve as a function of dust holding weight, efficiency = f (dust holding weight)."
+        },
+        "WeightedEfficiencyCurve": {
+            "title": "WeightedEfficiencyCurve",
+            "description": "Weighted efficiency curve as a function of dust holding weight, efficiency = f (dust holding weight)."
+        }
+    }
+}

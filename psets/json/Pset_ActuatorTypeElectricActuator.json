@@ -1,0 +1,31 @@
+{
+    "$id": "Pset_ActuatorTypeElectricActuator.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ActuatorTypeElectricActuator",
+    "description": "A device that electrically actuates a control element.",
+    "properties": {
+        "ActuatorInputPower": {
+            "title": "ActuatorInputPower",
+            "description": "Maximum input power requirement.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "ElectricActuatorType": {
+            "title": "ElectricActuatorType",
+            "description": "Enumeration that identifies electric actuator as defined by its operational principle.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "MOTORDRIVE",
+                    "MAGNETIC",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "$id": "Pset_UnitaryEquipmentTypeAirHandler.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_UnitaryEquipmentTypeAirHandler",
+    "description": "Air handler unitary equipment type attributes.\nNote that these attributes were formerly Pset_AirHandler prior to IFC2x2.",
+    "properties": {
+        "AirHandlerConstruction": {
+            "title": "AirHandlerConstruction",
+            "description": "Enumeration defining how the air handler might be fabricated.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "MANUFACTUREDITEM",
+                    "CONSTRUCTEDONSITE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AirHandlerFanCoilArrangement": {
+            "title": "AirHandlerFanCoilArrangement",
+            "description": "Enumeration defining the arrangement of the supply air fan and the cooling coil.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BLOWTHROUGH",
+                    "DRAWTHROUGH",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "DualDeck": {
+            "title": "DualDeck",
+            "description": "Does the AirHandler have a dual deck? TRUE = Yes, FALSE = No.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

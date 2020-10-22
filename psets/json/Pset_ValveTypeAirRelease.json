@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_ValveTypeAirRelease.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ValveTypeAirRelease",
+    "description": "Valve used to release air from a pipe or fitting. \nNote that an air release valve is constrained to have a single port pattern",
+    "properties": {
+        "IsAutomatic": {
+            "title": "IsAutomatic",
+            "description": "Indication of whether the valve is automatically operated (TRUE) or manually operated (FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

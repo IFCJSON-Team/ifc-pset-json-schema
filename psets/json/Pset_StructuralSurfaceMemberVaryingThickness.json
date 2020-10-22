@@ -1,0 +1,85 @@
+{
+    "$id": "Pset_StructuralSurfaceMemberVaryingThickness.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_StructuralSurfaceMemberVaryingThickness",
+    "description": "Thickness parameters of a surface member (structural analysis item) with varying thickness, particularly with linearly varying thickness.  The thickness is interpolated/ extrapolated from three points.  The locations of these points are given either in local x,y coordinates of the surface member or in global X,Y,Z coordinates.  Either way, these points are required to be located within the face or at the bounds of the face  of the surface member, and they must not be located on a common line.  Local and global coordinates shall not be mixed within the same property set instance.",
+    "properties": {
+        "Thickness1": {
+            "title": "Thickness1",
+            "description": "First thickness parameter of a surface member with varying thickness",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Location1Local": {
+            "title": "Location1Local",
+            "description": "Local x,y coordinates of the point in which Thickness1 is given",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "Location1Global": {
+            "title": "Location1Global",
+            "description": "Global X,Y,Z coordinates of the point in which Thickness1 is given",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "Thickness2": {
+            "title": "Thickness2",
+            "description": "Second thickness parameter of a surface member with varying thickness",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Location2Local": {
+            "title": "Location2Local",
+            "description": "Local x,y coordinates of the point in which Thickness2 is given",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "Location2Global": {
+            "title": "Location2Global",
+            "description": "Global X,Y,Z coordinates of the point in which Thickness2 is given",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "Thickness3": {
+            "title": "Thickness3",
+            "description": "Third thickness parameter of a surface member with varying thickness",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Location3Local": {
+            "title": "Location3Local",
+            "description": "Local x,y coordinates of the point in which Thickness3 is given",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "Location3Global": {
+            "title": "Location3Global",
+            "description": "Global X,Y,Z coordinates of the point in which Thickness3 is given",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        }
+    }
+}

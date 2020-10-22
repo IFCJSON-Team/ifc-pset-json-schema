@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_ElectricApplianceTypeElectricCooker.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ElectricApplianceTypeElectricCooker",
+    "description": "Common properties for electric cooker appliances.  HISTORY: Added in IFC4.",
+    "properties": {
+        "ElectricCookerType": {
+            "title": "ElectricCookerType",
+            "description": "Type of electric cooker.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "STEAMCOOKER",
+                    "DEEPFRYER",
+                    "STOVE",
+                    "OVEN",
+                    "TILTINGFRYINGPAN",
+                    "COOKINGKETTLE",
+                    "OTHER",
+                    "UNKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

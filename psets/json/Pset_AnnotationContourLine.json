@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_AnnotationContourLine.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AnnotationContourLine",
+    "description": "Specifies parameters of a standard curve that has a single, consistent measure value.",
+    "properties": {
+        "ContourValue": {
+            "title": "ContourValue",
+            "description": "Value of the elevation of the contour above or below a reference plane.",
+            "datatype": "IfcLengthMeasure"
+        }
+    }
+}

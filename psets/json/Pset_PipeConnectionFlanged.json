@@ -1,0 +1,50 @@
+{
+    "$id": "Pset_PipeConnectionFlanged.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PipeConnectionFlanged",
+    "description": "This property set is used to define the specifics of a flanged pipe connection used between occurrences of pipe segments and fittings.",
+    "properties": {
+        "FlangeTable": {
+            "title": "FlangeTable",
+            "description": "Designation of the standard table to which the flange conforms.",
+            "datatype": "IfcLabel"
+        },
+        "FlangeStandard": {
+            "title": "FlangeStandard",
+            "description": "Designation of the standard describing the flange table.",
+            "datatype": "IfcLabel"
+        },
+        "BoreSize": {
+            "title": "BoreSize",
+            "description": "The nominal bore of the pipe flange.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "FlangeDiameter": {
+            "title": "FlangeDiameter",
+            "description": "Overall diameter of the flange.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "FlangeThickness": {
+            "title": "FlangeThickness",
+            "description": "Thickness of the material from which the pipe bend is constructed.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NumberOfBoltholes": {
+            "title": "NumberOfBoltholes",
+            "description": "Number of boltholes in the flange.",
+            "datatype": "IfcInteger"
+        },
+        "BoltSize": {
+            "title": "BoltSize",
+            "description": "Size of the bolts securing the flange.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "BoltholePitch": {
+            "title": "BoltholePitch",
+            "description": "Diameter of the circle along which the boltholes are placed.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

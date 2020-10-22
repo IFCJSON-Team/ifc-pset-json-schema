@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_MaterialThermal.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialThermal",
+    "description": "A set of thermal material properties.",
+    "properties": {
+        "SpecificHeatCapacity": {
+            "title": "SpecificHeatCapacity",
+            "description": "Defines the specific heat of the material: heat energy absorbed per temperature unit.",
+            "datatype": "IfcSpecificHeatCapacityMeasure"
+        },
+        "BoilingPoint": {
+            "title": "BoilingPoint",
+            "description": "The boiling point of the material (fluid).",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "FreezingPoint": {
+            "title": "FreezingPoint",
+            "description": "The freezing point of the material (fluid).",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "ThermalConductivity": {
+            "title": "ThermalConductivity",
+            "description": "The rate at which thermal energy is transmitted through the material.",
+            "datatype": "IfcThermalConductivityMeasure"
+        }
+    }
+}

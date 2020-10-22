@@ -1,0 +1,55 @@
+{
+    "$id": "Pset_CooledBeamTypeActive.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CooledBeamTypeActive",
+    "description": "Active (ventilated) cooled beam common attributes.",
+    "properties": {
+        "AirFlowConfiguration": {
+            "title": "AirFlowConfiguration",
+            "description": "Air flow configuration type of cooled beam.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BIDIRECTIONAL",
+                    "UNIDIRECTIONALRIGHT",
+                    "UNIDIRECTIONALLEFT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AirflowRateRange": {
+            "title": "AirflowRateRange",
+            "description": "Possible range of airflow that can be delivered.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "SupplyAirConnectionType": {
+            "title": "SupplyAirConnectionType",
+            "description": "The manner in which the pipe connection is made to the cooled beam.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "STRAIGHT",
+                    "RIGHT",
+                    "LEFT",
+                    "TOP",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ConnectionSize": {
+            "title": "ConnectionSize",
+            "description": "Duct connection diameter.",
+            "datatype": "IfcLengthMeasure"
+        }
+    }
+}

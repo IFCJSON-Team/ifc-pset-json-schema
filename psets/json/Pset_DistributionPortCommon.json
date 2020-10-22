@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_DistributionPortCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionPortCommon",
+    "description": "Common attributes attached to an instance of IfcDistributionPort.",
+    "properties": {
+        "PortNumber": {
+            "title": "PortNumber",
+            "description": "The port index for logically ordering the port within the containing element or element type.",
+            "datatype": "IfcInteger"
+        },
+        "ColorCode": {
+            "title": "ColorCode",
+            "description": "Name of a color for identifying the connector, if applicable.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "$id": "Pset_DiscreteAccessoryColumnShoe.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DiscreteAccessoryColumnShoe",
+    "description": "Shape properties common to column shoes.",
+    "properties": {
+        "ColumnShoeBasePlateThickness": {
+            "title": "ColumnShoeBasePlateThickness",
+            "description": "The thickness of the column shoe base plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ColumnShoeBasePlateWidth": {
+            "title": "ColumnShoeBasePlateWidth",
+            "description": "The width of the column shoe base plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ColumnShoeBasePlateDepth": {
+            "title": "ColumnShoeBasePlateDepth",
+            "description": "The depth of the column shoe base plate.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ColumnShoeCasingHeight": {
+            "title": "ColumnShoeCasingHeight",
+            "description": "The height of the column shoe casing.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ColumnShoeCasingWidth": {
+            "title": "ColumnShoeCasingWidth",
+            "description": "The width of the column shoe casing.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ColumnShoeCasingDepth": {
+            "title": "ColumnShoeCasingDepth",
+            "description": "The depth of the column shoe casing.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

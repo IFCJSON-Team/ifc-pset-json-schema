@@ -1,0 +1,84 @@
+{
+    "$id": "Pset_CableSegmentTypeConductorSegment.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CableSegmentTypeConductorSegment",
+    "description": "An electrical conductor is a single linear element with the specific purpose to lead electric current. The core of one lead is normally single wired or multiwired which are intertwined. According to IEC 60050: IEV 195-01-07, a conductor is a conductive part intended to carry a specified electric current.",
+    "properties": {
+        "CrossSectionalArea": {
+            "title": "CrossSectionalArea",
+            "description": "Cross section area of the phase(s) lead(s).",
+            "datatype": "IfcAreaMeasure"
+        },
+        "Function": {
+            "title": "Function",
+            "description": "Type of function for which the conductor is intended.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "LINE",
+                    "NEUTRAL",
+                    "PROTECTIVEEARTH",
+                    "PROTECTIVEEARTHNEUTRAL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Material": {
+            "title": "Material",
+            "description": "Type of material from which the conductor is constructed.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ALUMINIUM",
+                    "COPPER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Construction": {
+            "title": "Construction",
+            "description": "Purpose of informing on how the vonductor is constucted (interwined or solid). I.e. Solid (IEV 461-01-06), stranded (IEV 461-01-07), solid-/finestranded(IEV 461-01-11) (not flexible/flexible).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SOLIDCONDUCTOR",
+                    "STRANDEDCONDUCTOR",
+                    "FLEXIBLESTRANDEDCONDUCTOR",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Shape": {
+            "title": "Shape",
+            "description": "Indication of the shape of the conductor.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "HELICALCONDUCTOR",
+                    "CIRCULARCONDUCTOR",
+                    "SECTORCONDUCTOR",
+                    "RECTANGULARCONDUCTOR",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

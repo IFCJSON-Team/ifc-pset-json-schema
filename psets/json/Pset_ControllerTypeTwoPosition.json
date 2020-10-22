@@ -1,0 +1,51 @@
+{
+    "$id": "Pset_ControllerTypeTwoPosition.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ControllerTypeTwoPosition",
+    "description": "Properties for signal handling for an analog controller taking disparate valued multiple inputs and creating a single valued binary output. HISTORY: In IFC4, extended properties to replace Pset_BinaryInput and Pset_BinaryOutput.",
+    "properties": {
+        "ControlType": {
+            "title": "ControlType",
+            "description": "The type of signal modification effected and applicable ports:\n\nLOWERLIMITSWITCH: Single analog input is read and if less than Value.LowerBound then True is written to the output value.\nUPPERLIMITSWITCH: Single analog input is read and if more than Value.UpperBound then True is written to the output value.\nLOWERBANDSWITCH: Single analog input is read and if less than Value.LowerBound+BandWidth then True is written to the output value.\nUPPERBANDSWITCH: Single analog input is read and if more than Value.UpperBound-BandWidth then True is written to the output value.\nNOT: Single binary input is read and the opposite value is written to the output value.\nAND: Two binary inputs are read and if both are True then True is written to the output value.\nOR: Two binary inputs are read and if either is True then True is written to the output value.\nXOR: Two binary inputs are read and if one is true then True is written to the output value.\nCALENDAR: No inputs; the current time is compared with an IfcWorkCalendar to which the IfcController is assigned and True is written if active.\nINPUT: Controller element is a dedicated input.\nOUTPUT: Controller element is a dedicated output.\nVARIABLE: Controller element is an in-memory variable.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NOT",
+                    "AND",
+                    "OR",
+                    "XOR",
+                    "LOWERLIMITSWITCH",
+                    "UPPERLIMITSWITCH",
+                    "LOWERBANDSWITCH",
+                    "UPPERBANDSWITCH",
+                    "AVERAGE",
+                    "CALENDAR",
+                    "INPUT",
+                    "OUTPUT",
+                    "VARIABLE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Labels": {
+            "title": "Labels",
+            "description": "Table mapping values to labels, where such labels indicate the meanings of True and False, such as 'Open' and 'Closed'"
+        },
+        "Polarity": {
+            "title": "Polarity",
+            "description": "True indicates normal polarity; False indicates reverse polarity.",
+            "datatype": "IfcBoolean"
+        },
+        "Value": {
+            "title": "Value",
+            "description": "The default value such as normally-closed or normally-open.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

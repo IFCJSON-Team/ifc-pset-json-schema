@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_PipeSegmentTypeCulvert.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PipeSegmentTypeCulvert",
+    "description": "Covered channel or large pipe that forms a watercourse below ground level, usually under a road or railway (BS6100).",
+    "properties": {
+        "InternalWidth": {
+            "title": "InternalWidth",
+            "description": "The internal width of the culvert.",
+            "datatype": "IfcLengthMeasure"
+        },
+        "ClearDepth": {
+            "title": "ClearDepth",
+            "description": "The clear depth of the culvert.",
+            "datatype": "IfcLengthMeasure"
+        }
+    }
+}

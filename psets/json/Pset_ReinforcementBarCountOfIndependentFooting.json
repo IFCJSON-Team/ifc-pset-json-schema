@@ -1,0 +1,40 @@
+{
+    "$id": "Pset_ReinforcementBarCountOfIndependentFooting.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ReinforcementBarCountOfIndependentFooting",
+    "description": "Reinforcement Concrete parameter [ST-2]: The amount number information of reinforcement  bar with the independent footing. The X and Y direction are based on the local coordinate system of building storey. The X and Y direction of the reinforcement bar are parallel to the X and Y axis of the IfcBuildingStorey's local coordinate system, respectively.",
+    "properties": {
+        "Description": {
+            "title": "Description",
+            "description": "Description of the reinforcement.",
+            "datatype": "IfcText"
+        },
+        "Reference": {
+            "title": "Reference",
+            "description": "A descriptive label for the general reinforcement type.",
+            "datatype": "IfcLabel"
+        },
+        "XDirectionLowerBarCount": {
+            "title": "XDirectionLowerBarCount",
+            "description": "The number of bars with X direction lower bar.",
+            "datatype": "IfcInteger"
+        },
+        "YDirectionLowerBarCount": {
+            "title": "YDirectionLowerBarCount",
+            "description": "The number of bars with Y direction lower bar.",
+            "datatype": "IfcInteger"
+        },
+        "XDirectionUpperBarCount": {
+            "title": "XDirectionUpperBarCount",
+            "description": "The number of bars with X direction upper bar.",
+            "datatype": "IfcInteger"
+        },
+        "YDirectionUpperBarCount": {
+            "title": "YDirectionUpperBarCount",
+            "description": "The number of bars with Y direction upper bar.",
+            "datatype": "IfcInteger"
+        }
+    }
+}

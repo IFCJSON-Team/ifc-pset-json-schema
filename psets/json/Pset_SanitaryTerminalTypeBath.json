@@ -1,0 +1,42 @@
+{
+    "$id": "Pset_SanitaryTerminalTypeBath.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SanitaryTerminalTypeBath",
+    "description": "Sanitary appliance for immersion of the human body or parts of it (BS6100). HISTORY: In IFC4, Material and MaterialThickness properties removed. Use materials capabilities from IfcMaterialsResource schema. Datatype of color changed to IfcLabel (still a string value)",
+    "properties": {
+        "BathType": {
+            "title": "BathType",
+            "description": "The property enumeration defines the types of bath that may be specified within the property set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DOMESTIC",
+                    "DOMESTICCORNER",
+                    "FOOT",
+                    "JACUZZI",
+                    "PLUNGE",
+                    "SITZ",
+                    "TREATMENT",
+                    "WHIRLPOOL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "DrainSize": {
+            "title": "DrainSize",
+            "description": "The size of the drain outlet connection from the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HasGrabHandles": {
+            "title": "HasGrabHandles",
+            "description": "Indicates whether the bath is fitted with handles that provide assistance to a bather in entering or leaving the bath.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

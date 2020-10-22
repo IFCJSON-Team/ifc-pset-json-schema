@@ -1,0 +1,78 @@
+{
+    "$id": "Pset_SlabCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SlabCommon",
+    "description": "Properties common to the definition of all occurrences of IfcSlab. Note: Properties for PitchAngle added in IFC 2x3",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as \"construction type\". It should be provided as an alternative to the name of the \"object type\", if the software does not support object types.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AcousticRating": {
+            "title": "AcousticRating",
+            "description": "Acoustic rating for this object.\nIt is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).",
+            "datatype": "IfcLabel"
+        },
+        "FireRating": {
+            "title": "FireRating",
+            "description": "Fire rating for this object. It is given according to the national fire safety classification.",
+            "datatype": "IfcLabel"
+        },
+        "PitchAngle": {
+            "title": "PitchAngle",
+            "description": "Angle of the slab to the horizontal when used as a component for the roof (specified as 0 degrees or not asserted for cases where the slab is not used as a roof component).      \n\nThe shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the attached property, the geometric parameters take precedence.  For geometry editing applications, like CAD: this value should be write-only.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "Combustible": {
+            "title": "Combustible",
+            "description": "Indication whether the object is made from combustible material (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "SurfaceSpreadOfFlame": {
+            "title": "SurfaceSpreadOfFlame",
+            "description": "Indication on how the flames spread around the surface, It is given according to the national building code that governs the fire behaviour for materials.",
+            "datatype": "IfcLabel"
+        },
+        "Compartmentation": {
+            "title": "Compartmentation",
+            "description": "Indication whether the object is designed to serve as a fire compartmentation (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "IsExternal": {
+            "title": "IsExternal",
+            "description": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+            "datatype": "IfcBoolean"
+        },
+        "ThermalTransmittance": {
+            "title": "ThermalTransmittance",
+            "description": "Thermal transmittance coefficient (U-Value) of a material. Here the total thermal transmittance coefficient through the slab (including all materials).",
+            "datatype": "IfcThermalTransmittanceMeasure"
+        },
+        "LoadBearing": {
+            "title": "LoadBearing",
+            "description": "Indicates whether the object is intended to carry loads (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

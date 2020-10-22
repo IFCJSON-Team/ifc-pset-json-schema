@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_ProtectiveDeviceTypeResidualCurrentSwitch.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceTypeResidualCurrentSwitch",
+    "description": "A residual current switch opens, closes or isolates a circuit and has no short circuit or overload protection.",
+    "properties": {
+        "Sensitivity": {
+            "title": "Sensitivity",
+            "description": "Current leakage to an unwanted leading path during normal operation (IEC 151-14-49).",
+            "datatype": "IfcElectricCurrentMeasure"
+        }
+    }
+}

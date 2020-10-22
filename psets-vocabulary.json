@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://ifcjson.org/draft/2020-10/meta/psets",
+    "$vocabulary": {
+        "https://ifcjson.org/draft/2020-10/meta/psets": true
+    },
+    "$recursiveAnchor": true,
+
+    "title": "IFC PSet vocabulary meta-schema",
+
+    "type": ["object", "boolean"],
+    "properties": {
+        "ifcversion": {
+            "type": "string"
+        },
+        "datatype": {
+            "type": "string"
+        }
+      
+    }
+}

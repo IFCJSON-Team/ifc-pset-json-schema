@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_SensorTypeGasSensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypeGasSensor",
+    "description": "A device that senses or detects gas. HISTORY: Changed in IFC4. Gas detected made into enumeration, set point concentration and coverage area added. Range, accuracy and time constant deleted.",
+    "properties": {
+        "GasDetected": {
+            "title": "GasDetected",
+            "description": "Identification of the gas that is being detected, according to chemical formula.  For example, carbon monoxide is 'CO', carbon dioxide is 'CO2', oxygen is 'O2'.",
+            "datatype": "IfcLabel"
+        },
+        "SetPointConcentration": {
+            "title": "SetPointConcentration",
+            "description": "The gas concentration value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "CoverageArea": {
+            "title": "CoverageArea",
+            "description": "The floor area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).",
+            "datatype": "IfcAreaMeasure"
+        }
+    }
+}

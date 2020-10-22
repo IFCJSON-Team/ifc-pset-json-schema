@@ -1,0 +1,46 @@
+{
+    "$id": "Pset_PipeFittingTypeJunction.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PipeFittingTypeJunction",
+    "description": "Pipe fitting type attributes for junction shapes.",
+    "properties": {
+        "JunctionType": {
+            "title": "JunctionType",
+            "description": "The type of junction. TEE=3 ports, CROSS = 4 ports.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "TEE",
+                    "CROSS",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "JunctionLeftAngle": {
+            "title": "JunctionLeftAngle",
+            "description": "The change of direction of flow for the left junction.",
+            "datatype": "IfcPositivePlaneAngleMeasure"
+        },
+        "JunctionLeftRadius": {
+            "title": "JunctionLeftRadius",
+            "description": "The radius of bending for the left junction.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "JunctionRightAngle": {
+            "title": "JunctionRightAngle",
+            "description": "The change of direction of flow for the right junction where 0 indicates straight segment.",
+            "datatype": "IfcPositivePlaneAngleMeasure"
+        },
+        "JunctionRightRadius": {
+            "title": "JunctionRightRadius",
+            "description": "The radius of bending for the right junction where 0 indicates sharp bend.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

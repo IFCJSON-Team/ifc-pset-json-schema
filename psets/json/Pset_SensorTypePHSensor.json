@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_SensorTypePHSensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypePHSensor",
+    "description": "A device that senses or detects acidity.  HISTORY: Added in IFC4.",
+    "properties": {
+        "SetPointPH": {
+            "title": "SetPointPH",
+            "description": "The fill level value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+            "datatype": "IfcPHMeasure"
+        }
+    }
+}

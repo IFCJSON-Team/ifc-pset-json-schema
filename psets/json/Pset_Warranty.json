@@ -1,0 +1,50 @@
+{
+    "$id": "Pset_Warranty.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_Warranty",
+    "description": "An assurance given by the seller or provider of an artefact that the artefact is without defects and will operate as described for a defined period of time without failure and that if a defect does arise during that time, that it will be corrected by the seller or provider.",
+    "properties": {
+        "WarrantyIdentifier": {
+            "title": "WarrantyIdentifier",
+            "description": "The identifier assigned to a warranty.",
+            "datatype": "IfcIdentifier"
+        },
+        "WarrantyStartDate": {
+            "title": "WarrantyStartDate",
+            "description": "The date on which the warranty commences.",
+            "datatype": "IfcDate"
+        },
+        "WarrantyEndDate": {
+            "title": "WarrantyEndDate",
+            "description": "The date on which the warranty expires.",
+            "datatype": "IfcDate"
+        },
+        "IsExtendedWarranty": {
+            "title": "IsExtendedWarranty",
+            "description": "Indication of whether this is an extended warranty whose duration is greater than that normally assigned to an artefact (=TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "WarrantyPeriod": {
+            "title": "WarrantyPeriod",
+            "description": "The time duration during which a manufacturer or supplier guarantees or warrants the performance of an artefact.",
+            "datatype": "IfcDuration"
+        },
+        "WarrantyContent": {
+            "title": "WarrantyContent",
+            "description": "The content of the warranty.",
+            "datatype": "IfcText"
+        },
+        "PointOfContact": {
+            "title": "PointOfContact",
+            "description": "The organization that should be contacted for action under the terms of the warranty. Note that the role of the organization (manufacturer, supplier, installer etc.) is determined by the IfcActorRole attribute of IfcOrganization.",
+            "datatype": "IfcLabel"
+        },
+        "Exclusions": {
+            "title": "Exclusions",
+            "description": "Items, conditions or actions that may be excluded from the warranty or that may cause the warranty to become void.",
+            "datatype": "IfcText"
+        }
+    }
+}

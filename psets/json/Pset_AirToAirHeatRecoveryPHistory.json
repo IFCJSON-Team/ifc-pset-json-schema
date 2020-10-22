@@ -1,0 +1,54 @@
+{
+    "$id": "Pset_AirToAirHeatRecoveryPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AirToAirHeatRecoveryPHistory",
+    "description": "Air to Air Heat Recovery performance history common attributes.",
+    "properties": {
+        "SensibleEffectiveness": {
+            "title": "SensibleEffectiveness",
+            "description": "Sensible heat transfer effectiveness, where effectiveness is defined as the ratio of heat transfer to maximum possible heat transfer."
+        },
+        "TotalEffectiveness": {
+            "title": "TotalEffectiveness",
+            "description": "Total heat transfer effectiveness: The ratio of heat transfer to the maximum possible heat transfer."
+        },
+        "TemperatureEffectiveness": {
+            "title": "TemperatureEffectiveness",
+            "description": "Temperature heat transfer effectiveness: The ratio of primary airflow temperature changes to maximum possible temperature changes."
+        },
+        "DefrostTemperatureEffectiveness": {
+            "title": "DefrostTemperatureEffectiveness",
+            "description": "Temperature heat transfer effectiveness when defrosting is active."
+        },
+        "HumidityEffectiveness": {
+            "title": "HumidityEffectiveness",
+            "description": "Humidity heat transfer effectiveness: The ratio of primary airflow absolute humidity changes to maximum possible absolute humidity changes."
+        },
+        "SensibleHeatTransferRate": {
+            "title": "SensibleHeatTransferRate",
+            "description": "Sensible heat transfer rate."
+        },
+        "LatentHeatTransferRate": {
+            "title": "LatentHeatTransferRate",
+            "description": "Latent heat transfer rate."
+        },
+        "TotalHeatTransferRate": {
+            "title": "TotalHeatTransferRate",
+            "description": "Total heat transfer rate."
+        },
+        "SensibleEffectivenessTable": {
+            "title": "SensibleEffectivenessTable",
+            "description": "Sensible heat transfer effectiveness curve as a function of the primary and secondary air flow rate."
+        },
+        "TotalEffectivenessTable": {
+            "title": "TotalEffectivenessTable",
+            "description": "Total heat transfer effectiveness curve as a function of the primary and secondary air flow rate."
+        },
+        "AirPressureDropCurves": {
+            "title": "AirPressureDropCurves",
+            "description": "Air pressure drop as function of air flow rate."
+        }
+    }
+}

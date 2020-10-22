@@ -1,0 +1,48 @@
+{
+    "$id": "Pset_OpeningElementCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_OpeningElementCommon",
+    "description": "Properties common to the definition of all instances of IfcOpeningElement.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal construction type.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Purpose": {
+            "title": "Purpose",
+            "description": "Indication of the purpose for that opening, e.g. 'ventilation', 'access', etc.",
+            "datatype": "IfcLabel"
+        },
+        "FireExit": {
+            "title": "FireExit",
+            "description": "Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).\nHere whether the space (in case of e.g., a corridor) is designed to serve as an exit space, e.g., for fire escape purposes.",
+            "datatype": "IfcBoolean"
+        },
+        "ProtectedOpening": {
+            "title": "ProtectedOpening",
+            "description": "Indication whether the opening is considered to be protected under fire safety considerations. If (TRUE) it counts as a protected opening under the applicable building code, (FALSE) otherwise.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

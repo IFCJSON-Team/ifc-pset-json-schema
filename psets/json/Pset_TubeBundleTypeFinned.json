@@ -1,0 +1,50 @@
+{
+    "$id": "Pset_TubeBundleTypeFinned.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_TubeBundleTypeFinned",
+    "description": "Finned tube bundle type attributes.\nContains the attributes related to the fins attached to a tube in a finned tube bundle such as is commonly found in coils.",
+    "properties": {
+        "Spacing": {
+            "title": "Spacing",
+            "description": "Distance between fins on a tube in the tube bundle.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Thickness": {
+            "title": "Thickness",
+            "description": "Thickness of the fin.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ThermalConductivity": {
+            "title": "ThermalConductivity",
+            "description": "The thermal conductivity of the fin.",
+            "datatype": "IfcThermalConductivityMeasure"
+        },
+        "Length": {
+            "title": "Length",
+            "description": "Length of the fin as measured parallel to the direction of airflow.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Height": {
+            "title": "Height",
+            "description": "Length of the fin as measured perpendicular to the direction of airflow.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Diameter": {
+            "title": "Diameter",
+            "description": "Actual diameter of a fin for circular fins only.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "FinCorrugatedType": {
+            "title": "FinCorrugatedType",
+            "description": "Description of a fin corrugated type.",
+            "datatype": "IfcLabel"
+        },
+        "HasCoating": {
+            "title": "HasCoating",
+            "description": "TRUE if the fin has a coating, FALSE if it does not.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

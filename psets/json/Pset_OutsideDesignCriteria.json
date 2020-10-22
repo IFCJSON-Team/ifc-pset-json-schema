@@ -1,0 +1,76 @@
+{
+    "$id": "Pset_OutsideDesignCriteria.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_OutsideDesignCriteria",
+    "description": "Outside air conditions used as the basis for calculating thermal loads at peak conditions, as well as the weather data location from which these conditions were obtained. HISTORY: New property set in IFC Release 1.0.",
+    "properties": {
+        "HeatingDryBulb": {
+            "title": "HeatingDryBulb",
+            "description": "Outside dry bulb temperature for heating design.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "HeatingWetBulb": {
+            "title": "HeatingWetBulb",
+            "description": "Outside wet bulb temperature for heating design.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "HeatingDesignDay": {
+            "title": "HeatingDesignDay",
+            "description": "The month, day and time that has been selected for the heating design calculations.",
+            "datatype": "IfcDateTime"
+        },
+        "CoolingDryBulb": {
+            "title": "CoolingDryBulb",
+            "description": "Outside dry bulb temperature for cooling design.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "CoolingWetBulb": {
+            "title": "CoolingWetBulb",
+            "description": "Outside wet bulb temperature for cooling design.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "CoolingDesignDay": {
+            "title": "CoolingDesignDay",
+            "description": "The month, day  and time that has been selected for the cooling design calculations.",
+            "datatype": "IfcDateTime"
+        },
+        "WeatherDataStation": {
+            "title": "WeatherDataStation",
+            "description": "The site weather data station description or reference to the data source from which weather data was obtained for use in calculations.",
+            "datatype": "IfcText"
+        },
+        "WeatherDataDate": {
+            "title": "WeatherDataDate",
+            "description": "The date for which the weather data was gathered.",
+            "datatype": "IfcDateTime"
+        },
+        "BuildingThermalExposure": {
+            "title": "BuildingThermalExposure",
+            "description": "The thermal exposure expected by the building based on surrounding site conditions.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "LIGHT",
+                    "MEDIUM",
+                    "HEAVY",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "PrevailingWindDirection": {
+            "title": "PrevailingWindDirection",
+            "description": "The prevailing wind angle direction measured from True North (0 degrees) in a clockwise direction.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "PrevailingWindVelocity": {
+            "title": "PrevailingWindVelocity",
+            "description": "The design wind velocity coming from the direction specified by the PrevailingWindDirection attribute.",
+            "datatype": "IfcLinearVelocityMeasure"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "$id": "Pset_DiscreteAccessoryDiagonalTrussConnector.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DiscreteAccessoryDiagonalTrussConnector",
+    "description": "Shape properties specific to connecting accessories in truss form with diagonal cross-bars.",
+    "properties": {
+        "DiagonalTrussHeight": {
+            "title": "DiagonalTrussHeight",
+            "description": "The overall height of the truss connector.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "DiagonalTrussLength": {
+            "title": "DiagonalTrussLength",
+            "description": "The overall length of the truss connector.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "DiagonalTrussCrossBarSpacing": {
+            "title": "DiagonalTrussCrossBarSpacing",
+            "description": "The spacing between diagonal cross-bar sections.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "DiagonalTrussBaseBarDiameter": {
+            "title": "DiagonalTrussBaseBarDiameter",
+            "description": "The nominal diameter of the base bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "DiagonalTrussSecondaryBarDiameter": {
+            "title": "DiagonalTrussSecondaryBarDiameter",
+            "description": "The nominal diameter of the secondary bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "DiagonalTrussCrossBarDiameter": {
+            "title": "DiagonalTrussCrossBarDiameter",
+            "description": "The nominal diameter of the diagonal cross-bars.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

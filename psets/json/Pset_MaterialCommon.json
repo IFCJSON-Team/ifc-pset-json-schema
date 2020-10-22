@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_MaterialCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialCommon",
+    "description": "A set of general material properties.",
+    "properties": {
+        "MolecularWeight": {
+            "title": "MolecularWeight",
+            "description": "Molecular weight of material (typically gas).",
+            "datatype": "IfcMolecularWeightMeasure"
+        },
+        "Porosity": {
+            "title": "Porosity",
+            "description": "The void fraction of the total volume occupied by material (Vbr - Vnet)/Vbr.",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "MassDensity": {
+            "title": "MassDensity",
+            "description": "Material mass density.",
+            "datatype": "IfcMassDensityMeasure"
+        }
+    }
+}

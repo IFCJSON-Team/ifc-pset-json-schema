@@ -1,0 +1,108 @@
+{
+    "$id": "Pset_CoilTypeHydronic.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CoilTypeHydronic",
+    "description": "Hydronic coil type attributes.",
+    "properties": {
+        "FluidPressureRange": {
+            "title": "FluidPressureRange",
+            "description": "Allowable water working pressure range inside the tube.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "CoilCoolant": {
+            "title": "CoilCoolant",
+            "description": "The fluid used for heating or cooling used by the hydronic coil.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "WATER",
+                    "BRINE",
+                    "GLYCOL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "CoilConnectionDirection": {
+            "title": "CoilConnectionDirection",
+            "description": "Coil connection direction (facing into the air stream).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "LEFT",
+                    "RIGHT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "CoilFluidArrangement": {
+            "title": "CoilFluidArrangement",
+            "description": "Fluid flow arrangement of the coil.\n\nCrossCounterFlow: Air and water flow enter in different directions.\nCrossFlow: Air and water flow are perpendicular.\nCrossParallelFlow: Air and water flow enter in same directions.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CROSSFLOW",
+                    "CROSSCOUNTERFLOW",
+                    "CROSSPARALLELFLOW",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "CoilFaceArea": {
+            "title": "CoilFaceArea",
+            "description": "Coil face area in the direction against air the flow.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "HeatExchangeSurfaceArea": {
+            "title": "HeatExchangeSurfaceArea",
+            "description": "Heat exchange surface area associated with U-value.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "PrimarySurfaceArea": {
+            "title": "PrimarySurfaceArea",
+            "description": "Primary heat transfer surface area of the tubes and headers.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "SecondarySurfaceArea": {
+            "title": "SecondarySurfaceArea",
+            "description": "Secondary heat transfer surface area created by fins.",
+            "datatype": "IfcAreaMeasure"
+        },
+        "TotalUACurves": {
+            "title": "TotalUACurves",
+            "description": "Total UA curves, UA - air and water velocities, UA = [(C1 * AirFlowRate^0.8)^-1 + (C2 * WaterFlowRate^0.8)^-1]^-1.  Note: as two variables are used, DefiningValues and DefinedValues are null, and values are stored in IfcTable in the following order: AirFlowRate,WaterFlowRate,UA.  The IfcTable is related to IfcPropertyTableValue using IfcMetric and IfcPropertyConstraintRelationship."
+        },
+        "WaterPressureDropCurve": {
+            "title": "WaterPressureDropCurve",
+            "description": "Water pressure drop curve, pressure drop \u2013 flow rate curve, WaterPressureDrop = f(WaterflowRate)."
+        },
+        "BypassFactor": {
+            "title": "BypassFactor",
+            "description": "Fraction of air that is bypassed by the coil (0-1).",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "SensibleHeatRatio": {
+            "title": "SensibleHeatRatio",
+            "description": "Air-side sensible heat ratio, or fraction of sensible heat transfer to the total heat transfer.",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "WetCoilFraction": {
+            "title": "WetCoilFraction",
+            "description": "Fraction of coil surface area that is wet (0-1).",
+            "datatype": "IfcNormalisedRatioMeasure"
+        }
+    }
+}

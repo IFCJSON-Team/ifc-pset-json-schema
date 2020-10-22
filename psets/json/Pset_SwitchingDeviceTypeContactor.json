@@ -1,0 +1,31 @@
+{
+    "$id": "Pset_SwitchingDeviceTypeContactor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SwitchingDeviceTypeContactor",
+    "description": "An electrical device used to control the flow of power in a circuit on or off.",
+    "properties": {
+        "ContactorType": {
+            "title": "ContactorType",
+            "description": "A list of the available types of contactor from which that required may be selected where:\n\nCapacitorSwitching: for switching 3 phase single or multi-step capacitor banks.\nLowCurrent: requires the use of low resistance contacts.\nMagneticLatching: enables the contactor to remain in the on position when the coil is no longer energized.\nMechanicalLatching: requires that the contactor is mechanically retained in the on position.\nModular: are totally enclosed and self contained.\nReversing: has a double set of contactors that are prewired.\nStandard: is a generic device that controls the flow of power in a circuit on or off.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CAPACITORSWITCHING",
+                    "LOWCURRENT",
+                    "MAGNETICLATCHING",
+                    "MECHANICALLATCHING",
+                    "MODULAR",
+                    "REVERSING",
+                    "STANDARD",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_ServiceLife.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ServiceLife",
+    "description": "Captures the period of time that an artifact will last.  HISTORY: Introduced in IFC2X4 as replacement for IfcServiceLife.",
+    "properties": {
+        "ServiceLifeDuration": {
+            "title": "ServiceLifeDuration",
+            "description": "The length or duration of a service life.  \n\n\n\nThe lower bound indicates pessimistic service life, the upper bound indicates optimistic service life, and the setpoint indicates the typical service life.",
+            "datatype": "IfcDuration"
+        },
+        "MeanTimeBetweenFailure": {
+            "title": "MeanTimeBetweenFailure",
+            "description": "The average time duration between instances of failure of a product.",
+            "datatype": "IfcDuration"
+        }
+    }
+}

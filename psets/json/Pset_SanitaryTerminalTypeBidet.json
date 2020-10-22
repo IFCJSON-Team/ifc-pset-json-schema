@@ -1,0 +1,38 @@
+{
+    "$id": "Pset_SanitaryTerminalTypeBidet.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SanitaryTerminalTypeBidet",
+    "description": "Waste water appliance for washing the excretory organs while sitting astride the bowl (BS6100). HISTORY: In IFC4, Material property removed. Use materials capabilities from IfcMaterialsResource schema. Datatype of color changed to IfcLabel (still a string value). BidetMounting changed to Mounting.",
+    "properties": {
+        "Mounting": {
+            "title": "Mounting",
+            "description": "The property enumeration Pset_SanitaryMountingEnum defines the forms of mounting or fixing of the sanitary terminal that may be specified within property sets used to define sanitary terminals (WC\u2019s, basins, sinks, etc.) where:-\n\nBackToWall: \tA pedestal mounted sanitary terminal that fits flush to the wall at the rear to cover its service connections\n.\nPedestal: \tA floor mounted sanitary terminal that has an integral base\n.\nCounterTop: \tA sanitary terminal that is installed into a horizontal surface that is installed into a horizontal surface. Note: When applied to a wash hand basin, the term more normally used is \u2018vanity\u2019. See also Wash Hand Basin Type specification.\nWallHung: \tA sanitary terminal cantilevered clear of the floor.\n\nNote that BackToWall, Pedestal and WallHung are allowable values for a bidet.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BACKTOWALL",
+                    "PEDESTAL",
+                    "COUNTERTOP",
+                    "WALLHUNG",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "SpilloverLevel": {
+            "title": "SpilloverLevel",
+            "description": "The level at which water spills out of the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "DrainSize": {
+            "title": "DrainSize",
+            "description": "The size of the drain outlet connection from the object.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

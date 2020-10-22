@@ -1,0 +1,40 @@
+{
+    "$id": "Pset_SpaceFireSafetyRequirements.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceFireSafetyRequirements",
+    "description": "Properties related to fire protection of spaces that apply to the occurrences of IfcSpace or IfcZone.",
+    "properties": {
+        "FireRiskFactor": {
+            "title": "FireRiskFactor",
+            "description": "Fire Risk factor assigned to the space according to local building regulations. It defines the fire risk of the space at several levels of fire hazard.",
+            "datatype": "IfcLabel"
+        },
+        "FlammableStorage": {
+            "title": "FlammableStorage",
+            "description": "Indication whether the space is intended to serve as a storage of flammable material (which is regarded as such by the presiding building code. (TRUE) indicates yes, (FALSE) otherwise.",
+            "datatype": "IfcBoolean"
+        },
+        "FireExit": {
+            "title": "FireExit",
+            "description": "Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).\nHere whether the space (in case of e.g., a corridor) is designed to serve as an exit space, e.g., for fire escape purposes.",
+            "datatype": "IfcBoolean"
+        },
+        "SprinklerProtection": {
+            "title": "SprinklerProtection",
+            "description": "Indication whether the space is sprinkler protected (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "SprinklerProtectionAutomatic": {
+            "title": "SprinklerProtectionAutomatic",
+            "description": "Indication whether the space has an automatic sprinkler protection (TRUE) or not (FALSE).\nIt should only be given, if the property \"SprinklerProtection\" is set to TRUE.",
+            "datatype": "IfcBoolean"
+        },
+        "AirPressurization": {
+            "title": "AirPressurization",
+            "description": "Indication whether the space is required to have pressurized air (TRUE) or not (FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

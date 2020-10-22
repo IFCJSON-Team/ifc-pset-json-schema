@@ -1,0 +1,154 @@
+{
+    "$id": "Pset_SpaceHeaterTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceHeaterTypeCommon",
+    "description": "Space heater type common attributes.\nSoundLevel attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.  Properties added in IFC4.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1').",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "PlacementType": {
+            "title": "PlacementType",
+            "description": "Indicates how the space heater is designed to be placed.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BASEBOARD",
+                    "TOWELWARMER",
+                    "SUSPENDED",
+                    "WALL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "TemperatureClassification": {
+            "title": "TemperatureClassification",
+            "description": "Enumeration defining the temperature classification of the space heater surface temperature.\nlow temperature - surface temperature is relatively low, usually heated by hot water or electricity.\nhigh temperature - surface temperature is relatively high, usually heated by gas or steam.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "LOWTEMPERATURE",
+                    "HIGHTEMPERATURE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HeatTransferDimension": {
+            "title": "HeatTransferDimension",
+            "description": "Indicates how heat is transmitted according to the shape of the space heater.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "POINT",
+                    "PATH",
+                    "SURFACE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "HeatTransferMedium": {
+            "title": "HeatTransferMedium",
+            "description": "Enumeration defining the heat transfer medium if applicable.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "WATER",
+                    "STEAM",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "EnergySource": {
+            "title": "EnergySource",
+            "description": "Enumeration defining the energy source or fuel combusted to generate heat if applicable.  Note: hydronic heaters shall use UNSET; dual-use hydronic/electric heaters shall use ELECTRICITY.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "COAL",
+                    "COAL_PULVERIZED",
+                    "ELECTRICITY",
+                    "GAS",
+                    "OIL",
+                    "PROPANE",
+                    "WOOD",
+                    "WOOD_CHIP",
+                    "WOOD_PELLET",
+                    "WOOD_PULVERIZED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "BodyMass": {
+            "title": "BodyMass",
+            "description": "Overall body mass of the heater.",
+            "datatype": "IfcMassMeasure"
+        },
+        "ThermalMassHeatCapacity": {
+            "title": "ThermalMassHeatCapacity",
+            "description": "Product of component mass and specific heat.",
+            "datatype": "IfcReal"
+        },
+        "OutputCapacity": {
+            "title": "OutputCapacity",
+            "description": "Total nominal heat output as listed by the manufacturer.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "ThermalEfficiency": {
+            "title": "ThermalEfficiency",
+            "description": "Overall Thermal Efficiency is defined as gross energy output of the heat transfer device divided by the energy input.",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "NumberOfPanels": {
+            "title": "NumberOfPanels",
+            "description": "Number of panels.",
+            "datatype": "IfcInteger"
+        },
+        "NumberOfSections": {
+            "title": "NumberOfSections",
+            "description": "Number of vertical sections, measured in the direction of flow.",
+            "datatype": "IfcInteger"
+        }
+    }
+}

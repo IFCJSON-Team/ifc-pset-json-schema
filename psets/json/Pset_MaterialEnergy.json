@@ -1,0 +1,45 @@
+{
+    "$id": "Pset_MaterialEnergy.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialEnergy",
+    "description": "A set of extended material properties for energy calculation purposes.",
+    "properties": {
+        "ViscosityTemperatureDerivative": {
+            "title": "ViscosityTemperatureDerivative",
+            "description": "Viscosity temperature derivative.",
+            "datatype": "IfcReal"
+        },
+        "MoistureCapacityThermalGradient": {
+            "title": "MoistureCapacityThermalGradient",
+            "description": "Thermal gradient coefficient for moisture capacity. Based on water vapor density.",
+            "datatype": "IfcReal"
+        },
+        "ThermalConductivityTemperatureDerivative": {
+            "title": "ThermalConductivityTemperatureDerivative",
+            "description": "Thermal conductivity temperature derivative.",
+            "datatype": "IfcReal"
+        },
+        "SpecificHeatTemperatureDerivative": {
+            "title": "SpecificHeatTemperatureDerivative",
+            "description": "Specific heat temperature derivative.",
+            "datatype": "IfcReal"
+        },
+        "VisibleRefractionIndex": {
+            "title": "VisibleRefractionIndex",
+            "description": "Index of refraction (visible) defines the \"bending\" of the sola! r ray in the visible spectrum when it passes from one medium into another.",
+            "datatype": "IfcReal"
+        },
+        "SolarRefractionIndex": {
+            "title": "SolarRefractionIndex",
+            "description": "Index of refraction (solar) defines the \"bending\" of the solar ray when it passes from one medium into another.",
+            "datatype": "IfcReal"
+        },
+        "GasPressure": {
+            "title": "GasPressure",
+            "description": "Fill pressure (e.g. for between-pane gas fills): the pressure exerted by a mass of gas confined in a constant volume.",
+            "datatype": "IfcPressureMeasure"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "$id": "Pset_ActionRequest.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ActionRequest",
+    "description": "An action request is a request for an action to fulfill a need.  HISTORY: IFC4: Removed RequestSourceType, RequestDescription, Status",
+    "properties": {
+        "RequestSourceLabel": {
+            "title": "RequestSourceLabel",
+            "description": "A specific name or label that further qualifies the identity of a request source. In the event of an email, this may be the email address.",
+            "datatype": "IfcLabel"
+        },
+        "RequestSourceName": {
+            "title": "RequestSourceName",
+            "description": "The person making the request, where known."
+        },
+        "RequestComments": {
+            "title": "RequestComments",
+            "description": "Comments that may be made on the request.",
+            "datatype": "IfcText"
+        }
+    }
+}

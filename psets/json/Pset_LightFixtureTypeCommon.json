@@ -1,0 +1,104 @@
+{
+    "$id": "Pset_LightFixtureTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_LightFixtureTypeCommon",
+    "description": "Common data for light fixtures.\nHistory: IFC4 - Article number and manufacturer specific information deleted. Use Pset_ManufacturerTypeInformation. ArticleNumber instead.   Load properties moved from Pset_LightFixtureTypeThermal (deleted).",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NumberOfSources": {
+            "title": "NumberOfSources",
+            "description": "Number of sources .",
+            "datatype": "IfcInteger"
+        },
+        "TotalWattage": {
+            "title": "TotalWattage",
+            "description": "Wattage on whole lightfitting device with all sources intact.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "LightFixtureMountingType": {
+            "title": "LightFixtureMountingType",
+            "description": "A list of the available types of mounting for light fixtures from which that required may be selected.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CABLESPANNED",
+                    "FREESTANDING",
+                    "POLE_SIDE",
+                    "POLE_TOP",
+                    "RECESSED",
+                    "SURFACE",
+                    "SUSPENDED",
+                    "TRACKMOUNTED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "LightFixturePlacingType": {
+            "title": "LightFixturePlacingType",
+            "description": "A list of the available types of placing specification for light fixtures from which that required may be selected.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CEILING",
+                    "FLOOR",
+                    "FURNITURE",
+                    "POLE",
+                    "WALL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "MaintenanceFactor": {
+            "title": "MaintenanceFactor",
+            "description": "The arithmetical allowance made for depreciation of lamps and reflective equipment from their initial values due to dirt, fumes, or age.",
+            "datatype": "IfcReal"
+        },
+        "MaximumPlenumSensibleLoad": {
+            "title": "MaximumPlenumSensibleLoad",
+            "description": "Maximum or Peak sensible thermal load contributed to return air plenum by the light fixture.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "MaximumSpaceSensibleLoad": {
+            "title": "MaximumSpaceSensibleLoad",
+            "description": "Maximum or Peak sensible thermal load contributed to the conditioned space by the light fixture.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "SensibleLoadToRadiant": {
+            "title": "SensibleLoadToRadiant",
+            "description": "Percent of sensible thermal load to radiant heat.",
+            "datatype": "IfcPositiveRatioMeasure"
+        }
+    }
+}

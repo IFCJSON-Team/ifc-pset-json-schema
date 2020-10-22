@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_ValveTypeGasTap.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ValveTypeGasTap",
+    "description": "A small diameter valve, used to discharge gas from a system.",
+    "properties": {
+        "HasHoseUnion": {
+            "title": "HasHoseUnion",
+            "description": "Indicates whether the gas tap is fitted with a hose union connection (= TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

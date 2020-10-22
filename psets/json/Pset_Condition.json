@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_Condition.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_Condition",
+    "description": "Determines the state or condition of an element at a particular point in time.",
+    "properties": {
+        "AssessmentDate": {
+            "title": "AssessmentDate",
+            "description": "Date on which the overall condition is assessed",
+            "datatype": "IfcDate"
+        },
+        "AssessmentCondition": {
+            "title": "AssessmentCondition",
+            "description": "The overall condition of a product based on an assessment of the contributions to the overall condition made by the various criteria considered. The meanings given to the values of assessed condition should be agreed and documented by local agreements. For instance, is overall condition measured on a scale of 1 - 10 or by assigning names such as Good, OK, Poor.",
+            "datatype": "IfcLabel"
+        },
+        "AssessmentDescription": {
+            "title": "AssessmentDescription",
+            "description": "Qualitative description of the condition.",
+            "datatype": "IfcText"
+        }
+    }
+}

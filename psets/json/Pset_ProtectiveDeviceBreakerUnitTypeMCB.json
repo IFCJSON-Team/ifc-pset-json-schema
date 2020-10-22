@@ -1,0 +1,65 @@
+{
+    "$id": "Pset_ProtectiveDeviceBreakerUnitTypeMCB.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceBreakerUnitTypeMCB",
+    "description": "A coherent set of attributes representing the breaking capacities of an MCB. Note - A protective device may be associated with different instances of this property set providing information related to different  basic characteristics.",
+    "properties": {
+        "PowerLoss": {
+            "title": "PowerLoss",
+            "description": "The power loss in [W] per pole of the MCB  when the nominal current is flowing through the MCB.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "VoltageLevel": {
+            "title": "VoltageLevel",
+            "description": "The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "U230",
+                    "U400",
+                    "U440",
+                    "U525",
+                    "U690",
+                    "U1000",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NominalCurrents": {
+            "title": "NominalCurrents",
+            "description": "A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the \nUltimateRatedCurrent associated with the same breaker unit.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        },
+        "ICU60947": {
+            "title": "ICU60947",
+            "description": "The ultimate breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "ICS60947": {
+            "title": "ICS60947",
+            "description": "The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "ICN60898": {
+            "title": "ICN60898",
+            "description": "The nominal breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "ICS60898": {
+            "title": "ICS60898",
+            "description": "The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.",
+            "datatype": "IfcElectricCurrentMeasure"
+        }
+    }
+}

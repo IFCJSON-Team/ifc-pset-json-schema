@@ -1,0 +1,55 @@
+{
+    "$id": "Pset_MaterialWood.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialWood",
+    "description": "This is a collection of properties applicable to wood-based materials that specify kind and grade of material as well as moisture related parameters.",
+    "properties": {
+        "Species": {
+            "title": "Species",
+            "description": "Wood species of a solid wood or laminated wood product.",
+            "datatype": "IfcLabel"
+        },
+        "StrengthGrade": {
+            "title": "StrengthGrade",
+            "description": "Grade with respect to mechanical strength and stiffness.",
+            "datatype": "IfcLabel"
+        },
+        "AppearanceGrade": {
+            "title": "AppearanceGrade",
+            "description": "Grade with respect to visual quality.",
+            "datatype": "IfcLabel"
+        },
+        "Layup": {
+            "title": "Layup",
+            "description": "Configuration of the lamination.",
+            "datatype": "IfcLabel"
+        },
+        "Layers": {
+            "title": "Layers",
+            "description": "Number of layers.",
+            "datatype": "IfcInteger"
+        },
+        "Plies": {
+            "title": "Plies",
+            "description": "Number of plies.",
+            "datatype": "IfcInteger"
+        },
+        "MoistureContent": {
+            "title": "MoistureContent",
+            "description": "Total weight of moisture relative to oven-dried weight of the wood.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "DimensionalChangeCoefficient": {
+            "title": "DimensionalChangeCoefficient",
+            "description": "Weighted dimensional change coefficient, relative to 1% change in moisture content.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "ThicknessSwelling": {
+            "title": "ThicknessSwelling",
+            "description": "Swelling ratio relative to board depth.",
+            "datatype": "IfcPositiveRatioMeasure"
+        }
+    }
+}

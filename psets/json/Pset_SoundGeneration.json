@@ -1,0 +1,14 @@
+{
+    "$id": "Pset_SoundGeneration.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SoundGeneration",
+    "description": "Common definition to capture the properties of sound typically used within the context of building services and flow distribution systems.  This property set is instantiated multiple times on an object for each frequency band.  HISTORY: New property set in IFC Release 2x4.",
+    "properties": {
+        "SoundCurve": {
+            "title": "SoundCurve",
+            "description": "Table of sound frequencies and sound power measured in decibels at a reference power of 1 picowatt(10^(-12) watt) for the referenced octave band frequency."
+        }
+    }
+}

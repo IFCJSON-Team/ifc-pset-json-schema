@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_ProtectiveDeviceTrippingCurve.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceTrippingCurve",
+    "description": "Tripping curves are applied to thermal, thermal magnetic or MCB_RCD tripping units (i.e. tripping units having type property sets for thermal, thermal magnetic or MCB_RCD tripping defined). They are not applied to electronic tripping units.",
+    "properties": {
+        "TrippingCurveType": {
+            "title": "TrippingCurveType",
+            "description": "The type of tripping curve that is represented by the property set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "UPPER",
+                    "LOWER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "TrippingCurve": {
+            "title": "TrippingCurve",
+            "description": "A curve that establishes the release time of a tripping unit when a particular prospective current is applied.  Note that the tripping curve is defined within a Cartesian coordinate system and this fact must be asserted within the property set: \n\n(1) Defining value is the Prospective Current which is a list of minimum 2 and maximum 16 numbers providing the currents in [x In] for points in the current/time log/log coordinate space. The curve is drawn as a straight line between two consecutive points.\n(2) Defined value is a list of minimum 2 and maximum 16 numbers providing the release_time in [s] for points in the current/time log/log coordinate space. The curve is drawn as a straight line between two consecutive points. Note that a defined interpolation."
+        }
+    }
+}

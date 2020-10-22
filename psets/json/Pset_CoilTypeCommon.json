@@ -1,0 +1,75 @@
+{
+    "$id": "Pset_CoilTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CoilTypeCommon",
+    "description": "Coil type common attributes.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "OperationalTemperatureRange": {
+            "title": "OperationalTemperatureRange",
+            "description": "Allowable operational air temperature range.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "AirflowRateRange": {
+            "title": "AirflowRateRange",
+            "description": "Possible range of airflow that can be delivered.  For cases where there is no airflow across the coil (e.g. electric coil in a floor slab), then the value is zero.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "NominalSensibleCapacity": {
+            "title": "NominalSensibleCapacity",
+            "description": "Nominal sensible capacity.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "NominalLatentCapacity": {
+            "title": "NominalLatentCapacity",
+            "description": "Nominal latent capacity.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "NominalUA": {
+            "title": "NominalUA",
+            "description": "Nominal UA value.",
+            "datatype": "IfcReal"
+        },
+        "PlacementType": {
+            "title": "PlacementType",
+            "description": "Indicates the placement of the coil.  \nFLOOR indicates an under floor heater (if coil type is WATERHEATINGCOIL or ELECTRICHEATINGCOIL); \nCEILING indicates a cooling ceiling (if coil type is WATERCOOLINGCOIL);\nUNIT indicates that the coil is part of a cooling or heating unit, like cooled beam, etc.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FLOOR",
+                    "CEILING",
+                    "UNIT",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

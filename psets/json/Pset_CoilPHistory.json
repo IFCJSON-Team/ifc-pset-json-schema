@@ -1,0 +1,26 @@
+{
+    "$id": "Pset_CoilPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CoilPHistory",
+    "description": "Coil performance history common attributes.\nSound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.",
+    "properties": {
+        "AtmosphericPressure": {
+            "title": "AtmosphericPressure",
+            "description": "Ambient atmospheric pressure."
+        },
+        "AirPressureDropCurve": {
+            "title": "AirPressureDropCurve",
+            "description": "Air pressure drop curve, pressure drop \u2013 flow rate curve, AirPressureDrop = f (AirflowRate)."
+        },
+        "SoundCurve": {
+            "title": "SoundCurve",
+            "description": "Regenerated sound versus air-flow rate."
+        },
+        "FaceVelocity": {
+            "title": "FaceVelocity",
+            "description": "Air velocity through the coil."
+        }
+    }
+}

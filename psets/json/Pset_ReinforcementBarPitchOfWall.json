@@ -1,0 +1,52 @@
+{
+    "$id": "Pset_ReinforcementBarPitchOfWall.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ReinforcementBarPitchOfWall",
+    "description": "The pitch length information of reinforcement  bar with the wall.",
+    "properties": {
+        "Description": {
+            "title": "Description",
+            "description": "Description of the reinforcement.",
+            "datatype": "IfcText"
+        },
+        "Reference": {
+            "title": "Reference",
+            "description": "A descriptive label for the general reinforcement type.",
+            "datatype": "IfcLabel"
+        },
+        "BarAllocationType": {
+            "title": "BarAllocationType",
+            "description": "Defines the type of the reinforcement bar allocation.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SINGLE",
+                    "DOUBLE",
+                    "ALTERNATE",
+                    "OTHER",
+                    "USERDEFINED",
+                    "NOTDEFINED"
+                ]
+            }
+        },
+        "VerticalBarPitch": {
+            "title": "VerticalBarPitch",
+            "description": "The pitch length of the vertical bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "HorizontalBarPitch": {
+            "title": "HorizontalBarPitch",
+            "description": "The pitch length of the horizontal bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "SpacingBarPitch": {
+            "title": "SpacingBarPitch",
+            "description": "The pitch length of the spacing bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

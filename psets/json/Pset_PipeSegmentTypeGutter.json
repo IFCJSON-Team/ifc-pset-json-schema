@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_PipeSegmentTypeGutter.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_PipeSegmentTypeGutter",
+    "description": "Gutter segment type common attributes.",
+    "properties": {
+        "Slope": {
+            "title": "Slope",
+            "description": "Angle of the gutter to allow for drainage.",
+            "datatype": "IfcPlaneAngleMeasure"
+        },
+        "FlowRating": {
+            "title": "FlowRating",
+            "description": "Actual flow capacity for the gutter. Value of 0.00 means this value has not been set.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_WasteTerminalTypeWasteDisposalUnit.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_WasteTerminalTypeWasteDisposalUnit",
+    "description": "Electrically operated device that reduces kitchen or other waste into fragments small enough to be flushed into a drainage system.",
+    "properties": {
+        "DrainConnectionSize": {
+            "title": "DrainConnectionSize",
+            "description": "Size of the drain connection inlet to the waste disposal unit.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "OutletConnectionSize": {
+            "title": "OutletConnectionSize",
+            "description": "Size of the outlet connection from the waste disposal unit.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalDepth": {
+            "title": "NominalDepth",
+            "description": "Nominal or quoted depth of the object measured from the inlet drain connection to the base of the unit.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

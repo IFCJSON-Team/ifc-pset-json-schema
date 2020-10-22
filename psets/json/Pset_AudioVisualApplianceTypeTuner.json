@@ -1,0 +1,39 @@
+{
+    "$id": "Pset_AudioVisualApplianceTypeTuner.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AudioVisualApplianceTypeTuner",
+    "description": "An audio-visual tuner is a device that demodulates a signal into a stream of audio and/or video.  HISTORY: Added in IFC4.",
+    "properties": {
+        "TunerType": {
+            "title": "TunerType",
+            "description": "Indicates the tuner type.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "AUDIO",
+                    "VIDEO",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET."
+                ]
+            }
+        },
+        "TunerMode": {
+            "title": "TunerMode",
+            "description": "Indicates the tuner modes (or bands).  For example, 'AnalogCable', 'DigitalAir', 'AM', 'FM'."
+        },
+        "TunerChannel": {
+            "title": "TunerChannel",
+            "description": "Indicates the tuner channels, if applicable."
+        },
+        "TunerFrequency": {
+            "title": "TunerFrequency",
+            "description": "Indicates the tuner frequencies, if applicable.",
+            "datatype": "IfcFrequencyMeasure"
+        }
+    }
+}

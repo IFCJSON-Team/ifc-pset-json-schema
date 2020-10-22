@@ -1,0 +1,44 @@
+{
+    "$id": "Pset_MaterialSteel.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialSteel",
+    "description": "A set of extended mechanical properties related to steel (or other metallic and isotropic) materials.",
+    "properties": {
+        "YieldStress": {
+            "title": "YieldStress",
+            "description": "A measure of the yield stress (or characteristic 0.2 percent proof stress) of the material.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "UltimateStress": {
+            "title": "UltimateStress",
+            "description": "A measure of the ultimate stress of the material.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "UltimateStrain": {
+            "title": "UltimateStrain",
+            "description": "A measure of the (engineering) strain at the state of ultimate stress of the material.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "HardeningModule": {
+            "title": "HardeningModule",
+            "description": "A measure of the hardening module of the material (slope of stress versus strain curve after yield range).",
+            "datatype": "IfcModulusOfElasticityMeasure"
+        },
+        "ProportionalStress": {
+            "title": "ProportionalStress",
+            "description": "A measure of the proportional stress of the material. It describes the stress before the first plastic deformation occurs and is commonly measured at a deformation of 0.01%.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "PlasticStrain": {
+            "title": "PlasticStrain",
+            "description": "A measure of the permanent displacement, as in slip or twinning, which remains after the stress has been removed. Currently applied to a strain of 0.2% proportional stress of the material.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "Relaxations": {
+            "title": "Relaxations",
+            "description": "Measures of decrease in stress over long time intervals resulting from plastic flow. Different relaxation values for different initial stress levels for a material may be given. It describes the time dependent relative relaxation value for a given initial stress level at constant strain.\nRelating values are the \"RelaxationValue\". Related values are the \"InitialStress\""
+        }
+    }
+}

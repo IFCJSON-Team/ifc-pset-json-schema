@@ -1,0 +1,22 @@
+{
+    "$id": "Pset_ChillerPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ChillerPHistory",
+    "description": "Chiller performance history attributes.",
+    "properties": {
+        "Capacity": {
+            "title": "Capacity",
+            "description": "The product of the  ideal capacity and the overall volumetric efficiency of the compressor."
+        },
+        "EnergyEfficiencyRatio": {
+            "title": "EnergyEfficiencyRatio",
+            "description": "The Energy efficiency ratio (EER) is the ratio of net cooling capacity to the total input rate of electric power applied.  By definition, the units are BTU/hour per Watt.\nThe input electric power may be obtained from Pset_DistributionPortPHistoryElectrical.RealPower on the 'Power' port of the IfcChiller."
+        },
+        "CoefficientOfPerformance": {
+            "title": "CoefficientOfPerformance",
+            "description": "The Coefficient of performance (COP) is the ratio of heat removed to energy input. \nThe energy input may be obtained by multiplying \nPset_DistributionPortPHistoryGas.FlowRate on the 'Fuel' port of the IfcChiller by Pset_MaterialFuel.LowerHeatingValue.  \nThe IfcDistributionPort for fuel has an associated IfcMaterial with fuel properties and is assigned to an IfcPerformanceHistory object nested within this IfcPerformanceHistory object."
+        }
+    }
+}

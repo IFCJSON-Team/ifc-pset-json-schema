@@ -1,0 +1,34 @@
+{
+    "$id": "Pset_SpaceThermalPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SpaceThermalPHistory",
+    "description": "Thermal and air flow conditions of a space or zone. HISTORY: New property set in IFC 2x2.",
+    "properties": {
+        "CoolingAirFlowRate": {
+            "title": "CoolingAirFlowRate",
+            "description": "Cooling air flow rate in the space."
+        },
+        "HeatingAirFlowRate": {
+            "title": "HeatingAirFlowRate",
+            "description": "Heating air flow rate in the space."
+        },
+        "VentilationAirFlowRate": {
+            "title": "VentilationAirFlowRate",
+            "description": "Ventilation air flow rate in the space."
+        },
+        "ExhaustAirFlowRate": {
+            "title": "ExhaustAirFlowRate",
+            "description": "Exhaust air flow rate in the space."
+        },
+        "SpaceTemperature": {
+            "title": "SpaceTemperature",
+            "description": "Temperature of the space."
+        },
+        "SpaceRelativeHumidity": {
+            "title": "SpaceRelativeHumidity",
+            "description": "The relative humidity of the space."
+        }
+    }
+}

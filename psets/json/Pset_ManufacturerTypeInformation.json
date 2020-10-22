@@ -1,0 +1,57 @@
+{
+    "$id": "Pset_ManufacturerTypeInformation.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ManufacturerTypeInformation",
+    "description": "Defines characteristics of types (ranges) of manufactured products that may be given by the manufacturer. Note that the term 'manufactured' may also be used to refer to products that are supplied and identified by the supplier or that are assembled off site by a third party provider. \nHISTORY: This property set replaces the entity IfcManufacturerInformation from previous IFC releases. IFC 2x4: AssemblyPlace property added.",
+    "properties": {
+        "GlobalTradeItemNumber": {
+            "title": "GlobalTradeItemNumber",
+            "description": "The Global Trade Item Number (GTIN) is an identifier for trade items developed by GS1 (www.gs1.org).",
+            "datatype": "IfcIdentifier"
+        },
+        "ArticleNumber": {
+            "title": "ArticleNumber",
+            "description": "Article number or reference that is be applied to a configured product according to a standard scheme for article number definition as defined by the manufacturer. It is often used as the purchasing number.",
+            "datatype": "IfcIdentifier"
+        },
+        "ModelReference": {
+            "title": "ModelReference",
+            "description": "The model number or designator of the product model (or product line) as assigned by the manufacturer of the manufactured item.",
+            "datatype": "IfcLabel"
+        },
+        "ModelLabel": {
+            "title": "ModelLabel",
+            "description": "The descriptive model name of the product model (or product line) as assigned by the manufacturer of the manufactured item.",
+            "datatype": "IfcLabel"
+        },
+        "Manufacturer": {
+            "title": "Manufacturer",
+            "description": "The organization that manufactured and/or assembled the item.",
+            "datatype": "IfcLabel"
+        },
+        "ProductionYear": {
+            "title": "ProductionYear",
+            "description": "The year of production of the manufactured item.",
+            "datatype": "IfcLabel"
+        },
+        "AssemblyPlace": {
+            "title": "AssemblyPlace",
+            "description": "Enumeration defining where the assembly is intended to take place, either in a factory or on the building site.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FACTORY",
+                    "OFFSITE",
+                    "SITE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "$id": "Pset_Asset.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_Asset",
+    "description": "An asset is a uniquely identifiable element which has a financial value and against which maintenance actions are recorded.",
+    "properties": {
+        "AssetAccountingType": {
+            "title": "AssetAccountingType",
+            "description": "Identifies the predefined types of risk from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FIXED",
+                    "NONFIXED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AssetTaxType": {
+            "title": "AssetTaxType",
+            "description": "Identifies the predefined types of taxation group from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CAPITALISED",
+                    "EXPENSED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "AssetInsuranceType": {
+            "title": "AssetInsuranceType",
+            "description": "Identifies the predefined types of insurance rating from which the type required may be set.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "PERSONAL",
+                    "REAL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

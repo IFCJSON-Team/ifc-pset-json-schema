@@ -1,0 +1,24 @@
+{
+    "$id": "Pset_BridgeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_BridgeCommon",
+    "description": null,
+    "properties": {
+        "StructureIndicator": {
+            "title": "StructureIndicator",
+            "description": null,
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "COMPOSITE",
+                    "COATED",
+                    "HOMOGENEOUS"
+                ]
+            }
+        }
+    }
+}

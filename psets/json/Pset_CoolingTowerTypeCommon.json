@@ -1,0 +1,163 @@
+{
+    "$id": "Pset_CoolingTowerTypeCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CoolingTowerTypeCommon",
+    "description": "Cooling tower type common attributes.\nWaterRequirement attribute unit type modified in IFC2x2 Pset Addendum.",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NominalCapacity": {
+            "title": "NominalCapacity",
+            "description": "Nominal cooling tower capacity in terms of heat transfer rate of the cooling tower between air stream and water stream at nominal conditions.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "CircuitType": {
+            "title": "CircuitType",
+            "description": "OpenCircuit: Exposes water directly to the cooling atmosphere.\nCloseCircuit: The fluid is separated from the atmosphere by a heat exchanger.\nWet: The air stream or the heat exchange surface is evaporatively cooled.\nDry: No evaporation into the air stream.\nDryWet: A combination of a dry tower and a wet tower.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "OPENCIRCUIT",
+                    "CLOSEDCIRCUITWET",
+                    "CLOSEDCIRCUITDRY",
+                    "CLOSEDCIRCUITDRYWET",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FlowArrangement": {
+            "title": "FlowArrangement",
+            "description": "CounterFlow: Air and water flow enter in different directions.\nCrossFlow: Air and water flow are perpendicular.\nParallelFlow: air and water flow enter in same directions.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "COUNTERFLOW",
+                    "CROSSFLOW",
+                    "PARALLELFLOW",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "SprayType": {
+            "title": "SprayType",
+            "description": "SprayFilled: Water is sprayed into airflow.\nSplashTypeFill: water cascades over successive rows of splash bars.\nFilmTypeFill: water flows in a thin layer over closely spaced sheets.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SPRAYFILLED",
+                    "SPLASHTYPEFILL",
+                    "FILMTYPEFILL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "CapacityControl": {
+            "title": "CapacityControl",
+            "description": "FanCycling: Fan is cycled on and off to control duty.\nTwoSpeedFan: Fan is switched between low and high speed to control duty.\nVariableSpeedFan: Fan speed is varied to control duty.\nDampersControl: Dampers modulate the air flow to control duty.\nBypassValveControl: Bypass valve modulates the water flow to control duty.\nMultipleSeriesPumps: Turn on/off multiple series pump to control duty.\nTwoSpeedPump: Switch between high/low pump speed to control duty.\nVariableSpeedPump: vary pump speed to control duty.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FANCYCLING",
+                    "TWOSPEEDFAN",
+                    "VARIABLESPEEDFAN",
+                    "DAMPERSCONTROL",
+                    "BYPASSVALVECONTROL",
+                    "MULTIPLESERIESPUMPS",
+                    "TWOSPEEDPUMP",
+                    "VARIABLESPEEDPUMP",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ControlStrategy": {
+            "title": "ControlStrategy",
+            "description": "FixedExitingWaterTemp: The capacity is controlled to maintain a fixed exiting water temperature.\nWetBulbTempReset: The set-point is reset based on the wet-bulb temperature.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FIXEDEXITINGWATERTEMP",
+                    "WETBULBTEMPRESET",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NumberOfCells": {
+            "title": "NumberOfCells",
+            "description": "Number of cells in one cooling tower unit.",
+            "datatype": "IfcInteger"
+        },
+        "BasinReserveVolume": {
+            "title": "BasinReserveVolume",
+            "description": "Volume between operating and overflow levels in cooling tower basin.",
+            "datatype": "IfcVolumeMeasure"
+        },
+        "LiftElevationDifference": {
+            "title": "LiftElevationDifference",
+            "description": "Elevation difference between cooling tower sump and the top of the tower.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "WaterRequirement": {
+            "title": "WaterRequirement",
+            "description": "Make-up water requirements.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "OperationTemperatureRange": {
+            "title": "OperationTemperatureRange",
+            "description": "Allowable operation ambient air temperature range.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "AmbientDesignDryBulbTemperature": {
+            "title": "AmbientDesignDryBulbTemperature",
+            "description": "Ambient design dry bulb temperature used for selecting the cooling tower.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        },
+        "AmbientDesignWetBulbTemperature": {
+            "title": "AmbientDesignWetBulbTemperature",
+            "description": "Ambient design wet bulb temperature used for selecting the cooling tower.",
+            "datatype": "IfcThermodynamicTemperatureMeasure"
+        }
+    }
+}

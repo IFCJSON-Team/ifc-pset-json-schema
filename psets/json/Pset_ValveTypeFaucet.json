@@ -1,0 +1,81 @@
+{
+    "$id": "Pset_ValveTypeFaucet.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ValveTypeFaucet",
+    "description": "A small diameter valve, with a free outlet, from which water is drawn.",
+    "properties": {
+        "FaucetType": {
+            "title": "FaucetType",
+            "description": "Defines the range of faucet types that may be specified where:\n\nBib:\t Faucet with a horizontal inlet and a nozzle that discharges downwards.\nGlobe:\t Faucet fitted through the end of a bath, with a horizontal inlet, a partially spherical body and a vertical nozzle.\nDiverter: \tCombination faucet assembly with a valve to enable the flow of mixed water to be transferred to a showerhead.\nDividedFlowCombination:\t Combination faucet assembly in which hot and cold water are kept separate until emerging from a common nozzle\n.\nPillar:\t Faucet that has a vertical inlet and a nozzle that discharges downwards\n.\nSingleOutletCombination =\t Combination faucet assembly in which hot and cold water mix before emerging from a common nozzle\n.\nSpray:\t Faucet with a spray outlet\n.\nSprayMixing:\t Spray faucet connected to hot and cold water supplies that delivers water at a temperature determined during use.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "BIB",
+                    "GLOBE",
+                    "DIVERTER",
+                    "DIVIDEDFLOWCOMBINATION",
+                    "PILLAR",
+                    "SINGLEOUTLETCOMBINATION",
+                    "SPRAY",
+                    "SPRAYMIXING",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FaucetOperation": {
+            "title": "FaucetOperation",
+            "description": "Defines the range of ways in which a faucet can be operated that may be specified where:\n\nCeramicDisc: Quick action faucet with a ceramic seal to open or close the orifice\n.\nLeverHandle: Quick action faucet that is operated by a lever handle\n.\nNonConcussiveSelfClosing:\t Self closing faucet that does not induce surge pressure\n.\nQuarterTurn: Quick action faucet that can be fully opened or shut by turning the operating mechanism through 90 degrees.\nQuickAction: Faucet that can be opened or closed fully with a single small movement of the operating mechanism\n.\nScrewDown: Faucet in which a plate or disc is moved, by the rotation of a screwed spindle, to close or open the orifice.\nSelfClosing: Faucet that is opened by pressure of the top of an operating spindle and is closed under the action of a spring or weight when the pressure is released.\nTimedSelfClosing: \tSelf closing faucet that discharges for a predetermined period of time\n.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CERAMICDISC",
+                    "LEVERHANDLE",
+                    "NONCONCUSSIVESELFCLOSING",
+                    "QUATERTURN",
+                    "QUICKACTION",
+                    "SCREWDOWN",
+                    "SELFCLOSING",
+                    "TIMEDSELFCLOSING",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FaucetFunction": {
+            "title": "FaucetFunction",
+            "description": "Defines the operating temperature of a faucet that may be specified.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "COLD",
+                    "HOT",
+                    "MIXED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Finish": {
+            "title": "Finish",
+            "description": "Description of the finish applied to the faucet.",
+            "datatype": "IfcText"
+        },
+        "FaucetTopDescription": {
+            "title": "FaucetTopDescription",
+            "description": "Description of the operating mechanism/top of the faucet.",
+            "datatype": "IfcText"
+        }
+    }
+}

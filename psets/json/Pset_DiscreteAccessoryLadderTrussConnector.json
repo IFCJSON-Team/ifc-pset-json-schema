@@ -1,0 +1,40 @@
+{
+    "$id": "Pset_DiscreteAccessoryLadderTrussConnector.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DiscreteAccessoryLadderTrussConnector",
+    "description": "Shape properties specific to connecting accessories in truss form with straight cross-bars in ladder shape.",
+    "properties": {
+        "LadderTrussHeight": {
+            "title": "LadderTrussHeight",
+            "description": "The overall height of the truss connector.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LadderTrussLength": {
+            "title": "LadderTrussLength",
+            "description": "The overall length of the truss connector.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LadderTrussCrossBarSpacing": {
+            "title": "LadderTrussCrossBarSpacing",
+            "description": "The spacing between the straight cross-bars.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LadderTrussBaseBarDiameter": {
+            "title": "LadderTrussBaseBarDiameter",
+            "description": "The nominal diameter of the base bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LadderTrussSecondaryBarDiameter": {
+            "title": "LadderTrussSecondaryBarDiameter",
+            "description": "The nominal diameter of the secondary bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "LadderTrussCrossBarDiameter": {
+            "title": "LadderTrussCrossBarDiameter",
+            "description": "The nominal diameter of the straight cross-bars.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

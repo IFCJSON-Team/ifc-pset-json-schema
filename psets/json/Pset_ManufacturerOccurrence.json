@@ -1,0 +1,47 @@
+{
+    "$id": "Pset_ManufacturerOccurrence.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ManufacturerOccurrence",
+    "description": "Defines properties of individual instances of manufactured products that may be given by the manufacturer.\nHISTORY: IFC 2x4: AssemblyPlace property added. This property does not need to be asserted if Pset_ManufacturerTypeInformation is allocated to the type and the AssemblyPlace property is asserted there.",
+    "properties": {
+        "AcquisitionDate": {
+            "title": "AcquisitionDate",
+            "description": "The date that the manufactured item was purchased.",
+            "datatype": "IfcDate"
+        },
+        "BarCode": {
+            "title": "BarCode",
+            "description": "The identity of the bar code given to an occurrence of the product.",
+            "datatype": "IfcIdentifier"
+        },
+        "SerialNumber": {
+            "title": "SerialNumber",
+            "description": "The serial number assigned to an occurrence of a product.",
+            "datatype": "IfcIdentifier"
+        },
+        "BatchReference": {
+            "title": "BatchReference",
+            "description": "The identity of the batch reference from which an occurrence of a product is taken.",
+            "datatype": "IfcIdentifier"
+        },
+        "AssemblyPlace": {
+            "title": "AssemblyPlace",
+            "description": "Enumeration defining where the assembly is intended to take place, either in a factory, other offsite location or on the building site.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FACTORY",
+                    "OFFSITE",
+                    "SITE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

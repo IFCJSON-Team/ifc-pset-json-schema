@@ -1,0 +1,31 @@
+{
+    "$id": "Pset_ValveTypeIsolating.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ValveTypeIsolating",
+    "description": "Valve that is used to isolate system components.\nNote that an isolating valve is constrained to have a 2 port  pattern.",
+    "properties": {
+        "IsNormallyOpen": {
+            "title": "IsNormallyOpen",
+            "description": "If TRUE, the valve is normally open. If FALSE is is normally closed.",
+            "datatype": "IfcBoolean"
+        },
+        "IsolatingPurpose": {
+            "title": "IsolatingPurpose",
+            "description": "Defines the purpose for which the isolating valve is used since the way in which the valve is identified as an isolating valve may be in the context of its use. Note that unless there is a contextual name for the isolating valve (as in the case of a Landing Valve on a rising fire main), then the value assigned shoulkd be UNSET.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "LANDING",
+                    "LANDINGWITHPRESSUREREGULATION",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

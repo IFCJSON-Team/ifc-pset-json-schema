@@ -1,0 +1,108 @@
+{
+    "$id": "Pset_DistributionPortTypeCable.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionPortTypeCable",
+    "description": "Cable port occurrence attributes attached to an instance of IfcDistributionPort.",
+    "properties": {
+        "ConnectionType": {
+            "title": "ConnectionType",
+            "description": "The physical port connection:\n\nACPLUG: AC plug\nDCPLUG: DC plug\nCRIMP: bare wire",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ACPLUG",
+                    "DCPLUG",
+                    "CRIMPCOAXIAL",
+                    "RJ",
+                    "RADIO",
+                    "DIN",
+                    "DSUB",
+                    "DVI",
+                    "EIAJ",
+                    "HDMI",
+                    "RCA",
+                    "TRS",
+                    "XLR",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ConnectionSubtype": {
+            "title": "ConnectionSubtype",
+            "description": "<p>The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:</p>\n\n\n<ul>\n\n<li>ACPLUG: A, B, C, D, E, F, EF, G, H, I, J, K, L, M</li> \n\n<li>DIN: Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P, Mini9P</li>\n\n<li>DSub: DA15, DB25, DC37, DD50, DE9, DE15</li>\n\n<li>EIAJ: RC5720</li>\n\n\n<li>HDMI: A, B, C</li>\n\n<li>RADIO: IEEE802.11g, IEEE802.11n\n</li>\n\n<li>RJ: 4P4C, 6P2C, 8P8C</li>\n\n<li>SOCKET: E-11, E-12, E-14, E-17, E-26, E-27, E-39, E-40</li>\n\n<li>TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini</li>\n\n</ul>",
+            "datatype": "IfcLabel"
+        },
+        "ConnectionGender": {
+            "title": "ConnectionGender",
+            "description": "The physical connection gender.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "MALE",
+                    "FEMALE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ConductorFunction": {
+            "title": "ConductorFunction",
+            "description": "For ports distributing power, indicates function of the conductors to which the load is connected.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "PHASE_L1",
+                    "PHASE_L2",
+                    "PHASE_L3",
+                    "NEUTRAL",
+                    "PROTECTIVEEARTH",
+                    "PROTECTIVEEARTHNEUTRAL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "CurrentContent3rdHarmonic": {
+            "title": "CurrentContent3rdHarmonic",
+            "description": "The ratio between the third harmonic current and the phase current.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "Current": {
+            "title": "Current",
+            "description": "The actual current and operable range.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "Voltage": {
+            "title": "Voltage",
+            "description": "The actual voltage and operable range.",
+            "datatype": "IfcElectricVoltageMeasure"
+        },
+        "Power": {
+            "title": "Power",
+            "description": "The actual power and operable range.",
+            "datatype": "IfcPowerMeasure"
+        },
+        "Protocols": {
+            "title": "Protocols",
+            "description": "For data ports, identifies the protocols used as defined by the Open System Interconnection (OSI) Basic Reference Model (ISO 7498).  Layers include: 1. Physical; 2. DataLink; 3. Network; 4. Transport; 5. Session; 6. Presentation; 7. Application.  Example: 3:IP, 4:TCP, 5:HTTP",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "array",
+                "items": []
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "$id": "Pset_DamperPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DamperPHistory",
+    "description": "Damper performance history attributes.",
+    "properties": {
+        "AirFlowRate": {
+            "title": "AirFlowRate",
+            "description": "Air flow rate."
+        },
+        "Leakage": {
+            "title": "Leakage",
+            "description": "Air leakage rate."
+        },
+        "PressureDrop": {
+            "title": "PressureDrop",
+            "description": "Pressure drop."
+        },
+        "BladePositionAngle": {
+            "title": "BladePositionAngle",
+            "description": "Blade position angle; angle between the blade and flow direction ( 0 - 90)."
+        },
+        "DamperPosition": {
+            "title": "DamperPosition",
+            "description": "Damper position (0-1); damper position ( 0=closed=90deg position angle, 1=open=0deg position angle."
+        },
+        "PressureLossCoefficient": {
+            "title": "PressureLossCoefficient",
+            "description": "Pressure loss coefficient."
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "$id": "Pset_MaterialMechanical.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialMechanical",
+    "description": "A set of mechanical material properties normally used for structural analysis purpose. It contains all properties which are independent of the actual material type.",
+    "properties": {
+        "DynamicViscosity": {
+            "title": "DynamicViscosity",
+            "description": "A measure of the viscous resistance of the material.",
+            "datatype": "IfcDynamicViscosityMeasure"
+        },
+        "YoungModulus": {
+            "title": "YoungModulus",
+            "description": "A measure of the Young's modulus of elasticity of the material.",
+            "datatype": "IfcModulusOfElasticityMeasure"
+        },
+        "ShearModulus": {
+            "title": "ShearModulus",
+            "description": "A measure of the shear modulus of elasticity of the material.",
+            "datatype": "IfcModulusOfElasticityMeasure"
+        },
+        "PoissonRatio": {
+            "title": "PoissonRatio",
+            "description": "A measure of the lateral deformations in the elastic range.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "ThermalExpansionCoefficient": {
+            "title": "ThermalExpansionCoefficient",
+            "description": "A measure of the expansion coefficient for warming up the material about one Kelvin.",
+            "datatype": "IfcThermalExpansionCoefficientMeasure"
+        }
+    }
+}

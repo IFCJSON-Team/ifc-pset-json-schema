@@ -1,0 +1,60 @@
+{
+    "$id": "Pset_AudioVisualApplianceTypeSpeaker.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AudioVisualApplianceTypeSpeaker",
+    "description": "An audio-visual speaker is a device that converts amplified audio signals into sound waves.  HISTORY: Added in IFC4.",
+    "properties": {
+        "SpeakerType": {
+            "title": "SpeakerType",
+            "description": "Indicates the type of speaker.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FULLRANGE",
+                    "MIDRANGE",
+                    "WOOFER",
+                    "TWEETER",
+                    "COAXIAL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET."
+                ]
+            }
+        },
+        "SpeakerMounting": {
+            "title": "SpeakerMounting",
+            "description": "Indicates how the speaker is designed to be mounted.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FREESTANDING",
+                    "CEILING",
+                    "WALL",
+                    "OUTDOOR",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET."
+                ]
+            }
+        },
+        "SpeakerDriverSize": {
+            "title": "SpeakerDriverSize",
+            "description": "Indicates the number of drivers and their sizes."
+        },
+        "FrequencyResponse": {
+            "title": "FrequencyResponse",
+            "description": "Indicates the output over a specified range of frequencies."
+        },
+        "Impedence": {
+            "title": "Impedence",
+            "description": "Indicates the speaker impedence.",
+            "datatype": "IfcFrequencyMeasure"
+        }
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "$id": "Pset_ShadingDeviceCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ShadingDeviceCommon",
+    "description": "Shading device properties associated with an element that represents a shading device",
+    "properties": {
+        "Reference": {
+            "title": "Reference",
+            "description": "Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.",
+            "datatype": "IfcIdentifier"
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as \"New\" - element designed as new addition, \"Existing\" - element exists and remains, \"Demolish\" - element existed but is to be demolished,  \"Temporary\" - element will exists only temporary (like a temporary support structure).",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "NEW",
+                    "EXISTING",
+                    "DEMOLISH",
+                    "TEMPORARY",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ShadingDeviceType": {
+            "title": "ShadingDeviceType",
+            "description": "Specifies the type of shading device.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FIXED",
+                    "MOVABLE",
+                    "OVERHANG",
+                    "SIDEFIN",
+                    "USERDEFINED",
+                    "NOTDEFINED"
+                ]
+            }
+        },
+        "MechanicalOperated": {
+            "title": "MechanicalOperated",
+            "description": "Indication whether the element is operated machanically (TRUE) or not, i.e. manually  (FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "SolarTransmittance": {
+            "title": "SolarTransmittance",
+            "description": "(Tsol): The ratio of incident solar radiation that directly passes through a shading system (also named \u03c4e). Note the following equation Asol + Rsol + Tsol = 1",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "SolarReflectance": {
+            "title": "SolarReflectance",
+            "description": "(Rsol): The ratio of incident solar radiation that is reflected by a shading system (also named \u03c1e). Note the following equation Asol + Rsol + Tsol = 1",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "VisibleLightTransmittance": {
+            "title": "VisibleLightTransmittance",
+            "description": "Fraction of the visible light that passes the shading system  at normal incidence. It is a value without unit.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "VisibleLightReflectance": {
+            "title": "VisibleLightReflectance",
+            "description": "Fraction of the visible light that is reflected by the glazing at normal incidence. It is a value without unit.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "ThermalTransmittance": {
+            "title": "ThermalTransmittance",
+            "description": "Thermal transmittance coefficient (U-Value) of a material of a certain thickness for this element.",
+            "datatype": "IfcThermalTransmittanceMeasure"
+        },
+        "IsExternal": {
+            "title": "IsExternal",
+            "description": "Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.",
+            "datatype": "IfcBoolean"
+        },
+        "Roughness": {
+            "title": "Roughness",
+            "description": "A measure of the vertical deviations of the surface.",
+            "datatype": "IfcLabel"
+        },
+        "SurfaceColor": {
+            "title": "SurfaceColor",
+            "description": "The color of the surface.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

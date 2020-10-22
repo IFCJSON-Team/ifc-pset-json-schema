@@ -1,0 +1,22 @@
+{
+    "$id": "Pset_ValvePHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ValvePHistory",
+    "description": "Valve performance history common attributes of a typical 2 port pattern type valve.",
+    "properties": {
+        "PercentageOpen": {
+            "title": "PercentageOpen",
+            "description": "The ratio between the amount that the valve is open to the full open position of the valve."
+        },
+        "MeasuredFlowRate": {
+            "title": "MeasuredFlowRate",
+            "description": "The rate of flow of a fluid measured across the valve."
+        },
+        "MeasuredPressureDrop": {
+            "title": "MeasuredPressureDrop",
+            "description": "The actual pressure drop in the fluid measured across the valve."
+        }
+    }
+}

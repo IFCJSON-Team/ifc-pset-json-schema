@@ -1,0 +1,30 @@
+{
+    "$id": "Pset_ReinforcementBarPitchOfBeam.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ReinforcementBarPitchOfBeam",
+    "description": "The pitch length information of reinforcement  bar with the beam.",
+    "properties": {
+        "Description": {
+            "title": "Description",
+            "description": "Description of the reinforcement.",
+            "datatype": "IfcText"
+        },
+        "Reference": {
+            "title": "Reference",
+            "description": "A descriptive label for the general reinforcement type.",
+            "datatype": "IfcLabel"
+        },
+        "StirrupBarPitch": {
+            "title": "StirrupBarPitch",
+            "description": "The pitch length of the stirrup bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "SpacingBarPitch": {
+            "title": "SpacingBarPitch",
+            "description": "The pitch length of the spacing bar.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

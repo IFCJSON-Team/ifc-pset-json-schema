@@ -1,0 +1,20 @@
+{
+    "$id": "Pset_ProjectOrderChangeOrder.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProjectOrderChangeOrder",
+    "description": "A change order is an instruction to make a change to a product or work being undertake. Note that the change order status is defined in the same way as a work order status since a change order implies a work requirement.",
+    "properties": {
+        "ReasonForChange": {
+            "title": "ReasonForChange",
+            "description": "A description of the problem for why a change is needed.",
+            "datatype": "IfcText"
+        },
+        "BudgetSource": {
+            "title": "BudgetSource",
+            "description": "The budget source requested.",
+            "datatype": "IfcText"
+        }
+    }
+}

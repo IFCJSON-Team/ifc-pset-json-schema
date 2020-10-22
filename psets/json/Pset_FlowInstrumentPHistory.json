@@ -1,0 +1,22 @@
+{
+    "$id": "Pset_FlowInstrumentPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FlowInstrumentPHistory",
+    "description": "Properties for history of flow instrument values.  HISTORY: Added in IFC4.",
+    "properties": {
+        "Value": {
+            "title": "Value",
+            "description": "Indicates measured values over time which may be recorded continuously or only when changed beyond a particular deadband."
+        },
+        "Quality": {
+            "title": "Quality",
+            "description": "Indicates the quality of measurement or failure condition, which may be further qualified by the Status.  True: measured values are considered reliable; False: measured values are considered not reliable (i.e. a fault has been detected); Unknown: reliability of values is uncertain."
+        },
+        "Status": {
+            "title": "Status",
+            "description": "Indicates an error code or identifier, whose meaning is specific to the particular automation system.  Example values include: 'ConfigurationError', 'NotConnected', 'DeviceFailure', 'SensorFailure', 'LastKnown, 'CommunicationsFailure', 'OutOfService'."
+        }
+    }
+}

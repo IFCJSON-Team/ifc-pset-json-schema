@@ -1,0 +1,31 @@
+{
+    "$id": "Pset_SensorTypeMovementSensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypeMovementSensor",
+    "description": "A device that senses or detects movement. HISTORY: In IFC4, time constant deleted.",
+    "properties": {
+        "MovementSensingType": {
+            "title": "MovementSensingType",
+            "description": "Enumeration that identifies the type of movement sensing mechanism.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "PHOTOELECTRICCELL",
+                    "PRESSUREPAD",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "SetPointMovement": {
+            "title": "SetPointMovement",
+            "description": "The movement to be sensed.",
+            "datatype": "IfcPositiveRatioMeasure"
+        }
+    }
+}

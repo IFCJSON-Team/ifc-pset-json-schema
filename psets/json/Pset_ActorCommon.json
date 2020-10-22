@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_ActorCommon.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ActorCommon",
+    "description": "A property set that enables further classification of actors, including the ability to give a number of actors to be designated as a population, the number being specified as a property to be dealt with as a single value rather than having to aggregate a number of instances of IfcActor.",
+    "properties": {
+        "NumberOfActors": {
+            "title": "NumberOfActors",
+            "description": "The number of actors that are to be dealt with together in the population.",
+            "datatype": "IfcCountMeasure"
+        },
+        "Category": {
+            "title": "Category",
+            "description": "Designation of the category into which the actors in the population belong.",
+            "datatype": "IfcLabel"
+        },
+        "SkillLevel": {
+            "title": "SkillLevel",
+            "description": "Skill level exhibited by the actor and which indicates an extent of their capability to perform actions on the artefacts upon which they can act.",
+            "datatype": "IfcLabel"
+        }
+    }
+}

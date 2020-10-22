@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_FurnitureTypeFileCabinet.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FurnitureTypeFileCabinet",
+    "description": "A set of specific properties for furniture type file cabinet HISTORY: First issued in IFC Release R1.5. Renamed from Pset_FileCabinet",
+    "properties": {
+        "WithLock": {
+            "title": "WithLock",
+            "description": "Indicates whether the file cabinet is lockable (= TRUE) or not (= FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

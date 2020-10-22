@@ -1,0 +1,15 @@
+{
+    "$id": "Pset_CoilOccurrence.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CoilOccurrence",
+    "description": "Coil occurrence attributes attached to an instance of IfcCoil.",
+    "properties": {
+        "HasSoundAttenuation": {
+            "title": "HasSoundAttenuation",
+            "description": "TRUE if the coil has sound attenuation, FALSE if it does not.",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

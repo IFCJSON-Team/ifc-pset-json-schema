@@ -1,0 +1,66 @@
+{
+    "$id": "Pset_CompressorPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CompressorPHistory",
+    "description": "Compressor performance history attributes.",
+    "properties": {
+        "CompressorCapacity": {
+            "title": "CompressorCapacity",
+            "description": "The product of the  ideal capacity and the overall volumetric efficiency of the compressor."
+        },
+        "EnergyEfficiencyRatio": {
+            "title": "EnergyEfficiencyRatio",
+            "description": "Energy efficiency ratio (EER)."
+        },
+        "CoefficientOfPerformance": {
+            "title": "CoefficientOfPerformance",
+            "description": "Coefficient of performance (COP)."
+        },
+        "VolumetricEfficiency": {
+            "title": "VolumetricEfficiency",
+            "description": "Ratio of the actual volume of gas entering the compressor to the theoretical displacement of the compressor."
+        },
+        "CompressionEfficiency": {
+            "title": "CompressionEfficiency",
+            "description": "Ratio of the work required for isentropic compression of the gas to the work delivered to the gas within the compression volume (as obtained by measurement)."
+        },
+        "MechanicalEfficiency": {
+            "title": "MechanicalEfficiency",
+            "description": "Ratio of the work (as measured) delivered to the gas to the work input to the compressor shaft."
+        },
+        "IsentropicEfficiency": {
+            "title": "IsentropicEfficiency",
+            "description": "Ratio of the work required for isentropic compression of the gas to work input to the compressor shaft."
+        },
+        "CompressorTotalEfficiency": {
+            "title": "CompressorTotalEfficiency",
+            "description": "Ratio of the thermal cooling capacity to electrical input."
+        },
+        "ShaftPower": {
+            "title": "ShaftPower",
+            "description": "The actual shaft power input to the compressor."
+        },
+        "InputPower": {
+            "title": "InputPower",
+            "description": "Input power to the compressor motor."
+        },
+        "LubricantPumpHeatGain": {
+            "title": "LubricantPumpHeatGain",
+            "description": "Lubricant pump heat gain."
+        },
+        "FrictionHeatGain": {
+            "title": "FrictionHeatGain",
+            "description": "Friction heat gain."
+        },
+        "CompressorTotalHeatGain": {
+            "title": "CompressorTotalHeatGain",
+            "description": "Compressor total heat gain."
+        },
+        "FullLoadRatio": {
+            "title": "FullLoadRatio",
+            "description": "Ratio of actual power to full load power as a quadratic function of part load, at certain condensing and evaporating temperature, FracFullLoadPower = f ( PartLoadRatio)."
+        }
+    }
+}

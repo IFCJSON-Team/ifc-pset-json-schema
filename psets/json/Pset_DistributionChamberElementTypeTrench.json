@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_DistributionChamberElementTypeTrench.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_DistributionChamberElementTypeTrench",
+    "description": "Excavation, the length of which greatly exceeds the width.",
+    "properties": {
+        "Width": {
+            "title": "Width",
+            "description": "The width of the trench.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "Depth": {
+            "title": "Depth",
+            "description": "The depth of the trench.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "InvertLevel": {
+            "title": "InvertLevel",
+            "description": "Level of the lowest part of the cross section as measured from ground level.",
+            "datatype": "IfcLengthMeasure"
+        }
+    }
+}

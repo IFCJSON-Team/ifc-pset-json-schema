@@ -1,0 +1,34 @@
+{
+    "$id": "Pset_AudioVisualApplianceTypeAmplifier.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_AudioVisualApplianceTypeAmplifier",
+    "description": "An audio-visual amplifier is a device that renders audio from a single external source connected from a port.  HISTORY: Added in IFC4.",
+    "properties": {
+        "AmplifierType": {
+            "title": "AmplifierType",
+            "description": "Indicates the type of amplifier.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "FIXED",
+                    "VARIABLE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET."
+                ]
+            }
+        },
+        "AudioAmplification": {
+            "title": "AudioAmplification",
+            "description": "Indicates audio amplification frequency ranges."
+        },
+        "AudioMode": {
+            "title": "AudioMode",
+            "description": "Indicates audio sound modes and corresponding labels, if applicable."
+        }
+    }
+}

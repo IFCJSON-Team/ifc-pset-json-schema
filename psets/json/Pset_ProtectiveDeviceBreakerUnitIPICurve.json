@@ -1,0 +1,39 @@
+{
+    "$id": "Pset_ProtectiveDeviceBreakerUnitIPICurve.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ProtectiveDeviceBreakerUnitIPICurve",
+    "description": "A coherent set of attributes representing curves for  let-through currents of a protective device. Note - A protective device may be associated with different instances of this pSet providing information related to different  basic characteristics.",
+    "properties": {
+        "VoltageLevel": {
+            "title": "VoltageLevel",
+            "description": "The voltage level of the protective device for which the data of the instance is valid. More than one value may be selected in the enumeration.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "U230",
+                    "U400",
+                    "U440",
+                    "U525",
+                    "U690",
+                    "U1000",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "NominalCurrent": {
+            "title": "NominalCurrent",
+            "description": "A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the \nUltimateRatedCurrent associated with the same breaker unit.",
+            "datatype": "IfcElectricCurrentMeasure"
+        },
+        "BreakerUnitIPICurve": {
+            "title": "BreakerUnitIPICurve",
+            "description": "A curve that establishes the let through peak current of a breaker unit when a particular prospective current is applied.  Note that the breaker unit IPI curve is defined within a Cartesian coordinate system and this fact must be asserted within the property set:\n\n(1) Defining value: A list of minimum 2 and maximum 16 numbers providing the currents in [A] for points in the I/\u00ce log/log coordinate space. The curve is drawn as a straight line between two consecutive points.\n(2) Defined value: A list of minimum 2 and maximum 16 numbers providing the let-through peak currents, \u00ce, in [A] for points in the I/\u00ce log/log coordinate space. The curve is drawn as a straight line between two consecutive points."
+        }
+    }
+}

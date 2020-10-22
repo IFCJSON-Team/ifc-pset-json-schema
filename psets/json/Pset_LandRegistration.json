@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_LandRegistration.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_LandRegistration",
+    "description": "Specifies the identity of land within a statutory registration system. NOTE: The property LandTitleID is to be used in preference to deprecated attribute LandTitleNumber in IfcSite.",
+    "properties": {
+        "LandID": {
+            "title": "LandID",
+            "description": "Identification number assigned by the statutory registration authority to a land parcel.",
+            "datatype": "IfcIdentifier"
+        },
+        "IsPermanentID": {
+            "title": "IsPermanentID",
+            "description": "Indicates whether the identity assigned to a land parcel is permanent (= TRUE) or temporary (=FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "LandTitleID": {
+            "title": "LandTitleID",
+            "description": "Identification number assigned by the statutory registration authority to the title to a land parcel.",
+            "datatype": "IfcIdentifier"
+        }
+    }
+}

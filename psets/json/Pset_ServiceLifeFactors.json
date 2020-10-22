@@ -1,0 +1,45 @@
+{
+    "$id": "Pset_ServiceLifeFactors.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ServiceLifeFactors",
+    "description": "Captures various factors that impact the expected service life of elements within the system or zone.",
+    "properties": {
+        "QualityOfComponents": {
+            "title": "QualityOfComponents",
+            "description": "Adjustment of the service life resulting from the effect of the quality of components used.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "DesignLevel": {
+            "title": "DesignLevel",
+            "description": "Adjustment of the service life resulting from the effect of design level employed.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "WorkExecutionLevel": {
+            "title": "WorkExecutionLevel",
+            "description": "Adjustment of the service life resulting from the effect of the quality of work executed.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "IndoorEnvironment": {
+            "title": "IndoorEnvironment",
+            "description": "Adjustment of the service life resulting from the effect of the indoor environment (where appropriate).",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "OutdoorEnvironment": {
+            "title": "OutdoorEnvironment",
+            "description": "Adjustment of the service life resulting from the effect of the outdoor environment (where appropriate)",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "InUseConditions": {
+            "title": "InUseConditions",
+            "description": "Adjustment of the service life resulting from the effect of the conditions in which components are operating.",
+            "datatype": "IfcPositiveRatioMeasure"
+        },
+        "MaintenanceLevel": {
+            "title": "MaintenanceLevel",
+            "description": "Adjustment of the service life resulting from the effect of the level or degree of maintenance applied to dcomponents.",
+            "datatype": "IfcPositiveRatioMeasure"
+        }
+    }
+}

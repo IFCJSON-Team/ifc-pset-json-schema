@@ -1,0 +1,108 @@
+{
+    "$id": "Pset_FanOccurrence.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FanOccurrence",
+    "description": "Fan occurrence attributes attached to an instance of IfcFan.",
+    "properties": {
+        "DischargeType": {
+            "title": "DischargeType",
+            "description": "Defines the type of connection at the fan discharge.\n\nDuct: Discharge into ductwork.\nScreen: Discharge into screen outlet.\nLouver: Discharge into a louver.\nDamper: Discharge into a damper.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DUCT",
+                    "SCREEN",
+                    "LOUVER",
+                    "DAMPER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "ApplicationOfFan": {
+            "title": "ApplicationOfFan",
+            "description": "The functional application of the fan.\n\nSupplyAir: Supply air fan. \nReturnAir: Return air fan. \nExhaustAir: Exhaust air fan. \nOther: Other type of application not defined above.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "SUPPLYAIR",
+                    "RETURNAIR",
+                    "EXHAUSTAIR",
+                    "COOLINGTOWER",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "CoilPosition": {
+            "title": "CoilPosition",
+            "description": "Defines the relationship between a fan and a coil.\n\nDrawThrough: Fan located downstream of the coil.\nBlowThrough: Fan located upstream of the coil.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "DRAWTHROUGH",
+                    "BLOWTHROUGH",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "MotorPosition": {
+            "title": "MotorPosition",
+            "description": "Defines the location of the motor relative to the air stream.\n\nInAirStream: Fan motor is in the air stream.\nOutOfAirStream: Fan motor is out of the air stream.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "INAIRSTREAM",
+                    "OUTOFAIRSTREAM",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FanMountingType": {
+            "title": "FanMountingType",
+            "description": "Defines the method of mounting the fan in the building.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "MANUFACTUREDCURB",
+                    "FIELDERECTEDCURB",
+                    "CONCRETEPAD",
+                    "SUSPENDED",
+                    "WALLMOUNTED",
+                    "DUCTMOUNTED",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "FractionOfMotorHeatToAirStream": {
+            "title": "FractionOfMotorHeatToAirStream",
+            "description": "Fraction of the motor heat released into the fluid flow.",
+            "datatype": "IfcNormalisedRatioMeasure"
+        },
+        "ImpellerDiameter": {
+            "title": "ImpellerDiameter",
+            "description": "Diameter of fan wheel - used to scale performance of geometrically similar fans.",
+            "datatype": "IfcPositiveLengthMeasure"
+        }
+    }
+}

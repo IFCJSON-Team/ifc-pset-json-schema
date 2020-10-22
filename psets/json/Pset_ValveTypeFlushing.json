@@ -1,0 +1,25 @@
+{
+    "$id": "Pset_ValveTypeFlushing.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_ValveTypeFlushing",
+    "description": "Valve that flushes a predetermined quantity of water to cleanse a WC, urinal or slop hopper.\nNote that a flushing valve is constrained to have a 2 port  pattern.",
+    "properties": {
+        "FlushingRate": {
+            "title": "FlushingRate",
+            "description": "The predetermined quantity of water to be flushed.",
+            "datatype": "IfcVolumetricFlowRateMeasure"
+        },
+        "HasIntegralShutOffDevice": {
+            "title": "HasIntegralShutOffDevice",
+            "description": "Indication of whether the flushing valve has an integral shut off device fitted (set TRUE) or not (set FALSE).",
+            "datatype": "IfcBoolean"
+        },
+        "IsHighPressure": {
+            "title": "IsHighPressure",
+            "description": "Indication of whether the flushing valve is suitable for use on a high pressure water main (set TRUE) or not (set FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

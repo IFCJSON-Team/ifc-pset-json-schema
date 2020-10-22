@@ -1,0 +1,70 @@
+{
+    "$id": "Pset_FanCentrifugal.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_FanCentrifugal",
+    "description": "Centrifugal fan occurrence attributes attached to an instance of IfcFan.",
+    "properties": {
+        "DischargePosition": {
+            "title": "DischargePosition",
+            "description": "Centrifugal fan discharge position.\n\nTOPHORIZONTAL: Top horizontal discharge. \nTOPANGULARDOWN: Top angular down discharge. \nDOWNBLAST: Downblast discharge. \nBOTTOMANGULARDOWN: Bottom angular down discharge. \nBOTTOMHORIZONTAL: Bottom horizontal discharge. \nBOTTOMANGULARUP: Bottom angular up discharge. \nUPBLAST: Upblast discharge. \nTOPANGULARUP: Top angular up discharge. \nOTHER: Other type of fan arrangement.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "TOPHORIZONTAL",
+                    "TOPANGULARDOWN",
+                    "TOPANGULARUP",
+                    "DOWNBLAST",
+                    "BOTTOMANGULARDOWN",
+                    "BOTTOMHORIZONTAL",
+                    "BOTTOMANGULARUP",
+                    "UPBLAST",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "DirectionOfRotation": {
+            "title": "DirectionOfRotation",
+            "description": "The direction of the centrifugal fan wheel rotation when viewed from the drive side of the fan.\n\nCLOCKWISE: Clockwise. \nCOUNTERCLOCKWISE: Counter-clockwise. \nOTHER: Other type of fan rotation.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CLOCKWISE",
+                    "COUNTERCLOCKWISE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "Arrangement": {
+            "title": "Arrangement",
+            "description": "Defines the fan and motor drive arrangement as defined by AMCA.\n\nARRANGEMENT1: Arrangement 1. \nARRANGEMENT2: Arrangement 2. \nARRANGEMENT3: Arrangement 3. \nARRANGEMENT4: Arrangement 4. \nARRANGEMENT7: Arrangement 7. \nARRANGEMENT8: Arrangement 8. \nARRANGEMENT9: Arrangement 9. \nARRANGEMENT10: Arrangement 10. \nOTHER: Other type of fan drive arrangement.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "ARRANGEMENT1",
+                    "ARRANGEMENT2",
+                    "ARRANGEMENT3",
+                    "ARRANGEMENT4",
+                    "ARRANGEMENT7",
+                    "ARRANGEMENT8",
+                    "ARRANGEMENT9",
+                    "ARRANGEMENT10",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        }
+    }
+}

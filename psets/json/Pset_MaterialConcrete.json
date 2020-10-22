@@ -1,0 +1,40 @@
+{
+    "$id": "Pset_MaterialConcrete.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_MaterialConcrete",
+    "description": "A set of extended mechanical properties related to concrete materials.",
+    "properties": {
+        "CompressiveStrength": {
+            "title": "CompressiveStrength",
+            "description": "The compressive strength of the concrete.",
+            "datatype": "IfcPressureMeasure"
+        },
+        "MaxAggregateSize": {
+            "title": "MaxAggregateSize",
+            "description": "The maximum aggregate size of the concrete.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "AdmixturesDescription": {
+            "title": "AdmixturesDescription",
+            "description": "Description of the admixtures added to the concrete mix.",
+            "datatype": "IfcText"
+        },
+        "Workability": {
+            "title": "Workability",
+            "description": "Description of the workability of the fresh concrete defined according to local standards.",
+            "datatype": "IfcText"
+        },
+        "WaterImpermeability": {
+            "title": "WaterImpermeability",
+            "description": "Description of the water impermeability denoting the water repelling properties.",
+            "datatype": "IfcText"
+        },
+        "ProtectivePoreRatio": {
+            "title": "ProtectivePoreRatio",
+            "description": "The protective pore ratio indicating the frost-resistance of the concrete.",
+            "datatype": "IfcNormalisedRatioMeasure"
+        }
+    }
+}

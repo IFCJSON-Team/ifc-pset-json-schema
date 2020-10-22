@@ -1,0 +1,36 @@
+{
+    "$id": "Pset_SensorTypeWindSensor.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_SensorTypeWindSensor",
+    "description": "A device that senses or detects wind speed and direction. HISTORY: Added in IFC4.",
+    "properties": {
+        "WindSensorType": {
+            "title": "WindSensorType",
+            "description": "Enumeration that Identifies the types of wind sensors that can be specified.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CUP",
+                    "WINDMILL",
+                    "HOTWIRE",
+                    "LASERDOPPLER",
+                    "SONIC",
+                    "PLATE",
+                    "TUBE",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "SetPointSpeed": {
+            "title": "SetPointSpeed",
+            "description": "The wind speed value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.",
+            "datatype": "IfcLinearVelocityMeasure"
+        }
+    }
+}

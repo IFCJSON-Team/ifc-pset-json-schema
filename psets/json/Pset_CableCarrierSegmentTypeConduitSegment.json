@@ -1,0 +1,41 @@
+{
+    "$id": "Pset_CableCarrierSegmentTypeConduitSegment.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CableCarrierSegmentTypeConduitSegment",
+    "description": "An enclosed tubular carrier segment through which cables are pulled.\nHISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure.",
+    "properties": {
+        "NominalWidth": {
+            "title": "NominalWidth",
+            "description": "The nominal width of the segment.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "NominalHeight": {
+            "title": "NominalHeight",
+            "description": "The nominal height of the segment.",
+            "datatype": "IfcPositiveLengthMeasure"
+        },
+        "ConduitShapeType": {
+            "title": "ConduitShapeType",
+            "description": "The shape of the conduit segment.",
+            "datatype": {
+                "title": null,
+                "description": null,
+                "type": "string",
+                "enum": [
+                    "CIRCULAR",
+                    "OVAL",
+                    "OTHER",
+                    "NOTKNOWN",
+                    "UNSET"
+                ]
+            }
+        },
+        "IsRigid": {
+            "title": "IsRigid",
+            "description": "Indication of whether the conduit is rigid (= TRUE) or flexible (= FALSE).",
+            "datatype": "IfcBoolean"
+        }
+    }
+}

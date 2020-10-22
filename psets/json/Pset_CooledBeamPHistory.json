@@ -1,0 +1,62 @@
+{
+    "$id": "Pset_CooledBeamPHistory.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "ifcversion": "IFC4x2",
+    "type": "object",
+    "title": "Pset_CooledBeamPHistory",
+    "description": "Common performance history attributes for a cooled beam.",
+    "properties": {
+        "TotalCoolingCapacity": {
+            "title": "TotalCoolingCapacity",
+            "description": "Total cooling capacity. This includes cooling capacity of beam and cooling capacity of supply air."
+        },
+        "TotalHeatingCapacity": {
+            "title": "TotalHeatingCapacity",
+            "description": "Total heating capacity. This includes heating capacity of beam and heating capacity of supply air."
+        },
+        "BeamCoolingCapacity": {
+            "title": "BeamCoolingCapacity",
+            "description": "Cooling capacity of beam. This excludes cooling capacity of supply air."
+        },
+        "BeamHeatingCapacity": {
+            "title": "BeamHeatingCapacity",
+            "description": "Heating capacity of beam. This excludes heating capacity of supply air."
+        },
+        "CoolingWaterFlowRate": {
+            "title": "CoolingWaterFlowRate",
+            "description": "Water flow rate for cooling."
+        },
+        "HeatingWaterFlowRate": {
+            "title": "HeatingWaterFlowRate",
+            "description": "Water flow rate for heating."
+        },
+        "CorrectionFactorForCooling": {
+            "title": "CorrectionFactorForCooling",
+            "description": "Correction factor k as a function of water flow rate (used to calculate cooling capacity)."
+        },
+        "CorrectionFactorForHeating": {
+            "title": "CorrectionFactorForHeating",
+            "description": "Correction factor k as a function of water flow rate (used to calculate heating capacity)."
+        },
+        "WaterPressureDropCurves": {
+            "title": "WaterPressureDropCurves",
+            "description": "Water pressure drop as function of water flow rate."
+        },
+        "SupplyWaterTemperatureCooling": {
+            "title": "SupplyWaterTemperatureCooling",
+            "description": "Supply water temperature in cooling mode."
+        },
+        "ReturnWaterTemperatureCooling": {
+            "title": "ReturnWaterTemperatureCooling",
+            "description": "Return water temperature in cooling mode."
+        },
+        "SupplyWaterTemperatureHeating": {
+            "title": "SupplyWaterTemperatureHeating",
+            "description": "Supply water temperature in heating mode."
+        },
+        "ReturnWaterTemperatureHeating": {
+            "title": "ReturnWaterTemperatureHeating",
+            "description": "Return water temperature in heating mode."
+        }
+    }
+}
